@@ -5,6 +5,16 @@ When you're done, you can delete the content in this README and update the file 
 *We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
 
 ---
+Stappen:
+
+1. Transformatie file "Projectbesluit nieuw_0.91.xml door map.xsl ==> output ProjectBesluit_1_map.xml
+2. Transformatie file "ProjectBesluit_1_map.xml door plaats_id.xsl ==> output ProjectBesluit_2_ids.xml
+3. Transformatie file "ProjectBesluit_2_ids.xml door AKN.xsl ==> output ProjectBesluit_3_akn.xml
+4. Verwijder namespaces bij  ProjectBesluit_3_akn.xml en copy file in input directory.
+5. Uitvoeren buid.xml om html output te maken.
+
+
+
 ## Valdiation XML
 
 xmlns="https://standaarden.overheid.nl/stop/imop/"
