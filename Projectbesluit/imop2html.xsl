@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="#all">
-    <xsl:output method="xhtml" encoding="UTF-8" indent="no" omit-xml-declaration="yes" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
+<xsl:stylesheet version="2.0" 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xml:gml="http://www.opengis.net/gml/3.2"
+    xmlns:fn="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="#all">
+    <xsl:output method="xhtml" encoding="UTF-8" indent="no" omit-xml-declaration="yes" 
+        doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" 
+        doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
 
     <!-- Verwijder schemaverwijzing in om te zetten document -->
 
     <!-- Tijdelijke variabelen om de links goed te maken -->
 
-    <xsl:variable name="title" select="(.//RegelingOpschrift/al/node(),.//Metadata/Uitspraak[@eigenschap='imop:citeertitel']/Waarde/node(),string('Aan de slag met de omgevingswet'))[1]"/>
+    <xsl:variable name="title" select="(.//Opschrift/Al/node(),.//Metadata/Uitspraak[@eigenschap='imop:citeertitel']/Waarde/node(),string('Aan de slag met de omgevingswet'))[1]"/>
     <xsl:variable name="links">
         <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Centrumgebied_speelautomatenhal" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=1a6ef435c9a245f58fdb66525538e0d3"/>
         <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=f8b88c6ca69a449cac5082b91f2ba7d7"/>
@@ -95,7 +100,7 @@
                             </xsl:for-each-group>
                         </div>
                         <div class="metadata">
-                            <xsl:apply-templates select="OfficielePublicatie/Metadata/Uitspraak" mode="metadata"/>
+                            <xsl:apply-templates select="Besluit/Metadata/Uitspraak" mode="metadata"/>
                         </div>
                     </div>
                     <div class="content">
@@ -237,7 +242,13 @@
     <xsl:template match="Kop">
         <!-- TOC bevat de koppenstructuur -->
         <xsl:variable name="id" select="generate-id(.)"/>
-        <p class="{concat('heading_',$TOC/heading[@id=$id]/@level)}" id="{$id}"><xsl:if test="./Label|./Nummer"><span class="nummer"><xsl:value-of select="fn:string-join((./Label,./Nummer),' ')"/></span></xsl:if><xsl:apply-templates select="./Opschrift/node()"/></p>
+        <p class="{concat('heading_',$TOC/heading[@id=$id]/@level)}" id="{$id}">
+            <xsl:if test="./Label|./Nummer"><span class="nummer">
+                <xsl:value-of select="fn:string-join((./Label,./Nummer),' ')"/>
+            </span>
+            </xsl:if>
+            <xsl:apply-templates select="./Opschrift/node()"/>
+        </p>
     </xsl:template>
 
     <!-- begrippenlijst -->
@@ -268,7 +279,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="Definitie//al">
+    <xsl:template match="Definitie//Al">
         <p class="begrip"><xsl:apply-templates/></p>
     </xsl:template>
 
@@ -288,7 +299,7 @@
         <p class="{fn:string-join(($class,'kop'),'_')}"><xsl:apply-templates/></p>
     </xsl:template>
 
-    <xsl:template match="Groep/al" priority="1">
+    <xsl:template match="Groep/Al" priority="1">
         <xsl:param name="class"/>
         <p class="{$class}"><xsl:apply-templates/></p>
     </xsl:template>
