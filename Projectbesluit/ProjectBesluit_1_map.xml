@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Besluit xmlns:gml="http://www.opengis.net/gml/3.2">
+<Besluit xmlns:gml="http://www.opengis.net/gml/3.2"
+         xmlns:imop="https://standaarden.overheid.nl/stop/imop/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.overheid.nl/imop/def# ./xsd_stop_0.97.1_imop_0.97.1.xsd">
 
     <Metadata>
         <Uitspraak eigenschap="imop:typeDocument">
@@ -607,7 +610,9 @@
                            </Li>
                         </Lijst>
                         <table class="tabel" frame="all" colsep="1" rowsep="1">
-                           <title>Tabel 5 – Overzicht geluidschermen</title>
+                           <title>
+                              <Inline>Tabel 5 – Overzicht geluidschermen</Inline>
+                           </title>
                            <tgroup cols="4">
                               <colspec colname="col1" colwidth="4082"/>
                               <colspec colname="col2" colwidth="2733"/>
@@ -919,7 +924,9 @@
                            </tgroup>
                         </table>
                         <table class="tabel" frame="all" colsep="1" rowsep="1">
-                           <title>Tabel 6 – Overzicht asfalttypen</title>
+                           <title>
+                              <Inline>Tabel 6 – Overzicht asfalttypen</Inline>
+                           </title>
                            <tgroup cols="4">
                               <colspec colname="col1" colwidth="3534"/>
                               <colspec colname="col2" colwidth="3553"/>
@@ -1138,7 +1145,9 @@
                      <FormeleInhoud>
                         <Al>De maximum rijsnelheden op de A10 Zuid en de van de knooppunten De Nieuwe Meer en Amstel onderdeel uitmakende gedeelten van de A4, A10 West, A10 Oost en A2 zijn weergeven in Tabel 1.  </Al>
                         <table class="tabel" frame="all" colsep="1" rowsep="1">
-                           <title>Tabel 1 – Rijsnelheden</title>
+                           <title>
+                              <Inline>Tabel 1 – Rijsnelheden</Inline>
+                           </title>
                            <tgroup cols="3">
                               <colspec colname="col1" colwidth="2721"/>
                               <colspec colname="col2" colwidth="4120"/>
@@ -1235,7 +1244,7 @@
                             </Term>
                   <Definitie>
                      <Al>
-                        <ExIoRef wId="" eId="" doel=""/>
+                        <ExtIoRef wId="" eId="" doel=""/>
                      </Al>
                   </Definitie>
                </Begrip>

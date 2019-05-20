@@ -13,6 +13,7 @@
             <xsl:apply-templates select="node()|@*"/>
         </xsl:copy>
     </xsl:template>
+    
     <!-- Delete extra Metadata???? -->
     <xsl:template match="Besluit/Metadata/Uitspraak/Object/Eigenschap/Geometrie/Metadata" priority="1">
         <xsl:apply-templates/>
@@ -36,6 +37,26 @@
         </xsl:copy>
     </xsl:template>
     
+    <!-- add attribute type to lijst -->
+    
+    <xsl:template match="Lijst" priority="1">      
+        <xsl:copy>
+            <xsl:attribute name="type">expliciet</xsl:attribute>
+            <xsl:apply-templates select="@*"/>          
+            <xsl:apply-templates select="@* | node()"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <!-- add attribute type to lijst -->
+    
+    <xsl:template match="thead" priority="1">      
+        <xsl:copy>
+            <xsl:attribute name="valign">top</xsl:attribute>
+            <xsl:apply-templates select="@*"/>          
+            <xsl:apply-templates select="@* | node()"/>
+        </xsl:copy>
+    </xsl:template>
+    
     <!-- begin Replace value of Waarde imop:Geometrie --> 
     <xsl:variable name="werkingsgebiedID" select="fn:generate-id()" />
     <xsl:variable name="Dateid" select="translate(substring(string(current-dateTime()), 1, 23), '-:T.', '')"/>
@@ -52,6 +73,16 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>  
+    
+    <!-- add Regeling id -->
+    <xsl:template match="Besluit/Regeling">
+        <xsl:copy>
+            <xsl:variable name="regelingId" select="fn:generate-id()"/>
+            <xsl:attribute name="id" select="$regelingId">
+            </xsl:attribute>
+            <xsl:apply-templates/>    
+        </xsl:copy>
+    </xsl:template>
     <!-- 
     <xsl:template match="@eigenschap">      
         <xsl:choose>

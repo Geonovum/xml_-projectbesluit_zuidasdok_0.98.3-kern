@@ -2,9 +2,23 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:imop="http://www.overheid.nl/imop/def#" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.overheid.nl/imop/def#" xpath-default-namespace="http://www.overheid.nl/imop/def#">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
 
-    <xsl:param name="element" select="('Aanhef','Afdeling','Artikel','Begrip','Begrippenlijst','Bijlage','Boek','Citaat','Deel','Divisie','ExtIoRef','FormeleDivisie','FormeleInhoud','Figuur','Hoofdstuk','Inhoudsopgave','Inline','IntIoRef','Li','Lichaam','Lid','Lijst','Nawerk','Ondertekening','Paragraaf','Regeling','Opschrift','Slotformulier','Subparagraaf','Subsubparagraaf','table','Tekst','Titel','Toelichting','WijzigArtikel','WijzigBijlage','WijzigLid')"/>
-    <xsl:param name="element_ref" select="('formula_1','subchp','art','item','list','cmp','book','cit','part','dvs','ref','dvs','fin','img','chp','toc','inline','ref','item','body','para','list','app','signature','subsec','longTitle','formula_2','subsec','subsec','table','body','title','recital','art','cmp','para')"/>
-    <xsl:param name="element_wId_eId" select="('waar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','waar','onwaar','onwaar','onwaar','waar','onwaar','onwaar','waar','waar','onwaar','waar','waar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar','onwaar')"/>
+    <xsl:param name="element" select="('Aanhef','Afdeling','Artikel','Begrip','Begrippenlijst',
+                                       'Bijlage','Boek','Citaat','Deel','Divisie',
+                                       'ExtIoRef','FormeleDivisie','FormeleInhoud','Figuur','Hoofdstuk',
+                                       'Inhoudsopgave','Inline','IntIoRef','Li','Lichaam',
+                                       'Lid','Lijst','Nawerk','Ondertekening','Paragraaf',
+                                       'RegelingOpschrift','Slotformulier','Subparagraaf','Subsubparagraaf','table',
+                                       'Tekst','Titel','Toelichting','WijzigArtikel','WijzigBijlage','WijzigLid')"/>
+    <xsl:param name="element_ref" select="('formula_1','subchp','art','item','list','cmp','book','cit','part','dvs','ref',
+        'dvs','fin','img','chp','toc','inline','ref','item','body','para','list','app','signature','subsec','longTitle',
+        'formula_2','subsec','subsec','table','body','title','recital','art','cmp','para')"/>
+    <xsl:param name="element_wId_eId" select="('waar','onwaar','onwaar','onwaar','onwaar',
+                                               'onwaar','onwaar','onwaar','onwaar','onwaar',
+                                               'onwaar','onwaar','onwaar','onwaar','onwaar',
+                                               'waar','onwaar','onwaar','onwaar','waar',
+                                               'onwaar','onwaar','waar','waar','onwaar',
+                                               'waar','waar','onwaar','onwaar','onwaar',
+                                               'onwaar','onwaar','onwaar','onwaar','onwaar','onwaar')"/>
 
     <!-- Vul hieronder de identifier voor het bevoegd gezag en het versienummer in. -->
 

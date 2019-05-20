@@ -103,6 +103,24 @@
         </xsl:copy>
     </xsl:template>   
     
+    <!-- Add inline element to table|title  -->
+    <xsl:template match="table/title" priority="1">
+      <xsl:copy>   
+         <xsl:element name="Inline">
+             <xsl:apply-templates/>
+         </xsl:element>
+        </xsl:copy>   
+    </xsl:template>
+    
+    <!-- 
+    <xsl:copy>   
+        <xsl:element name="inline">
+            <xsl:value-of select="ancestor::table/title/text()"/>
+        </xsl:element>
+            <xsl:apply-templates/>    
+    </xsl:copy>
+    -->
+    
     <!-- Replace element Staatsblad tree -->
     <xsl:template match="Staatsblad" priority="1">
         <xsl:element name="Regeling">
@@ -193,7 +211,7 @@
                             </xsl:element>
                             <xsl:element name="Definitie">
                                 <xsl:element name="Al">
-                                    <xsl:element name="ExIoRef">
+                                    <xsl:element name="ExtIoRef">
                                         <xsl:attribute name="wId"></xsl:attribute>
                                         <xsl:attribute name="eId"></xsl:attribute>
                                         <xsl:attribute name="doel"></xsl:attribute>

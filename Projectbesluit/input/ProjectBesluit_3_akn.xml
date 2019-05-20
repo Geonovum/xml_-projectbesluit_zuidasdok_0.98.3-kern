@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Besluit xmlns="http://www.overheid.nl/imop/def#">
+<Besluit>
    <Metadata>
       <Uitspraak eigenschap="imop:typeDocument">
          <Waarde type="xs:string">Projectbesluit</Waarde>
@@ -14,7 +14,7 @@
          <Waarde type="xs:date">2018-06-12</Waarde>
       </Uitspraak>
       <Uitspraak eigenschap="imop:werkingsgebied">
-         <Waarde type="imop:Geometrie">d1/regdata/gm0503/20190520012735419werkingsgebied_projectbesluit_zuidas_20180320</Waarde>
+         <Waarde type="imop:Geometrie">d1/regdata/gm0503/20190520131019442werkingsgebied_projectbesluit_zuidas_20180320</Waarde>
       </Uitspraak>
       <Uitspraak eigenschap="imop:heeftDatacollectie">
          <Object type="imop:GeoInformatieobject">
@@ -99,9 +99,9 @@
          </Object>
       </Uitspraak>
    </Metadata>
-   <Regeling eId="longTitle_1" wId="ws0636_1__longTitle_1">
-      <Lichaam eId="body" wId="ws0636_1__body">
-         <WijzigArtikel eId="cmp_1" wId="ws0636_1__cmp_1">
+   <Regeling id="d1e183">
+      <Lichaam eId="body" wId="body">
+         <WijzigArtikel eId="art_1_inst_1" wId="ws0636_1__art_1_inst_1">
             <Metadata>
                <Uitspraak eigenschap="imop:datumInwerkingtreding">
                   <Waarde type="xs:date"/>
@@ -116,7 +116,7 @@
             </Kop>
             <Wat>Projectbesluit Zuidas 2018 wordt vastgesteld zoals vastgesteld in de bijlage.</Wat>
          </WijzigArtikel>
-         <Artikel eId="art_1" wId="ws0636_1__art_1">
+         <Artikel eId="art_1_inst_2" wId="ws0636_1__art_1_inst_2">
             <Kop>
                <Label>Artikel</Label>
                <Nummer>II</Nummer>
@@ -126,7 +126,7 @@
             </Inhoud>
          </Artikel>
       </Lichaam>
-      <WijzigBijlage eId="para_1" wId="ws0636_1__para_1">
+      <WijzigBijlage eId="cmp_1" wId="ws0636_1__cmp_1">
          <Metadata>
             <Uitspraak eigenschap="imop:wordtVersie">
                <Waarde type="xs:string"/>
@@ -135,32 +135,34 @@
          <Kop>
             <Label>Bijlage</Label>
             <Nummer>I</Nummer>
-            <Opschrift eId="formula_2_1" wId="formula_2_1">Bijlage bij artikel I</Opschrift>
+            <Opschrift>Bijlage bij artikel I</Opschrift>
          </Kop>
          <MaakInitieleRegeling>
-            <Lichaam eId="body" wId="ws0636_1__body">
+            <Lichaam eId="body" wId="body">
                <FormeleDivisie eId="dvs_1" wId="ws0636_1__dvs_1">
                   <Kop>
-                     <Opschrift eId="formula_2_1" wId="formula_2_1">Projectbesluit Zuidas 2018</Opschrift>
+                     <Opschrift>Projectbesluit Zuidas 2018</Opschrift>
                   </Kop>
-                  <FormeleDivisie eId="dvs_1" wId="ws0636_1__dvs_1">
+                  <FormeleDivisie eId="dvs_1__dvs_1" wId="ws0636_1__dvs_1__dvs_1">
                      <Kop>
-                        <Opschrift eId="dvs_1__formula_2_1" wId="dvs_1__formula_2_1">Inleiding</Opschrift>
+                        <Opschrift>Inleiding</Opschrift>
                      </Kop>
-                     <FormeleDivisie eId="dvs_1__dvs_1" wId="ws0636_1__dvs_1__dvs_1">
+                     <FormeleDivisie eId="dvs_1__dvs_1__dvs_1" wId="ws0636_1__dvs_1__dvs_1__dvs_1">
                         <Kop>
-                           <Opschrift eId="dvs_1__dvs_1__formula_2_1" wId="dvs_1__dvs_1__formula_2_1">Algemeen</Opschrift>
+                           <Opschrift>Algemeen</Opschrift>
                         </Kop>
-                        <FormeleInhoud eId="dvs_1__dvs_1__fin_1" wId="ws0636_1__dvs_1__dvs_1__fin_1">
+                        <FormeleInhoud eId="dvs_1__dvs_1__dvs_1__fin_1"
+                                       wId="ws0636_1__dvs_1__dvs_1__dvs_1__fin_1">
                            <Al>Zoals ook aangegeven in de Rijksstructuurvisie Infrastructuur en Ruimte (SVIR) en de gemeentelijke structuurvisie Amsterdam 2040 ontwikkelt de Zuidas zich tot internationale toplocatie voor wonen en werken in de metropoolregio Amsterdam. De uitstekende bereikbaarheid, de kwalitatief hoogwaardige omgeving en de economische aantrekkingskracht van Amsterdam vormen de grondslagen voor een succesvolle ontwikkeling. Een ontwikkeling waarmee de internationale concurrentiekracht wordt vergroot en de economische positie van Nederland in Europa en de rest van de wereld versterkt.</Al>
                            <Al>Sinds de vaststelling van het Masterplan Zuidas door de gemeenteraad van Amsterdam in 1998 wordt de ontwikkelingsstrategie voor de Zuidas uitgewerkt in verschillende deelprojecten. Eén van deze deelprojecten is het project Zuidasdok van ProRail, Rijkswaterstaat en de gemeente Amsterdam. In de Structuurvisie ZuidasDok en het ambitiedocument zijn de ambities voor de ontwikkeling weergegeven. In de Structuurvisie zijn doelen gesteld om de bereikbaarheid van de noordelijke Randstad te verbeteren én Zuidas zich verder te laten ontwikkelen als internationale toplocatie en hoogwaardig stedelijk gebied. Het ambitiedocument geeft richting aan de infrastructurele ontwikkeling en inpassing van Zuidasdok en is te beschouwen als nadere uitwerking van deze Structuurvisie ZuidasDok. Deze twee documenten samen vormen de basis voor dit bestemmingsplan.</Al>
                         </FormeleInhoud>
                      </FormeleDivisie>
-                     <FormeleDivisie eId="dvs_1__dvs_2" wId="ws0636_1__dvs_1__dvs_2">
+                     <FormeleDivisie eId="dvs_1__dvs_1__dvs_2" wId="ws0636_1__dvs_1__dvs_1__dvs_2">
                         <Kop>
-                           <Opschrift eId="dvs_1__dvs_2__formula_2_1" wId="dvs_1__dvs_2__formula_2_1">Tracébesluit en bestemmingsplan</Opschrift>
+                           <Opschrift>Tracébesluit en bestemmingsplan</Opschrift>
                         </Kop>
-                        <FormeleInhoud eId="dvs_1__dvs_2__fin_1" wId="ws0636_1__dvs_1__dvs_2__fin_1">
+                        <FormeleInhoud eId="dvs_1__dvs_1__dvs_2__fin_1"
+                                       wId="ws0636_1__dvs_1__dvs_1__dvs_2__fin_1">
                            <Al>Het project Zuidasdok omvat zowel de aanpassingen aan station Amsterdam Zuid ten behoeve van de capaciteitvergroting en de opwaardering tot een volwaardige openbaarvervoerterminal (OVT) als aanpassingen aan de A10, waaronder de uitbreiding naar twee maal zes rijstroken en het - ter hoogte van het plangebied - ondertunnelen van de A10. Het tracébesluit maakt de totale wegverbreding van knooppunt Amstel tot knooppunt De Nieuwe Meer inclusief het plaatselijk ondergronds brengen van de A10 mogelijk. Het bestemmingsplan regelt de openbaarvervoerterminal, de tunneldaken, aangrenzende gronden en een langzaamverkeersverbinding ter hoogte van het Beatrixpark. De infrastructurele aanpassingen en de gebiedsontwikkeling kunnen niet los van elkaar worden gezien. Omdat het hier een integrale gebiedsontwikkeling betreft, is gekozen om het tracébesluit en het bestemmingsplan voor dit gebied zoveel mogelijk parallel te laten lopen.</Al>
                            <Al>Het onderhavige bestemmingsplan beoogt voor de gronden die binnen het bestemmingsplangebied vallen het tracébesluit te incorporeren. Het gaat daarbij om de parallel aan het station gelegen gronden, waar de 2 verkeerstunnels zijn voorzien. Daarmee zijn de verbreding van de A10 en de ondertunneling voor dit bestemmingsplan een gegeven.</Al>
                            <Al>Het tracébesluit wordt vastgesteld door de Minister van Infrastructuur en Milieu. De gemeenteraad stelt vervolgens het bestemmingsplan Zuidasdok vast, waarbij in aanvulling op de verbreding en de ondertunneling een juridisch planologisch kader wordt geboden voor de verbouw van de openbaarvervoerterminal en de inrichting van de tunneldaken.</Al>
@@ -168,11 +170,12 @@
                            <Al>In de volgende paragraaf wordt ingegaan op de bevoegdheden omtrent dit plan, waarna aandacht wordt besteed aan de Crisis- en herstelwet. Aan het einde van dit hoofdstuk is de leeswijzer opgenomen, waarin verder inzichtelijk wordt gemaakt hoe deze toelichting en ook regels en verbeelding tot stand zijn gekomen en opgebouwd.</Al>
                         </FormeleInhoud>
                      </FormeleDivisie>
-                     <FormeleDivisie eId="dvs_1__dvs_3" wId="ws0636_1__dvs_1__dvs_3">
+                     <FormeleDivisie eId="dvs_1__dvs_1__dvs_3" wId="ws0636_1__dvs_1__dvs_1__dvs_3">
                         <Kop>
-                           <Opschrift eId="dvs_1__dvs_3__formula_2_1" wId="dvs_1__dvs_3__formula_2_1">Planning</Opschrift>
+                           <Opschrift>Planning</Opschrift>
                         </Kop>
-                        <FormeleInhoud eId="dvs_1__dvs_3__fin_1" wId="ws0636_1__dvs_1__dvs_3__fin_1">
+                        <FormeleInhoud eId="dvs_1__dvs_1__dvs_3__fin_1"
+                                       wId="ws0636_1__dvs_1__dvs_1__dvs_3__fin_1">
                            <Al>Het project Zuidasdok doorloopt verschillende fasen volgens het Meerjarenprogramma Infrastructuur, Ruimte en Transport (MIRT). Het MIRT gaat over de financiële investeringen in deze integrale gezamenlijke oplossingen (programma’s en projecten). Momenteel bevindt het project zich in fase twee: de planuitwerkingsfase.</Al>
                            <Tussenkop>Eerste fase: verkenning</Tussenkop>
                            <Al>De eerste fase van het project Zuidasdok was de verkenningsfase. Kern van de verkenningsfase is het trechteringsproces: van veel oplossingsrichtingen trechteren naar een robuuste voorkeursbeslissing met één voorkeursalternatief. Op 9 juli 2012 is overeenstemming over dit voorkeursalternatief bereikt. Op die dag is de Structuurvisie Zuidasdok vastgesteld, inclusief het Milieueffectrapport (met bijlagen). De Structuurvisie beschrijft het (ruimtelijk) kader waarbinnen de ontwikkelingen van Zuidasdok vorm krijgen. In het planMER worden mogelijke milieueffecten in beeld gebracht.</Al>
@@ -180,51 +183,54 @@
                            <Al>In de huidige fase van het project - de planuitwerkingsfase (2013 - 2016) - worden / zijn een projectMER, een (Ontwerp) tracébesluit en een (Ontwerp) bestemmingsplan gemaakt. Hiervoor is reeds ingegaan op de verhouding tussen tracébesluit en bestemmingsplan. In hoofdstuk 5 wordt ingegaan op het projectMER. (Ontwerp)tracébesluit en (Ontwerp) bestemmingsplan doorlopen in 2015 hun procedures. Eerst wordt het tracébesluit vastgesteld, waarna dit (deels) geïncorporeerd wordt in het bestemmingsplan, bij vaststelling hiervan. Naar verwachting zullen deze in 2016 van kracht zijn. Hierna kan worden gestart met de daadwerkelijke realisatie van het project. Vervolgens wordt in 2027 de afronding van de werkzaamheden aan de A10 verwacht, waarna in 2028 het totale project zal zijn gerealiseerd. Gedurende deze periode van in totaal 12 jaar wordt niet overal tegelijk gewerkt. De overlast op één locatie zal dus niet 12 jaar aanhouden, maar slechts een deel hiervan.</Al>
                         </FormeleInhoud>
                      </FormeleDivisie>
-                     <FormeleDivisie eId="dvs_1__dvs_4" wId="ws0636_1__dvs_1__dvs_4">
+                     <FormeleDivisie eId="dvs_1__dvs_1__dvs_4" wId="ws0636_1__dvs_1__dvs_1__dvs_4">
                         <Kop>
-                           <Opschrift eId="dvs_1__dvs_4__formula_2_1" wId="dvs_1__dvs_4__formula_2_1">Bevoegdheden</Opschrift>
+                           <Opschrift>Bevoegdheden</Opschrift>
                         </Kop>
-                        <FormeleInhoud eId="dvs_1__dvs_4__fin_1" wId="ws0636_1__dvs_1__dvs_4__fin_1">
+                        <FormeleInhoud eId="dvs_1__dvs_1__dvs_4__fin_1"
+                                       wId="ws0636_1__dvs_1__dvs_1__dvs_4__fin_1">
                            <Al>Het plangebied is gelegen binnen de grenzen van het stadsdeel Zuid. Bij besluiten van de gemeenteraad van 1997, 29 oktober 2003 en 13 juli 2011 is de Zuidas, waar het bestemmingsplangebied deel van uitmaakt, aangewezen als grootstedelijk project. Voor grootstedelijke projecten geldt dat alle bevoegdheden op grond van de Wet ruimtelijke ordening bij de centrale stad en dus het college van Burgemeester &amp; Wethouders en de gemeenteraad liggen. De bevoegdheid tot het in ontwerp ter visie leggen en het vaststellen van het onderhavige bestemmingsplan is dus aan de gemeenteraad toegekend.</Al>
                            <Al>Na de terinzageligging van het ontwerpbestemmingsplan is de bestuurlijke structuur van de gemeente Amsterdam gewijzigd. De stadsdelen zijn omgezet in Bestuurscommissies, waarbij overigens de term stadsdelen nog wel wordt gebezigd. De bevoegdheid tot vaststelling van bestemmingsplannen is nu voor de gehele gemeente overgegaan naar de gemeenteraad. Voor het onderhavige bestemmingsplan is er in dit verband geen sprake van een wijziging.</Al>
                         </FormeleInhoud>
                      </FormeleDivisie>
-                     <FormeleDivisie eId="dvs_1__dvs_5" wId="ws0636_1__dvs_1__dvs_5">
+                     <FormeleDivisie eId="dvs_1__dvs_1__dvs_5" wId="ws0636_1__dvs_1__dvs_1__dvs_5">
                         <Kop>
-                           <Opschrift eId="dvs_1__dvs_5__formula_2_1" wId="dvs_1__dvs_5__formula_2_1">Crisis- en herstelwet</Opschrift>
+                           <Opschrift>Crisis- en herstelwet</Opschrift>
                         </Kop>
-                        <FormeleInhoud eId="dvs_1__dvs_5__fin_1" wId="ws0636_1__dvs_1__dvs_5__fin_1">
+                        <FormeleInhoud eId="dvs_1__dvs_1__dvs_5__fin_1"
+                                       wId="ws0636_1__dvs_1__dvs_1__dvs_5__fin_1">
                            <Al>Zuidasdok is in het kader van de zevende tranche (inwerkingtreding 15 mei 2014; Stb 2014, nr. 168) opgenomen in bijlage 2 van de Crisis- en herstelwet als overig ruimtelijk project. De ontwikkeling wordt daarin aangehaald als een “Combinatie van stedelijke ontwikkeling en verbetering van bereikbaarheid, zowel via de weg als het openbaar vervoer. Onderdelen van het project zijn herinrichting van de A10-Zuid en de knooppunten Nieuwe Meer en Amstel en herinrichting van de openbaarvervoerterminal.” In de Nota van toelichting bij de 7e tranche staat vermeld dat “de aanwijzing van het project in aanvulling is op de reeds aangewezen gebiedsontwikkeling Zuidas en om zeker te stellen dat ook Zuidasdok, inclusief de infrastructurele onderdelen, onder de werking van de Crisis- en herstelwet valt”.</Al>
-                           <Lijst eId="dvs_1__dvs_5__fin_1__list_1"
-                                  wId="ws0636_1__dvs_1__dvs_5__fin_1__list_1"
+                           <Lijst eId="dvs_1__dvs_1__dvs_5__fin_1__list_1"
+                                  wId="ws0636_1__dvs_1__dvs_1__dvs_5__fin_1__list_1"
+                                  type="expliciet"
                                   class="Tekens">
                               <Lijstaanhef>Opname in bijlage 2 van de Crisis- en herstelwet leidt ertoe dat:</Lijstaanhef>
-                              <Li eId="dvs_1__dvs_5__fin_1__list_1__item_1"
-                                  wId="ws0636_1__dvs_1__dvs_5__fin_1__list_1__item_1">
+                              <Li eId="dvs_1__dvs_1__dvs_5__fin_1__list_1__item_1"
+                                  wId="ws0636_1__dvs_1__dvs_1__dvs_5__fin_1__list_1__item_1">
                                  <Inhoud>
                                     <Al>het niet verplicht is om alternatieven in het MER op te nemen;</Al>
                                  </Inhoud>
                               </Li>
-                              <Li eId="dvs_1__dvs_5__fin_1__list_1__item_2"
-                                  wId="ws0636_1__dvs_1__dvs_5__fin_1__list_1__item_2">
+                              <Li eId="dvs_1__dvs_1__dvs_5__fin_1__list_1__item_2"
+                                  wId="ws0636_1__dvs_1__dvs_1__dvs_5__fin_1__list_1__item_2">
                                  <Inhoud>
                                     <Al>het niet verplicht is om de Commissie voor de m.e.r. over het opgestelde MER advies te vragen;</Al>
                                  </Inhoud>
                               </Li>
-                              <Li eId="dvs_1__dvs_5__fin_1__list_1__item_3"
-                                  wId="ws0636_1__dvs_1__dvs_5__fin_1__list_1__item_3">
+                              <Li eId="dvs_1__dvs_1__dvs_5__fin_1__list_1__item_3"
+                                  wId="ws0636_1__dvs_1__dvs_1__dvs_5__fin_1__list_1__item_3">
                                  <Inhoud>
                                     <Al>een decentrale overheid (als belanghebbende) geen beroep kan instellen tegen een besluit van de centrale overheid, tenzij het besluit gericht is tot (een orgaan van) die rechtspersoon of tot het bestuursorgaan dan wel de rechtspersoon waartoe dat bestuursorgaan behoort;</Al>
                                  </Inhoud>
                               </Li>
-                              <Li eId="dvs_1__dvs_5__fin_1__list_1__item_4"
-                                  wId="ws0636_1__dvs_1__dvs_5__fin_1__list_1__item_4">
+                              <Li eId="dvs_1__dvs_1__dvs_5__fin_1__list_1__item_4"
+                                  wId="ws0636_1__dvs_1__dvs_1__dvs_5__fin_1__list_1__item_4">
                                  <Inhoud>
                                     <Al>er geen mogelijkheid voor belanghebbenden is voor het aanvoeren van beroepsgronden na afloop van de beroepstermijn;</Al>
                                  </Inhoud>
                               </Li>
-                              <Li eId="dvs_1__dvs_5__fin_1__list_1__item_5"
-                                  wId="ws0636_1__dvs_1__dvs_5__fin_1__list_1__item_5">
+                              <Li eId="dvs_1__dvs_1__dvs_5__fin_1__list_1__item_5"
+                                  wId="ws0636_1__dvs_1__dvs_1__dvs_5__fin_1__list_1__item_5">
                                  <Inhoud>
                                     <Al>er een versnelde behandeling door de bestuursrechter van beroep plaatsvindt (uitspraak binnen een half jaar).</Al>
                                  </Inhoud>
@@ -232,51 +238,55 @@
                            </Lijst>
                         </FormeleInhoud>
                      </FormeleDivisie>
-                     <FormeleDivisie eId="dvs_1__dvs_6" wId="ws0636_1__dvs_1__dvs_6">
+                     <FormeleDivisie eId="dvs_1__dvs_1__dvs_6" wId="ws0636_1__dvs_1__dvs_1__dvs_6">
                         <Kop>
-                           <Opschrift eId="dvs_1__dvs_6__formula_2_1" wId="dvs_1__dvs_6__formula_2_1">Leeswijzer</Opschrift>
+                           <Opschrift>Leeswijzer</Opschrift>
                         </Kop>
-                        <FormeleInhoud eId="dvs_1__dvs_6__fin_1" wId="ws0636_1__dvs_1__dvs_6__fin_1">
+                        <FormeleInhoud eId="dvs_1__dvs_1__dvs_6__fin_1"
+                                       wId="ws0636_1__dvs_1__dvs_1__dvs_6__fin_1">
                            <Al>Het bestemmingsplan bestaat uit regels, een verbeelding en gaat vergezeld van een toelichting. Op de verbeelding zijn de bestemmingen in het plangebied weergegeven. Deze bestemmingen zijn gerelateerd aan de in de regels opgenomen juridische regeling. De verbeelding en de planregels vormen samen de bestemmingsplanregeling zoals deze door de gemeenteraad wordt vastgesteld. De toelichting geeft de achtergronden (relevant beleid, resultaten van onderzoeken en gemaakte keuzes) bij de bestemmingsplanregeling en licht deze vanzelfsprekend toe.</Al>
                         </FormeleInhoud>
                      </FormeleDivisie>
                   </FormeleDivisie>
-                  <FormeleDivisie eId="dvs_2" wId="ws0636_1__dvs_2">
+                  <FormeleDivisie eId="dvs_1__dvs_2" wId="ws0636_1__dvs_1__dvs_2">
                      <Kop>
-                        <Opschrift eId="dvs_2__formula_2_1" wId="dvs_2__formula_2_1">Artikel 1: Projectbeschrijving</Opschrift>
+                        <Opschrift>Artikel 1: Projectbeschrijving</Opschrift>
                      </Kop>
-                     <FormeleInhoud eId="dvs_2__fin_1" wId="ws0636_1__dvs_2__fin_1">
-                        <Lijst eId="dvs_2__fin_1__list_1"
-                               wId="ws0636_1__dvs_2__fin_1__list_1"
+                     <FormeleInhoud eId="dvs_1__dvs_2__fin_1" wId="ws0636_1__dvs_1__dvs_2__fin_1">
+                        <Lijst eId="dvs_1__dvs_2__fin_1__list_1"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1"
+                               type="expliciet"
                                class="Nummers">
-                           <Li eId="dvs_2__fin_1__list_1__item_1"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_1">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_1"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_1">
                               <Inhoud>
                                  <Al>De A10 Zuid wordt verbreed en ingericht met een systeem van hoofd- en parallelrijbanen. Deze worden beschreven in de leden 4 tot en met 7. De A10 Zuid wordt ter hoogte van station Amsterdam Zuid aangelegd in twee tunnels met een lengte van circa 1 km voor de noordelijke hoofdrijbaan en parallelrijbaan en van circa 1.1 km voor de zuidelijke hoofdrijbaan en parallelrijbaan, conform de kilometeraanduidingen in de artikelleden 4 tot en met 7. De hoofdrijbanen en de parallelrijbanen liggen in gescheiden tunnelbuizen met een middentunnelkanaal. De tunnels worden voor wat betreft de toegankelijkheid voor vervoer van gevaarlijke stoffen ingedeeld in categorie C.</Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_2"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_2">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_2"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_2">
                               <Inhoud>
                                  <Al>Het Projectbesluit voorziet tevens in de aanpassing van de knooppunten De Nieuwe Meer en Amstel en de daarvan onderdeel uitmakende gedeelten van de autosnelwegen A4 (tot km 1.2), A10 West (tot km 22.1), A10 Oost (tot km 15.1) en A2 (van km 30.8 tot km 32.3). Deze aan passingen worden beschreven in de leden 3 en 8 van dit artikel. </Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_3"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_3">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3">
                               <Inhoud>
-                                 <Lijst eId="dvs_2__fin_1__list_1__item_3__list_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1"
+                                 <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>Het knooppunt De Nieuwe Meer wordt als volgt aangepast:</Lijstaanhef>
-                                    <Li eId="dvs_2__fin_1__list_1__item_3__list_1__item_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1">
                                        <Inhoud>
-                                          <Lijst eId="dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1"
+                                          <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1"
+                                                 type="expliciet"
                                                  class="Nummers">
                                              <Lijstaanhef>De zuidelijke rijbaan van de A4 verbreedt ter hoogte van km 0.6 naar 4 rijstroken en splitst zich ter hoogte van km 0.3 in:</Lijstaanhef>
-                                             <Li eId="dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1__item_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1__item_1">
+                                             <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1__item_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1__item_1">
                                                 <Inhoud>
                                                    <Al>naar rechts 2 rijstroken naar de zuidelijke parallelrijbaan van de A10 Zuid; ii. naar links 2 rijstroken naar de zuidelijke hoofdrijbaan van de A10 Zuid. </Al>
                                                 </Inhoud>
@@ -284,15 +294,16 @@
                                           </Lijst>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_3__list_1__item_2"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2">
                                        <Inhoud>
-                                          <Lijst eId="dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1"
+                                          <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1"
+                                                 type="expliciet"
                                                  class="Nummers">
                                              <Lijstaanhef>De verbindingsweg A10 West naar A10 Zuid splitst zich ter hoogte van km 21.0 in:</Lijstaanhef>
-                                             <Li eId="dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1__item_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1__item_1">
+                                             <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1__item_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1__item_1">
                                                 <Inhoud>
                                                    <Al>naar rechts met 1 rijstrook naar de zuidelijke parallelrijbaan van de A10 Zuid; ii. naar links 2 rijstroken naar de zuidelijke hoofdrijbaan A10 Zuid.</Al>
                                                 </Inhoud>
@@ -300,21 +311,22 @@
                                           </Lijst>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_3__list_1__item_3"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_3">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3">
                                        <Inhoud>
-                                          <Lijst eId="dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1"
+                                          <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1"
+                                                 type="expliciet"
                                                  class="Nummers">
                                              <Lijstaanhef>De noordelijke parallelrijbaan van de A10 Zuid splitst zich ter hoogte van km 20.9 in:</Lijstaanhef>
-                                             <Li eId="dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_1">
+                                             <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_1">
                                                 <Inhoud>
                                                    <Al>naar rechts de verbindingsweg naar de A4 met 2 rijstroken, die ter hoogte van km 0.5 samenvoegen met de 2 stroken vanaf de noordelijke hoofdrijbaan A10 Zuid (3.e.ii) tot 3 doorgaande stroken die vervolgens samenvoegen met de huidige A4;</Al>
                                                 </Inhoud>
                                              </Li>
-                                             <Li eId="dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_2"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_2">
+                                             <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_2"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_2">
                                                 <Inhoud>
                                                    <Al>naar links de verbindingsweg naar de A10 West met 1 rijstrook.</Al>
                                                 </Inhoud>
@@ -325,27 +337,28 @@
                                  </Lijst>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_4"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_4">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_4"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_4">
                               <Inhoud>
                                  <Al>De verbindingsweg naar de A10 West (3.c.ii) voegt ter hoogte van km 21.5 samen met de hoofdrijbaan A10 West. Ter hoogte van km 21.6 voegt 1 rijstrook uit naar de S107 en voegt de doorgaande rijstrook onder het kunstwerk van de S107 in op de bestaande A10 West.</Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_5"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_5">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_5"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_5">
                               <Inhoud>
-                                 <Lijst eId="dvs_2__fin_1__list_1__item_5__list_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_5__list_1"
+                                 <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_5__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_5__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>De noordelijke hoofdrijbaan van de A10 Zuid splitst zich ter hoogte van km 0.1 in:</Lijstaanhef>
-                                    <Li eId="dvs_2__fin_1__list_1__item_5__list_1__item_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_5__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_5__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_5__list_1__item_1">
                                        <Inhoud>
                                           <Al>naar rechts de verbindingsweg naar de A10 West met 2 rijstroken;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_5__list_1__item_2"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_5__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_5__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_5__list_1__item_2">
                                        <Inhoud>
                                           <Al>naar links de verbindingsweg naar de A4 met 2 rijstroken, die ter hoogte van km 0.5 samenvoegen met de verbindingsweg vanaf de noordelijke parallelrijbaan A10 Zuid (3.c.i).</Al>
                                        </Inhoud>
@@ -353,57 +366,58 @@
                                  </Lijst>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_6"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_6">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_6"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_6">
                               <Inhoud>
                                  <Al>De overige rijbanen en verbindingswegen in het knooppunt blijven als bestaand.</Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_7"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_7">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_7"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7">
                               <Inhoud>
-                                 <Lijst eId="dvs_2__fin_1__list_1__item_7__list_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_7__list_1"
+                                 <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>De nieuwe zuidelijke parallelrijbaan van de A10 Zuid wordt van west naar oost als volgt ingericht:</Lijstaanhef>
-                                    <Li eId="dvs_2__fin_1__list_1__item_7__list_1__item_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_7__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_1">
                                        <Inhoud>
                                           <Al>Van km 20.8 tot km 20.2 bestaat de parallelrijbaan uit 3 rijstroken.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_7__list_1__item_2"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_7__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_2">
                                        <Inhoud>
                                           <Al>Ter hoogte van km 20.2 verbreedt de parallelrijbaan naar 4 rijstroken.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_7__list_1__item_3"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_7__list_1__item_3">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_3"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_3">
                                        <Inhoud>
                                           <Al>Ter hoogte van km 20.1 voegen 2 rijstroken rechts uit naar aansluiting 8 (S108) en gaan 2 rijstroken rechtdoor. De afrit gaat over in meerdere rijstroken bij het kruispunt met de Amstelveenseweg.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_7__list_1__item_4"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_7__list_1__item_4">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_4"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_4">
                                        <Inhoud>
                                           <Al>Ter hoogte van km 19.8 voegt de 1-strooks toerit vanaf aansluiting 8 (S108) samen tot 2 rijstroken.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_7__list_1__item_5"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_7__list_1__item_5">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_5"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_5">
                                        <Inhoud>
                                           <Al>Van km 19.5 tot voorbij km 18.5 ligt de parallelrijbaan in de tunnel.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_7__list_1__item_6"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_7__list_1__item_6">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_6"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_6">
                                        <Inhoud>
                                           <Al>Ter hoogte van km 17.7 voegt 1 rijstrook rechts uit naar aansluiting 9 (S109) en gaan 2 rijstroken rechtdoor. De afrit verbreedt direct na het uitvoegen naar 2 rijstroken en gaat bij het kruispunt met de Europaboulevard over in meerdere opstelstroken.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_7__list_1__item_7"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_7__list_1__item_7">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_7"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_7">
                                        <Inhoud>
                                           <Al>De zuidelijke toerit vanaf aansluiting 9 (S109) bestaat uit drie rijstroken en voegt ter hoogte van km 17.4 samen tot twee rijstroken, die ter hoogte van km 17.3 samenvoegen met de parallelrijbaan tot 4 rijstroken (2+2 weefvak).</Al>
                                        </Inhoud>
@@ -411,21 +425,22 @@
                                  </Lijst>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_8"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_8">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_8"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_8">
                               <Inhoud>
-                                 <Lijst eId="dvs_2__fin_1__list_1__item_8__list_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_8__list_1"
+                                 <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_8__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_8__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>De nieuwe zuidelijke hoofdrijbaan van de A10 Zuid wordt van west naar oost als volgt ingericht:</Lijstaanhef>
-                                    <Li eId="dvs_2__fin_1__list_1__item_8__list_1__item_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_8__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_8__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_8__list_1__item_1">
                                        <Inhoud>
                                           <Al>De 2 rijstroken vanaf de A4 (3.a.i) voegen ter hoogte van km 20.5 samen met de 2 rijstroken vanaf de A10 West (3.b.ii) tot 4 rijstroken.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_8__list_1__item_2"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_8__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_8__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_8__list_1__item_2">
                                        <Inhoud>
                                           <Al>Van km 19.5 tot voorbij km 18.5 ligt de hoofdrijbaan in de tunnel.</Al>
                                        </Inhoud>
@@ -433,45 +448,46 @@
                                  </Lijst>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_9"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_9">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_9"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9">
                               <Inhoud>
-                                 <Lijst eId="dvs_2__fin_1__list_1__item_9__list_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_9__list_1"
+                                 <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_9__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>De nieuwe noordelijke parallelrijbaan A10 Zuid wordt van oost naar west als volgt ingericht:</Lijstaanhef>
-                                    <Li eId="dvs_2__fin_1__list_1__item_9__list_1__item_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_9__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_1">
                                        <Inhoud>
                                           <Al>Van km 16.5 tot km 16.9 bestaat de parallelrijbaan uit 3 rijstroken;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_9__list_1__item_2"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_9__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_2">
                                        <Inhoud>
                                           <Al>Ter hoogte van km 16.9 gaan 2 rijstroken rechtdoor en start het weefvak richting aansluiting 9 (S109).</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_9__list_1__item_3"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_9__list_1__item_3">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_3"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_3">
                                        <Inhoud>
                                           <Al>Ter hoogte van km 17.3 verbreedt het weefvak naar 2 rijstroken, die ter hoogte van km 17.4 rechts uitvoegen naar aansluiting 9 (S109). De afrit gaat over in meerdere opstelstroken bij het kruispunt met de Europaboulevard. Ter hoogte van km 18.2 voegt de 1-strooks toerit vanaf aansluiting 9 (S109) via een weefvak in.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_9__list_1__item_4"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_9__list_1__item_4">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_4"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_4">
                                        <Inhoud>
                                           <Al>Van km 18.5 tot km 19.6 liggen 2 rijstroken in de tunnel.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_9__list_1__item_5"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_9__list_1__item_5">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_5"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_5">
                                        <Inhoud>
                                           <Al>Ter hoogte van km 19.7 voegt 1 rijstrook rechts uit naar aansluiting 8 (S108) en gaan 2 rijstroken rechtdoor. De afrit gaat over in meerdere opstelstroken bij het kruispunt met de Amstelveenseweg.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_9__list_1__item_6"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_9__list_1__item_6">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_6"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_6">
                                        <Inhoud>
                                           <Al>Ter hoogte van km 20.5 voegen 2 rijstroken vanaf aansluiting 8 (S108) via een weefvak samen tot 3 rijstroken.</Al>
                                        </Inhoud>
@@ -479,27 +495,28 @@
                                  </Lijst>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_10"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_10">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_10"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_10">
                               <Inhoud>
-                                 <Lijst eId="dvs_2__fin_1__list_1__item_10__list_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_10__list_1"
+                                 <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_10__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_10__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>De nieuwe noordelijke hoofdrijbaan A10 Zuid wordt als volgt ingericht:</Lijstaanhef>
-                                    <Li eId="dvs_2__fin_1__list_1__item_10__list_1__item_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_10__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_10__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_10__list_1__item_1">
                                        <Inhoud>
                                           <Al>van km 16.5 tot km 17.3 bestaat de hoofdrijbaan uit 5 rijstroken</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_10__list_1__item_2"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_10__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_10__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_10__list_1__item_2">
                                        <Inhoud>
                                           <Al>van km 17.3 tot km 20.8 bestaat de hoofdrijbaan uit 4 rijstroken.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_10__list_1__item_3"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_10__list_1__item_3">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_10__list_1__item_3"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_10__list_1__item_3">
                                        <Inhoud>
                                           <Al>Van km 18.5 tot km 19.6 ligt de hoofdrijbaan in de tunnel.</Al>
                                        </Inhoud>
@@ -507,28 +524,30 @@
                                  </Lijst>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_11"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_11">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11">
                               <Inhoud>
-                                 <Lijst eId="dvs_2__fin_1__list_1__item_11__list_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1"
+                                 <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>Het knooppunt Amstel wordt als volgt aangepast:</Lijstaanhef>
-                                    <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_1"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1">
                                        <Inhoud>
-                                          <Lijst eId="dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1"
+                                          <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1"
+                                                 type="expliciet"
                                                  class="Nummers">
                                              <Lijstaanhef>De zuidelijke parallelrijbaan van de A10 Zuid splitst zich ter hoogte van km 16.7 in:</Lijstaanhef>
-                                             <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_1">
+                                             <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_1">
                                                 <Inhoud>
                                                    <Al>naar rechts de verbindingsweg naar de A10 Oost met 2 rijstroken die samenvoegen met de 3 rijstroken van de hoofdrijbaan A10 zuid naar A10 Oost (8.b.ii) via een weefvak tot 4 rijstroken;</Al>
                                                 </Inhoud>
                                              </Li>
-                                             <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_2"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_2">
+                                             <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_2"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_2">
                                                 <Inhoud>
                                                    <Al>naar links de verbindingsweg naar de A2 richting Utrecht met 2 rijstroken die samenvoegen met de verbindingsweg vanaf de hoofdrijbaan A10 Zuid (8.b.i) tot 4 rijstroken en ter hoogte van km 15.7 versmallen naar 3 rijstroken.</Al>
                                                 </Inhoud>
@@ -536,21 +555,22 @@
                                           </Lijst>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_2"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2">
                                        <Inhoud>
-                                          <Lijst eId="dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1"
+                                          <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1"
+                                                 type="expliciet"
                                                  class="Nummers">
                                              <Lijstaanhef>De zuidelijke hoofdrijbaan van de A10 Zuid verbreedt ter hoogte van km 17.50 van 4 naar 5 rijstroken en splitst zich ter hoogte van km 16.8 in:</Lijstaanhef>
-                                             <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_1"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_1">
+                                             <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_1"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_1">
                                                 <Inhoud>
                                                    <Al>naar rechts de verbindingsweg naar de A2 richting Utrecht met 2 rijstroken die samenvoegen met de verbindingsweg vanaf de parallelrijbaan (8.a.ii);</Al>
                                                 </Inhoud>
                                              </Li>
-                                             <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_2"
-                                                 wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_2">
+                                             <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_2"
+                                                 wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_2">
                                                 <Inhoud>
                                                    <Al>naar links 3 doorgaande rijstroken naar de A10 Oost.</Al>
                                                 </Inhoud>
@@ -558,26 +578,26 @@
                                           </Lijst>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_3"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_3">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_3"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_3">
                                        <Inhoud>
                                           <Al>De verbindingsweg van de S110 naar de A10 Oost vervalt.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_4"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_4">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_4"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_4">
                                        <Inhoud>
                                           <Al>De 2-strooks verbindingsweg van de A10 Oost naar de A2 versmalt ter hoogte van km 16.4 naar 1 rijstrook en voegt samen met de 1-strooks S110 tot 2 rijstroken, die vervolgens samenvoegen met de 3-strooks verbindingsweg vanaf de A10 Zuid (8.b.i) via een weefvak tot de A2 met 4 rijstroken richting Utrecht.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_5"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_5">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_5"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_5">
                                        <Inhoud>
                                           <Al>De 4-strooks verbindingsweg van de A10 Zuid naar de A10 Oost voegt ter hoogte van km 15.5 samen met de 2-strooks verbindingsweg vanaf de A2 Utrecht via een weefvak tot de 5-strooks A10 Oost.</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_2__fin_1__list_1__item_11__list_1__item_6"
-                                        wId="ws0636_1__dvs_2__fin_1__list_1__item_11__list_1__item_6">
+                                    <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_6"
+                                        wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_6">
                                        <Inhoud>
                                           <Al>De overige rijbanen en verbindingswegen in het knooppunt blijven als bestaand.</Al>
                                        </Inhoud>
@@ -585,26 +605,26 @@
                                  </Lijst>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_12"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_12">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_12"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_12">
                               <Inhoud>
                                  <Al>Vluchtstroken zijn aanwezig waar deze op de detailkaarten (II) zijn weergegeven.</Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_13"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_13">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_13"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_13">
                               <Inhoud>
                                  <Al>De maatregelen opgenomen in de leden 1 tot en met 9 worden gerealiseerd binnen de op de detailkaarten (II) aangegeven maatregelvlakken ‘Verkeersdoeleinden, zone Wegverharding’, ‘Verkeersdoeleinden, zone open Tunnelbak’ en ‘Verkeersdoeleinden, zone gesloten Tunnel’. </Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_14"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_14">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_14"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_14">
                               <Inhoud>
                                  <Al>De aanpassingen en het daarbij behorende ruimtebeslag vinden plaats overeenkomstig de detailkaarten en de kaartbladen met lengteprofielen (II). De kilometeraanduidingen bij de maatregelen genoemd in de leden 2 tot en met 8 en 12 zijn afgerond, voor de exacte maatvoering zijn de detailkaarten maatgevend. </Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_2__fin_1__list_1__item_15"
-                               wId="ws0636_1__dvs_2__fin_1__list_1__item_15">
+                           <Li eId="dvs_1__dvs_2__fin_1__list_1__item_15"
+                               wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_15">
                               <Inhoud>
                                  <Al>De hoogteligging van de parallelrijbanen tussen km 20.8 en km 16.9 is gelijk aan hoogteligging van de hoofdrijbanen, zoals weergegeven op de kaartbladen met lengteprofielen bij dit Projectbesluit.</Al>
                               </Inhoud>
@@ -613,65 +633,67 @@
                         <Al class="Afstand_na">De hiervoor weergegeven beschrijving van het project wordt hierna in dit besluit aangeduid als ‘(het) Project’. Het Project wordt uitgevoerd binnen de grenzen van het werkingsgebied opgenomen in dit besluit, hierna aangeduid als ‘Projectgebied’.</Al>
                      </FormeleInhoud>
                   </FormeleDivisie>
-                  <FormeleDivisie eId="dvs_3" wId="ws0636_1__dvs_3">
+                  <FormeleDivisie eId="dvs_1__dvs_3" wId="ws0636_1__dvs_1__dvs_3">
                      <Kop>
-                        <Opschrift eId="dvs_3__formula_2_1" wId="dvs_3__formula_2_1">Artikel 2: Maatregelen ter voorkoming, beperking of compensatie van nadelige gevolgen Project</Opschrift>
+                        <Opschrift>Artikel 2: Maatregelen ter voorkoming, beperking of compensatie van nadelige gevolgen Project</Opschrift>
                      </Kop>
-                     <FormeleInhoud eId="dvs_3__fin_1" wId="ws0636_1__dvs_3__fin_1">
-                        <Lijst eId="dvs_3__fin_1__list_1"
-                               wId="ws0636_1__dvs_3__fin_1__list_1"
+                     <FormeleInhoud eId="dvs_1__dvs_3__fin_1" wId="ws0636_1__dvs_1__dvs_3__fin_1">
+                        <Lijst eId="dvs_1__dvs_3__fin_1__list_1"
+                               wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1"
+                               type="expliciet"
                                class="Nummers">
-                           <Li eId="dvs_3__fin_1__list_1__item_1"
-                               wId="ws0636_1__dvs_3__fin_1__list_1__item_1">
+                           <Li eId="dvs_1__dvs_3__fin_1__list_1__item_1"
+                               wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_1">
                               <Inhoud>
                                  <Al>De in Tabel 5 opgenomen geluidschermen worden gerealiseerd. Op de detailkaarten zijn de geluidschermen weergegeven als ‘Geluidscherm’.</Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_3__fin_1__list_1__item_2"
-                               wId="ws0636_1__dvs_3__fin_1__list_1__item_2">
+                           <Li eId="dvs_1__dvs_3__fin_1__list_1__item_2"
+                               wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_2">
                               <Inhoud>
                                  <Al>In Tabel 6 worden de wegdekken aangeduid waar geluidreducerend asfalt van het type tweelaags ZOAB wordt gerealiseerd, dan wel een asfalttype met akoestisch gelijkwaardige eigenschappen. </Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_3__fin_1__list_1__item_3"
-                               wId="ws0636_1__dvs_3__fin_1__list_1__item_3">
+                           <Li eId="dvs_1__dvs_3__fin_1__list_1__item_3"
+                               wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_3">
                               <Inhoud>
                                  <Al>In de open tunnelbakken wordt geluidsabsorberende wandbekleding aangebracht welke over enkele tientallen meters doorloopt in de gesloten tunnelbakken. </Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_3__fin_1__list_1__item_4"
-                               wId="ws0636_1__dvs_3__fin_1__list_1__item_4">
+                           <Li eId="dvs_1__dvs_3__fin_1__list_1__item_4"
+                               wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_4">
                               <Inhoud>
                                  <Al>De voegovergangen van vaste bruggen worden geluidsarm gerealiseerd conform de richtlijn RTD-1007-3. </Al>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_3__fin_1__list_1__item_5"
-                               wId="ws0636_1__dvs_3__fin_1__list_1__item_5">
+                           <Li eId="dvs_1__dvs_3__fin_1__list_1__item_5"
+                               wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_5">
                               <Inhoud>
-                                 <Lijst eId="dvs_3__fin_1__list_1__item_5__list_1"
-                                        wId="ws0636_1__dvs_3__fin_1__list_1__item_5__list_1"
+                                 <Lijst eId="dvs_1__dvs_3__fin_1__list_1__item_5__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_5__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>Ter beperking van de geluidafstraling van de nieuwe beweegbare Schinkelbrug in de noordelijke parallelrijbaan van de A10 worden de volgende maatregelen getroffen:</Lijstaanhef>
-                                    <Li eId="dvs_3__fin_1__list_1__item_5__list_1__item_1"
-                                        wId="ws0636_1__dvs_3__fin_1__list_1__item_5__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_1">
                                        <Inhoud>
                                           <Al>voegovergangen tussen de vaste en beweegbare brugdelen worden aan de zijkant en aan de onderzijde afgesloten;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_3__fin_1__list_1__item_5__list_1__item_2"
-                                        wId="ws0636_1__dvs_3__fin_1__list_1__item_5__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_2">
                                        <Inhoud>
                                           <Al>zijwanden onder het beweegbare brugdeel worden voorzien van een akoestische absorberende bekleding;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_3__fin_1__list_1__item_5__list_1__item_3"
-                                        wId="ws0636_1__dvs_3__fin_1__list_1__item_5__list_1__item_3">
+                                    <Li eId="dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_3"
+                                        wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_3">
                                        <Inhoud>
                                           <Al>de constructie van de brugval wordt geoptimaliseerd om de geluidproductie te minimaliseren</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_3__fin_1__list_1__item_5__list_1__item_4"
-                                        wId="ws0636_1__dvs_3__fin_1__list_1__item_5__list_1__item_4">
+                                    <Li eId="dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_4"
+                                        wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_4">
                                        <Inhoud>
                                           <Al>of andere maatregelen die ten minste dezelfde geluidreducerende eigenschappen hebben.</Al>
                                        </Inhoud>
@@ -679,27 +701,28 @@
                                  </Lijst>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_3__fin_1__list_1__item_6"
-                               wId="ws0636_1__dvs_3__fin_1__list_1__item_6">
+                           <Li eId="dvs_1__dvs_3__fin_1__list_1__item_6"
+                               wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_6">
                               <Inhoud>
-                                 <Lijst eId="dvs_3__fin_1__list_1__item_6__list_1"
-                                        wId="ws0636_1__dvs_3__fin_1__list_1__item_6__list_1"
+                                 <Lijst eId="dvs_1__dvs_3__fin_1__list_1__item_6__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_6__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>Ter beperking van de geluidafstraling van de bestaande beweegbare Schinkelbrug in de noordelijke hoofdrijbaan van de A10 worden de volgende maatregelen getroffen:</Lijstaanhef>
-                                    <Li eId="dvs_3__fin_1__list_1__item_6__list_1__item_1"
-                                        wId="ws0636_1__dvs_3__fin_1__list_1__item_6__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_3__fin_1__list_1__item_6__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_6__list_1__item_1">
                                        <Inhoud>
                                           <Al>maatregelen aan de voegovergangen tussen de vaste en de beweegbare brugdelen, in ieder geval bestaande uit het afsluiten van de zijkant en de onderzijde van voegovergangen;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_3__fin_1__list_1__item_6__list_1__item_2"
-                                        wId="ws0636_1__dvs_3__fin_1__list_1__item_6__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_3__fin_1__list_1__item_6__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_6__list_1__item_2">
                                        <Inhoud>
                                           <Al>zijwanden onder het beweegbare brugdeel worden voorzien van een akoestische absorberende bekleding;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_3__fin_1__list_1__item_6__list_1__item_3"
-                                        wId="ws0636_1__dvs_3__fin_1__list_1__item_6__list_1__item_3">
+                                    <Li eId="dvs_1__dvs_3__fin_1__list_1__item_6__list_1__item_3"
+                                        wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_6__list_1__item_3">
                                        <Inhoud>
                                           <Al>of andere maatregelen die ten minste dezelfde geluidreducerende eigenschappen hebben. </Al>
                                        </Inhoud>
@@ -708,19 +731,22 @@
                               </Inhoud>
                            </Li>
                         </Lijst>
-                        <table eId="dvs_3__fin_1__body_inst_1"
-                               wId="ws0636_1__dvs_3__fin_1__body_inst_1"
+                        <table eId="dvs_1__dvs_3__fin_1__table_1"
+                               wId="ws0636_1__dvs_1__dvs_3__fin_1__table_1"
                                class="tabel"
                                frame="all"
                                colsep="1"
                                rowsep="1">
-                           <title>Tabel 5 – Overzicht geluidschermen</title>
+                           <title>
+                              <Inline eId="dvs_1__dvs_3__fin_1__table_1__inline_1"
+                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__table_1__inline_1">Tabel 5 – Overzicht geluidschermen</Inline>
+                           </title>
                            <tgroup align="left" cols="4">
                               <colspec colname="col1" colwidth="4082"/>
                               <colspec colname="col2" colwidth="2733"/>
                               <colspec colname="col3" colwidth="1047"/>
                               <colspec colname="col4" colwidth="970"/>
-                              <thead>
+                              <thead valign="top">
                                  <row>
                                     <entry align="left" namest="col1" nameend="col1" morerows="0">
                                        <Al>Soort en hoogte afscherming*</Al>
@@ -1025,19 +1051,22 @@
                               </tbody>
                            </tgroup>
                         </table>
-                        <table eId="dvs_3__fin_1__body_inst_2"
-                               wId="ws0636_1__dvs_3__fin_1__body_inst_2"
+                        <table eId="dvs_1__dvs_3__fin_1__table_2"
+                               wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2"
                                class="tabel"
                                frame="all"
                                colsep="1"
                                rowsep="1">
-                           <title>Tabel 6 – Overzicht asfalttypen</title>
+                           <title>
+                              <Inline eId="dvs_1__dvs_3__fin_1__table_2__inline_1"
+                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__inline_1">Tabel 6 – Overzicht asfalttypen</Inline>
+                           </title>
                            <tgroup align="left" cols="4">
                               <colspec colname="col1" colwidth="3534"/>
                               <colspec colname="col2" colwidth="3553"/>
                               <colspec colname="col3" colwidth="907"/>
                               <colspec colname="col4" colwidth="850"/>
-                              <thead>
+                              <thead valign="top">
                                  <row>
                                     <entry align="left" namest="col1" nameend="col1" morerows="0">
                                        <Al>Maatregel</Al>
@@ -1104,83 +1133,84 @@
                                  </row>
                                  <row>
                                     <entry align="left" namest="col1" nameend="col4" morerows="0">
-                                       <Lijst eId="dvs_3__fin_1__body_inst_2__list_1"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1"
+                                       <Lijst eId="dvs_1__dvs_3__fin_1__table_2__list_1"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1"
+                                              type="expliciet"
                                               class="Tekens">
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_1"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_1">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_1"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_1">
                                              <Inhoud>
                                                 <Al>toe –en afritten S107, S108 en S109;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_2"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_2">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_2"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_2">
                                              <Inhoud>
                                                 <Al>kunstwerk verbindingsboog A10 west – A4 km 21.35 tot km 21.48;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_3"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_3">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_3"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_3">
                                              <Inhoud>
                                                 <Al>kunstwerk verbindingsboog A4 – A10 west km 0.19 tot km 0.28;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_4"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_4">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_4"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_4">
                                              <Inhoud>
                                                 <Al>kunstwerk (beweegbare brugdeel Schinkelbrug) A10 zuid km 20.80Rex – 20.82Rex;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_5"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_5">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_5"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_5">
                                              <Inhoud>
                                                 <Al>kunstwerk (beweegbare brugdeel Schinkelbrug) A10 zuid km 20.80Re – 20.82Re;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_6"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_6">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_6"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_6">
                                              <Inhoud>
                                                 <Al>kunstwerk (beweegbare brugdeel Schinkelbrug) A10 zuid km 20.79Liy – 20.81Liy;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_7"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_7">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_7"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_7">
                                              <Inhoud>
                                                 <Al>kunstwerk (beweegbare brugdeel Schinkelbrug) A10 zuid km 20.79Li – 20.81Li;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_8"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_8">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_8"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_8">
                                              <Inhoud>
                                                 <Al>kunstwerk verbindingsboog A10 oost – A2 km 15.78Ret – km 15.83Ret;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_9"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_9">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_9"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_9">
                                              <Inhoud>
                                                 <Al>kunstwerk verbindingsboog A10 oost – A2 km 15.90Ret – km 15.96Ret;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_10"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_10">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_10"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_10">
                                              <Inhoud>
                                                 <Al>kunstwerk verbindingsboog A10 oost – A10 zuid km 15.92Rex – km 15.98Rex;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_11"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_11">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_11"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_11">
                                              <Inhoud>
                                                 <Al>gesloten tunneldeel A10 hoofdrijbaan rechts km 18.53Re – km 19.58Re; • gesloten tunneldeel A10 parallelrijbaan rechts km 18.53Rex – km 19.58Rex.</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_12"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_12">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_12"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_12">
                                              <Inhoud>
                                                 <Al>gesloten tunneldeel A10 hoofdrijbaan links km 18.44Li – km 19.49Li;</Al>
                                              </Inhoud>
                                           </Li>
-                                          <Li eId="dvs_3__fin_1__body_inst_2__list_1__item_13"
-                                              wId="ws0636_1__dvs_3__fin_1__body_inst_2__list_1__item_13">
+                                          <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_13"
+                                              wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_13">
                                              <Inhoud>
                                                 <Al>gesloten tunneldeel A10 parallelrijbaan links km 18.44Liy – km 19.49Liy.</Al>
                                              </Inhoud>
@@ -1193,59 +1223,61 @@
                         </table>
                      </FormeleInhoud>
                   </FormeleDivisie>
-                  <FormeleDivisie eId="dvs_4" wId="ws0636_1__dvs_4">
+                  <FormeleDivisie eId="dvs_1__dvs_4" wId="ws0636_1__dvs_1__dvs_4">
                      <Kop>
-                        <Opschrift eId="dvs_4__formula_2_1" wId="dvs_4__formula_2_1">Artikel 3: Tijdelijke maatregelen en voorzieningen</Opschrift>
+                        <Opschrift>Artikel 3: Tijdelijke maatregelen en voorzieningen</Opschrift>
                      </Kop>
-                     <FormeleInhoud eId="dvs_4__fin_1" wId="ws0636_1__dvs_4__fin_1">
-                        <Lijst eId="dvs_4__fin_1__list_1"
-                               wId="ws0636_1__dvs_4__fin_1__list_1"
+                     <FormeleInhoud eId="dvs_1__dvs_4__fin_1" wId="ws0636_1__dvs_1__dvs_4__fin_1">
+                        <Lijst eId="dvs_1__dvs_4__fin_1__list_1"
+                               wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1"
+                               type="expliciet"
                                class="Nummers">
-                           <Li eId="dvs_4__fin_1__list_1__item_1"
-                               wId="ws0636_1__dvs_4__fin_1__list_1__item_1">
+                           <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1"
+                               wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1">
                               <Inhoud>
-                                 <Lijst eId="dvs_4__fin_1__list_1__item_1__list_1"
-                                        wId="ws0636_1__dvs_4__fin_1__list_1__item_1__list_1"
+                                 <Lijst eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1"
+                                        wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1"
+                                        type="expliciet"
                                         class="Nummers">
                                     <Lijstaanhef>Behalve definitieve werken met het oog op de uitvoering van het Projectbesluit kunnen op de gronden die op de detailkaarten zijn aangeduid als maatregelvlak ‘Verkeersdoeleinden, zone Wegverharding’, ‘Verkeersdoeleinden, Werkterrein’ en maatregelvlak ‘Verkeersdoeleinden, Zoekgebied Werkterrein’ tijdelijke werken ten behoeve van de uitvoering van het Projectbesluit worden uitgevoerd. Onder tijdelijke werken worden onder andere begrepen:</Lijstaanhef>
-                                    <Li eId="dvs_4__fin_1__list_1__item_1__list_1__item_1"
-                                        wId="ws0636_1__dvs_4__fin_1__list_1__item_1__list_1__item_1">
+                                    <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_1"
+                                        wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_1">
                                        <Inhoud>
                                           <Al>tijdelijke verlegging van de rijbanen A10 Zuid in verband met fasering van de uitvoering, waarbij een verlaging van de maximale snelheid van 100 naar 90 km/uur is toegestaan;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_4__fin_1__list_1__item_1__list_1__item_2"
-                                        wId="ws0636_1__dvs_4__fin_1__list_1__item_1__list_1__item_2">
+                                    <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_2"
+                                        wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_2">
                                        <Inhoud>
                                           <Al>opslagplaatsen, werkplaatsen, installaties, pontons, bouwketen en parkeerplaatsen voor personeel en bezoekers;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_4__fin_1__list_1__item_1__list_1__item_3"
-                                        wId="ws0636_1__dvs_4__fin_1__list_1__item_1__list_1__item_3">
+                                    <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_3"
+                                        wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_3">
                                        <Inhoud>
                                           <Al>laad- en losplaatsen, afmeervoorzieningen langs vaarwegen en grond- en zanddepots;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_4__fin_1__list_1__item_1__list_1__item_4"
-                                        wId="ws0636_1__dvs_4__fin_1__list_1__item_1__list_1__item_4">
+                                    <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_4"
+                                        wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_4">
                                        <Inhoud>
                                           <Al>pijpleidingen en transportbanden met bijbehorende voorzieningen;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_4__fin_1__list_1__item_1__list_1__item_5"
-                                        wId="ws0636_1__dvs_4__fin_1__list_1__item_1__list_1__item_5">
+                                    <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_5"
+                                        wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_5">
                                        <Inhoud>
                                           <Al>bouwzones aan weerszijden van de weg ten behoeve van de werkzaamheden;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_4__fin_1__list_1__item_1__list_1__item_6"
-                                        wId="ws0636_1__dvs_4__fin_1__list_1__item_1__list_1__item_6">
+                                    <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_6"
+                                        wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_6">
                                        <Inhoud>
                                           <Al>damwanden en andere grond- dan wel waterkerende constructies;</Al>
                                        </Inhoud>
                                     </Li>
-                                    <Li eId="dvs_4__fin_1__list_1__item_1__list_1__item_7"
-                                        wId="ws0636_1__dvs_4__fin_1__list_1__item_1__list_1__item_7">
+                                    <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_7"
+                                        wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_7">
                                        <Inhoud>
                                           <Al>tijdelijke bouwwegen, watergangen, energievoorziening, afrastering, watercompensatie, kunstwerken (waaronder bruggen en viaducten), kabels en leidingen, barriers en geluidschermen.</Al>
                                        </Inhoud>
@@ -1253,8 +1285,8 @@
                                  </Lijst>
                               </Inhoud>
                            </Li>
-                           <Li eId="dvs_4__fin_1__list_1__item_2"
-                               wId="ws0636_1__dvs_4__fin_1__list_1__item_2">
+                           <Li eId="dvs_1__dvs_4__fin_1__list_1__item_2"
+                               wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_2">
                               <Inhoud>
                                  <Al>In afwijking van het gestelde in lid 1 is binnen de maatregelvlakken ‘Verkeersdoeleinden, Zoekgebied Werkterrein’ de op de detailkaarten (II) aangegeven maximale oppervlakte beschikbaar ten behoeve van de in lid 1 omschreven tijdelijke werken.</Al>
                               </Inhoud>
@@ -1263,27 +1295,30 @@
                         <Al class="Afstand_na">Tijdelijke werken mogen niet langer in stand gehouden worden dan zes maanden na de ingebruikname van het tracé.</Al>
                      </FormeleInhoud>
                   </FormeleDivisie>
-                  <FormeleDivisie eId="dvs_5" wId="ws0636_1__dvs_5">
+                  <FormeleDivisie eId="dvs_1__dvs_5" wId="ws0636_1__dvs_1__dvs_5">
                      <Kop>
-                        <Opschrift eId="dvs_5__formula_2_1" wId="dvs_5__formula_2_1">Artikel 4: Wijziging regels omgevingsplan</Opschrift>
+                        <Opschrift>Artikel 4: Wijziging regels omgevingsplan</Opschrift>
                      </Kop>
-                     <FormeleInhoud eId="dvs_5__fin_1" wId="ws0636_1__dvs_5__fin_1">
+                     <FormeleInhoud eId="dvs_1__dvs_5__fin_1" wId="ws0636_1__dvs_1__dvs_5__fin_1">
                         <Al>Dit besluit wijzigt de regels van het omgevingsplan van de gemeente (………). De wijziging van deze regels, inclusief de daarbij behorende gewijzigde Verbeelding, zijn opgenomen in <b>bijlage (-)</b>.</Al>
                      </FormeleInhoud>
                   </FormeleDivisie>
-                  <FormeleDivisie eId="dvs_6" wId="ws0636_1__dvs_6">
+                  <FormeleDivisie eId="dvs_1__dvs_6" wId="ws0636_1__dvs_1__dvs_6">
                      <Kop>
-                        <Opschrift eId="formula_2_1" wId="formula_2_1">Artikel 9: Verkeersbesluit</Opschrift>
+                        <Opschrift>Artikel 9: Verkeersbesluit</Opschrift>
                      </Kop>
-                     <FormeleInhoud eId="fin_1" wId="ws0636_1__fin_1">
+                     <FormeleInhoud eId="dvs_1__dvs_6__fin_1" wId="ws0636_1__dvs_1__dvs_6__fin_1">
                         <Al>De maximum rijsnelheden op de A10 Zuid en de van de knooppunten De Nieuwe Meer en Amstel onderdeel uitmakende gedeelten van de A4, A10 West, A10 Oost en A2 zijn weergeven in Tabel 1. </Al>
-                        <table eId="body"
-                               wId="ws0636_1__body"
+                        <table eId="dvs_1__dvs_6__fin_1__table_1"
+                               wId="ws0636_1__dvs_1__dvs_6__fin_1__table_1"
                                class="tabel"
                                frame="all"
                                colsep="1"
                                rowsep="1">
-                           <title>Tabel 1 – Rijsnelheden</title>
+                           <title>
+                              <Inline eId="dvs_1__dvs_6__fin_1__table_1__inline_1"
+                                      wId="ws0636_1__dvs_1__dvs_6__fin_1__table_1__inline_1">Tabel 1 – Rijsnelheden</Inline>
+                           </title>
                            <tgroup align="left" cols="3">
                               <colspec colname="col1" colwidth="2721"/>
                               <colspec colname="col2" colwidth="4120"/>
@@ -1370,7 +1405,7 @@
          <Kop>
             <Label>Bijlage</Label>
             <Nummer>I</Nummer>
-            <Opschrift eId="cmp_1__formula_2_1" wId="cmp_1__formula_2_1">Overzicht informatieobjecten</Opschrift>
+            <Opschrift>Overzicht informatieobjecten</Opschrift>
          </Kop>
          <Inhoud>
             <Begrippenlijst eId="cmp_1__list_1" wId="ws0636_1__cmp_1__list_1">
@@ -1378,7 +1413,9 @@
                   <Term> Werkinggebied A </Term>
                   <Definitie>
                      <Al>
-                        <ExIoRef doel="d1/regdata/gm0503/20190520012735419"/>
+                        <ExtIoRef eId="cmp_1__list_1__item_1__ref_1"
+                                  wId="ws0636_1__cmp_1__list_1__item_1__ref_1"
+                                  doel="d1/regdata/gm0503/20190520131019442"/>
                      </Al>
                   </Definitie>
                </Begrip>
