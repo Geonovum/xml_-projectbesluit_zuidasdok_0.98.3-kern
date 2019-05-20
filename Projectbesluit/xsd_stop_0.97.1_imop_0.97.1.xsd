@@ -1,0 +1,2220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="https://standaarden.overheid.nl/stop/imop/" version="0.97.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:imop="https://standaarden.overheid.nl/stop/imop/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <xs:annotation>
+    <xs:documentation>Versie 0.97.1 voorstel - 2019-03-25 - Aanpassingen ten opzichte van de vorige versie (0.97):</xs:documentation>
+    <xs:documentation>- Indeling aangepast door toevoeging lege comments tussen declaraties</xs:documentation>
+    <xs:documentation>- Local definities verplaatst naar global, met uitzondering van Al (3x local) en Titel (1x local)</xs:documentation>
+    <xs:documentation>- Substitution groepen verwijderd</xs:documentation>
+    <xs:documentation>- Global complexTypes verwijderd.</xs:documentation>
+    <xs:documentation>- Extensions overal verwijderd.</xs:documentation>
+    <xs:documentation>- XML-namespace aangepast naar vaststelling "https://standaarden.overheid.nl/stop/imop/". Was: "http://www.overheid.nl/imop/def#"</xs:documentation>
+    <xs:documentation>- Import xml.xsd verwijderd, was alleen voor xml:lang.</xs:documentation>
+    <xs:documentation>- Attribuut 'xml:lang' verwijderd - taalaanduidingen zijn onderdeel van imop:Metadata.</xs:documentation>
+    <xs:documentation>- Default waarden voor attributen: verwijderd, attributen zijn verplicht, default waarde is opgenomen in documentatie.</xs:documentation>
+    <xs:documentation>- Inline elementen 'imop:EOL', 'imop:EOP' en 'imop:Marker' Verwijderd.</xs:documentation>
+    <xs:documentation>- Optioneel element 'imop:Metadata' voor 'imop:Lid' verwijderd. Metadatering moet op 'imop:Artikel' niveau plaatsvinden.</xs:documentation>
+    <xs:documentation>- Structuur voor 'imop:Lichaam' herzien - zelfde mogelijkheden, maar strakker (keuze sub-structuur op elk niveau consistent houden). Eenvoudiger te valideren met TPOD.</xs:documentation>
+    <xs:documentation>- Model voor de stuctuur niveau's (zoals: 'imop:Hoofdstuk', 'imop:Afdeling' etc.) conform model imop:Lichaam</xs:documentation>
+    <xs:documentation>- Elementen 'imop:sup' en 'imop:sub' toegevoegd aan elementen 'imop:i', 'imop:b', 'imop:strong', imop:u'.</xs:documentation>
+    <xs:documentation>- Element 'imop:Aanhaling' verwijderd, werd in geen enkel model gebruikt.</xs:documentation>
+    <xs:documentation>- Element 'imop:Tekst' verwijderd, was niet in gebruik en de rol en positie van dit element was niet duidelijk.</xs:documentation>
+    <xs:documentation>- Element 'imop:Aanduidingen' verwijderd, gebruik en toepassing net gespecificeerd. Blijkt niet nodig.</xs:documentation>
+    <xs:documentation>- Element 'imop:Blad' en het bijbehorende attribuut '@aanduidingBladen' verwijderd, was bedoeld om nog onbekende bladen te kunnen toevoegen.</xs:documentation>
+    <xs:documentation>- Element 'imop:Geometrie' binnen 'imop:Uitspraak' voor metadata beperkt tot maximaal 1x (was: unbouded).</xs:documentation>
+    <xs:documentation>- Element 'imop:FormeleDivisie' toegevoegd aan 'Lichaam' - container voor "FormeleInhoud" als regeling. Constructie vergelijkbaar met 'Hoofdstuk', 'Afdeling' etc.</xs:documentation>
+    <xs:documentation>- Element 'imop:FormeleInhoud' toegevoegd binnen 'FormeleDivisie' - container voor "vrije tekststructuur" als regeling. Constructie gelijk aan 'Artikel'.</xs:documentation>
+    <xs:documentation>- Element 'imop:VoegToe' voor imop:WijzigBijlage' kardinaliteit aangepast naar 'unbounded'.</xs:documentation>
+    <xs:documentation>- Element 'imop:WijzigBijlage' in een regelingstructuur kardinaliteit aangepast naar 'unbounded'.</xs:documentation>
+    <xs:documentation>- Attribuut @type en waardenlijst voor element 'imop:Waarde' verwijderd. Validatie voor datatypen aan de hand 'imop:Object/@type' en 'Eigenschap/@naam'.</xs:documentation>
+    <xs:documentation>- Documentatie (als xs:annotation) toegevoegd (kort, nog niet compleet). Voor uitgebreide documentatie wordt een referentie naar een externe bron gegenereerd.</xs:documentation>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:documentation>Dit schema ondersteunt berichten van het bevoegde gezag aan de LVBB en de aldaar gegenereerde centrale en decentrale besluiten en consolidaties.</xs:documentation>
+  </xs:annotation>
+  <!--  ELEMENTEN -->
+  <!-- ROOT -->
+  <xs:element name="Besluit">
+    <xs:annotation>
+      <xs:documentation>Root element - voor regelingen en wijzigingen daarop voor besluiten die door bevoegd gezag aan LVBB worden gestuurd.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="imop:mgRegeling"/>
+        <xs:element minOccurs="0" ref="imop:Nawerk"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="OfficielePublicatie">
+    <xs:annotation>
+      <xs:documentation>Root element - voor Officiele Publicaties die door LVBB worden gemaakt.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="imop:mgBladen"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="RegelingVersie">
+    <xs:annotation>
+      <xs:documentation>Root element - voor volledige regeling versies zonder datum inwerkingtreding die door LVBB worden gemaakt.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="imop:mgRegeling"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Toestand">
+    <xs:annotation>
+      <xs:documentation>Root element - voor geconsolideerde regelingen die door LVBB worden gemaakt. Heeft altijd een datum inwerkingtreding.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="imop:mgRegeling"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- EINDE ROOT -->
+  <!-- PUBLICATIES -->
+  <xs:element name="Staatscourant">
+    <xs:annotation>
+      <xs:documentation>Een publicatie in de Staatscourant. Mag niet worden gebruikt als bundeling van meerdere publicaties die samen een Staatscourant nummer.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:group ref="imop:mgBlad"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Staatsblad">
+    <xs:annotation>
+      <xs:documentation>Een in het Staatsblad gepubliceerde regeling.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:group ref="imop:mgBlad"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Gemeenteblad">
+    <xs:annotation>
+      <xs:documentation>Een in het Gemeenteblad gepubliceerde regeling.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:group ref="imop:mgBlad"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Provincieblad">
+    <xs:annotation>
+      <xs:documentation>Een in het Provincieblad gepubliceerde regeling.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:group ref="imop:mgBlad"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Waterschapsblad">
+    <xs:annotation>
+      <xs:documentation>Een in een Waterschapsblad gepubliceerde regeling.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:group ref="imop:mgBlad"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="BladGR">
+    <xs:annotation>
+      <xs:documentation>Een in een publicatie van een gemeente gepubliceerde regeling.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:group ref="imop:mgBlad"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Bladaanduiding">
+    <xs:annotation>
+      <xs:documentation>De tekstuele duiding verzorgt van het blad waarin de publicatie wordt geplaatst. Bevat 1 of 2 Titelregels.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="2" ref="imop:Titelregel"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- -->
+  <xs:element name="Titelregel">
+    <xs:annotation>
+      <xs:documentation>De officiele titel en eventuele subtitel voor een publicatie. Bijvoorbeeld: "GEMEENTEBLAD" en in de 2e Titelregel "Officiële uitgave van gemeente [...]".</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- EINDE PUBLICATIES -->
+  <!-- ELEMENTEN FORMEEL -->
+  <xs:element name="Regeling">
+    <xs:annotation>
+      <xs:documentation>Element Regeling is bedoeld voor documenten waarbij het hoofdbestanddeel (inhoudelijk gezien) wordt gevormd door juridisch authentieke tekst. Gegroepeerd in Artikelen, Hoofdstuk(ken) of andere
+        structuurelementen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="imop:mgRegelingStructuur"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeenVerplichtId"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Bijlage">
+    <xs:annotation>
+      <xs:documentation>Binnen 'Regeling' bijlage(n) die formeel tot de regeling behoren (bindend zijn). Binnen 'Nawerk' een toelichtende bijlage.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element ref="imop:Kop"/>
+        <xs:choice>
+          <xs:element ref="imop:Inhoud"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Divisie"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="imop:Sluiting"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Toelichting">
+    <xs:annotation>
+      <xs:documentation>Binnen 'Regeling': toelichtingen die geconsolideerd worden. Binnen 'Nawerk': een toelichting die NIET geconsolideerd wordt.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="0" ref="imop:Kop"/>
+        <xs:choice>
+          <xs:element ref="imop:Inhoud"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Divisie"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="imop:Sluiting"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Bijlage"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="FormeleDivisie">
+    <xs:annotation>
+      <xs:documentation>Een FormeleDivisie bevat juridisch authentieke tekst zonder een artikel structuur.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element ref="imop:Kop"/>
+        <xs:choice maxOccurs="unbounded" minOccurs="1">
+          <xs:element maxOccurs="unbounded" minOccurs="1" ref="imop:FormeleInhoud"/>
+          <xs:element maxOccurs="unbounded" minOccurs="1" ref="imop:FormeleDivisie"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="FormeleInhoud">
+    <xs:annotation>
+      <xs:documentation>Een FormeleInhoud bevat juridisch authentieke tekst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="0" ref="imop:Kop"/>
+        <xs:choice maxOccurs="unbounded" minOccurs="1">
+          <xs:group ref="imop:mgBlocksMinimaal"/>
+          <xs:group ref="imop:mgBlocksVolledig"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Divisie">
+    <xs:annotation>
+      <xs:documentation>Divisie is de recursieve hierarchische structuur voor niet-regeltekst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element ref="imop:Kop"/>
+        <xs:element minOccurs="0" ref="imop:Inhoud"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Divisie"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attribute name="soort" type="imop:wlSoortDivisie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Inhoud">
+    <xs:annotation>
+      <xs:documentation>Inhoud het container element waarbinnen de tekst-objectebn zijn gegroepeerd.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="1">
+        <xs:group ref="imop:mgBlocksMinimaal"/>
+        <xs:group ref="imop:mgBlocksVolledig"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="WijzigBijlage">
+    <xs:annotation>
+      <xs:documentation>Binnen een WijzigBijlage worden alle wijzigingen voor een regeling opgenomen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="0" ref="imop:Metadata"/>
+        <xs:element maxOccurs="1" minOccurs="1" ref="imop:Kop"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:VoegToe"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Vervang"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Vervallen"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:VervangKop"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Verwijder"/>
+        <xs:element maxOccurs="1" minOccurs="0" ref="imop:MaakInitieleRegeling"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="MaakInitieleRegeling">
+    <xs:annotation>
+      <xs:documentation>Container waarbinnen de volledige tekst voor een nieuwe regeling wordt opgenomen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="0" ref="imop:RegelingOpschrift"/>
+        <xs:element ref="imop:Lichaam"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Bijlage"/>
+        <xs:element maxOccurs="1" minOccurs="0" ref="imop:Toelichting"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="VervangKop">
+    <xs:annotation>
+      <xs:documentation>Een Kop dat in zijn geheel wordt vervangen bij het wijzigen van structuur voor een regeltekst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:sequence minOccurs="1">
+          <xs:element minOccurs="0" ref="imop:Metadata"/>
+          <xs:element minOccurs="0" ref="imop:Nummer"/>
+          <xs:element minOccurs="0" ref="imop:Wat"/>
+        </xs:sequence>
+        <xs:element ref="imop:Kop"/>
+      </xs:sequence>
+      <xs:attribute name="wat"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Verwijder">
+    <xs:annotation>
+      <xs:documentation>De structuur van een fragment van een regeling dat bij wijziging moet worden verwijderd.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:sequence minOccurs="1">
+          <xs:element minOccurs="0" ref="imop:Metadata"/>
+          <xs:element minOccurs="0" ref="imop:Nummer"/>
+          <xs:element minOccurs="0" ref="imop:Wat"/>
+        </xs:sequence>
+        <xs:choice>
+          <xs:group ref="imop:mgStructuurRegeling"/>
+          <xs:element ref="imop:Lichaam"/>
+          <xs:element ref="imop:Geometrie"/>
+          <xs:element ref="imop:Uitspraak"/>
+          <xs:element ref="imop:Object"/>
+          <xs:element ref="imop:Bijlage"/>
+          <xs:element ref="imop:Toelichting"/>
+          <xs:element ref="imop:FormeleInhoud"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="imop:Was"/>
+      </xs:sequence>
+      <xs:attribute name="wat" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="VoegToe">
+    <xs:annotation>
+      <xs:documentation>De structuur van een fragment van een regeling dat bij wijziging moet worden toegevoegd.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:sequence minOccurs="1">
+          <xs:element minOccurs="0" ref="imop:Metadata"/>
+          <xs:element minOccurs="0" ref="imop:Nummer"/>
+          <xs:element minOccurs="0" ref="imop:Wat"/>
+        </xs:sequence>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:group ref="imop:mgStructuurRegeling"/>
+          <xs:element ref="imop:Lichaam"/>
+          <xs:element ref="imop:Geometrie"/>
+          <xs:element ref="imop:Uitspraak"/>
+          <xs:element ref="imop:Object"/>
+          <xs:element ref="imop:Bijlage"/>
+          <xs:element ref="imop:Toelichting"/>
+          <xs:element ref="imop:FormeleInhoud"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agWijzigActie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Vervallen">
+    <xs:annotation>
+      <xs:documentation>De structuur van een fragment van een regeling dat bij wijziging is komen te vervallen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:sequence minOccurs="1">
+          <xs:element minOccurs="0" ref="imop:Metadata"/>
+          <xs:element minOccurs="0" ref="imop:Nummer"/>
+          <xs:element minOccurs="0" ref="imop:Wat"/>
+        </xs:sequence>
+        <xs:choice>
+          <xs:group ref="imop:mgStructuurRegeling"/>
+          <xs:element ref="imop:Lichaam"/>
+          <xs:element ref="imop:Geometrie"/>
+          <xs:element ref="imop:Uitspraak"/>
+          <xs:element ref="imop:Object"/>
+          <xs:element ref="imop:Bijlage"/>
+          <xs:element ref="imop:Toelichting"/>
+          <xs:element ref="imop:FormeleInhoud"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="imop:Was"/>
+      </xs:sequence>
+      <xs:attribute name="wat" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Vervang">
+    <xs:annotation>
+      <xs:documentation>De structuur van (een fragment) van een regeling dat bij wijziging een bestaande regeling wordt vervangen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:sequence minOccurs="1">
+          <xs:element minOccurs="0" ref="imop:Metadata"/>
+          <xs:element minOccurs="0" ref="imop:Nummer"/>
+          <xs:element minOccurs="0" ref="imop:Wat"/>
+        </xs:sequence>
+        <xs:choice>
+          <xs:group ref="imop:mgStructuurRegeling"/>
+          <xs:element ref="imop:Lichaam"/>
+          <xs:element ref="imop:Geometrie"/>
+          <xs:element ref="imop:Uitspraak"/>
+          <xs:element ref="imop:Object"/>
+          <xs:element ref="imop:Bijlage"/>
+          <xs:element ref="imop:Toelichting"/>
+          <xs:element ref="imop:FormeleInhoud"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="imop:Was"/>
+      </xs:sequence>
+      <xs:attribute name="wat" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Wat">
+    <xs:annotation>
+      <xs:documentation>Tekstuele beschrijving te geven van de wijziging(en) in een WijzigArtikel of een WijzigLid</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Was">
+    <xs:annotation>
+      <xs:documentation>Referentie(s) naar een vorige versie van een (fragment) regelingtekst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="imop:Object"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Kop">
+    <xs:annotation>
+      <xs:documentation>Voor het coderen van koppen (als lopende tekst), met drie onderdelen: Opschrift, Nummer, en Label.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0">
+          <xs:sequence>
+            <xs:element ref="imop:Label"/>
+            <xs:element minOccurs="0" ref="imop:Nummer"/>
+          </xs:sequence>
+          <xs:sequence>
+            <xs:element ref="imop:Nummer"/>
+            <xs:element minOccurs="0" ref="imop:Label"/>
+          </xs:sequence>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="imop:Opschrift"/>
+        <xs:element maxOccurs="3" minOccurs="0" ref="imop:Subtitel"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Label">
+    <xs:annotation>
+      <xs:documentation>Het Label voor een kop-structuur, bijvoorbeeld: "Artikel", "Hoofdstuk", "Paragraaf" etc.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Nummer">
+    <xs:annotation>
+      <xs:documentation>Het Nummer voor een kop-structuur, bijvoorbeeld: "1", "3.2", "A" etc. Het plaatsen van een punt "." als laatste karakter wordt afgeraden.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Opschrift">
+    <xs:annotation>
+      <xs:documentation>Het opschrift (of de titel) voor een kop-structuur</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Subtitel">
+    <xs:annotation>
+      <xs:documentation>Optioneel te plaatsen tweede titel regel in een kop-structuur.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="RegelingOpschrift">
+    <xs:annotation>
+      <xs:documentation>Het formele opschrift (of de titel) voor een besluit of regeling.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="1" ref="imop:Al"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Aanhef">
+    <xs:annotation>
+      <xs:documentation>De formele begin tekst voor een besluit. De alinea's (Al) kunnen worden voorzien van een attribuut '@rol' waarmee de betekenis van de alinea kan worden aangegeven.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Al">
+          <xs:complexType mixed="true">
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:group ref="imop:mgInlineReferenties"/>
+              <xs:group ref="imop:mgInlineMaximaal"/>
+              <xs:group ref="imop:mgHtml"/>
+              <xs:group ref="imop:mgMarkers"/>
+              <xs:group ref="imop:mgPopup"/>
+            </xs:choice>
+            <xs:attributeGroup ref="imop:agWijzigactie"/>
+            <xs:attributeGroup ref="imop:agAlgemeen"/>
+            <xs:attribute name="rol" type="imop:wlRolAanhef"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="imop:Lijst"/>
+        <xs:element ref="imop:Groep"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Groep">
+    <xs:annotation>
+      <xs:documentation>Groepering van bijeen te houden elementen in een tekst. Via '@class' kan een vrije waarde worden toegekend, o.m. voor visualisatie.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="1">
+        <xs:group ref="imop:mgBlocksMinimaal"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Lijst">
+    <xs:annotation>
+      <xs:documentation>Een Lijst of opsomming genoemd - is een recursieve structuur. Indien de lijst-items worden voorafgegaan door een symbool of nummering moet deze expliciet in en lijst-item (Li) worden opgenomen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Lijstaanhef"/>
+        <xs:element maxOccurs="unbounded" minOccurs="1" ref="imop:Li"/>
+        <xs:element minOccurs="0" ref="imop:Lijstsluiting"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="imop:wlTypeLijst" use="required">
+        <xs:annotation>
+          <xs:documentation>Waarde 'expliciet' is de meest voorkomende situatie.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Lijstaanhef">
+    <xs:annotation>
+      <xs:documentation>Tekst waarbinnen de betekenis van de lijst wordt beschreven. Maximaal 1 alinea die eindigt op ":".</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Li">
+    <xs:annotation>
+      <xs:documentation>Onderdeel voor een Lijst. Kan weer een lijst kan bevatten, waardoor de lijststructuur recursief wordt.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:LiNummer"/>
+        <xs:choice>
+          <xs:element ref="imop:Lijst"/>
+          <xs:element ref="imop:Inhoud"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="LiNummer">
+    <xs:annotation>
+      <xs:documentation>Het nummer of het af te beelden symbool voor een Lijst. Gebruikte nummering of symbool is altijd hetzelfde op hetzelfde niveau van de Lijst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:VerwijderdeTekst"/>
+        <xs:element ref="imop:NieuweTekst"/>
+        <xs:element ref="imop:sup"/>
+        <xs:element ref="imop:sub"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Lijstsluiting">
+    <xs:annotation>
+      <xs:documentation>Optineel afsluitende alinea voor een Lijst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="VerwijderdeTekst">
+    <xs:annotation>
+      <xs:documentation>Groepering voor tekst in een regeltekst dat is verwijderd bij een wijziging.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:element ref="imop:Inline"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="NieuweTekst">
+    <xs:annotation>
+      <xs:documentation>Groepering voor tekst in een regeltekst dat wordt geplaatst bij een wijziging.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:element ref="imop:Inline"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Citaat">
+    <xs:annotation>
+      <xs:documentation>Citaat is een letterlijke overname van tekst uit een andere publicatie. Aanhalingstekens maken geen onderdeel uit van de tekst van een citaat; deze worden gegenereerd.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgBlocksMinimaal"/>
+        <xs:group ref="imop:mgBlocksZonderCitaat"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agCitaat"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Ondertekening">
+    <xs:annotation>
+      <xs:documentation>De formele ondertekening voor een besluit. De alinea's (Al) kunnen worden voorzien van een attribuut '@rol' waarmee de betekenis van de alinea kan worden aangegeven.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Al">
+          <xs:complexType mixed="true">
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:group ref="imop:mgInlineReferenties"/>
+              <xs:group ref="imop:mgInlineMaximaal"/>
+              <xs:group ref="imop:mgHtml"/>
+              <xs:group ref="imop:mgMarkers"/>
+              <xs:group ref="imop:mgPopup"/>
+            </xs:choice>
+            <xs:attributeGroup ref="imop:agWijzigactie"/>
+            <xs:attributeGroup ref="imop:agAlgemeen"/>
+            <xs:attribute name="rol" type="imop:wlRolOndertekening"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAKN"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Lichaam">
+    <xs:annotation>
+      <xs:documentation>Lichaam is het container element voor artikel(en), FormeleInhoud en eventuele groeperende niveau's ertussenin (hoofdstuk; paragraaf; FormeleDivisie etc,).</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:sequence>
+          <xs:group ref="imop:mgLichaamStructuur"/>
+        </xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Redactioneel"/>
+      </xs:sequence>
+      <xs:attribute name="sluitIn" type="xs:IDREF"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Boek">
+    <xs:annotation>
+      <xs:documentation>Representeert een 'boek' in een Regeling. Volgens de AvR zijn alleen "Hoofdstuk" en "Deel" toegestaan als lagere niveau's.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="1" ref="imop:Kop"/>
+        <xs:choice maxOccurs="1" minOccurs="1">
+          <xs:element maxOccurs="unbounded" ref="imop:Deel"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Hoofdstuk"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Paragraaf"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Afdeling"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Titel"/>
+        </xs:choice>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:element ref="imop:Artikel"/>
+          <xs:element ref="imop:Redactioneel"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agReferentie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Deel">
+    <xs:annotation>
+      <xs:documentation>Representeert een 'deel' in een Regeling. Volgens de AvR is alleen "Hoofdstuk" als lagere niveau toegestaan.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="1" ref="imop:Kop"/>
+        <xs:choice maxOccurs="1" minOccurs="1">
+          <xs:element maxOccurs="unbounded" ref="imop:Boek"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Hoofdstuk"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Paragraaf"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Afdeling"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Titel"/>
+        </xs:choice>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:element ref="imop:Artikel"/>
+          <xs:element ref="imop:Redactioneel"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agReferentie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Hoofdstuk">
+    <xs:annotation>
+      <xs:documentation>Representeert een 'hoofdstuk' in een Regeling. Volgens de AvR zijn alleen "Afdeling", "Paragraaf"; "Titel" en "Artikel" als lagere niveau's toegestaan.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="1" ref="imop:Kop"/>
+        <xs:choice maxOccurs="1" minOccurs="0">
+          <xs:element maxOccurs="unbounded" ref="imop:Boek"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Deel"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Paragraaf"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Afdeling"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Titel"/>
+        </xs:choice>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:element ref="imop:Artikel"/>
+          <xs:element ref="imop:Redactioneel"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agReferentie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Afdeling">
+    <xs:annotation>
+      <xs:documentation>Representeert een 'afdeling' in een Regeling. Volgens de AvR is alleen "Paragraaf" als lager niveau toegestaan.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="1" ref="imop:Kop"/>
+        <xs:choice maxOccurs="1" minOccurs="0">
+          <xs:element maxOccurs="unbounded" ref="imop:Boek"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Deel"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Hoofdstuk"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Paragraaf"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Titel"/>
+        </xs:choice>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:element ref="imop:Artikel"/>
+          <xs:element ref="imop:Redactioneel"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agReferentie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Titel">
+    <xs:annotation>
+      <xs:documentation>Representeert een 'titel' in een Regeling. Volgens de AvR is alleen "Afdeling" als lager niveau toegestaan.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="1" ref="imop:Kop"/>
+        <xs:choice maxOccurs="1" minOccurs="0">
+          <xs:element maxOccurs="unbounded" ref="imop:Boek"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Deel"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Hoofdstuk"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Paragraaf"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Afdeling"/>
+        </xs:choice>
+        <xs:choice maxOccurs="1">
+          <xs:element maxOccurs="unbounded" ref="imop:Artikel"/>
+          <xs:element maxOccurs="1" minOccurs="0" ref="imop:Redactioneel"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agReferentie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Paragraaf">
+    <xs:annotation>
+      <xs:documentation>Representeert een 'paragraaf' in een Regeling. Volgens de AvR is alleen "Artikel" als lager niveau toegestaan.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="1" ref="imop:Kop"/>
+        <xs:choice maxOccurs="1" minOccurs="0">
+          <xs:element maxOccurs="unbounded" ref="imop:Subparagraaf"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Subsubparagraaf"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Artikel"/>
+        </xs:choice>
+        <xs:element maxOccurs="1" minOccurs="0" ref="imop:Redactioneel"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agReferentie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Subparagraaf">
+    <xs:annotation>
+      <xs:documentation>Representeert een 'sub-paragraaf' in een Regeling. Volgens de AvR een niet toegestaan niveau. Aanbeveling is alleen "subsubpargraaf" of "Artikel" te gebruiken als lagere niveau's.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="1" ref="imop:Kop"/>
+        <xs:choice>
+          <xs:element ref="imop:Subsubparagraaf"/>
+          <xs:element ref="imop:Artikel"/>
+          <xs:element ref="imop:Redactioneel"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agReferentie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Subsubparagraaf">
+    <xs:annotation>
+      <xs:documentation>Representeert een 'sub-sub-paragraaf' in een Regeling. Volgens de AvR een niet toegestaan niveau. Aanbeveling is alleen "Artikel" te gebruiken als lager niveau.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="1" ref="imop:Kop"/>
+        <xs:choice minOccurs="1">
+          <xs:element ref="imop:Artikel"/>
+          <xs:element ref="imop:Redactioneel"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agReferentie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Artikel">
+    <xs:annotation>
+      <xs:documentation>'Artikel' is het primaire niveau voor een regeling (regeltekst).</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="0" ref="imop:Kop"/>
+        <xs:choice minOccurs="0">
+          <xs:element maxOccurs="unbounded" ref="imop:Lid"/>
+          <xs:element ref="imop:Inhoud"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agArtikel"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Lid">
+    <xs:annotation>
+      <xs:documentation>'Lid' is als component voor 'Artikel' het laagste niveau voor een regeltekst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="imop:LidNummer"/>
+        <xs:element ref="imop:Inhoud"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="LidNummer">
+    <xs:annotation>
+      <xs:documentation>De nummering voor artikelleden.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:VerwijderdeTekst"/>
+        <xs:element ref="imop:NieuweTekst"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="WijzigArtikel">
+    <xs:annotation>
+      <xs:documentation>Wijzigingen voor een besluit of regeling. Tekstuele beschrijving van een of meer wijzigingsinstructies. Specificatie van de wijzigingen door gebruik te maken van de elementen 'Vervang'; 'Voegtoe'; 'Verwijder' of
+        'Vervallen' in een 'WijzigBijlage'.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="0" ref="imop:Kop"/>
+        <xs:element minOccurs="0" ref="imop:Wat"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:WijzigLid"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="WijzigLid">
+    <xs:annotation>
+      <xs:documentation>Een of meer wijzigingsinstructie(s) binnen he besluit of regeling dat is aangeduid in het bovenliggende 'WijzigArtikel'.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element minOccurs="0" ref="imop:LidNummer"/>
+        <xs:element minOccurs="0" ref="imop:Wat"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Redactioneel">
+    <xs:annotation>
+      <xs:documentation>Notities of opmerkingen die geen onderdeel van de (formele-)tekst of structuur uitmaken. het wordt ten sterkste afgraden hier gebruik van te maken. Deze tekst maakt geen onderdeel uit van een beluit of
+        regeling.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="1">
+        <xs:group ref="imop:mgBlocksMinimaal"/>
+        <xs:group ref="imop:mgBlocksVolledig"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Sluiting">
+    <xs:annotation>
+      <xs:documentation>Het slotformulier, met afsluitende (procedurele) tekst over de regeling.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="1">
+        <xs:element name="Al">
+          <xs:complexType mixed="true">
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:group ref="imop:mgInlineReferenties"/>
+              <xs:group ref="imop:mgInlineMaximaal"/>
+              <xs:group ref="imop:mgHtml"/>
+              <xs:group ref="imop:mgMarkers"/>
+              <xs:group ref="imop:mgPopup"/>
+            </xs:choice>
+            <xs:attributeGroup ref="imop:agWijzigactie"/>
+            <xs:attributeGroup ref="imop:agAlgemeen"/>
+            <xs:attribute name="rol" type="imop:wlRolSluiting"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="imop:Groep"/>
+        <xs:element ref="imop:Ondertekening"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Nawerk">
+    <xs:annotation>
+      <xs:documentation>Groepring van onderdelen die niet tot de regeling behoren zoals nota van toelichting, inhoudsopgave, bezwaar etc. Onderdelen binnen Nawerk worden niet geconsolideerd.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element maxOccurs="1" minOccurs="0" ref="imop:Motivering"/>
+        <xs:element maxOccurs="1" minOccurs="0" ref="imop:Toelichting"/>
+        <xs:element maxOccurs="1" minOccurs="0" ref="imop:Inhoudsopgave"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Bijlage"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:NawerkContainer"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Motivering">
+    <xs:annotation>
+      <xs:documentation>Een Motivering binnen een Nawerk geeft de overwegingen ten gronslag aan de wijzigingen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element ref="imop:Kop"/>
+        <xs:choice>
+          <xs:element ref="imop:Inhoud"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Divisie"/>
+        </xs:choice>
+        <xs:element minOccurs="0" ref="imop:Sluiting"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Bijlage"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Inhoudsopgave">
+    <xs:annotation>
+      <xs:documentation>De inhoudsopgave voor een belsuit of regeling. Volgens de AvR is een inhoudsopgave GEEN onderdeel van de regeling.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Kop"/>
+        <xs:choice>
+          <xs:element ref="imop:table"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Al"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="NawerkContainer">
+    <xs:annotation>
+      <xs:documentation>Generieke groepering voor Nawerk teksten met het attribuut '@soort' kan de rol van het nawerk worden aangegeven.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:Metadata"/>
+        <xs:element ref="imop:Inhoud"/>
+      </xs:sequence>
+      <xs:attribute name="soort" type="imop:wlSoortNawerk" use="required"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- EINDE ELEMENTEN FORMEEL -->
+  <!-- METADATA -->
+  <xs:element name="Metadata">
+    <xs:annotation>
+      <xs:documentation>Groepering voioir het toevoegen van extra informatie of data aan regelingtekst of dataobjecten.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="imop:Uitspraak"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agIdentifier"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Uitspraak">
+    <xs:annotation>
+      <xs:documentation>Groepering voor een set data waarmee de de rol of de betekenis van de data wordt gegeven met een attribuut '@eigenschap'.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="imop:Object"/>
+        <xs:element maxOccurs="unbounded" ref="imop:Waarde"/>
+        <xs:element maxOccurs="1" ref="imop:Geometrie"/>
+      </xs:choice>
+      <xs:attribute name="eigenschap" use="required"/>
+      <xs:attribute name="onderwerp" type="xs:string"/>
+      <xs:attribute name="id"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Object">
+    <xs:annotation>
+      <xs:documentation>Object representeert een datastructuur waarvoor aanvullende informatie moet worden opogenomen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Eigenschap"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:NMTOKEN" use="required"/>
+      <xs:attribute name="oId" type="xs:token"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Eigenschap">
+    <xs:annotation>
+      <xs:documentation>Nadere duiding van informatie gebruik of doel voor onderligende gegevens. Wordt gespecificeert met het attribuut '@naam'.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice>
+        <xs:element maxOccurs="unbounded" ref="imop:Object"/>
+        <xs:element maxOccurs="unbounded" ref="imop:Waarde"/>
+        <xs:element maxOccurs="1" ref="imop:Geometrie"/>
+      </xs:choice>
+      <xs:attribute name="naam" type="xs:NMTOKEN" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Waarde">
+    <xs:annotation>
+      <xs:documentation>De feitelijke waarde voor een metadata-component. Het datatype voor de waarde wordt bepaalt door het '@type' van een 'Object', de '@eigenschap' van een 'Uitspraak' of de '@naam' van een
+        'Eigenschap'..</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:sup"/>
+        <xs:element ref="imop:sub"/>
+      </xs:choice>
+      <xs:attribute name="type" type="imop:wlWaardeType"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Geometrie">
+    <xs:annotation>
+      <xs:documentation>Container voor XML Fragmenten in de GML namespaces, geometrie structuur volgens "http://www.opengis.net/gml/3.2" wordt als een extern schema ingelezen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" ref="gml:AbstractGeometry"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- EINDE METADATA -->
+  <!-- TABLE CALS -->
+  <xs:element name="table">
+    <xs:annotation>
+      <xs:documentation>Een tabel (conform CALS Exchange Table Model).</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:title"/>
+        <xs:element maxOccurs="unbounded" ref="imop:tgroup"/>
+        <xs:element minOccurs="0" ref="imop:Bron"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agTable"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Bron">
+    <xs:annotation>
+      <xs:documentation>Als onderschrift bij een tabel of illustratrie te gebruiken waarin kan worden aangegeven welke bron voor de tabel is gebuikt.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="tgroup">
+    <xs:annotation>
+      <xs:documentation>Groepering van rijen in een tabel.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:colspec"/>
+        <xs:element minOccurs="0" ref="imop:thead"/>
+        <xs:element ref="imop:tbody"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agTableGroup"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="thead">
+    <xs:annotation>
+      <xs:documentation>Tabel rijen die de specificatie geven van de inhoud voor de kolommen in de tabel.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="imop:row"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agTableHead"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="tbody">
+    <xs:annotation>
+      <xs:documentation>De volledige inhoud voor een tabel na een header..</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="imop:row"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agTableBody"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="title">
+    <xs:annotation>
+      <xs:documentation>Titel voor een tabel.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="colspec">
+    <xs:annotation>
+      <xs:documentation>Specificaties voor het weergeven van een kolom binnen een tabel.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attributeGroup ref="imop:agColspec"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="row">
+    <xs:annotation>
+      <xs:documentation>Een rij in een tabel.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="imop:entry"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agTableRow"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="entry">
+    <xs:annotation>
+      <xs:documentation>Een cel binnen een tabel.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgBlocksZonderTable"/>
+        <xs:group ref="imop:mgBlocksMinimaal"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agTableEntry"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- EINDE TABLE CALS -->
+  <!-- TEKST CONTAINERS -->
+  <xs:element name="Al">
+    <xs:annotation>
+      <xs:documentation>Alinea, bevat de lopende tekst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Begrippenlijst">
+    <xs:annotation>
+      <xs:documentation>Een lijst met definities voor begrippen.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="imop:Begrip"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Begrip">
+    <xs:annotation>
+      <xs:documentation>De combinatie van het begrip (of term) met de bijbehorende definitie.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:LiNummer"/>
+        <xs:element ref="imop:Term"/>
+        <xs:element ref="imop:Definitie"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Term">
+    <xs:annotation>
+      <xs:documentation>Het begrip of de term die nader wordt gedefinieerd in een begrippenlijst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Definitie">
+    <xs:annotation>
+      <xs:documentation>De definitie voor een begrip in een begrippenlijst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="imop:Al"/>
+        <xs:element ref="imop:Lijst"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Figuur">
+    <xs:annotation>
+      <xs:documentation>Figuur is een container voor illustraties, inclusief omringende gegevens voor weergave.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Titel">
+          <xs:complexType mixed="true">
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:group ref="imop:mgInlineReferenties"/>
+              <xs:group ref="imop:mgInlineMaximaal"/>
+              <xs:group ref="imop:mgHtml"/>
+              <xs:group ref="imop:mgMarkers"/>
+              <xs:group ref="imop:mgPopup"/>
+            </xs:choice>
+            <xs:attributeGroup ref="imop:agWijzigactie"/>
+            <xs:attributeGroup ref="imop:agAlgemeen"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="imop:Illustratie"/>
+        <xs:element minOccurs="0" ref="imop:Bijschrift"/>
+        <xs:element minOccurs="0" ref="imop:Bron"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Illustratie">
+    <xs:annotation>
+      <xs:documentation>Verwijzing naar een afbeelding (als een object).</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attributeGroup ref="imop:agIllustratie"/>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Bijschrift">
+    <xs:annotation>
+      <xs:documentation>Een verklarend bijschrift bij een illustratie of figuur.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attribute name="locatie" type="imop:wlPositieBijschrift" use="required">
+        <xs:annotation>
+          <xs:documentation>Plaatsing van het bijschrift, als default is "onder" te gebruiken.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Tussenkop">
+    <xs:annotation>
+      <xs:documentation>Tussenkop is een niet-hiërarchische kop dat geplaatst kan worden iun lopende tekst.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgInlineMaximaal"/>
+        <xs:group ref="imop:mgHtml"/>
+        <xs:group ref="imop:mgMarkers"/>
+        <xs:group ref="imop:mgPopup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agWijzigactie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- EINDE TEKST CONTAINERS -->
+  <!-- INLINES -->
+  <xs:element name="Inline">
+    <xs:annotation>
+      <xs:documentation>Inline geplaatste Juridische "regel" met verwijzingsconstructies.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:group ref="imop:mgInlineReferenties"/>
+        <xs:group ref="imop:mgHtml"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAKN"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="i">
+    <xs:annotation>
+      <xs:documentation>Een tekstfragment binnen een alinea dat cursief moet worden weergegeven.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:b"/>
+        <xs:element ref="imop:u"/>
+        <xs:element ref="imop:strong"/>
+        <xs:element ref="imop:Inline"/>
+        <xs:element ref="imop:sub"/>
+        <xs:element ref="imop:sup"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="b">
+    <xs:annotation>
+      <xs:documentation>Een tekstfragment binnen een alinea dat vet moet worden weergegeven.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:i"/>
+        <xs:element ref="imop:u"/>
+        <xs:element ref="imop:strong"/>
+        <xs:element ref="imop:Inline"/>
+        <xs:element ref="imop:sub"/>
+        <xs:element ref="imop:sup"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="u">
+    <xs:annotation>
+      <xs:documentation>Een tekstfragment binnen een alinea dat onderstreept moet worden weergegeven.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:b"/>
+        <xs:element ref="imop:i"/>
+        <xs:element ref="imop:strong"/>
+        <xs:element ref="imop:Inline"/>
+        <xs:element ref="imop:sub"/>
+        <xs:element ref="imop:sup"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="strong">
+    <xs:annotation>
+      <xs:documentation>Een tekstfragment binnen een alinea dat met extra nadruk moet worden weergegeven.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:b"/>
+        <xs:element ref="imop:u"/>
+        <xs:element ref="imop:i"/>
+        <xs:element ref="imop:Inline"/>
+        <xs:element ref="imop:sub"/>
+        <xs:element ref="imop:sup"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="sup" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Een karakter dat als superieur moet worden weergegeven (boven de x-lijn van de tekst).</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <!--  -->
+  <xs:element name="sub" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Een karakter dat als inferieur moet worden weergegeven (onder de x-lijn van de tekst).</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <!--  -->
+  <xs:element name="abbr">
+    <xs:annotation>
+      <xs:documentation>Een afkorting in tekst, de betekenis van de afkorting kan in het attribuut 'title' worden opgegeven. </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="title" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="ExtRef">
+    <xs:annotation>
+      <xs:documentation>ExtRef is een externe verwijzing. De verplichte attribuut 'doel' bevat de URL of locatie van een document of een positie binnen een document.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:u"/>
+        <xs:element ref="imop:Inline"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agExtrefDoelSoort"/>
+      <xs:attributeGroup ref="imop:agExtrefOP"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Noot">
+    <xs:annotation>
+      <xs:documentation>Een Noot waarnaar vanuit tekst wordt verwezen. Typering voor plaatsing van de Noot kan worden opgegeven imet het attribuut 'type'.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="imop:NootNummer"/>
+        <xs:element ref="imop:Inhoud"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="imop:wlTypeNoot" use="required"/>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="NootNummer" type="imop:dtNootNummerLengte">
+    <xs:annotation>
+      <xs:documentation>Nummeraanduiding voor een Noot.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <!--  -->
+  <xs:element name="Nootref">
+    <xs:annotation>
+      <xs:documentation>Referentie naar een voet- of eindnoot, de noot moet zich binnen hetzelfde document bevinden./</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="refid" type="xs:IDREF" use="required"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="IntRef">
+    <xs:annotation>
+      <xs:documentation>IntRef is een interne verwijzing binnen een document. De verplichte eigenschap 'doel' bevat de identificatie van een element binnen hetzelfde document.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Inline"/>
+      </xs:choice>
+      <xs:attribute name="doel" type="xs:string" use="required"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="ExtIoRef">
+    <xs:annotation>
+      <xs:documentation>ExtIoRef wordt gebruikt om een externe verwijzing naar een informatie-object te coderen dat niet in hetzelfde document aanwezig is.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:u"/>
+        <xs:element ref="imop:Inline"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attribute name="doel" use="required"/>
+      <xs:attribute name="soort" type="imop:wlSoortExtrefNotatie"/>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="IntIoRef">
+    <xs:annotation>
+      <xs:documentation>IntIoRef wordt gebruikt om een verwijzing naar een informatie-object te coderen dat in hetzelfde document aanwezig is.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:Inline"/>
+      </xs:choice>
+      <xs:attributeGroup ref="imop:agAlgemeen"/>
+      <xs:attributeGroup ref="imop:agAKN"/>
+      <xs:attributeGroup ref="imop:agIntref"/>
+      <xs:attribute name="type" type="imop:wlTypeIntIOref"/>
+    </xs:complexType>
+  </xs:element>
+  <!--  -->
+  <xs:element name="br">
+    <xs:annotation>
+      <xs:documentation>Break, een regelovergang binnen een alinea.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType/>
+  </xs:element>
+  <!-- EINDE INLINES -->
+  <!-- EINDE ELEMENTEN -->
+  <!-- GROEPEN -->
+  <xs:group name="mgRegeling">
+    <xs:sequence>
+      <xs:element ref="imop:Metadata"/>
+      <xs:element ref="imop:Regeling"/>
+    </xs:sequence>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgRegelingStructuur">
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="imop:RegelingOpschrift"/>
+      <xs:element minOccurs="0" ref="imop:Aanhef"/>
+      <xs:element ref="imop:Lichaam"/>
+      <xs:element minOccurs="0" ref="imop:Sluiting"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" ref="imop:WijzigBijlage"/>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="imop:Bijlage"/>
+        <xs:element ref="imop:Toelichting"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgLichaamStructuur">
+    <xs:sequence>
+      <xs:choice minOccurs="1">
+        <xs:choice maxOccurs="unbounded">
+          <xs:element maxOccurs="unbounded" ref="imop:FormeleDivisie"/>
+          <xs:element maxOccurs="unbounded" ref="imop:FormeleInhoud"/>
+        </xs:choice>
+        <xs:choice>
+          <xs:element maxOccurs="unbounded" ref="imop:Boek"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Deel"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Hoofdstuk"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Paragraaf"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Afdeling"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Titel"/>
+          <xs:element maxOccurs="unbounded" ref="imop:Artikel"/>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" ref="imop:WijzigArtikel"/>
+            <xs:element maxOccurs="1" ref="imop:Artikel"/>
+          </xs:sequence>
+        </xs:choice>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgBladen">
+    <xs:sequence>
+      <xs:element ref="imop:Metadata"/>
+      <xs:choice maxOccurs="1">
+        <xs:element ref="imop:Staatscourant"/>
+        <xs:element ref="imop:Staatsblad"/>
+        <xs:element ref="imop:Gemeenteblad"/>
+        <xs:element ref="imop:Provincieblad"/>
+        <xs:element ref="imop:Waterschapsblad"/>
+        <xs:element ref="imop:BladGR"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgBlad">
+    <xs:sequence>
+      <xs:element ref="imop:Bladaanduiding"/>
+      <xs:choice maxOccurs="1">
+        <xs:element ref="imop:Regeling"/>
+      </xs:choice>
+      <xs:element minOccurs="0" ref="imop:Nawerk"/>
+    </xs:sequence>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgInlineReferenties">
+    <xs:choice>
+      <xs:element ref="imop:ExtRef"/>
+      <xs:element ref="imop:IntRef"/>
+      <xs:element ref="imop:ExtIoRef"/>
+      <xs:element ref="imop:IntIoRef"/>
+    </xs:choice>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgInlineMaximaal">
+    <xs:choice>
+      <xs:element ref="imop:VerwijderdeTekst"/>
+      <xs:element ref="imop:NieuweTekst"/>
+      <xs:element ref="imop:Inline"/>
+    </xs:choice>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgHtml">
+    <xs:choice>
+      <xs:element ref="imop:i"/>
+      <xs:element ref="imop:b"/>
+      <xs:element ref="imop:u"/>
+      <xs:element ref="imop:sub"/>
+      <xs:element ref="imop:sup"/>
+      <xs:element ref="imop:strong"/>
+      <xs:element ref="imop:abbr"/>
+      <xs:element ref="imop:br"/>
+    </xs:choice>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgMarkers">
+    <xs:choice>
+      <xs:element ref="imop:Nootref"/>
+    </xs:choice>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgPopup">
+    <xs:choice>
+      <xs:element ref="imop:Noot"/>
+    </xs:choice>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgBlocksMinimaal">
+    <xs:choice>
+      <xs:element ref="imop:Al"/>
+      <xs:element ref="imop:Groep"/>
+      <xs:element ref="imop:Begrippenlijst"/>
+      <xs:element ref="imop:Lijst"/>
+      <xs:element ref="imop:Figuur"/>
+      <xs:element ref="imop:Tussenkop"/>
+    </xs:choice>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgBlocksVolledig">
+    <xs:choice>
+      <xs:element ref="imop:Citaat"/>
+      <xs:element ref="imop:table"/>
+    </xs:choice>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgBlocksZonderCitaat">
+    <xs:choice>
+      <xs:element ref="imop:table"/>
+    </xs:choice>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgBlocksZonderTable">
+    <xs:choice>
+      <xs:element ref="imop:Citaat"/>
+    </xs:choice>
+  </xs:group>
+  <!--  -->
+  <xs:group name="mgStructuurRegeling">
+    <xs:choice>
+      <xs:element maxOccurs="unbounded" ref="imop:Afdeling"/>
+      <xs:element maxOccurs="unbounded" ref="imop:Artikel"/>
+      <xs:element maxOccurs="unbounded" ref="imop:Boek"/>
+      <xs:element maxOccurs="unbounded" ref="imop:Deel"/>
+      <xs:element maxOccurs="unbounded" ref="imop:Hoofdstuk"/>
+      <xs:element maxOccurs="unbounded" ref="imop:Paragraaf"/>
+      <xs:element maxOccurs="unbounded" ref="imop:Subparagraaf"/>
+      <xs:element maxOccurs="unbounded" ref="imop:Subsubparagraaf"/>
+      <xs:element maxOccurs="unbounded" ref="imop:Titel"/>
+      <xs:element maxOccurs="unbounded" ref="imop:FormeleDivisie"/>
+    </xs:choice>
+  </xs:group>
+  <!-- EINDE GROEPEN -->
+  <!-- ATTRIBUTEN -->
+  <xs:attributeGroup name="agIdentifier">
+    <xs:attribute name="id"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agAlgemeen">
+    <xs:attribute name="id" type="xs:ID"/>
+    <xs:attribute name="class" type="xs:string"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agAlgemeenVerplichtId">
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+    <xs:attribute name="class" type="xs:string"/>
+  </xs:attributeGroup>
+  <!-- ATTRIBUTEN CALS TABLE -->
+  <xs:attributeGroup name="agTable">
+    <xs:attribute name="frame" type="imop:wlTableFrame"/>
+    <xs:attribute name="colsep" type="imop:dtNulOfEen"/>
+    <xs:attribute name="rowsep" type="imop:dtNulOfEen"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agTableGroup">
+    <xs:attribute name="cols" type="xs:NMTOKEN" use="required"/>
+    <xs:attribute name="colsep" type="xs:NMTOKEN"/>
+    <xs:attribute name="rowsep" type="xs:NMTOKEN"/>
+    <xs:attribute default="" name="char"/>
+    <xs:attribute default="50" name="charoff" type="xs:NMTOKEN"/>
+    <xs:attribute name="align" type="imop:wlTableAlignHorizontal" use="required">
+      <xs:annotation>
+        <xs:documentation>Waarde 'left' kan gebruikt worden als de default.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agTableHead">
+    <xs:attribute name="valign" type="imop:wlTableAlignVertical" use="required">
+      <xs:annotation>
+        <xs:documentation>De waarde 'bottom' kan gebruikt worden als default.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agTableBody">
+    <xs:attribute default="top" name="valign" type="imop:wlTableAlignVertical">
+      <xs:annotation>
+        <xs:documentation>De waarde 'top' kan gebruikt worden als default.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agColspec">
+    <xs:attribute name="colname" type="xs:NMTOKEN"/>
+    <xs:attribute name="colnum" type="xs:NMTOKEN"/>
+    <xs:attribute name="colsep" type="imop:dtNulOfEen"/>
+    <xs:attribute name="rowsep" type="imop:dtNulOfEen"/>
+    <xs:attribute name="colwidth"/>
+    <xs:attribute name="align" type="imop:wlTableAlignHorizontal"/>
+    <xs:attribute default="" name="char"/>
+    <xs:attribute default="50" name="charoff" type="xs:NMTOKEN"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agTableRow">
+    <xs:attribute name="rowsep" type="xs:NMTOKEN"/>
+    <xs:attribute name="valign" type="imop:wlTableAlignVertical"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agTableEntry">
+    <xs:attribute name="colname" type="xs:NMTOKEN"/>
+    <xs:attribute name="namest" type="xs:NMTOKEN"/>
+    <xs:attribute name="nameend" type="xs:NMTOKEN"/>
+    <xs:attribute name="morerows" type="xs:integer"/>
+    <xs:attribute name="colsep" type="imop:dtNulOfEen"/>
+    <xs:attribute name="rowsep" type="imop:dtNulOfEen"/>
+    <xs:attribute name="align" type="imop:wlTableAlignHorizontal"/>
+    <xs:attribute name="char" type="xs:string"/>
+    <xs:attribute name="charoff" type="xs:NMTOKEN"/>
+    <xs:attribute name="valign" type="imop:wlTableAlignVertical"/>
+  </xs:attributeGroup>
+  <!-- EINDE ATTRIBUTEN CALS TABLE -->
+  <xs:attributeGroup name="agAKN">
+    <xs:attribute name="wId" use="required"/>
+    <xs:attribute name="eId" use="required"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agWijzigactie">
+    <xs:attribute name="wijzigactie" type="imop:wlWijzigactieElementen" use="optional"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agExtrefDoelSoort">
+    <xs:attribute name="doel" use="required"/>
+    <xs:attribute name="soort" type="imop:wlSoortExtrefNotatie"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agExtrefOP">
+    <xs:attribute name="struct"/>
+    <xs:attribute name="beschrijving"/>
+    <xs:attribute name="label"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agArtikel">
+    <xs:attribute name="ref" type="xs:anyURI"/>
+    <xs:attribute name="type"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agCitaat">
+    <xs:attribute name="bron"/>
+    <xs:attribute name="url"/>
+    <xs:attribute name="auteur"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agIntref">
+    <xs:attribute name="doel" type="xs:string" use="required"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agIllustratie">
+    <xs:attribute name="naam" use="required"/>
+    <xs:attribute name="breedte"/>
+    <xs:attribute name="hoogte"/>
+    <xs:attribute name="schaal"/>
+    <xs:attribute name="uitlijning" type="imop:wlUitlijningIllustratie" use="required"/>
+    <xs:attribute name="kleur" type="imop:wlKleurIllustratie"/>
+    <xs:attribute name="formaat" type="imop:wlFormaatIllustratie" use="required"/>
+    <xs:attribute name="alt"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agWijzigActie">
+    <xs:attribute name="doelPositie" type="imop:wlPostitieWijziging" use="required"/>
+    <xs:attribute name="context" use="required"/>
+  </xs:attributeGroup>
+  <!--  -->
+  <xs:attributeGroup name="agReferentie">
+    <xs:attribute name="ref" type="xs:anyURI"/>
+  </xs:attributeGroup>
+  <!-- EINDE ATTRIBUTEN -->
+  <!-- WAARDELIJSTEN -->
+  <xs:simpleType name="wlPostitieWijziging">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="volgtOp"/>
+      <xs:enumeration value="komtVoor"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlFormaatIllustratie">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="jpeg"/>
+      <xs:enumeration value="gif"/>
+      <xs:enumeration value="png"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlKleurIllustratie">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ja"/>
+      <xs:enumeration value="nee"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlUitlijningIllustratie">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="start"/>
+      <xs:enumeration value="end"/>
+      <xs:enumeration value="center"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlTableFrame">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="top"/>
+      <xs:enumeration value="bottom"/>
+      <xs:enumeration value="topbot"/>
+      <xs:enumeration value="all"/>
+      <xs:enumeration value="sides"/>
+      <xs:enumeration value="none"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlTableAlignHorizontal">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="left"/>
+      <xs:enumeration value="right"/>
+      <xs:enumeration value="center"/>
+      <xs:enumeration value="justify"/>
+      <xs:enumeration value="char"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlTableAlignVertical">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="top"/>
+      <xs:enumeration value="middle"/>
+      <xs:enumeration value="bottom"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlWijzigactieElementen">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="verwijder"/>
+      <xs:enumeration value="voegtoe"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlRolAanhef">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="aan-wie"/>
+      <xs:enumeration value="in-afschrift-aan"/>
+      <xs:enumeration value="kenmerk"/>
+      <xs:enumeration value="origine"/>
+      <xs:enumeration value="datum"/>
+      <xs:enumeration value="informatie"/>
+      <xs:enumeration value="relatie"/>
+      <xs:enumeration value="onbepaald"/>
+      <xs:enumeration value="considerans"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlRolSluiting">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="slotformulering"/>
+      <xs:enumeration value="gegeven"/>
+      <xs:enumeration value="goedkeuring"/>
+      <xs:enumeration value="dagtekening"/>
+      <xs:enumeration value="dagtekening_plaats"/>
+      <xs:enumeration value="dagtekening_datum"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlRolOndertekening">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="naam"/>
+      <xs:enumeration value="functie"/>
+      <xs:enumeration value="organisatie"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlSoortDivisie">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Titel"/>
+      <xs:enumeration value="Deel"/>
+      <xs:enumeration value="Hoofdstuk"/>
+      <xs:enumeration value="Paragraaf"/>
+      <xs:enumeration value="Onbekend"/>
+      <xs:enumeration value="Afdeling"/>
+      <xs:enumeration value="Boek"/>
+      <xs:enumeration value="Bijlage"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlWaardeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="xs:decimal"/>
+      <xs:enumeration value="xs:date"/>
+      <xs:enumeration value="xs:boolean"/>
+      <xs:enumeration value="xs:language"/>
+      <xs:enumeration value="imop:Geometrie"/>
+      <xs:enumeration value="xs:anyURI"/>
+      <xs:enumeration value="xs:string"/>
+      <xs:enumeration value="xs:ID"/>
+      <xs:enumeration value="xs:IDREF"/>
+      <xs:enumeration value="imop:XMLstring"/>
+      <xs:enumeration value="imop:textIncludeRef"/>
+      <xs:enumeration value="imop:XMLIncludeRef"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlSoortExtrefNotatie">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="URL"/>
+      <xs:enumeration value="AKN"/>
+      <xs:enumeration value="JOIN"/>
+      <xs:enumeration value="document"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlTypeLijst">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="expliciet"/>
+      <xs:enumeration value="ongemarkeerd"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlTypeNoot">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="voet"/>
+      <xs:enumeration value="marge"/>
+      <xs:enumeration value="eind"/>
+      <xs:enumeration value="tabel"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlTypeIntIOref">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="vaststellend"/>
+      <xs:enumeration value="verwijzing"/>
+      <xs:enumeration value="inhoud"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlPositieBijschrift">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="boven"/>
+      <xs:enumeration value="onder"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="wlSoortNawerk">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="bezwaarschrift"/>
+      <xs:enumeration value="voorblad"/>
+      <xs:enumeration value="geschiedenis"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- EINDE WAARDELIJSTEN -->
+  <!-- DATATYPES -->
+  <xs:simpleType name="dtNulOfEen">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="0"/>
+      <xs:enumeration value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!--  -->
+  <xs:simpleType name="dtNootNummerLengte">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="20"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- EINDE DATATYPES -->
+</xs:schema>
