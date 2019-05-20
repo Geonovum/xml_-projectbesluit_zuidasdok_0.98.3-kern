@@ -41,11 +41,11 @@
     <!-- Koppenstructuur wordt vastgelegd in TOC -->
 
     <xsl:variable name="TOC">
-        <xsl:for-each select=".//Kop[ancestor::Lichaam|parent::Divisie]">
+        <xsl:for-each select=".//Kop[ancestor::Lichaam|parent::FormeleDivisie]">
             <xsl:element name="heading">
                 <xsl:attribute name="id" select="generate-id(.)"/>
-                <xsl:attribute name="level" select="count(ancestor::*[Kop[ancestor::Lichaam|parent::Divisie]])"/>
-                <xsl:attribute name="number" select="count(.|../preceding-sibling::*[Kop[ancestor::Lichaam|parent::Divisie]])"/>
+                <xsl:attribute name="level" select="count(ancestor::*[Kop[ancestor::Lichaam|parent::FormeleDivisie]])"/>
+                <xsl:attribute name="number" select="count(.|../preceding-sibling::*[Kop[ancestor::Lichaam|parent::FormeleDivisie]])"/>
                 <xsl:copy-of select="./element()"/>
             </xsl:element>
         </xsl:for-each>
@@ -120,7 +120,7 @@
 
     <xsl:template name="pages">
         <!-- maak de hoofdstukken in de omschrijving -->
-        <xsl:for-each select=".//Lichaam/*[Kop]|.//Tekst/Divisie">
+        <xsl:for-each select=".//Lichaam/*[Kop]|.//Tekst/FormeleDivisie">
             <xsl:variable name="filename" select="concat('pages/page_',fn:format-number(position(),'00'),'.html')"/>
             <xsl:result-document href="{$filename}" method="xhtml">
                 <html>
@@ -262,7 +262,7 @@
     <xsl:template match="Begrip">
         <div class="begrip">
             <div class="nummer">
-                <xsl:apply-templates select="LiNr"/>
+                <xsl:apply-templates select="LiNummer"/>
             </div>
             <div class="inhoud">
                 <xsl:apply-templates select="Term"/>
@@ -340,7 +340,7 @@
                 <div class="item">
                     <xsl:apply-templates select="ancestor::*/Metadata/Uitspraak[@onderwerp=$id]" mode="metadata"/>
                     <div class="nummer">
-                        <xsl:apply-templates select="LiNr"/>
+                        <xsl:apply-templates select="LiNummer"/>
                     </div>
                     <div class="inhoud">
                         <xsl:apply-templates select="Inhoud"/>
@@ -356,7 +356,7 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="LiNr">
+    <xsl:template match="LiNummer">
         <p><xsl:if test="@class"><xsl:attribute name="class" select="fn:lower-case(@class)"/></xsl:if><xsl:apply-templates/></p>
     </xsl:template>
 
