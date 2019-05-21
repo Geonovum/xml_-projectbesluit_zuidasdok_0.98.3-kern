@@ -51,6 +51,10 @@
         </xsl:for-each>
     </xsl:variable>
 
+   <xsl:template match="Geometrie">
+       <!-- doe niets -->
+   </xsl:template>
+    
     <!-- document -->
 
     <xsl:template match="/">
@@ -159,7 +163,7 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="al">
+    <xsl:template match="Al">
         <p><xsl:if test="@class"><xsl:attribute name="class" select="fn:lower-case(@class)"/></xsl:if><xsl:apply-templates/></p>
     </xsl:template>
 
@@ -204,7 +208,7 @@
             <xsl:when test="@naam='locatie'">
                 <xsl:variable name="locatie" select="string(Waarde)"/>
                 <div class="locatie">
-                    <p class="locatie"><a class="locatie" href="gml_01.html" onclick="window.open('gml_01.html','GML','width=960,height=500,scrollbars=yes,toolbar=no,location=no'); return false"><img src="../media/icon.svg" alt="" width="40" height="40"/></a></p>
+                    <p class="locatie"><a class="locatie" href="./gml_01.html" onclick="window.open('./gml_01.html','GML','width=960,height=500,scrollbars=yes,toolbar=no,location=no'); return false"><img src="../media/icon.svg" alt="" width="40" height="40"/></a></p>
                 </div>
                 <p class="metadata_eigenschap"><xsl:value-of select="@naam"/></p>
                 <xsl:apply-templates/>
