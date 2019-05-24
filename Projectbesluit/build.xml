@@ -18,7 +18,7 @@
     <copy todir="${output.dir}/media">
       <fileset dir="${media.dir}"/>
     </copy>
-    <copy todir="${gml.dir}/gml">
+    <copy todir="${output.dir}/gml">
       <fileset dir="${gml.dir}"/>
     </copy>
     <copy file="${css.dir}/custom.css" todir="${output.dir}/pages"/>
