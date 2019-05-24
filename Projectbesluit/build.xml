@@ -7,7 +7,7 @@
   <property name="input.dir" value="input"/>
   <property name="media.dir" value="media"/>
   <property name="output.dir" value="output"/>
-
+  <property name="gml.dir" value="gml"/>
   <!-- initialiseer mappen -->
 
   <target name="init" description="Initialiseer mappen">
@@ -17,6 +17,9 @@
     <copy file="${css.dir}/index.css" todir="${output.dir}"/>
     <copy todir="${output.dir}/media">
       <fileset dir="${media.dir}"/>
+    </copy>
+    <copy todir="${gml.dir}/gml">
+      <fileset dir="${gml.dir}"/>
     </copy>
     <copy file="${css.dir}/custom.css" todir="${output.dir}/pages"/>
   </target>
