@@ -19,6 +19,22 @@
         <xsl:apply-templates/>
     </xsl:template>
     
+    <!-- Delete Waarde imop:Geometrie-->
+    
+    <xsl:template match="Besluit/Metadata/Uitspraak[@eigenschap='imop:werkingsgebied']/Waarde"
+        priority="1"> </xsl:template>
+    
+    <!-- add Regeling id -->
+    
+    <xsl:template match="Besluit/Regeling">
+        <xsl:copy>
+            <xsl:variable name="regelingId" select="fn:generate-id()"/>
+            <xsl:attribute name="id" select="$regelingId"> </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:copy>
+    </xsl:template>
+    
+   
     
     <!-- add attribute align to tgroup and entry -->
     
@@ -58,6 +74,7 @@
     </xsl:template>
     
     <!-- begin Replace value of Waarde imop:Geometrie --> 
+    <!--
     <xsl:variable name="werkingsgebiedID" select="fn:generate-id()" />
     <xsl:variable name="Dateid" select="translate(substring(string(current-dateTime()), 1, 23), '-:T.', '')"/>
     <xsl:variable name="wekingsId" select= "concat($werkingsgebiedID,'/regdata/gm0503/',$Dateid)"/>
@@ -73,6 +90,29 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>  
+    -->
+    
+    <!-- add value of Waarde imop:Geometrie -->
+    
+    <xsl:variable name="werkingsgebiedID" select="fn:generate-id()"/>
+    <xsl:variable name="Dateid"
+        select="translate(substring(string(current-dateTime()), 1, 23), '-:T.', '')"/>
+    <xsl:variable name="werkingsId" select="concat($werkingsgebiedID,'/regdata/gm0503/',$Dateid)"/>
+    
+    <xsl:template match="@eigenschap">      
+        <xsl:choose>
+            <xsl:when test=". eq 'imop:werkingsgebied'">
+                <xsl:copy/>
+                <xsl:element name="Waarde">
+                    <xsl:attribute name="type" select="string('imop:Geometrie')"/>
+                    <xsl:value-of select="fn:string($werkingsId)"/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:copy/>
+            </xsl:otherwise>
+        </xsl:choose>     
+    </xsl:template>
     
     <!-- add Regeling id -->
     <xsl:template match="Besluit/Regeling">
@@ -101,7 +141,7 @@
     <xsl:template match="@doel">
         <xsl:choose>
             <xsl:when test=". eq ''">
-                <xsl:attribute name="doel" select="concat($werkingsgebiedID,'/regdata/gm0503/',$Dateid)"></xsl:attribute>
+                <xsl:attribute name="doel" select="$werkingsId"></xsl:attribute>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:copy/>

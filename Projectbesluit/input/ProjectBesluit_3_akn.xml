@@ -14,7 +14,7 @@
          <Waarde type="xs:date">2018-06-12</Waarde>
       </Uitspraak>
       <Uitspraak eigenschap="imop:werkingsgebied">
-         <Waarde type="imop:Geometrie">d1/regdata/gm0503/20190520131019442werkingsgebied_projectbesluit_zuidas_20180320</Waarde>
+         <Waarde type="imop:Geometrie">d1/regdata/gm0503/20190525133810706</Waarde>
       </Uitspraak>
       <Uitspraak eigenschap="imop:heeftDatacollectie">
          <Object type="imop:GeoInformatieobject">
@@ -1415,7 +1415,7 @@
                      <Al>
                         <ExtIoRef eId="cmp_1__list_1__item_1__ref_1"
                                   wId="ws0636_1__cmp_1__list_1__item_1__ref_1"
-                                  doel="d1/regdata/gm0503/20190520131019442"/>
+                                  doel="d1/regdata/gm0503/20190525133810706"/>
                      </Al>
                   </Definitie>
                </Begrip>

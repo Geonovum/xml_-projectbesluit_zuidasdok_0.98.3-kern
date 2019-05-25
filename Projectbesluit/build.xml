@@ -8,6 +8,7 @@
   <property name="media.dir" value="media"/>
   <property name="output.dir" value="output"/>
   <property name="gml.dir" value="gml"/>
+  
   <!-- initialiseer mappen -->
 
   <target name="init" description="Initialiseer mappen">
