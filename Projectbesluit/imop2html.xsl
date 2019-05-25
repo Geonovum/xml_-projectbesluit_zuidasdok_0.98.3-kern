@@ -205,12 +205,19 @@
             <xsl:when test="descendant::Eigenschap">
                 <xsl:apply-templates/>
             </xsl:when>
-            <xsl:when test="@naam='locatie'">
+            <xsl:when test="@naam='imop:Geometrie'">
+                <!--
                 <xsl:variable name="locatie" select="string(Waarde)"/>
+                -->
+                <p class="metadata_waarde"><xsl:value-of select="@naam"/></p>
                 <div class="locatie">
-                    <p class="locatie"><a class="locatie" href="./gml_01.html" onclick="window.open('./gml_01.html','GML','width=960,height=500,scrollbars=yes,toolbar=no,location=no'); return false"><img src="../media/icon.svg" alt="" width="40" height="40"/></a></p>
-                </div>
-                <p class="metadata_eigenschap"><xsl:value-of select="@naam"/></p>
+                    <p class="">
+                        <a class="locatie" href="./gml/gml_01.html" 
+                            onclick="window.open('./gml/gml_01.html','GML','width=960,height=500,scrollbars=yes,toolbar=no,location=no'); return false">
+                            <img src="../media/icon.svg" alt="" width="40" height="40"/>
+                        </a>
+                    </p>
+                </div>         
                 <xsl:apply-templates/>
             </xsl:when>
             <xsl:otherwise>
