@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="2.0" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xml:gml="http://www.opengis.net/gml/3.2"
-    xmlns:fn="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="#all">
-    <xsl:output method="xhtml" encoding="UTF-8" indent="no" omit-xml-declaration="yes" 
-        doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xml:gml="http://www.opengis.net/gml/3.2" xmlns:fn="http://www.w3.org/2005/xpath-functions"
+    exclude-result-prefixes="#all">
+    <xsl:output method="xhtml" encoding="UTF-8" indent="no" omit-xml-declaration="yes"
+        doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
         doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
 
     <!-- Verwijder schemaverwijzing in om te zetten document -->
 
     <!-- Tijdelijke variabelen om de links goed te maken -->
 
-    <xsl:variable name="title" select="(.//Opschrift/Al/node(),.//Metadata/Uitspraak[@eigenschap='imop:citeertitel']/Waarde/node(),string('Aan de slag met de omgevingswet'))[1]"/>
+    <xsl:variable name="title"
+        select="(./MaakInitieleRegeling//*[Kop]/Opschrift/node(), .//Metadata/Uitspraak[@eigenschap = 'imop:citeertitel']/Waarde/node(), string('Aan de slag met de omgevingswet'))[1]"/>
+
     <xsl:variable name="links">
         <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Centrumgebied_speelautomatenhal" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=1a6ef435c9a245f58fdb66525538e0d3"/>
         <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=f8b88c6ca69a449cac5082b91f2ba7d7"/>
@@ -41,19 +42,22 @@
     <!-- Koppenstructuur wordt vastgelegd in TOC -->
 
     <xsl:variable name="TOC">
-        <xsl:for-each select=".//Kop[ancestor::Lichaam|parent::FormeleDivisie]">
-            <xsl:element name="heading">
-                <xsl:attribute name="id" select="generate-id(.)"/>
-                <xsl:attribute name="level" select="count(ancestor::*[Kop[ancestor::Lichaam|parent::FormeleDivisie]])"/>
-                <xsl:attribute name="number" select="count(.|../preceding-sibling::*[Kop[ancestor::Lichaam|parent::FormeleDivisie]])"/>
-                <xsl:copy-of select="./element()"/>
-            </xsl:element>
+        <xsl:for-each select=".//Kop[parent::FormeleDivisie]">
+            <xsl:variable name="level" select="count(ancestor::*[Kop[parent::FormeleDivisie]])-1"/>
+            <xsl:if test="$level gt 0">
+                <xsl:element name="heading">
+                    <xsl:attribute name="id" select="generate-id(.)"/>
+                    <xsl:attribute name="level" select="$level"/>
+                    <xsl:attribute name="number" select="count(.|../preceding-sibling::*[Kop[parent::FormeleDivisie]])"/>
+                    <xsl:copy-of select="./element()"/>
+                </xsl:element>
+            </xsl:if>
         </xsl:for-each>
     </xsl:variable>
 
-   <xsl:template match="Geometrie">
-       <!-- doe niets -->
-   </xsl:template>
+    <xsl:template match="Geometrie">
+        <!-- doe niets -->
+    </xsl:template>
     
     <!-- document -->
 
@@ -70,7 +74,8 @@
         <html>
             <head>
                 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-                <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
+                <meta name="viewport" id="viewport"
+                    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
                 <link rel="stylesheet" type="text/css" href="index.css"/>
                 <title>
                     <xsl:apply-templates select="$title"/>
@@ -83,19 +88,34 @@
                             <img src="media/logo.svg" alt="logo" height="44"/>
                         </div>
                         <div class="menu">
-                            <xsl:for-each-group select="$TOC/*" group-starting-with="heading[number(@level) eq 1]">
+                            <xsl:for-each-group select="$TOC/*"
+                                group-starting-with="heading[number(@level) eq 1]">
                                 <ul class="mainmenu">
                                     <li>
                                         <xsl:choose>
                                             <xsl:when test="self::heading">
-                                                <xsl:variable name="filename" select="concat('pages/page_',fn:format-number(position(),'00'),'.html')"/>
-                                                <p><a href="{$filename}" target="content"><xsl:apply-templates select="./Opschrift/node()"/></a></p>
-                                                <xsl:if test="current-group()/self::heading[number(@level) eq 2]">
-                                                    <ul class="submenu">
-                                                        <xsl:for-each select="current-group()/self::heading[number(@level) eq 2]">
-                                                            <li><p><a href="{concat($filename,'#',@id)}" target="content"><xsl:apply-templates select="./Opschrift/node()"/></a></p></li>
-                                                        </xsl:for-each>
-                                                    </ul>
+                                                <xsl:variable name="filename"
+                                                  select="concat('pages/page_', fn:format-number(position(), '00'), '.html')"/>
+                                                <p>
+                                                  <a href="{$filename}" target="content">
+                                                  <xsl:apply-templates select="./Opschrift/node()"/>
+                                                  </a>
+                                                </p>
+                                                <xsl:if
+                                                  test="current-group()/self::heading[number(@level) eq 2]">
+                                                  <ul class="submenu">
+                                                  <xsl:for-each
+                                                  select="current-group()/self::heading[number(@level) eq 2]">
+                                                  <li>
+                                                  <p>
+                                                  <a href="{concat($filename,'#',@id)}"
+                                                  target="content">
+                                                  <xsl:apply-templates select="./Opschrift/node()"/>
+                                                  </a>
+                                                  </p>
+                                                  </li>
+                                                  </xsl:for-each>
+                                                  </ul>
                                                 </xsl:if>
                                             </xsl:when>
                                         </xsl:choose>
@@ -104,12 +124,15 @@
                             </xsl:for-each-group>
                         </div>
                         <div class="metadata">
-                            <xsl:apply-templates select="Besluit/Metadata/Uitspraak" mode="metadata"/>
+                            <xsl:apply-templates select="Besluit/Metadata/Uitspraak" mode="metadata"
+                            />
                         </div>
                     </div>
                     <div class="content">
                         <div class="title">
-                            <p class="title"><xsl:apply-templates select="$title"/></p>
+                            <p class="title">
+                                <xsl:apply-templates select="$title"/>
+                            </p>
                         </div>
                         <div class="target">
                             <iframe name="content" src="pages/page_01.html"/>
@@ -124,22 +147,24 @@
 
     <xsl:template name="pages">
         <!-- maak de hoofdstukken in de omschrijving -->
-        <xsl:for-each select=".//Lichaam/*[Kop]|.//Tekst/FormeleDivisie">
-            <xsl:variable name="filename" select="concat('pages/page_',fn:format-number(position(),'00'),'.html')"/>
-            <xsl:result-document href="{$filename}" method="xhtml">
-                <html>
-                    <head>
-                        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-                        <link rel="stylesheet" type="text/css" href="custom.css"/>
-                        <title>
-                            <xsl:apply-templates select="./Kop[1]/Opschrift/node()"/>
-                        </title>
-                    </head>
-                    <body>
-                        <xsl:apply-templates select="."/>
-                    </body>
-                </html>
-            </xsl:result-document>
+  
+        <xsl:for-each select=".//Lichaam/FormeleDivisie/FormeleDivisie">         
+               <xsl:variable name="filename"
+                   select="concat('pages/page_', fn:format-number(position(), '00'), '.html')"/>
+               <xsl:result-document href="{$filename}" method="xhtml">
+                   <html>
+                       <head>
+                           <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+                           <link rel="stylesheet" type="text/css" href="custom.css"/>
+                           <title>
+                               <xsl:apply-templates select="./Kop[1]/Opschrift/node()"/>
+                           </title>
+                       </head>
+                       <body>
+                           <xsl:apply-templates select="."/>
+                       </body>
+                   </html>
+               </xsl:result-document>              
         </xsl:for-each>
     </xsl:template>
 
@@ -155,20 +180,29 @@
         <xsl:variable name="test" select="."/>
         <xsl:choose>
             <xsl:when test="fn:normalize-space() eq ''">
+           
                 <!-- doe niets -->
-            </xsl:when>
+      
+       </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="."/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-
+   
     <xsl:template match="Al">
-        <p><xsl:if test="@class"><xsl:attribute name="class" select="fn:lower-case(@class)"/></xsl:if><xsl:apply-templates/></p>
+        <p>
+            <xsl:if test="@class">
+                <xsl:attribute name="class" select="fn:lower-case(@class)"/>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <xsl:template match="Tussenkop">
-        <p class="tussenkop"><xsl:apply-templates/></p>
+        <p class="tussenkop">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <xsl:template match="Inhoud">
@@ -186,14 +220,18 @@
             <xsl:when test="descendant::Object">
                 <xsl:for-each select="descendant::Object[not(ancestor::Object)]">
                     <div class="metadata_uitspraak">
-                        <p class="metadata_uitspraak"><xsl:value-of select="@type"/></p>
+                        <p class="metadata_uitspraak">
+                            <xsl:value-of select="@type"/>
+                        </p>
                         <xsl:apply-templates select="."/>
                     </div>
                 </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
                 <div class="metadata_uitspraak">
-                    <p class="metadata_uitspraak"><xsl:value-of select="@eigenschap"/></p>
+                    <p class="metadata_uitspraak">
+                        <xsl:value-of select="@eigenschap"/>
+                    </p>
                     <xsl:apply-templates/>
                 </div>
             </xsl:otherwise>
@@ -205,21 +243,25 @@
             <xsl:when test="descendant::Eigenschap">
                 <xsl:apply-templates/>
             </xsl:when>
-            <xsl:when test="@naam='imop:Geometrie'">
-                <p class="metadata_waarde"><xsl:value-of select="@naam"/></p>
+            <xsl:when test="@naam = 'imop:Geometrie'">
+                <p class="metadata_waarde">
+                    <xsl:value-of select="@naam"/>
+                </p>
                 <div class="locatie">
                     <p class="locatie">
-                        <a class="locatie" href="./gml/gml_01.html" 
+                        <a class="locatie" href="./gml/gml_01.html"
                             onclick="window.open('./gml/gml_01.html','GML','width=960,height=500,scrollbars=yes,toolbar=no,location=no'); return false">
                             <img src="../media/icon.svg" alt="" width="40" height="40"/>
                         </a>
                     </p>
-                </div>         
+                </div>
                 <xsl:apply-templates/>
             </xsl:when>
-            
+
             <xsl:otherwise>
-                <p class="metadata_eigenschap"><xsl:value-of select="@naam"/></p>
+                <p class="metadata_eigenschap">
+                    <xsl:value-of select="@naam"/>
+                </p>
                 <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>
@@ -229,32 +271,32 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="Metadata//Reeks">
-        <xsl:apply-templates/>
-    </xsl:template>
-
     <xsl:template match="Metadata//Waarde">
-        <p class="metadata_waarde"><xsl:apply-templates/></p>
+        <p class="metadata_waarde">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <!-- structuurelementen -->
 
     <xsl:template match="*[Kop]">
-        <xsl:variable name="class" select="fn:lower-case(fn:string-join((name(),@class),' '))"/>
-        <xsl:variable name="id" select="@id"/>
-        <section class="{$class}">
-            <xsl:apply-templates select="Metadata/Uitspraak[@onderwerp=$id]" mode="metadata"/>
-            <xsl:apply-templates/>
-        </section>
+                <xsl:variable name="class" select="fn:lower-case(fn:string-join((name(), @class), ' '))"/>
+                <xsl:variable name="id" select="@eId"/>
+                <section class="{$class}">                    
+                    <xsl:apply-templates select="Metadata/Uitspraak[@onderwerp = $id]" mode="metadata"/>
+                    <xsl:apply-templates/>
+                </section>
     </xsl:template>
+   
 
-    <xsl:template match="Kop">
-        <!-- TOC bevat de koppenstructuur -->
+    <xsl:template match="Kop">     
+        <!-- TOC bevat de koppenstructuur --> 
         <xsl:variable name="id" select="generate-id(.)"/>
         <p class="{concat('heading_',$TOC/heading[@id=$id]/@level)}" id="{$id}">
-            <xsl:if test="./Label|./Nummer"><span class="nummer">
-                <xsl:value-of select="fn:string-join((./Label,./Nummer),' ')"/>
-            </span>
+            <xsl:if test="./Label | ./Nummer">
+                <span class="nummer">
+                    <xsl:value-of select="fn:string-join((./Label, ./Nummer), ' ')"/>
+                </span>
             </xsl:if>
             <xsl:apply-templates select="./Opschrift/node()"/>
         </p>
@@ -281,7 +323,9 @@
     </xsl:template>
 
     <xsl:template match="Term">
-        <p class="begrip"><xsl:apply-templates/></p>
+        <p class="begrip">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <xsl:template match="Definitie">
@@ -289,13 +333,15 @@
     </xsl:template>
 
     <xsl:template match="Definitie//Al">
-        <p class="begrip"><xsl:apply-templates/></p>
+        <p class="begrip">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <!-- groep -->
 
     <xsl:template match="Groep">
-        <xsl:variable name="class" select="(fn:lower-case(@class),'geen')[1]"/>
+        <xsl:variable name="class" select="(fn:lower-case(@class), 'geen')[1]"/>
         <div class="{$class}">
             <xsl:apply-templates select="*">
                 <xsl:with-param name="class" select="$class"/>
@@ -305,31 +351,35 @@
 
     <xsl:template match="Groep/Tussenkop" priority="1">
         <xsl:param name="class"/>
-        <p class="{fn:string-join(($class,'kop'),'_')}"><xsl:apply-templates/></p>
+        <p class="{fn:string-join(($class,'kop'),'_')}">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <xsl:template match="Groep/Al" priority="1">
         <xsl:param name="class"/>
-        <p class="{$class}"><xsl:apply-templates/></p>
+        <p class="{$class}">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <!-- opsomming -->
 
     <xsl:template match="Lijst">
-        <xsl:variable name="class" select="concat('nummering_',count(.|ancestor::Lijst))"/>
+        <xsl:variable name="class" select="concat('nummering_', count(. | ancestor::Lijst))"/>
         <xsl:choose>
-            <xsl:when test="@type='expliciet'">
+            <xsl:when test="@type = 'expliciet'">
                 <div class="{$class}">
                     <xsl:apply-templates/>
                 </div>
             </xsl:when>
-            <xsl:when test="@class='Nummers'">
+            <xsl:when test="@class = 'Nummers'">
                 <xsl:apply-templates select="Lijstaanhef"/>
                 <ol class="{$class}">
                     <xsl:apply-templates select="Li"/>
                 </ol>
             </xsl:when>
-            <xsl:when test="@class='Tekens'">
+            <xsl:when test="@class = 'Tekens'">
                 <xsl:apply-templates select="Lijstaanhef"/>
                 <ul class="{$class}">
                     <xsl:apply-templates select="Li"/>
@@ -339,15 +389,21 @@
     </xsl:template>
 
     <xsl:template match="Lijstaanhef">
-        <p><xsl:if test="@class"><xsl:attribute name="class" select="fn:lower-case(@class)"/></xsl:if><xsl:apply-templates/></p>
+        <p>
+            <xsl:if test="@class">
+                <xsl:attribute name="class" select="fn:lower-case(@class)"/>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <xsl:template match="Li">
-        <xsl:variable name="id" select="@id"/>
+        <xsl:variable name="id" select="@eId"/>
         <xsl:choose>
-            <xsl:when test="parent::Lijst/@type='expliciet'">
+            <xsl:when test="parent::Lijst/@type = 'expliciet'">
                 <div class="item">
-                    <xsl:apply-templates select="ancestor::*/Metadata/Uitspraak[@onderwerp=$id]" mode="metadata"/>
+                    <xsl:apply-templates select="ancestor::*/Metadata/Uitspraak[@onderwerp = $id]"
+                        mode="metadata"/>
                     <div class="nummer">
                         <xsl:apply-templates select="LiNummer"/>
                     </div>
@@ -358,7 +414,8 @@
             </xsl:when>
             <xsl:otherwise>
                 <li>
-                    <xsl:apply-templates select="ancestor::*/Metadata/Uitspraak[@onderwerp=$id]" mode="metadata"/>
+                    <xsl:apply-templates select="ancestor::*/Metadata/Uitspraak[@onderwerp = $id]"
+                        mode="metadata"/>
                     <xsl:apply-templates select="Inhoud"/>
                 </li>
             </xsl:otherwise>
@@ -366,15 +423,21 @@
     </xsl:template>
 
     <xsl:template match="LiNummer">
-        <p><xsl:if test="@class"><xsl:attribute name="class" select="fn:lower-case(@class)"/></xsl:if><xsl:apply-templates/></p>
+        <p>
+            <xsl:if test="@class">
+                <xsl:attribute name="class" select="fn:lower-case(@class)"/>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <!-- Lid -->
 
     <xsl:template match="Lid">
-        <xsl:variable name="id" select="@id"/>
+        <xsl:variable name="id" select="@eId"/>
         <div class="item">
-            <xsl:apply-templates select="ancestor::*/Metadata/Uitspraak[@onderwerp=$id]" mode="metadata"/>
+            <xsl:apply-templates select="ancestor::*/Metadata/Uitspraak[@onderwerp = $id]"
+                mode="metadata"/>
             <div class="nummer">
                 <xsl:apply-templates select="Lidnr"/>
             </div>
@@ -383,31 +446,45 @@
             </div>
         </div>
     </xsl:template>
-    
+
     <xsl:template match="Lidnr">
-        <p><xsl:if test="@class"><xsl:attribute name="class" select="fn:lower-case(@class)"/></xsl:if><xsl:apply-templates/></p>
+        <p>
+            <xsl:if test="@class">
+                <xsl:attribute name="class" select="fn:lower-case(@class)"/>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <!-- inline -->
-
     <xsl:template match="b">
-        <span class="vet"><xsl:apply-templates/></span>
+        <span class="vet">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
     <xsl:template match="i">
-        <span class="cursief"><xsl:apply-templates/></span>
+        <span class="cursief">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
     <xsl:template match="u">
-        <span class="onderstreept"><xsl:apply-templates/></span>
+        <span class="onderstreept">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
     <xsl:template match="sup">
-        <span class="superscript"><xsl:apply-templates/></span>
+        <span class="superscript">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
     <xsl:template match="sub">
-        <span class="subscript"><xsl:apply-templates/></span>
+        <span class="subscript">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
     <xsl:template match="ExtRef">
@@ -434,7 +511,8 @@
         <xsl:variable name="tablewidth" select="sum(./colspec/@colwidth)"/>
         <colgroup>
             <xsl:for-each select="./colspec">
-                <col id="{./@colname}" style="{concat('width: ',./@colwidth div $tablewidth * 100,'%')}"/>
+                <col id="{./@colname}"
+                    style="{concat('width: ',./@colwidth div $tablewidth * 100,'%')}"/>
             </xsl:for-each>
         </colgroup>
         <xsl:apply-templates select="./thead"/>
@@ -446,30 +524,33 @@
             <xsl:apply-templates/>
         </thead>
     </xsl:template>
-    
+
     <xsl:template match="tbody">
         <tbody class="{ancestor::table[1]/@type}">
             <xsl:apply-templates/>
         </tbody>
     </xsl:template>
-    
+
     <xsl:template match="row">
         <tr class="{ancestor::table[1]/@type}">
             <xsl:apply-templates/>
         </tr>
     </xsl:template>
-    
+
     <xsl:template match="entry">
-        <xsl:variable name="colspan" select="number(substring(./@nameend,4))-number(substring(./@namest,4))+1"/>
-        <xsl:variable name="rowspan" select="number(./@morerows)+1"/>
+        <xsl:variable name="colspan"
+            select="number(substring(./@nameend, 4)) - number(substring(./@namest, 4)) + 1"/>
+        <xsl:variable name="rowspan" select="number(./@morerows) + 1"/>
         <xsl:choose>
             <xsl:when test="ancestor::thead">
-                <th class="{ancestor::table[1]/@type}" colspan="{$colspan}" rowspan="{$rowspan}" style="{concat('text-align:',./@align)}">
+                <th class="{ancestor::table[1]/@type}" colspan="{$colspan}" rowspan="{$rowspan}"
+                    style="{concat('text-align:',./@align)}">
                     <xsl:apply-templates/>
                 </th>
             </xsl:when>
             <xsl:when test="ancestor::tbody">
-                <td class="{ancestor::table[1]/@type}" colspan="{$colspan}" rowspan="{$rowspan}" style="{concat('text-align:',./@align)}">
+                <td class="{ancestor::table[1]/@type}" colspan="{$colspan}" rowspan="{$rowspan}"
+                    style="{concat('text-align:',./@align)}">
                     <xsl:apply-templates/>
                 </td>
             </xsl:when>
@@ -493,9 +574,9 @@
         </xsl:variable>
         <xsl:variable name="float">
             <xsl:choose>
-                <xsl:when test="(./@tekstomloop='ja')">
+                <xsl:when test="(./@tekstomloop = 'ja')">
                     <xsl:choose>
-                        <xsl:when test="./@uitlijning=('links','rechts')">
+                        <xsl:when test="./@uitlijning = ('links', 'rechts')">
                             <xsl:value-of select="string(./@uitlijning)"/>
                         </xsl:when>
                         <xsl:otherwise>
@@ -518,7 +599,9 @@
     </xsl:template>
 
     <xsl:template match="Figuur/Bijschrift">
-        <p class="bijschrift"><xsl:apply-templates/></p>
+        <p class="bijschrift">
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <!-- voetnoot -->
@@ -530,15 +613,21 @@
     <!-- verschilweergave -->
 
     <xsl:template match="Wijzig">
-        <div class="wijzig"><xsl:apply-templates/></div>
+        <div class="wijzig">
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
-    
+
     <xsl:template match="Was">
-        <div class="was"><xsl:apply-templates/></div>
+        <div class="was">
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
 
     <xsl:template match="Wordt">
-        <div class="wordt"><xsl:apply-templates/></div>
+        <div class="wordt">
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>

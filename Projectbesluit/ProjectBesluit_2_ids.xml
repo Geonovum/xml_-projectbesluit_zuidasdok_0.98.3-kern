@@ -18,7 +18,7 @@
             <Waarde type="xs:date">2018-06-12</Waarde>
         </Uitspraak>
         <Uitspraak eigenschap="imop:werkingsgebied">
-         <Waarde type="imop:Geometrie">d1/regdata/gm0503/20190525133810706</Waarde>
+         <Waarde type="imop:Geometrie">d1/regdata/gm0503/20190527120240826</Waarde>
             
         </Uitspraak>
       <Uitspraak eigenschap="imop:heeftDatacollectie">
@@ -201,7 +201,7 @@
                         </Kop>
                         <FormeleInhoud>
                            <Al>Zuidasdok is in het kader van de zevende tranche (inwerkingtreding 15 mei 2014; Stb 2014, nr. 168) opgenomen in bijlage 2 van de Crisis- en herstelwet als overig ruimtelijk project. De ontwikkeling wordt daarin aangehaald als een “Combinatie van stedelijke ontwikkeling en verbetering van bereikbaarheid, zowel via de weg als het openbaar vervoer. Onderdelen van het project zijn herinrichting van de A10-Zuid en de knooppunten Nieuwe Meer en Amstel en herinrichting van de openbaarvervoerterminal.” In de Nota van toelichting bij de 7e tranche staat vermeld dat “de aanwijzing van het project in aanvulling is op de reeds aangewezen gebiedsontwikkeling Zuidas en om zeker te stellen dat ook Zuidasdok, inclusief de infrastructurele onderdelen, onder de werking van de Crisis- en herstelwet valt”.</Al>
-                           <Lijst type="expliciet" class="Tekens">
+                           <Lijst type="ongemarkeerd" class="Tekens">
                               <Lijstaanhef>Opname in bijlage 2 van de Crisis- en herstelwet leidt ertoe dat:</Lijstaanhef>
                               <Li>
                                 <Inhoud>
@@ -245,7 +245,7 @@
                         <Opschrift>Artikel 1: Projectbeschrijving</Opschrift>
                      </Kop>
                      <FormeleInhoud>
-                        <Lijst type="expliciet" class="Nummers">
+                        <Lijst type="ongemarkeerd" class="Nummers">
                            <Li>
                               <Inhoud>
                                 <Al>De A10 Zuid wordt verbreed en ingericht met een systeem van hoofd- en parallelrijbanen. Deze worden beschreven in de leden 4 tot en met 7. De A10 Zuid wordt ter hoogte van station Amsterdam Zuid aangelegd in twee tunnels met een lengte van circa 1 km voor de noordelijke hoofdrijbaan en parallelrijbaan en van circa 1.1 km voor de zuidelijke hoofdrijbaan en parallelrijbaan, conform de kilometeraanduidingen in de artikelleden 4 tot en met 7. De hoofdrijbanen en de parallelrijbanen liggen in gescheiden tunnelbuizen met een middentunnelkanaal. De tunnels worden voor wat betreft de toegankelijkheid voor vervoer van gevaarlijke stoffen ingedeeld in categorie C.</Al>
@@ -258,11 +258,11 @@
                            </Li>
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>Het knooppunt De Nieuwe Meer wordt als volgt aangepast:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
-                                            <Lijst type="expliciet" class="Nummers">
+                                            <Lijst type="ongemarkeerd" class="Nummers">
                                                 <Lijstaanhef>De zuidelijke rijbaan van de A4 verbreedt ter hoogte van km 0.6 naar 4 rijstroken en splitst zich ter hoogte van km 0.3 in:</Lijstaanhef>
                                                 <Li>
                                                     <Inhoud>
@@ -274,7 +274,7 @@
                                     </Li>
                                     <Li>
                                         <Inhoud>
-                                            <Lijst type="expliciet" class="Nummers">
+                                            <Lijst type="ongemarkeerd" class="Nummers">
                                                 <Lijstaanhef>De verbindingsweg A10 West naar A10 Zuid splitst zich ter hoogte van km 21.0 in:</Lijstaanhef>
                                                 <Li>
                                                     <Inhoud>
@@ -286,7 +286,7 @@
                                     </Li>
                                     <Li>
                                         <Inhoud>
-                                            <Lijst type="expliciet" class="Nummers">
+                                            <Lijst type="ongemarkeerd" class="Nummers">
                                                 <Lijstaanhef>De noordelijke parallelrijbaan van de A10 Zuid splitst zich ter hoogte van km 20.9 in:</Lijstaanhef>
                                                 <Li>
                                                     <Inhoud>
@@ -311,7 +311,7 @@
                            </Li>
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>De noordelijke hoofdrijbaan van de A10 Zuid splitst zich ter hoogte van km 0.1 in:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
@@ -333,7 +333,7 @@
                            </Li>
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>De nieuwe zuidelijke parallelrijbaan van de A10 Zuid wordt van west naar oost als volgt ingericht:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
@@ -375,7 +375,7 @@
                            </Li>
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>De nieuwe zuidelijke hoofdrijbaan van de A10 Zuid wordt van west naar oost als volgt ingericht:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
@@ -392,7 +392,7 @@
                            </Li>
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>De nieuwe noordelijke parallelrijbaan A10 Zuid wordt van oost naar west als volgt ingericht:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
@@ -429,7 +429,7 @@
                            </Li>
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>De nieuwe noordelijke hoofdrijbaan A10 Zuid wordt als volgt ingericht:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
@@ -451,11 +451,11 @@
                            </Li>
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>Het knooppunt Amstel wordt als volgt aangepast:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
-                                            <Lijst type="expliciet" class="Nummers">
+                                            <Lijst type="ongemarkeerd" class="Nummers">
                                                 <Lijstaanhef>De zuidelijke parallelrijbaan van de A10 Zuid splitst zich ter hoogte van km 16.7 in:</Lijstaanhef>
                                                 <Li>
                                                     <Inhoud>
@@ -472,7 +472,7 @@
                                     </Li>
                                     <Li>
                                         <Inhoud>
-                                            <Lijst type="expliciet" class="Nummers">
+                                            <Lijst type="ongemarkeerd" class="Nummers">
                                                 <Lijstaanhef>De zuidelijke hoofdrijbaan van de A10 Zuid verbreedt ter hoogte van km 17.50 van 4 naar 5 rijstroken en splitst zich ter hoogte van km 16.8 in:</Lijstaanhef>
                                                 <Li>
                                                     <Inhoud>
@@ -539,7 +539,7 @@
                         <Opschrift>Artikel 2: Maatregelen ter voorkoming, beperking of compensatie van nadelige gevolgen Project</Opschrift>
                      </Kop>
                      <FormeleInhoud>
-                        <Lijst type="expliciet" class="Nummers">
+                        <Lijst type="ongemarkeerd" class="Nummers">
                            <Li>
                               <Inhoud>
                                 <Al>De in Tabel 5 opgenomen geluidschermen worden gerealiseerd. Op de detailkaarten zijn de geluidschermen weergegeven als ‘Geluidscherm’.</Al>
@@ -562,7 +562,7 @@
                            </Li>
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>Ter beperking van de geluidafstraling van de nieuwe beweegbare Schinkelbrug in de noordelijke parallelrijbaan van de A10 worden de volgende maatregelen getroffen:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
@@ -589,7 +589,7 @@
                            </Li>
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>Ter beperking van de geluidafstraling van de bestaande beweegbare Schinkelbrug in de noordelijke hoofdrijbaan van de A10 worden de volgende maatregelen getroffen:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
@@ -1000,7 +1000,7 @@
                                 </row>
                                 <row>
                                     <entry align="left" namest="col1" nameend="col4" morerows="0">
-                                        <Lijst type="expliciet" class="Tekens">
+                                        <Lijst type="ongemarkeerd" class="Tekens">
                                             <Li>
                                                 <Inhoud>
                                                     <Al>toe –en afritten S107, S108 en S109;</Al>
@@ -1079,10 +1079,10 @@
                         <Opschrift>Artikel 3: Tijdelijke maatregelen en voorzieningen</Opschrift>
                      </Kop>
                      <FormeleInhoud>
-                        <Lijst type="expliciet" class="Nummers">
+                        <Lijst type="ongemarkeerd" class="Nummers">
                            <Li>
                               <Inhoud>
-                                <Lijst type="expliciet" class="Nummers">
+                                <Lijst type="ongemarkeerd" class="Nummers">
                                     <Lijstaanhef>Behalve definitieve werken met het oog op de uitvoering van het Projectbesluit kunnen op de gronden die op de detailkaarten zijn aangeduid als maatregelvlak ‘Verkeersdoeleinden, zone Wegverharding’, ‘Verkeersdoeleinden, Werkterrein’ en maatregelvlak ‘Verkeersdoeleinden, Zoekgebied Werkterrein’ tijdelijke werken ten behoeve van de uitvoering van het Projectbesluit worden uitgevoerd. Onder tijdelijke werken worden onder andere begrepen:</Lijstaanhef>
                                     <Li>
                                         <Inhoud>
@@ -1245,7 +1245,7 @@
                             </Term>
                   <Definitie>
                      <Al>
-                        <ExtIoRef wId="" eId="" doel="d1/regdata/gm0503/20190525133810706"/>
+                        <ExtIoRef wId="" eId="" doel="d1/regdata/gm0503/20190527120240826"/>
                      </Al>
                   </Definitie>
                </Begrip>

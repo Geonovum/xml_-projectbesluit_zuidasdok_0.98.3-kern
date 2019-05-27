@@ -57,7 +57,7 @@
     
     <xsl:template match="Lijst" priority="1">      
         <xsl:copy>
-            <xsl:attribute name="type">expliciet</xsl:attribute>
+            <xsl:attribute name="type">ongemarkeerd</xsl:attribute>
             <xsl:apply-templates select="@*"/>          
             <xsl:apply-templates select="@* | node()"/>
         </xsl:copy>
