@@ -14,29 +14,66 @@
         select="(./MaakInitieleRegeling//*[Kop]/Opschrift/node(), .//Metadata/Uitspraak[@eigenschap = 'imop:citeertitel']/Waarde/node(), string('Aan de slag met de omgevingswet'))[1]"/>
 
     <xsl:variable name="links">
-        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Centrumgebied_speelautomatenhal" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=1a6ef435c9a245f58fdb66525538e0d3"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=f8b88c6ca69a449cac5082b91f2ba7d7"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad_bedrijf_categorie_2" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=18411644fdc3419aab9a532367ffc950"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad_bedrijf_categorie_2_HogeGebouwen" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=05825d1976b741cd8af2f4f2ae8de1d5"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad_bedrijf_categorie_2_LageGebouwen" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=5890084c2b96465981284ceaec93e6af"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad_beschermd_monument" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=d3c82b2c30a84c88988ce761e0b62c04"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad_bijzonder_houtgewas" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=aae4817cb9154b43847ef5d388a8c58e"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad_centrumgebied" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=b4443051448d4b91a57b3c0de71e727a"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie" locatie="Gemeentestad_woongebied_dorps" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=b058a7005dba42a6943eb72ca3e84c9c"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant beperkte annotatie" locatie="Gemeentestad_bedrijf_categorie_2" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=2e4dbecd02e14d68b327c4051fcd4492"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant beperkte annotatie" locatie="Gemeentestad_beschermd_monument" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=37fbe934581f443089de80168458f579"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant beperkte annotatie" locatie="Gemeentestad_centrumgebied" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=cf58852a93c241a69de1c0852ba5450a"/>
-        <link title="Voorbeeldartikelen omgevingsplan Variant beperkte annotatie" locatie="Gemeentestad_woongebied_dorps" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=a678dd922462400ca06ca7b7e0262d48"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Centrumgebied" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=8a40feda29854ec0b2d298c54b1e6e36"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Bouwactiviteit_1" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=2ca471d015b4444fae0e8a81dcd7b6b5"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Bouwactiviteit_2" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=a6aabb6655344e58808461dc72e0410f"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Bouwhoogte_12m" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=78272e29a08d4c1cb4319b4bba581670"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Bouwhoogte_15m" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=466b5ecaeac241739ec54f8a999cd14f"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Supermarkt" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=47dc23b009864a6681fc74171b5f9a59"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Detailhandel" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=16d8d50ab06c4289b89f503e057bc24f"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Café" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=6e802fea929042ee81a11f9ece2ceaba"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Wonen" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=e30d58f87e8b4414be6f81efe3df76e9"/>
-        <link title="Voorbeeld gemeente Amterdam" locatie="Woongebied" url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=d6dfd84e34c24328839ad3c77c11a333"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie"
+            locatie="Centrumgebied_speelautomatenhal"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=1a6ef435c9a245f58fdb66525538e0d3"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie"
+            locatie="Gemeentestad"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=f8b88c6ca69a449cac5082b91f2ba7d7"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie"
+            locatie="Gemeentestad_bedrijf_categorie_2"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=18411644fdc3419aab9a532367ffc950"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie"
+            locatie="Gemeentestad_bedrijf_categorie_2_HogeGebouwen"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=05825d1976b741cd8af2f4f2ae8de1d5"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie"
+            locatie="Gemeentestad_bedrijf_categorie_2_LageGebouwen"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=5890084c2b96465981284ceaec93e6af"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie"
+            locatie="Gemeentestad_beschermd_monument"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=d3c82b2c30a84c88988ce761e0b62c04"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie"
+            locatie="Gemeentestad_bijzonder_houtgewas"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=aae4817cb9154b43847ef5d388a8c58e"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie"
+            locatie="Gemeentestad_centrumgebied"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=b4443051448d4b91a57b3c0de71e727a"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant rijke annotatie"
+            locatie="Gemeentestad_woongebied_dorps"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=b058a7005dba42a6943eb72ca3e84c9c"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant beperkte annotatie"
+            locatie="Gemeentestad_bedrijf_categorie_2"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=2e4dbecd02e14d68b327c4051fcd4492"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant beperkte annotatie"
+            locatie="Gemeentestad_beschermd_monument"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=37fbe934581f443089de80168458f579"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant beperkte annotatie"
+            locatie="Gemeentestad_centrumgebied"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=cf58852a93c241a69de1c0852ba5450a"/>
+        <link title="Voorbeeldartikelen omgevingsplan Variant beperkte annotatie"
+            locatie="Gemeentestad_woongebied_dorps"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=a678dd922462400ca06ca7b7e0262d48"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Centrumgebied"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=8a40feda29854ec0b2d298c54b1e6e36"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Bouwactiviteit_1"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=2ca471d015b4444fae0e8a81dcd7b6b5"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Bouwactiviteit_2"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=a6aabb6655344e58808461dc72e0410f"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Bouwhoogte_12m"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=78272e29a08d4c1cb4319b4bba581670"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Bouwhoogte_15m"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=466b5ecaeac241739ec54f8a999cd14f"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Supermarkt"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=47dc23b009864a6681fc74171b5f9a59"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Detailhandel"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=16d8d50ab06c4289b89f503e057bc24f"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Café"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=6e802fea929042ee81a11f9ece2ceaba"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Wonen"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=e30d58f87e8b4414be6f81efe3df76e9"/>
+        <link title="Voorbeeld gemeente Amterdam" locatie="Woongebied"
+            url="https://gnm.maps.arcgis.com/apps/webappviewer/index.html?id=d6dfd84e34c24328839ad3c77c11a333"
+        />
     </xsl:variable>
 
     <!-- Koppenstructuur wordt vastgelegd in TOC -->
@@ -48,7 +85,8 @@
                 <xsl:element name="heading">
                     <xsl:attribute name="id" select="generate-id(.)"/>
                     <xsl:attribute name="level" select="$level"/>
-                    <xsl:attribute name="number" select="count(.|../preceding-sibling::*[Kop[parent::FormeleDivisie]])"/>
+                    <xsl:attribute name="number"
+                        select="count(.|../preceding-sibling::*[Kop[parent::FormeleDivisie]])"/>
                     <xsl:copy-of select="./element()"/>
                 </xsl:element>
             </xsl:if>
@@ -58,7 +96,7 @@
     <xsl:template match="Geometrie">
         <!-- doe niets -->
     </xsl:template>
-    
+
     <!-- document -->
 
     <xsl:template match="/">
@@ -147,24 +185,24 @@
 
     <xsl:template name="pages">
         <!-- maak de hoofdstukken in de omschrijving -->
-  
-        <xsl:for-each select=".//Lichaam/FormeleDivisie/FormeleDivisie">         
-               <xsl:variable name="filename"
-                   select="concat('pages/page_', fn:format-number(position(), '00'), '.html')"/>
-               <xsl:result-document href="{$filename}" method="xhtml">
-                   <html>
-                       <head>
-                           <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-                           <link rel="stylesheet" type="text/css" href="custom.css"/>
-                           <title>
-                               <xsl:apply-templates select="./Kop[1]/Opschrift/node()"/>
-                           </title>
-                       </head>
-                       <body>
-                           <xsl:apply-templates select="."/>
-                       </body>
-                   </html>
-               </xsl:result-document>              
+
+        <xsl:for-each select=".//Lichaam/FormeleDivisie/FormeleDivisie">
+            <xsl:variable name="filename"
+                select="concat('pages/page_', fn:format-number(position(), '00'), '.html')"/>
+            <xsl:result-document href="{$filename}" method="xhtml">
+                <html>
+                    <head>
+                        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+                        <link rel="stylesheet" type="text/css" href="custom.css"/>
+                        <title>
+                            <xsl:apply-templates select="./Kop[1]/Opschrift/node()"/>
+                        </title>
+                    </head>
+                    <body>
+                        <xsl:apply-templates select="."/>
+                    </body>
+                </html>
+            </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
 
@@ -180,16 +218,14 @@
         <xsl:variable name="test" select="."/>
         <xsl:choose>
             <xsl:when test="fn:normalize-space() eq ''">
-           
                 <!-- doe niets -->
-      
-       </xsl:when>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="."/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-   
+
     <xsl:template match="Al">
         <p>
             <xsl:if test="@class">
@@ -280,17 +316,24 @@
     <!-- structuurelementen -->
 
     <xsl:template match="*[Kop]">
+        <section>
+            <xsl:attribute name="formeledivisie"> </xsl:attribute>
+        </section>
+        <!--
                 <xsl:variable name="class" select="fn:lower-case(fn:string-join((name(), @class), ' '))"/>
                 <xsl:variable name="id" select="@eId"/>
                 <section class="{$class}">                    
                     <xsl:apply-templates select="Metadata/Uitspraak[@onderwerp = $id]" mode="metadata"/>
                     <xsl:apply-templates/>
                 </section>
+           -->
     </xsl:template>
-   
 
-    <xsl:template match="Kop">     
-        <!-- TOC bevat de koppenstructuur --> 
+
+    <xsl:template match="Kop">
+        <p class="heading_1"> </p>
+        <!-- TOC bevat de koppenstructuur -->
+        <!--
         <xsl:variable name="id" select="generate-id(.)"/>
         <p class="{concat('heading_',$TOC/heading[@id=$id]/@level)}" id="{$id}">
             <xsl:if test="./Label | ./Nummer">
@@ -300,6 +343,7 @@
             </xsl:if>
             <xsl:apply-templates select="./Opschrift/node()"/>
         </p>
+        -->
     </xsl:template>
 
     <!-- begrippenlijst -->

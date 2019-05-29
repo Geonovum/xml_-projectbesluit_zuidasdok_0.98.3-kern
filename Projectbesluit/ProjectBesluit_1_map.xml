@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Besluit xmlns="https://standaarden.overheid.nl/stop/imop/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/ ./xsd_stop_0.97.1_imop_0.97.1.xsd">
 
     <Metadata>
@@ -20,6 +20,38 @@
         <Uitspraak eigenschap="imop:werkingsgebied">
             <Waarde type="imop:Geometrie">werkingsgebied_projectbesluit_zuidas_20180320</Waarde>
         </Uitspraak>
+      <Uitspraak eigenschap="imop:identificatie">
+         <Object type="imop:AKNIdentification">
+            <Eigenschap naam="imop:FRBRWork">
+               <Object type="imop:FRBRWorkIdentification">
+                  <Eigenschap naam="imop:FRBRthis">
+                     <Waarde type="xs:anyURI">
+                                    /akn/nl/act/gm0503/2018/Omgevingsplan
+                                </Waarde>
+                  </Eigenschap>
+                  <Eigenschap naam="imop:FRBRuri">
+                     <Waarde type="xs:anyURI">
+                                    /akn/nl/act/gm0503/2018/Omgevingsplan
+                                </Waarde>
+                  </Eigenschap>
+               </Object>
+            </Eigenschap>
+            <Eigenschap naam="imop:FRBRExpression">
+               <Object type="imop:FRBRExpressionIdentification">
+                  <Eigenschap naam="imop:FRBRthis">
+                     <Waarde type="xs:anyURI">
+                                    /akn/nl/act/gm0503/2018/Omgevingsplan/nl@2018-01-01
+                                </Waarde>
+                  </Eigenschap>
+                  <Eigenschap naam="imop:FRBRuri">
+                     <Waarde type="xs:anyURI">
+                                    /akn/nl/act/gm0503/2018/Omgevingsplan/nl@2018-01-01
+                                </Waarde>
+                  </Eigenschap>
+               </Object>
+            </Eigenschap>
+         </Object>
+      </Uitspraak>
       <Uitspraak eigenschap="imop:heeftDatacollectie">
          <Object type="imop:GeoInformatieobject">
             <Eigenschap naam="imop:identificatie">

@@ -87,6 +87,57 @@
         <xsl:copy>
             <xsl:apply-templates/>
             <xsl:element name="Uitspraak">
+                <xsl:attribute name="eigenschap" select="string('imop:identificatie')"> 
+                </xsl:attribute>
+                <xsl:element name="Object">
+                    <xsl:attribute name="type" select="string('imop:AKNIdentification')"/>              
+                    <xsl:element name="Eigenschap">
+                        <xsl:attribute name="naam" select="string('imop:FRBRWork')"/>
+                        <xsl:element name="Object">
+                            <xsl:attribute name="type" select="string('imop:FRBRWorkIdentification')"/>
+                            <xsl:element name="Eigenschap">
+                                <xsl:attribute name="naam" select="string('imop:FRBRthis')"/>
+                                <xsl:element name="Waarde">
+                                    <xsl:attribute name="type" select="string('xs:anyURI')"/>
+                                    /akn/nl/act/gm0503/2018/Omgevingsplan
+                                </xsl:element>
+                            </xsl:element>
+                            
+                            <xsl:element name="Eigenschap">
+                                <xsl:attribute name="naam" select="string('imop:FRBRuri')"/>
+                                <xsl:element name="Waarde">
+                                    <xsl:attribute name="type" select="string('xs:anyURI')"/>
+                                    /akn/nl/act/gm0503/2018/Omgevingsplan
+                                </xsl:element>
+                            </xsl:element>
+                            
+                            
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="Eigenschap">
+                        <xsl:attribute name="naam" select="string('imop:FRBRExpression')"/>
+                        <xsl:element name="Object">
+                            <xsl:attribute name="type" select="string('imop:FRBRExpressionIdentification')"/>
+                            <xsl:element name="Eigenschap">
+                                <xsl:attribute name="naam" select="string('imop:FRBRthis')"/>
+                                <xsl:element name="Waarde">
+                                    <xsl:attribute name="type" select="string('xs:anyURI')"/>
+                                    /akn/nl/act/gm0503/2018/Omgevingsplan/nl@2018-01-01
+                                </xsl:element>
+                            </xsl:element>
+                            <xsl:element name="Eigenschap">
+                                <xsl:attribute name="naam" select="string('imop:FRBRuri')"/>
+                                <xsl:element name="Waarde">
+                                    <xsl:attribute name="type" select="string('xs:anyURI')"/>
+                                    /akn/nl/act/gm0503/2018/Omgevingsplan/nl@2018-01-01
+                                </xsl:element>
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:element>  
+                </xsl:element>             
+            </xsl:element>
+                       
+            <xsl:element name="Uitspraak">
                 <xsl:attribute name="eigenschap" select="string('imop:heeftDatacollectie')"> 
                 </xsl:attribute> 
                 <xsl:element name="Object">
@@ -149,8 +200,10 @@
                             </xsl:element>
                         </xsl:element>  
                      </xsl:element>                               
-                </xsl:element>
+                </xsl:element>    
             </xsl:element>
+            
+          
         </xsl:copy>
     </xsl:template>   
     
