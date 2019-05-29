@@ -81,7 +81,8 @@
         </xsl:element>
     </xsl:template>
    
-    <!-- Copy Gemotrie from Locaties to metadata --> 
+    <!-- Copy Gemotrie from Locaties to metadata as version 0.97 -->
+    <!-- https://gitlab.com/koop/PR04/PR04-Overdracht/blob/master/voorbeeldbestanden/0.97.1u/Datacollecties/DatacollectiesEnInformatieObjecten.xml -->
     <xsl:template match="OfficielePublicatie/Metadata" priority="1">
         <xsl:copy>
             <xsl:apply-templates/>
@@ -89,15 +90,65 @@
                 <xsl:attribute name="eigenschap" select="string('imop:heeftDatacollectie')"> 
                 </xsl:attribute> 
                 <xsl:element name="Object">
-                    <xsl:attribute name="type" select="string('imop:GeoInformatieobject')"/>  
+                    <xsl:attribute name="type" select="string('imop:GeoInformatieobject')"/>                     
                     <xsl:element name="Eigenschap">
-                        <xsl:attribute name="naam" select="string('imop:Geometrie')"/> 
-                        <xsl:element name="Geometrie">
-                            <xsl:copy>
-                                <xsl:apply-templates select="ancestor::OfficielePublicatie/Locaties/Geometrie/*"/>
-                            </xsl:copy>
-                        </xsl:element>    
-                    </xsl:element>              
+                        <xsl:attribute name="naam" select="string('imop:identificatie')"/> 
+                        <xsl:element name="Object">
+                            <xsl:attribute name="type" select="string('imop:JOINIdentification')"/>
+                            <xsl:element name="Eigenschap">
+                                <xsl:attribute name="naam" select="string('imop:FRBRWork')"/> 
+                                <xsl:element name="Object">
+                                    <xsl:attribute name="type" select="string('imop:FRBRWorkIdentification')"/>
+                                    <xsl:element name="Eigenschap">
+                                        <xsl:attribute name="naam" select="string('imop:FRBRthis')"/> 
+                                        <xsl:element name="Waarde">
+                                            <xsl:attribute name="type" select="string('xs:anyURI')"/>
+                                            /join/id/regdata/gm0503/2018/loc_1234
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:element>                               
+                            </xsl:element>                           
+                            <xsl:element name="Eigenschap">
+                                <xsl:attribute name="naam" select="string('imop:FRBRExpression')"/> 
+                                <xsl:element name="Object">
+                                    <xsl:attribute name="type" select="string('imop:FRBRExpressionIdentification')"/>
+                                    <xsl:element name="Eigenschap">
+                                        <xsl:attribute name="naam" select="string('imop:FRBRthis')"/> 
+                                        <xsl:element name="Waarde">
+                                            <xsl:attribute name="type" select="string('xs:anyURI')"/>
+                                            /join/id/regdata/gm0503/2018/loc_1234@2018-01-01
+                                        </xsl:element>
+                                    </xsl:element>
+                                </xsl:element>                               
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="Eigenschap">
+                        <xsl:attribute name="naam" select="string('imop:noemer')"/> 
+                        <xsl:element name="Waarde">
+                            <xsl:attribute name="type" select="string('xs:anyURI')"/>
+                            Noemer_waarde
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="Eigenschap">
+                        <xsl:attribute name="naam" select="string('imop:collectieType')"/>
+                        <xsl:element name="Waarde">
+                            <xsl:attribute name="type" select="string('xs:anyURI')"/>
+                            imop:Geometrie
+                        </xsl:element>
+                    </xsl:element>
+                    <xsl:element name="Eigenschap">
+                        <xsl:attribute name="naam" select="string('imop:inhoud')"/> 
+                        <xsl:element name="Object">
+                            <xsl:attribute name="type" select="string('imop:Locatie')"/> 
+                            <xsl:element name="Eigenschap">
+                               <xsl:attribute name="naam" select="string('imop:Geometrie')"/>                          
+                                <xsl:element name="Geometrie">                          
+                                    <xsl:apply-templates select="ancestor::OfficielePublicatie/Locaties/Geometrie/element()"/>
+                                </xsl:element>    
+                            </xsl:element>
+                        </xsl:element>  
+                     </xsl:element>                               
                 </xsl:element>
             </xsl:element>
         </xsl:copy>

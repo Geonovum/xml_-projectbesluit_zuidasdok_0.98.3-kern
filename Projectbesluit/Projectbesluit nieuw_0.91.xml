@@ -7,7 +7,7 @@
             <Waarde type="xs:string">Projectbesluit</Waarde>
         </Uitspraak>
         <Uitspraak eigenschap="imop:conformProfiel">
-            <Waarde type="xs:string">TPOD Projectbesluit V0.90</Waarde>
+            <Waarde type="xs:string">TPOD Projectbesluit V0.97</Waarde>
         </Uitspraak>
         <Uitspraak eigenschap="imop:citeertitel">
             <Waarde>Projectbesluit Zuidas 2018</Waarde>

@@ -19,7 +19,7 @@ Stappen:
 
 xmlns="https://standaarden.overheid.nl/stop/imop/"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/ ../xsd_stop_0.97.1_imop_0.97.1.xsd"
+xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/ ./xsd_stop_0.97.1_imop_0.97.1.xsd"
 
 ## Edit a file
 
