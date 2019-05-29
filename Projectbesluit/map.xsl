@@ -74,9 +74,10 @@
     <!-- Add namesapce for validation -->
     <xsl:template match="OfficielePublicatie" priority="1">
         <xsl:element name="Besluit">
-            <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('http://www.overheid.nl/imop/def# ./xsd_stop_0.97.1_imop_0.97.1.xsd')"/>
+            <xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance" select="string('https://standaarden.overheid.nl/stop/imop/ ./xsd_stop_0.97.1_imop_0.97.1.xsd')"/>
             <xsl:namespace name="gml" select="string('http://www.opengis.net/gml/3.2')"/>
             <xsl:namespace name="imop" select="string('https://standaarden.overheid.nl/stop/imop/')"/>
+            <xsl:namespace name="xsi" select="string('http://www.w3.org/2001/XMLSchema-instance')"/>
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
