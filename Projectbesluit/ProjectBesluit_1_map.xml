@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Besluit xmlns:gml="http://www.opengis.net/gml/3.2"
-         xmlns="https://standaarden.overheid.nl/stop/imop/"
+         xmlns:imop="https://standaarden.overheid.nl/stop/imop/"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/ ./xsd_stop_0.97.1_imop_0.97.1.xsd">
 
@@ -18,35 +18,28 @@
             <Waarde type="xs:date">2018-06-12</Waarde>
         </Uitspraak>
         <Uitspraak eigenschap="imop:werkingsgebied">
-            <Waarde type="imop:Geometrie">werkingsgebied_projectbesluit_zuidas_20180320</Waarde>
+         <Waarde type="imop:Geometrie">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
+            
         </Uitspraak>
       <Uitspraak eigenschap="imop:identificatie">
          <Object type="imop:AKNIdentification">
             <Eigenschap naam="imop:FRBRWork">
                <Object type="imop:FRBRWorkIdentification">
                   <Eigenschap naam="imop:FRBRthis">
-                     <Waarde type="xs:anyURI">
-                                    /akn/nl/act/gm0503/2018/Omgevingsplan
-                                </Waarde>
+                     <Waarde type="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
                   </Eigenschap>
                   <Eigenschap naam="imop:FRBRuri">
-                     <Waarde type="xs:anyURI">
-                                    /akn/nl/act/gm0503/2018/Omgevingsplan
-                                </Waarde>
+                     <Waarde type="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
                   </Eigenschap>
                </Object>
             </Eigenschap>
             <Eigenschap naam="imop:FRBRExpression">
                <Object type="imop:FRBRExpressionIdentification">
                   <Eigenschap naam="imop:FRBRthis">
-                     <Waarde type="xs:anyURI">
-                                    /akn/nl/act/gm0503/2018/Omgevingsplan/nl@2018-01-01
-                                </Waarde>
+                     <Waarde type="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3@20190604121322741</Waarde>
                   </Eigenschap>
                   <Eigenschap naam="imop:FRBRuri">
-                     <Waarde type="xs:anyURI">
-                                    /akn/nl/act/gm0503/2018/Omgevingsplan/nl@2018-01-01
-                                </Waarde>
+                     <Waarde type="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3@20190604121322741</Waarde>
                   </Eigenschap>
                </Object>
             </Eigenschap>
@@ -59,18 +52,14 @@
                   <Eigenschap naam="imop:FRBRWork">
                      <Object type="imop:FRBRWorkIdentification">
                         <Eigenschap naam="imop:FRBRthis">
-                           <Waarde type="xs:anyURI">
-                                            /join/id/regdata/gm0503/2018/loc_1234
-                                        </Waarde>
+                           <Waarde type="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
                         </Eigenschap>
                      </Object>
                   </Eigenschap>
                   <Eigenschap naam="imop:FRBRExpression">
                      <Object type="imop:FRBRExpressionIdentification">
                         <Eigenschap naam="imop:FRBRthis">
-                           <Waarde type="xs:anyURI">
-                                            /join/id/regdata/gm0503/2018/loc_1234@2018-01-01
-                                        </Waarde>
+                           <Waarde type="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
                         </Eigenschap>
                      </Object>
                   </Eigenschap>
@@ -87,7 +76,8 @@
                         </Waarde>
             </Eigenschap>
             <Eigenschap naam="imop:inhoud">
-               <Object type="imop:Locatie">
+               <Object type="imop:Locatie"
+                       oId="33c18e84-9581-4ef5-bf97-72bfc30c05c3-20190604121322741">
                   <Eigenschap naam="imop:Geometrie">
                      <Geometrie>
                         <gml:Polygon srsName="urn:ogc:def:crs:EPSG::28992"
@@ -1310,7 +1300,9 @@
                             </Term>
                   <Definitie>
                      <Al>
-                        <ExtIoRef wId="" eId="" doel=""/>
+                        <ExtIoRef wId=""
+                                  eId=""
+                                  doel="/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</ExtIoRef>
                      </Al>
                   </Definitie>
                </Begrip>

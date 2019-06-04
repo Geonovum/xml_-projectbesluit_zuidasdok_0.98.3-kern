@@ -3,7 +3,8 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:imop="http://www.overheid.nl/imop/def# ./xsd_stop_0.97.1.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-    xmlns:fn="http://www.w3.org/2005/xpath-functions" 
+    xmlns:fn="http://www.w3.org/2005/xpath-functions"
+    xmlns:uuid="java.util.UUID"
     xmlns:gml="http://www.opengis.net/gml/3.2" exclude-result-prefixes="#all">
     <xsl:output method="xml" version="1.0" indent="yes" encoding="utf-8"/>
   
@@ -84,6 +85,20 @@
    
     <!-- Copy Gemotrie from Locaties to metadata as version 0.97 -->
     <!-- https://gitlab.com/koop/PR04/PR04-Overdracht/blob/master/voorbeeldbestanden/0.97.1u/Datacollecties/DatacollectiesEnInformatieObjecten.xml -->
+    <xsl:variable name="werkingsgebiedID" select="fn:generate-id()"/>
+    <xsl:variable name="Dateid"
+        select="translate(substring(string(current-dateTime()), 1, 23), '-:T.', '')"/>
+    
+    
+    <!-- create UUID -->
+    <xsl:variable name="uuid" select="uuid:randomUUID()"/>
+    
+    <xsl:variable name="werkingsId" select="concat('/akn/nl/act/rws','_',$werkingsgebiedID, '/2018/bsl_', $uuid)"/>
+    <xsl:variable name="werkingsIdDatum" select="concat($werkingsId,'@',$Dateid)"/>
+    <xsl:variable name="oId" select="concat($uuid,'-',$Dateid)"/>
+    
+    
+    <!-- 0.97.2 metdata  -->
     <xsl:template match="OfficielePublicatie/Metadata" priority="1">
         <xsl:copy>
             <xsl:apply-templates/>
@@ -100,7 +115,7 @@
                                 <xsl:attribute name="naam" select="string('imop:FRBRthis')"/>
                                 <xsl:element name="Waarde">
                                     <xsl:attribute name="type" select="string('xs:anyURI')"/>
-                                    /akn/nl/act/gm0503/2018/Omgevingsplan
+                                    <xsl:value-of select="$werkingsId"/>
                                 </xsl:element>
                             </xsl:element>
                             
@@ -108,7 +123,7 @@
                                 <xsl:attribute name="naam" select="string('imop:FRBRuri')"/>
                                 <xsl:element name="Waarde">
                                     <xsl:attribute name="type" select="string('xs:anyURI')"/>
-                                    /akn/nl/act/gm0503/2018/Omgevingsplan
+                                    <xsl:value-of select="$werkingsId"/>
                                 </xsl:element>
                             </xsl:element>
                             
@@ -123,14 +138,14 @@
                                 <xsl:attribute name="naam" select="string('imop:FRBRthis')"/>
                                 <xsl:element name="Waarde">
                                     <xsl:attribute name="type" select="string('xs:anyURI')"/>
-                                    /akn/nl/act/gm0503/2018/Omgevingsplan/nl@2018-01-01
+                                    <xsl:value-of select="$werkingsIdDatum"/>
                                 </xsl:element>
                             </xsl:element>
                             <xsl:element name="Eigenschap">
                                 <xsl:attribute name="naam" select="string('imop:FRBRuri')"/>
                                 <xsl:element name="Waarde">
                                     <xsl:attribute name="type" select="string('xs:anyURI')"/>
-                                    /akn/nl/act/gm0503/2018/Omgevingsplan/nl@2018-01-01
+                                    <xsl:value-of select="$werkingsIdDatum"/>
                                 </xsl:element>
                             </xsl:element>
                         </xsl:element>
@@ -155,7 +170,7 @@
                                         <xsl:attribute name="naam" select="string('imop:FRBRthis')"/> 
                                         <xsl:element name="Waarde">
                                             <xsl:attribute name="type" select="string('xs:anyURI')"/>
-                                            /join/id/regdata/gm0503/2018/loc_1234
+                                            <xsl:value-of select="$werkingsId"/>
                                         </xsl:element>
                                     </xsl:element>
                                 </xsl:element>                               
@@ -168,7 +183,7 @@
                                         <xsl:attribute name="naam" select="string('imop:FRBRthis')"/> 
                                         <xsl:element name="Waarde">
                                             <xsl:attribute name="type" select="string('xs:anyURI')"/>
-                                            /join/id/regdata/gm0503/2018/loc_1234@2018-01-01
+                                            <xsl:value-of select='$werkingsId'/>
                                         </xsl:element>
                                     </xsl:element>
                                 </xsl:element>                               
@@ -193,6 +208,7 @@
                         <xsl:attribute name="naam" select="string('imop:inhoud')"/> 
                         <xsl:element name="Object">
                             <xsl:attribute name="type" select="string('imop:Locatie')"/> 
+                            <xsl:attribute name="oId" select="string($oId)"/> 
                             <xsl:element name="Eigenschap">
                                <xsl:attribute name="naam" select="string('imop:Geometrie')"/>                          
                                 <xsl:element name="Geometrie">                          
@@ -207,6 +223,26 @@
           
         </xsl:copy>
     </xsl:template>   
+    
+    <!-- Delete Waarde imop:Geometrie-->
+    
+    <xsl:template match="Metadata/Uitspraak[@eigenschap='imop:werkingsgebied']/Waarde"
+        priority="1"> </xsl:template>
+    <!-- add new Waarde imop:Geometrie-->
+    <xsl:template match="@eigenschap">      
+        <xsl:choose>
+            <xsl:when test=". eq 'imop:werkingsgebied'">
+                <xsl:copy/>
+                <xsl:element name="Waarde">
+                    <xsl:attribute name="type" select="string('imop:Geometrie')"/>
+                    <xsl:value-of select="fn:string($werkingsId)"/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:copy/>
+            </xsl:otherwise>
+        </xsl:choose>     
+    </xsl:template>
     
     <!-- Add inline element to table|title  -->
     <xsl:template match="table/title" priority="1">
@@ -317,9 +353,11 @@
                             <xsl:element name="Definitie">
                                 <xsl:element name="Al">
                                     <xsl:element name="ExtIoRef">
-                                        <xsl:attribute name="wId"></xsl:attribute>
-                                        <xsl:attribute name="eId"></xsl:attribute>
-                                        <xsl:attribute name="doel"></xsl:attribute>
+                                        <xsl:attribute name="wId"/>
+                                        <xsl:attribute name="eId"/>
+                                        <xsl:attribute name="doel" select= "$werkingsId"/>                                     
+                                        <xsl:value-of select="$werkingsId"/>
+                                        
                                     </xsl:element>
                                 </xsl:element>
                             </xsl:element>

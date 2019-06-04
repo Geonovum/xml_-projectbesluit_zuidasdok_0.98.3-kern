@@ -14,15 +14,8 @@
         </xsl:copy>
     </xsl:template>
     
-    <!-- Delete extra Metadata???? -->
-    <xsl:template match="Besluit/Metadata/Uitspraak/Object/Eigenschap/Geometrie/Metadata" priority="1">
-        <xsl:apply-templates/>
-    </xsl:template>
+   
     
-    <!-- Delete Waarde imop:Geometrie-->
-    
-    <xsl:template match="Besluit/Metadata/Uitspraak[@eigenschap='imop:werkingsgebied']/Waarde"
-        priority="1"> </xsl:template>
     
     <!-- add Regeling id -->
     
@@ -97,8 +90,15 @@
     <xsl:variable name="werkingsgebiedID" select="fn:generate-id()"/>
     <xsl:variable name="Dateid"
         select="translate(substring(string(current-dateTime()), 1, 23), '-:T.', '')"/>
-    <xsl:variable name="werkingsId" select="concat($werkingsgebiedID,'/regdata/gm0503/',$Dateid)"/>
     
+    <!--
+    <xsl:variable name="werkingsId" select="
+        string(/Besluit/Metadata/Uitspraak[@eigenschap eq 'imop:werkingsgebied']/Waarde/node())"/>
+    <xsl:variable name="werkingsIdDatum" select="
+        concat(string(/Besluit/Metadata/Uitspraak[@eigenschap eq 'imop:werkingsgebied']/Waarde/node()),'_',
+        $werkingsgebiedID,'@',$Dateid)"/>
+    -->
+    <!--
     <xsl:template match="@eigenschap">      
         <xsl:choose>
             <xsl:when test=". eq 'imop:werkingsgebied'">
@@ -113,9 +113,9 @@
             </xsl:otherwise>
         </xsl:choose>     
     </xsl:template>
-    
+    -->
     <!-- add Regeling id -->
-    <xsl:template match="Besluit/Regeling">
+    <xsl:template match="/Besluit/Regeling">
         <xsl:copy>
             <xsl:variable name="regelingId" select="fn:generate-id()"/>
             <xsl:attribute name="id" select="$regelingId">
@@ -138,16 +138,19 @@
         </xsl:choose>
     </xsl:template>
      -->
+    <!-- repalce to map.xslt
     <xsl:template match="@doel">
         <xsl:choose>
             <xsl:when test=". eq ''">
-                <xsl:attribute name="doel" select="$werkingsId"></xsl:attribute>
+                <xsl:attribute name="doel" select="$werkingsIdDatum"></xsl:attribute>
+                <xsl:value-of select="$werkingsIdDatum"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:copy/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    -->
     <!-- end Replace value of Waarde imop:Geometrie -->
     
 </xsl:stylesheet>

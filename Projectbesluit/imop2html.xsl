@@ -316,24 +316,21 @@
     <!-- structuurelementen -->
 
     <xsl:template match="*[Kop]">
-        <section>
-            <xsl:attribute name="formeledivisie"> </xsl:attribute>
-        </section>
-        <!--
+       
+        
                 <xsl:variable name="class" select="fn:lower-case(fn:string-join((name(), @class), ' '))"/>
                 <xsl:variable name="id" select="@eId"/>
                 <section class="{$class}">                    
                     <xsl:apply-templates select="Metadata/Uitspraak[@onderwerp = $id]" mode="metadata"/>
                     <xsl:apply-templates/>
                 </section>
-           -->
-    </xsl:template>
+     </xsl:template>
 
 
     <xsl:template match="Kop">
-        <p class="heading_1"> </p>
+        
         <!-- TOC bevat de koppenstructuur -->
-        <!--
+        
         <xsl:variable name="id" select="generate-id(.)"/>
         <p class="{concat('heading_',$TOC/heading[@id=$id]/@level)}" id="{$id}">
             <xsl:if test="./Label | ./Nummer">
@@ -343,7 +340,7 @@
             </xsl:if>
             <xsl:apply-templates select="./Opschrift/node()"/>
         </p>
-        -->
+        
     </xsl:template>
 
     <!-- begrippenlijst -->
