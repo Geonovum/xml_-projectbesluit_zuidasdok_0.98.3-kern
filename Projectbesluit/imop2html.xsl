@@ -254,14 +254,18 @@
     <xsl:template match="Metadata//Uitspraak" mode="metadata">
         <xsl:choose>
             <xsl:when test="descendant::Object">
+               
                 <xsl:for-each select="descendant::Object[not(ancestor::Object)]">
+                    <xsl:if test="@type != 'imop:AKNIdentification'">    
                     <div class="metadata_uitspraak">
                         <p class="metadata_uitspraak">
                             <xsl:value-of select="@type"/>
                         </p>
                         <xsl:apply-templates select="."/>
                     </div>
+                    </xsl:if>    
                 </xsl:for-each>
+                
             </xsl:when>
             <xsl:otherwise>
                 <div class="metadata_uitspraak">
@@ -293,24 +297,36 @@
                 </div>
                 <xsl:apply-templates/>
             </xsl:when>
+            <xsl:when test="@naam = 'imop:noemer'">
+                <p class="metadata_eigenschap">
+                    <xsl:value-of select="concat(@naam,': ', ./Waarde)"/>
+                </p>
+                <xsl:apply-templates/>
+            </xsl:when>
 
             <xsl:otherwise>
+                <xsl:if test="@naam != 'imop:FRBRthis'">
                 <p class="metadata_eigenschap">
                     <xsl:value-of select="@naam"/>
                 </p>
+                </xsl:if>   
                 <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
 
     <xsl:template match="Metadata//Object">
-        <xsl:apply-templates/>
+        <xsl:if test="@type != 'imop:JOINIdentification'">  
+         <xsl:apply-templates/>
+        </xsl:if>    
     </xsl:template>
 
     <xsl:template match="Metadata//Waarde">
+        <xsl:if test="@type != 'xs:anyURI'">
         <p class="metadata_waarde">
             <xsl:apply-templates/>
         </p>
+        </xsl:if>   
     </xsl:template>
 
     <!-- structuurelementen -->

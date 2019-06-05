@@ -165,13 +165,7 @@ div.metadata_uitspraak {
     margin-left: 6mm;
     margin-top: 14pt;
 }
-div.metadata_eigenschap {
-    color: rgba(255,0,0,1);
-    display: block;
-    margin-bottom: 14pt;
-    margin-left: 6mm;
-    margin-top: 14pt;
-}
+
 p.metadata_uitspraak {
     font-family: 'Verdana', sans-serif;
     font-size: 10pt;
