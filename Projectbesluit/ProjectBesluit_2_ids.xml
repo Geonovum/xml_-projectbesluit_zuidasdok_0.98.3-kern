@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Besluit xmlns:gml="http://www.opengis.net/gml/3.2"
-         xmlns:imop="https://standaarden.overheid.nl/stop/imop/"
+         xmlns="https://standaarden.overheid.nl/stop/imop/"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/ ./xsd_stop_0.97.1_imop_0.97.1.xsd">
 
@@ -1191,7 +1191,7 @@
                         <Opschrift>Artikel 4: Wijziging regels omgevingsplan</Opschrift>
                      </Kop>
                      <FormeleInhoud>
-                        <Al>Dit besluit wijzigt de regels van het omgevingsplan van de gemeente (………). De wijziging van deze regels, inclusief de daarbij behorende gewijzigde Verbeelding, zijn opgenomen in <b>bijlage (-)</b>.</Al>
+                         <Al>Dit besluit wijzigt de regels van het omgevingsplan van de gemeente Amsterdam. De wijziging van deze regels, inclusief de daarbij behorende gewijzigde Verbeelding, zijn opgenomen in <bijlagetext>Omgevingsplan Amsterdam wijzigingen</bijlagetext>.</Al>
                      </FormeleInhoud>
                   </FormeleDivisie>
                   <FormeleDivisie>
@@ -1284,6 +1284,18 @@
                   </FormeleDivisie>
                </FormeleDivisie>
             </Lichaam>
+             <Bijlage>
+                 <Kop>Omgevingsplan Amsterdam wijzigingen</Kop>
+                 <Divisie>
+                     <Kop>Omgevingsplan Amsterdam wijzigingen</Kop>
+                     <Inhoud>
+                         ./Omgevingsplan%20Amsterdam%20wijzigingen.xml
+                     </Inhoud>
+                 </Divisie>
+             </Bijlage>
+             
+                 <Kop></Kop>
+             </Bijlage>
          </MaakInitieleRegeling>
       </WijzigBijlage>
       <Bijlage>
@@ -1310,5 +1322,4 @@
          </Inhoud>
       </Bijlage>
    </Regeling>
-    
 </Besluit>
