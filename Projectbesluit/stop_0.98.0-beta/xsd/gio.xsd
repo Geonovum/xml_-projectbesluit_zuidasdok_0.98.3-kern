@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="https://standaarden.overheid.nl/stop/imop/geo/"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:gmlsf="http://www.opengis.net/gmlsf"
+  xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+  elementFormDefault="qualified"
+  version="0.98.0-beta">
+<import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd" />
+<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd" />
+<annotation>
+  <appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+    <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+  </appinfo>
+</annotation>
+<element name="FeatureCollectionLocatie"
+  type="geo:FeatureCollectionLocatieType"
+  substitutionGroup="gml:AbstractGML"/>
+<complexType name="FeatureCollectionLocatieType"> 
+  <complexContent>
+    <extension base="gml:AbstractFeatureType"> 
+      <sequence minOccurs="0" maxOccurs="unbounded">
+       <element name="featureMember"> 
+         <complexType>
+           <complexContent>
+             <extension base="gml:AbstractFeatureMemberType">
+               <sequence>
+                 <element ref="gml:AbstractFeature"/>
+               </sequence>
+             </extension>
+           </complexContent>
+         </complexType>
+       </element>
+      </sequence>
+    </extension>
+  </complexContent>
+</complexType>
+<element name="Locatie" type="geo:LocatieType" substitutionGroup="gml:AbstractFeature"/>
+<complexType name="LocatieType">
+  <complexContent>
+    <extension base="gml:AbstractFeatureType">
+      <sequence>
+        <element name ="oId" minOccurs="1" maxOccurs="1" type="string"/>
+        <element name ="bronverwijzing" minOccurs="0" maxOccurs="1" type="anyURI"/>
+        <element name ="nauwkeurigheid" minOccurs="0" maxOccurs="1" type="integer"/>
+        <element name ="geometrie" minOccurs="1" maxOccurs="1" type="gml:GeometryPropertyType"/>
+        <element name ="bronbeschrijving" minOccurs="0" maxOccurs="1" type="string"/>
+        <element name ="bronactualiteit" minOccurs="0" maxOccurs="1" type="date"/>
+        <element name ="brontype" minOccurs="0" maxOccurs="1" type="string"/>
+        <element name ="naam" minOccurs="0" maxOccurs="1" type="string"/>
+      </sequence>
+    </extension>
+  </complexContent>
+</complexType>
+</schema>
