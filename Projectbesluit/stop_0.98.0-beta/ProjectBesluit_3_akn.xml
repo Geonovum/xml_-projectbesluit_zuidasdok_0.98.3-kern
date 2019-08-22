@@ -4,7 +4,8 @@
 <!-- KL 21-08-2019: GML in apart bestand opgeslagen en bestandsnaam opgenomen -->
 <!-- KL 21-08-2019: attribuut 'id' bij element 'Regeling' verwijderd. Moet deze ergens anders komen? -->
 <!-- KL 21-08-2019: element 'Inhoud' verwijderd bij element 'Li' -->
-<!-- KL 211-08-2019: element 'Inline' verwijderd bij element 'title' van element 'table', id's in 'title' gezet -->
+<!-- KL 21-08-2019: element 'Inline' verwijderd bij element 'title' van element 'table', eId's en wId's aangepast en in 'title' gezet -->
+<!-- KL 21-08-2019: bij element 'tbody' het atribuut 'valign="top"' toegevoegd -->
 
    <Besluit 
       xmlns="https://standaarden.overheid.nl/stop/imop/tekst/" 
@@ -646,8 +647,8 @@
                                frame="all"
                                colsep="1"
                                rowsep="1">
-                           <title eId="dvs_1__dvs_3__fin_1__table_1__inline_1"
-                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__table_1__inline_1">
+                           <title eId="dvs_1__dvs_3__fin_1__table_1__title_1"
+                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__table_1__title_1">
                               Tabel 5 – Overzicht geluidschermen
                            </title>
                            <tgroup align="left" cols="4">
@@ -966,10 +967,8 @@
                                frame="all"
                                colsep="1"
                                rowsep="1">
-                           <title eId="dvs_1__dvs_3__fin_1__table_2__inline_1"
-                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__inline_1">
-                              Tabel 6 – Overzicht asfalttypen
-                           </title>
+                           <title eId="dvs_1__dvs_3__fin_1__table_2__title_1"
+                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__title_1">Tabel 6 – Overzicht asfalttypen</title>
                            <tgroup align="left" cols="4">
                               <colspec colname="col1" colwidth="3534"/>
                               <colspec colname="col2" colwidth="3553"/>
@@ -1224,9 +1223,8 @@
                                frame="all"
                                colsep="1"
                                rowsep="1">
-                           <title>
-                              Tabel 1 – Rijsnelheden
-                           </title>
+                           <title eId="dvs_1__dvs_6__fin_1__table_1__title_1"
+                                      wId="ws0636_1__dvs_1__dvs_6__fin_1__table_1__title_1">Tabel 1 – Rijsnelheden</title>
                            <tgroup align="left" cols="3">
                               <colspec colname="col1" colwidth="2721"/>
                               <colspec colname="col2" colwidth="4120"/>
@@ -1315,7 +1313,7 @@
             <Nummer>I</Nummer>
             <Opschrift>Overzicht informatieobjecten</Opschrift>
          </Kop>
-            <Inhoud>
+         <Inhoud>
             <Begrippenlijst eId="cmp_1__list_1" wId="ws0636_1__cmp_1__list_1">
                <Begrip eId="cmp_1__list_1__item_1" wId="ws0636_1__cmp_1__list_1__item_1">
                   <Term> Werkinggebied A </Term>
@@ -1328,7 +1326,7 @@
                   </Definitie>
                </Begrip>
             </Begrippenlijst>
-            </Inhoud>
+         </Inhoud>
       </Bijlage>
    </Regeling>
 </Besluit>
