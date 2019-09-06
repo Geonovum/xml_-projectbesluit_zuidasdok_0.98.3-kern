@@ -39,7 +39,7 @@
         <sl:stand>
             <ow-dc:owObject>
                 <l:Gebied rkow:regeltekstId="nl.imow-gm5331.Gebied.32sG">
-                    <l:identificatie>nl.imow-gm5331.Gebied.32sG</l:identificatie>
+                    <l:identificatie>nl.imow-gm5331.gebied.32sG</l:identificatie>
                     <l:geometrie>
                         <gml:Polygon xmlns:gml="http://www.opengis.net/gml/3.2"
                             srsName="urn:ogc:def:crs:EPSG::28992"
