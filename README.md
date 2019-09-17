@@ -15,3 +15,7 @@ xmlns="https://standaarden.overheid.nl/stop/imop/"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="https://standaarden.overheid.nl/stop/imop/ ./xsd_stop_0.97.1_imop_0.97.1.xsd"
 
+20190917 - KL
+Bestanden verplaatst naar IMOP en IMOW folders.
+Folder Projectbesluit bevat nog de oude bestanden.
+XML-schema's in algemene folders: repositories 'imop-algemeen' en 'imow-algemeen'
