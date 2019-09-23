@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190801"
- xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
- xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190709"
- xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190801"
- xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190801"
- xmlns:g="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709"
- xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190801"
- xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190801"
- xmlns:gml="http://www.opengis.net/gml/3.2"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:v2="http://www.geostandaarden.nl/imow/locatie-ref/v20190901"
- xmlns:imvert="http://www.imvertor.org/schema/system"
- xmlns:gmd="http://www.isotc211.org/2005/gmd"
- xmlns:gco="http://www.isotc211.org/2005/gco"
- xmlns:rkop="https://www.geostandaarden.nl/imow/regeltekstkoppelingop/v20190709"
- xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709"
- xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190709"
- xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"
- xmlns:gss="http://www.isotc211.org/2005/gss"
- xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/v20190709"
- xmlns:gsr="http://www.isotc211.org/2005/gsr"
- xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709"
- xmlns:gts="http://www.isotc211.org/2005/gts"
- xmlns:g-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709"
- xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190709"
- xmlns:NEN3610="http://www.geonovum.nl/NEN3610/schemas/v20110301"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190801 file:/E:/DSO/Geonovum/imow-algemeen/xsd/bestanden-ow/deelbestand-ow/v20190801/IMOW_Deelbestand_v0_9_8_1-beta.xsd">
+<!-- KL 20190918: lijst namspaces bijgewerkt-->
+<!-- KL 20190918: vt:Tekstdeel toegevoegd, Inleiding/Tracébesluit en bestemmingsplan-->
+<ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
+    xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
+    xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901"
+    xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901"
+    xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901"
+    xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709"
+    xmlns:k="http://www.geostandaarden.nl/imow/kaartrecept/v20190901"
+    xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190901"
+    xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901"
+    xmlns:imvert="http://www.imvertor.org/schema/system"
+    xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709"
+    xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901"
+    xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901"
+    xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709"
+    xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709"
+    xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"
+    xmlns:op="http://www.geostandaarden.nl/imow/opobject/v20190901"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:vt-ref="http://www.geostandaarden.nl/imow/vrijetekst-ref/v20190901"
+    xmlns:g-ref="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901 ../../imow-algemeen/xsd/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
     <sl:standBestand>
         <sl:dataset>Zuidasdok</sl:dataset>
         <sl:inhoud>
@@ -36,10 +32,21 @@
                 <sl:objectType>Regeltekst</sl:objectType>
             </sl:objectTypen>
         </sl:inhoud>
+        <!-- Vrije tekst Inleiding-->
+        <sl:stand>
+            <ow-dc:owObject>
+                <vt:Tekstdeel>
+                    <vt:identificatie>nl.imow-gm0363.tekstdeel.001</vt:identificatie>
+                    <vt:formeleInhoud>
+                        <vt:FormeleInhoud wIdRegeling="" wId="ws0636_1__dvs_1__dvs_1__dvs_2__fin_1"/>
+                    </vt:formeleInhoud>
+                </vt:Tekstdeel>
+            </ow-dc:owObject>
+        </sl:stand>
         <!-- Artikel 9 -->
         <sl:stand>
             <ow-dc:owObject>
-                <r:Regeltekst wIdRegeling="Dv3hmUo" wId="i1inn2Ed" id="ID003" rkow:regeltekstId="nl.imow-gm0363.regeltekst.001">
+                <r:Regeltekst wIdRegeling="Dv3hmUo" wId="i1inn2Ed" id="ID003">
                     <r:identificatie>nl.imow-gm0363.regeltekst.001</r:identificatie>
                 </r:Regeltekst>
             </ow-dc:owObject>
