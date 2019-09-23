@@ -15,8 +15,17 @@
 <!-- KL 20190916: MaakInitieleRegeling, FRBRwork="/akn/nl/act/rws_d1/2018/reg122/nld@2018-06-12" toegevoegd, is dit correct?-->
 <!-- KL 20190916: Lijst, xmlns:rws toegevoegd voor rws:class="Tekens"-->
 <!-- KL 20190917: entry, attribuut morerows moet positive integer zijn: 1 -->
-<!-- KL 20190917: BesluitDoel, toegeveogd-->
-<BesluitVersie schemaversie="0.98.kern" xmlns="https://standaarden.overheid.nl/stop/imop/instrument/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cons="https://standaarden.overheid.nl/stop/imop/consolidatie/" xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" xmlns:meta="https://standaarden.overheid.nl/stop/imop/metadata/" xmlns:id="https://standaarden.overheid.nl/stop/imop/identificatie/" xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/" xmlns:tooi="https://standaarden.overheid.nl/stop/imop/tooi/" xsi:schemaLocation="http://www.overheid.nl/imop/def# ../../imop-algemeen/xsd/imop-instrument.xsd">
+<!-- KL 20190917: BesluitDoel, toegevoegd, doel?-->
+<!-- KL 20190923: Artikel gewijzigd in Hoofdstuk-->
+<BesluitVersie schemaversie="0.98.kern" xmlns="https://standaarden.overheid.nl/stop/imop/instrument/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:cons="https://standaarden.overheid.nl/stop/imop/consolidatie/" 
+    xmlns:data="https://standaarden.overheid.nl/stop/imop/data/" 
+    xmlns:meta="https://standaarden.overheid.nl/stop/imop/metadata/" 
+    xmlns:id="https://standaarden.overheid.nl/stop/imop/identificatie/" 
+    xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/" 
+    xmlns:tooi="https://standaarden.overheid.nl/stop/imop/tooi/" 
+    xsi:schemaLocation="http://www.overheid.nl/imop/def# ../../imop-algemeen/xsd/imop-instrument.xsd">
     <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
         <FRBRWork>/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</FRBRWork>
         <FRBRExpression>/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3@20190604121322741</FRBRExpression>
@@ -47,32 +56,7 @@
         </Procedureverloop>
     </Procedure>
     <Besluit xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
-        <Regeling>
-            <Lichaam eId="body" wId="body">
-                <WijzigArtikel eId="art_1_inst_1" wId="ws0636_1__art_1_inst_1">
-                    <Kop>
-                        <Label>Artikel</Label>
-                        <Nummer>I</Nummer>
-                    </Kop>
-                    <Wat>Projectbesluit Zuidas 2018 wordt vastgesteld zoals vastgesteld in de bijlage.</Wat>
-                </WijzigArtikel>
-                <Artikel eId="art_1_inst_2" wId="ws0636_1__art_1_inst_2">
-                    <Kop>
-                        <Label>Artikel</Label>
-                        <Nummer>II</Nummer>
-                    </Kop>
-                    <Inhoud>
-                        <Al>Dit besluit treedt in werking per .</Al>
-                    </Inhoud>
-                </Artikel>
-            </Lichaam>
-            <WijzigBijlage eId="cmp_1" wId="ws0636_1__cmp_1">
-                <Kop>
-                    <Label>Bijlage</Label>
-                    <Nummer>I</Nummer>
-                    <Opschrift>Bijlage bij artikel I</Opschrift>
-                </Kop>
-                <MaakInitieleRegeling FRBRwork="/akn/nl/act/rws_d1/2018/reg122/nld@2018-06-12" wordt="" componentnaam="Component_01">
+        <NieuweRegeling FRBRwork="" componentnaam="regelin01" wordt="">
                     <Lichaam eId="body" wId="body">
                         <FormeleDivisie eId="dvs_1" wId="ws0636_1__dvs_1">
                             <Kop>
@@ -161,7 +145,7 @@
                             </FormeleDivisie>
                             <FormeleDivisie eId="dvs_1__dvs_2" wId="ws0636_1__dvs_1__dvs_2">
                                 <Kop>
-                                    <Opschrift>Artikel 1: Projectbeschrijving</Opschrift>
+                                    <Opschrift>Hoofdstuk 1: Projectbeschrijving</Opschrift>
                                 </Kop>
                                 <FormeleInhoud eId="dvs_1__dvs_2__fin_1" wId="ws0636_1__dvs_1__dvs_2__fin_1">
                                     <Lijst eId="dvs_1__dvs_2__fin_1__list_1" wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1" type="ongemarkeerd" xmlns:rws="https://www.rws.nl" rws:class="Nummers">
@@ -351,7 +335,7 @@
                             </FormeleDivisie>
                             <FormeleDivisie eId="dvs_1__dvs_3" wId="ws0636_1__dvs_1__dvs_3">
                                 <Kop>
-                                    <Opschrift>Artikel 2: Maatregelen ter voorkoming, beperking of compensatie van nadelige gevolgen Project</Opschrift>
+                                    <Opschrift>Hoofdstuk 2: Maatregelen ter voorkoming, beperking of compensatie van nadelige gevolgen Project</Opschrift>
                                 </Kop>
                                 <FormeleInhoud eId="dvs_1__dvs_3__fin_1" wId="ws0636_1__dvs_1__dvs_3__fin_1">
                                     <Lijst eId="dvs_1__dvs_3__fin_1__list_1" wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1" type="ongemarkeerd" xmlns:rws="https://www.rws.nl" rws:class="Nummers">
@@ -874,7 +858,7 @@
                             </FormeleDivisie>
                             <FormeleDivisie eId="dvs_1__dvs_5" wId="ws0636_1__dvs_1__dvs_5">
                                 <Kop>
-                                    <Opschrift>Artikel 4: Wijziging regels omgevingsplan</Opschrift>
+                                    <Opschrift>Hoofdstuk 4: Wijziging regels omgevingsplan</Opschrift>
                                 </Kop>
                                 <FormeleInhoud eId="dvs_1__dvs_5__fin_1" wId="ws0636_1__dvs_1__dvs_5__fin_1">
                                     <Al>Dit besluit wijzigt de regels van het omgevingsplan van de gemeente (………). De wijziging van deze regels, inclusief de daarbij behorende gewijzigde Verbeelding, zijn opgenomen in <b>bijlage (-)</b>.</Al>
@@ -882,7 +866,7 @@
                             </FormeleDivisie>
                             <FormeleDivisie eId="dvs_1__dvs_6" wId="ws0636_1__dvs_1__dvs_6">
                                 <Kop>
-                                    <Opschrift>Artikel 9: Verkeersbesluit</Opschrift>
+                                    <Opschrift>Hoofdstuk 9: Verkeersbesluit</Opschrift>
                                 </Kop>
                                 <FormeleInhoud eId="dvs_1__dvs_6__fin_1" wId="ws0636_1__dvs_1__dvs_6__fin_1">
                                     <Al>De maximum rijsnelheden op de A10 Zuid en de van de knooppunten De Nieuwe Meer en Amstel onderdeel uitmakende gedeelten van de A4, A10 West, A10 Oost en A2 zijn weergeven in Tabel 1. </Al>
@@ -968,8 +952,6 @@
                             </FormeleDivisie>
                         </FormeleDivisie>
                     </Lichaam>
-                </MaakInitieleRegeling>
-            </WijzigBijlage>
             <Bijlage eId="cmp_1" wId="ws0636_1__cmp_1">
                 <Kop>
                     <Label>Bijlage</Label>
@@ -989,7 +971,7 @@
                     </Begrippenlijst>
                 </Inhoud>
             </Bijlage>
-        </Regeling>
+        </NieuweRegeling>
     </Besluit>
     <BesluitDoel xmlns="https://standaarden.overheid.nl/stop/imop/data/">
         <BeoogdeRegelgeving>
