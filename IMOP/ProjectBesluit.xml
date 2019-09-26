@@ -820,7 +820,7 @@
                             </FormeleDivisie>
                             <FormeleDivisie eId="dvs_1__dvs_4" wId="gm0363_1__dvs_1__dvs_4">
                                 <Kop>
-                                    <Opschrift>Artikel 3: Tijdelijke maatregelen en voorzieningen</Opschrift>
+                                    <Opschrift>Hoofdstuk 3: Tijdelijke maatregelen en voorzieningen</Opschrift>
                                 </Kop>
                                 <FormeleInhoud eId="dvs_1__dvs_4__fin_1" wId="gm0363_1__dvs_1__dvs_4__fin_1">
                                     <Lijst eId="dvs_1__dvs_4__fin_1__list_1" wId="gm0363_1__dvs_1__dvs_4__fin_1__list_1" type="ongemarkeerd" xmlns:rws="https://www.rws.nl" rws:class="Nummers">
@@ -862,7 +862,7 @@
                                     <Opschrift>Hoofdstuk 4: Wijziging regels omgevingsplan</Opschrift>
                                 </Kop>
                                 <FormeleInhoud eId="dvs_1__dvs_5__fin_1" wId="gm0363_1__dvs_1__dvs_5__fin_1">
-                                    <Al>Dit besluit wijzigt de regels van het omgevingsplan van de gemeente (………). De wijziging van deze regels, inclusief de daarbij behorende gewijzigde Verbeelding, zijn opgenomen in <b>bijlage (-)</b>.</Al>
+                                    <Al>Dit besluit wijzigt de regels van het omgevingsplan van de gemeente Amsterdam. De wijziging van deze regels, inclusief de daarbij behorende gewijzigde Verbeelding, zijn opgenomen in <b>bijlage (-)</b>.</Al>
                                 </FormeleInhoud>
                             </FormeleDivisie>
                             <FormeleDivisie eId="dvs_1__dvs_6" wId="gm0363_1__dvs_1__dvs_6">
