@@ -28,7 +28,7 @@
         <sl:dataset>Zuidasdok</sl:dataset>
         <sl:inhoud>
             <sl:gebied>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</sl:gebied>
-            <sl:leveringsId>JVaaa42fRENB</sl:leveringsId>
+            <sl:leveringsId>projectbesluit-zuidasdok</sl:leveringsId>
             <sl:objectTypen>
                 <sl:objectType>Regeltekst</sl:objectType>
             </sl:objectTypen>
@@ -36,10 +36,12 @@
         <!-- Vrije tekst Inleiding-->
         <sl:stand>
             <ow-dc:owObject>
-                <vt:Tekstdeel>
+                <vt:Tekstdeel ow:regeltekstId="">
                     <vt:identificatie>nl.imow-gm0363.tekstdeel.001</vt:identificatie>
                     <vt:formeleInhoud>
-                        <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_1__dvs_2__fin_1"/>
+                        <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_1__dvs_2__fin_1">
+                            <vt:identificatie>nl.imow-gm0363.formeleinhoud.001</vt:identificatie>
+                        </vt:FormeleInhoud>
                     </vt:formeleInhoud>
                 </vt:Tekstdeel>
             </ow-dc:owObject>
