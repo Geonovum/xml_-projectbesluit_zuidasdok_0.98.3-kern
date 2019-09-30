@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lvbb:manifest xmlns:lvbb="http://www.overheid.nl/2017/lvbb">
+    <lvbb:bestand>
+        <lvbb:bestandsnaam>opManifest.xml</lvbb:bestandsnaam>
+        <lvbb:contentType>application/xml</lvbb:contentType>
+    </lvbb:bestand>
+    <lvbb:bestand>
+        <lvbb:bestandsnaam>opOpdracht.xml</lvbb:bestandsnaam>
+        <lvbb:contentType>application/xml</lvbb:contentType>
+    </lvbb:bestand>
+    <lvbb:bestand>
+        <lvbb:bestandsnaam>opProjectBesluit.xml</lvbb:bestandsnaam>
+        <lvbb:contentType>application/xml</lvbb:contentType>
+    </lvbb:bestand>
+    <lvbb:bestand>
+        <lvbb:bestandsnaam>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</lvbb:bestandsnaam>
+        <lvbb:contentType>application/gml+xml</lvbb:contentType>
+    </lvbb:bestand>
+</lvbb:manifest>
