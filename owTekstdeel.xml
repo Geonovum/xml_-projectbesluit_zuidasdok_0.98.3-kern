@@ -66,16 +66,16 @@
         <sl:stand>
             <ow-dc:owObject>
                 <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_3__fin_1">
-                    <vt:identificatie>nl.imow-gm0363.formeleinhoud.003</vt:identificatie>
+                    <vt:identificatie>nl.imow-gm0363.formeleinhoud.002</vt:identificatie>
                 </vt:FormeleInhoud>
             </ow-dc:owObject>
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
                 <vt:Tekstdeel ow:regeltekstId="">
-                    <vt:identificatie>nl.imow-gm0363.tekstdeel.003</vt:identificatie>
+                    <vt:identificatie>nl.imow-gm0363.tekstdeel.002</vt:identificatie>
                     <vt:formeleInhoud>
-                        <vt-ref:FormeleInhoudRef xlink:href=""/>
+                        <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.002"/>
                     </vt:formeleInhoud>
                     <vt:hoofdlijnaanduiding>
                         <vt-ref:HoofdlijnRef xlink:href="nl.imow-gm0363.hoofdlijn.001"/>
@@ -105,7 +105,7 @@
                 <vt:Tekstdeel ow:regeltekstId="">
                     <vt:identificatie>nl.imow-gm0363.tekstdeel.003</vt:identificatie>
                     <vt:formeleInhoud>
-                        <vt-ref:FormeleInhoudRef xlink:href=""/>
+                        <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.003"/>
                     </vt:formeleInhoud>
                     <vt:hoofdlijnaanduiding>
                         <vt-ref:HoofdlijnRef xlink:href="nl.imow-gm0363.hoofdlijn.002"/>
@@ -117,16 +117,16 @@
         <sl:stand>
             <ow-dc:owObject>
                 <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_6__fin_1">
-                    <vt:identificatie>nl.imow-gm0363.formeleinhoud.002</vt:identificatie>
+                    <vt:identificatie>nl.imow-gm0363.formeleinhoud.004</vt:identificatie>
                 </vt:FormeleInhoud>
             </ow-dc:owObject>
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
                 <vt:Tekstdeel ow:regeltekstId="">
-                    <vt:identificatie>nl.imow-gm0363.tekstdeel.002</vt:identificatie>
+                    <vt:identificatie>nl.imow-gm0363.tekstdeel.004</vt:identificatie>
                     <vt:formeleInhoud>
-                        <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.002"/>
+                        <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.004"/>
                     </vt:formeleInhoud>
                 </vt:Tekstdeel>
             </ow-dc:owObject>
