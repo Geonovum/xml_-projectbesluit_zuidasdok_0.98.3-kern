@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Modules xmlns="https://standaarden.overheid.nl/stop/DSO-PI10" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="../Mapping/xsd_stop_0.97.1_manifest-ow.xsd">
+  <domein>omgevingswet</domein>
+  <RegelingVersie>
+    <FRBRwork></FRBRwork>
+    <FRBRExpression></FRBRExpression>
+    <Bestand>
+      <naam>owTekstdeel.xml</naam>
+      <objecttype>Tekstdeel</objecttype>
+      <objecttype>FormeleInhoud</objecttype>
+      <objecttype>Hoofdlijn</objecttype>
+    </Bestand>
+    <Bestand>
+      <naam>owLocatie.xml</naam>
+      <objecttype>Gebiedengroep</objecttype>
+      <objecttype>Gebied</objecttype>
+    </Bestand>
+  </RegelingVersie>
+</Modules>
