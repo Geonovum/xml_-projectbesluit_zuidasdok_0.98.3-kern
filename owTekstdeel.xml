@@ -2,6 +2,8 @@
 <!-- KL 20190918: lijst namspaces bijgewerkt-->
 <!-- KL 20190918: vt:Tekstdeel toegevoegd, Inleiding/Tracébesluit en bestemmingsplan-->
 <!-- KL 20190923: ws0636 (waterschap?) gewzijdigd in gm0363 (gemeente Amsterdam)-->
+<!-- KL 20190930: regeltekst gewijzigd in Tekstdeel-->
+<!-- KL 20190930: Hoofdlijn voor Hoofdstuk 2 en 3 toegevoegd-->
 <ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
     xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
     xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901"
@@ -33,25 +35,100 @@
                 <sl:objectType>Regeltekst</sl:objectType>
             </sl:objectTypen>
         </sl:inhoud>
-        <!-- Vrije tekst Inleiding-->
+        <!-- Vrije tekst Inleiding, Tracébesluit en bestemmingsplan-->
+        <sl:stand>
+            <ow-dc:owObject>
+                <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_1__dvs_2__fin_1">
+                    <vt:identificatie>nl.imow-gm0363.formeleinhoud.001</vt:identificatie>
+                </vt:FormeleInhoud>
+            </ow-dc:owObject>
+        </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
                 <vt:Tekstdeel ow:regeltekstId="">
                     <vt:identificatie>nl.imow-gm0363.tekstdeel.001</vt:identificatie>
                     <vt:formeleInhoud>
-                        <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_1__dvs_2__fin_1">
-                            <vt:identificatie>nl.imow-gm0363.formeleinhoud.001</vt:identificatie>
-                        </vt:FormeleInhoud>
+                        <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.001"/>
                     </vt:formeleInhoud>
                 </vt:Tekstdeel>
             </ow-dc:owObject>
         </sl:stand>
-        <!-- Artikel 9 -->
+        <!-- Hoofdstuk 2 -->
         <sl:stand>
             <ow-dc:owObject>
-                <r:Regeltekst wIdRegeling="Dv3hmUo" wId="i1inn2Ed" id="ID003">
-                    <r:identificatie>nl.imow-gm0363.regeltekst.001</r:identificatie>
-                </r:Regeltekst>
+                <vt:Hoofdlijn ow:regeltekstId="">
+                    <vt:identificatie>nl.imow-gm0363.hoofdlijn.001</vt:identificatie>
+                    <vt:naam>Geluid</vt:naam>
+                    <vt:soort>Maatregel</vt:soort>
+                </vt:Hoofdlijn>
+            </ow-dc:owObject>            
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_3__fin_1">
+                    <vt:identificatie>nl.imow-gm0363.formeleinhoud.003</vt:identificatie>
+                </vt:FormeleInhoud>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <vt:Tekstdeel ow:regeltekstId="">
+                    <vt:identificatie>nl.imow-gm0363.tekstdeel.003</vt:identificatie>
+                    <vt:formeleInhoud>
+                        <vt-ref:FormeleInhoudRef xlink:href=""/>
+                    </vt:formeleInhoud>
+                    <vt:hoofdlijnaanduiding>
+                        <vt-ref:HoofdlijnRef xlink:href="nl.imow-gm0363.hoofdlijn.001"/>
+                    </vt:hoofdlijnaanduiding>
+                </vt:Tekstdeel>
+            </ow-dc:owObject>
+        </sl:stand>
+        <!-- Hoofdstuk 3 -->
+        <sl:stand>
+            <ow-dc:owObject>
+                <vt:Hoofdlijn ow:regeltekstId="">
+                    <vt:identificatie>nl.imow-gm0363.hoofdlijn.002</vt:identificatie>
+                    <vt:naam>Verkeer</vt:naam>
+                    <vt:soort>Maatregel</vt:soort>
+                </vt:Hoofdlijn>
+            </ow-dc:owObject>            
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_4__fin_1">
+                    <vt:identificatie>nl.imow-gm0363.formeleinhoud.003</vt:identificatie>
+                </vt:FormeleInhoud>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <vt:Tekstdeel ow:regeltekstId="">
+                    <vt:identificatie>nl.imow-gm0363.tekstdeel.003</vt:identificatie>
+                    <vt:formeleInhoud>
+                        <vt-ref:FormeleInhoudRef xlink:href=""/>
+                    </vt:formeleInhoud>
+                    <vt:hoofdlijnaanduiding>
+                        <vt-ref:HoofdlijnRef xlink:href="nl.imow-gm0363.hoofdlijn.002"/>
+                    </vt:hoofdlijnaanduiding>
+                </vt:Tekstdeel>
+            </ow-dc:owObject>
+        </sl:stand>
+        <!-- Hoofdstuk 9 -->
+        <sl:stand>
+            <ow-dc:owObject>
+                <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_6__fin_1">
+                    <vt:identificatie>nl.imow-gm0363.formeleinhoud.002</vt:identificatie>
+                </vt:FormeleInhoud>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <vt:Tekstdeel ow:regeltekstId="">
+                    <vt:identificatie>nl.imow-gm0363.tekstdeel.002</vt:identificatie>
+                    <vt:formeleInhoud>
+                        <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.002"/>
+                    </vt:formeleInhoud>
+                </vt:Tekstdeel>
             </ow-dc:owObject>
         </sl:stand>
     </sl:standBestand>
