@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InformatieObjectVersie schemaversie="0.98.kern" xmlns="https://standaarden.overheid.nl/stop/imop/instrument/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.overheid.nl/imop/def# ../stop/imop-instrument.xsd">
+   <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/akn/nl/act/gm0363/2019/3520</FRBRWork>
+      <FRBRExpression>/akn/nl/act/gm0363/2019/3520/nld@2019-12-01</FRBRExpression>
+      <soortWork></soortWork>
+   </ExpressionIdentificatie>
+   <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/join/id/stop/gemeente/gm0363</eindverantwoordelijke>
+      <maker>/join/id/stop/gemeente/gm0363</maker>
+      <noemer>Werkingsgebied projectbesluit zuidas</noemer>
+      <officieleTitel>/join/id/regdata/gm0363/2019/loc_ABC@2019-01-16;3520</officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+      <!-- Koppeling naar het gml-bestand -->
+      <heeftBestanden>
+         <heeftBestand>
+            <Bestand>
+               <bestandsnaam>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</bestandsnaam>
+               <hash></hash>
+            </Bestand>
+         </heeftBestand>
+      </heeftBestanden>
+   </InformatieObjectMetadata>
+   <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+      <!-- GeoInformatie is leeggelaten, omdat dit in het gml-bestand staat -->
+   </GeoInformatie>
+   <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <bronactualiteit>2019-01-01</bronactualiteit>
+      <bronbeschrijving>top10nl</bronbeschrijving>
+      <brontype>achtergrond</brontype>
+      <bronverwijzing>#50EA019E-3C96-4631-A76C-35BCF4D7AB6D</bronverwijzing>
+      <nauwkeurigheid>10</nauwkeurigheid>
+   </Achtergrond>
+</InformatieObjectVersie>
