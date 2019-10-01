@@ -28,17 +28,17 @@
         <sl:dataset>Zuidasdok</sl:dataset>
         <sl:inhoud>
             <sl:gebied>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</sl:gebied>
-            <sl:leveringsId>JVaaa42fRENB</sl:leveringsId>
+            <sl:leveringsId>Projectbesluit_Zuidasdok</sl:leveringsId>
             <sl:objectTypen>
                 <sl:objectType>Gebied</sl:objectType>
             </sl:objectTypen>
         </sl:inhoud>
         <sl:stand>
             <ow-dc:owObject>
-                <l:Gebied ow:regeltekstId="nl.imow-gm0363.regeltekst.001">
+                <l:Gebied ow:regeltekstId="">
                     <l:identificatie>nl.imow-gm0363.gebied.001</l:identificatie>
                     <l:geometrie>
-                        <g-ref:GeometrieRef type="simple" xlink:href="../IMOP/gml/werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml"/>
+                        <g-ref:GeometrieRef type="simple" xlink:href="6e84ce4c-eb3c-4c87-976f-4466045a8c8d"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
