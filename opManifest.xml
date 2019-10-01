@@ -13,6 +13,10 @@
         <lvbb:contentType>application/xml</lvbb:contentType>
     </lvbb:bestand>
     <lvbb:bestand>
+        <lvbb:bestandsnaam>GIO001-werkingsgebied_projectbesluit_zuidas_20180320.geom.0.xml</lvbb:bestandsnaam>
+        <lvbb:contentType>application/xml</lvbb:contentType>
+    </lvbb:bestand>
+    <lvbb:bestand>
         <lvbb:bestandsnaam>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</lvbb:bestandsnaam>
         <lvbb:contentType>application/gml+xml</lvbb:contentType>
     </lvbb:bestand>
