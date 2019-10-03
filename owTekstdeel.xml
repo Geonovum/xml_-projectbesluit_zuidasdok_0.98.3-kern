@@ -33,7 +33,7 @@
         <!-- Vrije tekst Inleiding, Tracébesluit en bestemmingsplan-->
         <sl:stand>
             <ow-dc:owObject>
-                <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_1__dvs_2__fin_1">
+                <vt:FormeleInhoud wIdRegeling="/akn/nl/bill/gm0363/2019/3520/nld@2019-12-01" wId="gm0363_1__dvs_1__dvs_1__dvs_2__fin_1">
                     <vt:identificatie>nl.imow-gm0363.formeleinhoud.001</vt:identificatie>
                 </vt:FormeleInhoud>
             </ow-dc:owObject>
@@ -60,7 +60,7 @@
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
-                <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_3__fin_1">
+                <vt:FormeleInhoud wIdRegeling="/akn/nl/bill/gm0363/2019/3520/nld@2019-12-01" wId="gm0363_1__dvs_1__dvs_3__fin_1">
                     <vt:identificatie>nl.imow-gm0363.formeleinhoud.002</vt:identificatie>
                 </vt:FormeleInhoud>
             </ow-dc:owObject>
@@ -90,7 +90,7 @@
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
-                <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_4__fin_1">
+                <vt:FormeleInhoud wIdRegeling="/akn/nl/bill/gm0363/2019/3520/nld@2019-12-01" wId="gm0363_1__dvs_1__dvs_4__fin_1">
                     <vt:identificatie>nl.imow-gm0363.formeleinhoud.003</vt:identificatie>
                 </vt:FormeleInhoud>
             </ow-dc:owObject>
@@ -111,7 +111,7 @@
         <!-- Hoofdstuk 9 -->
         <sl:stand>
             <ow-dc:owObject>
-                <vt:FormeleInhoud wIdRegeling="" wId="gm0363_1__dvs_1__dvs_6__fin_1">
+                <vt:FormeleInhoud wIdRegeling="/akn/nl/bill/gm0363/2019/3520/nld@2019-12-01" wId="gm0363_1__dvs_1__dvs_6__fin_1">
                     <vt:identificatie>nl.imow-gm0363.formeleinhoud.004</vt:identificatie>
                 </vt:FormeleInhoud>
             </ow-dc:owObject>
