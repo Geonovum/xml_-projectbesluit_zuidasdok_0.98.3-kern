@@ -18,6 +18,7 @@
 <!-- KL 20190917: BesluitDoel, toegevoegd, doel?-->
 <!-- KL 20190923: Artikel gewijzigd in Hoofdstuk-->
 <!-- KL 20190923: ws0636 (waterschap?) gewzijdigd in gm0363 (gemeente Amsterdam)-->
+<!-- KL 20191003: eerste deel akn identificatie aangepast en gelijkgetrokken met de GIO: /akn/nl/act/gm0363/2019/...-->
 <BesluitVersie schemaversie="0.98.kern" xmlns="https://standaarden.overheid.nl/stop/imop/instrument/" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:cons="https://standaarden.overheid.nl/stop/imop/consolidatie/" 
@@ -28,8 +29,8 @@
     xmlns:tooi="https://standaarden.overheid.nl/stop/imop/tooi/" 
     xsi:schemaLocation="http://www.overheid.nl/imop/def# ../imop-algemeen/xsd/imop-instrument.xsd">
     <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-        <FRBRWork>/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</FRBRWork>
-        <FRBRExpression>/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3@20190604121322741</FRBRExpression>
+        <FRBRWork>/akn/nl/act/gm0363/2019/3520</FRBRWork>
+        <FRBRExpression>/akn/nl/act/gm0363/2019/3520/nld@2019-12-01</FRBRExpression>
         <soortWork>/join/id/stop/work_003</soortWork>
     </ExpressionIdentificatie>
     <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -965,7 +966,7 @@
                             <Term> Werkinggebied A </Term>
                             <Definitie>
                                 <Al>
-                                    <ExtIoRef eId="cmp_1__list_1__item_1__ref_1" wId="gm0363_1__cmp_1__list_1__item_1__ref_1" doel="/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</ExtIoRef>
+                                    <ExtIoRef eId="cmp_1__list_1__item_1__ref_1" wId="gm0363_1__cmp_1__list_1__item_1__ref_1" doel="/akn/nl/act/gm0363/2019/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3">/akn/nl/act/gm0363/2019/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</ExtIoRef>
                                 </Al>
                             </Definitie>
                         </Begrip>
@@ -978,7 +979,7 @@
         <BeoogdeRegelgeving>
             <BeoogdeRegeling>
                 <doel/>
-                <instrumentVersie>/akn/nl/act/rws_d1/2018/Regeling/Initieel@2018-06-12</instrumentVersie>
+                <instrumentVersie>/akn/nl/act/gm0363/2019/Regeling/Initieel@2018-06-12</instrumentVersie>
                 <eId>art_1_inst_2</eId>
             </BeoogdeRegeling>
         </BeoogdeRegelgeving>
