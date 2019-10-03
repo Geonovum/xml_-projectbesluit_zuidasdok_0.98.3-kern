@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- KL 201-0918: namespace regels vervangen-->
-<!-- KL 20190918: namespace rkow is ow geworden-->
-<!-- KL 20190918: inhoud geometrie vervangen door g-ref:GeometrieRef met link naar GML bij IMOP bestanden-->
 <ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
     xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
     xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901"
