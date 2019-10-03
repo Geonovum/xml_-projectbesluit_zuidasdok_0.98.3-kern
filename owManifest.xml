@@ -4,8 +4,8 @@
   xsi:schemaLocation="../Mapping/xsd_stop_0.97.1_manifest-ow.xsd">
   <domein>omgevingswet</domein>
   <RegelingVersie>
-    <FRBRwork></FRBRwork>
-    <FRBRExpression></FRBRExpression>
+    <FRBRwork>/akn/nl/act/gm0363/2019/2019000001</FRBRwork>
+    <FRBRExpression>/akn/nl/act/gm0363/2019/2019000001/nld@2019-12-01</FRBRExpression>
     <Bestand>
       <naam>owTekstdeel.xml</naam>
       <objecttype>Tekstdeel</objecttype>
