@@ -3,15 +3,15 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
    xsi:schemaLocation="http://www.overheid.nl/imop/def# ../imop-algemeen/xsd/imop-instrument.xsd">
    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-      <FRBRWork>/akn/nl/act/gm0363/2019/3520</FRBRWork>
-      <FRBRExpression>/akn/nl/act/gm0363/2019/3520/nld@2019-12-01</FRBRExpression>
-      <soortWork>/join/id/stop/work_003</soortWork>
+      <FRBRWork>/akn/nl/act/gm0363/2019/6e84ce4c-eb3c-4c87-976f-4466045a8c8d</FRBRWork>
+      <FRBRExpression>/akn/nl/act/gm0363/2019/6e84ce4c-eb3c-4c87-976f-4466045a8c8d/nld@2019-12-01</FRBRExpression>
+      <soortWork>/join/id/stop/work_007</soortWork>
    </ExpressionIdentificatie>
    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
       <eindverantwoordelijke>/join/id/stop/gemeente/gm0363</eindverantwoordelijke>
       <maker>/join/id/stop/gemeente/gm0363</maker>
       <noemer>Werkingsgebied projectbesluit zuidas</noemer>
-      <officieleTitel>/join/id/regdata/gm0363/2019/loc_ABC@2019-01-16;3520</officieleTitel>
+      <officieleTitel>/join/id/regdata/gm0363/2019/loc_ABC@2019-01-16;6e84ce4c-eb3c-4c87-976f-4466045a8c8d</officieleTitel>
       <publicatieinstructie>TeConsolideren</publicatieinstructie>
       <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
       <!-- Koppeling naar het gml-bestand -->
