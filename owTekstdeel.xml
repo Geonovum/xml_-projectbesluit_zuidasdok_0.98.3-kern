@@ -40,7 +40,7 @@
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
-                <vt:Tekstdeel ow:regeltekstId="">
+                <vt:Tekstdeel ow:regeltekstId="nl.imow-gm0363.formeleinhoud.001">
                     <vt:identificatie>nl.imow-gm0363.tekstdeel.001</vt:identificatie>
                     <vt:formeleInhoud>
                         <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.001"/>
@@ -51,7 +51,7 @@
         <!-- Hoofdstuk 2 -->
         <sl:stand>
             <ow-dc:owObject>
-                <vt:Hoofdlijn ow:regeltekstId="">
+                <vt:Hoofdlijn ow:regeltekstId="nl.imow-gm0363.formeleinhoud.002">
                     <vt:identificatie>nl.imow-gm0363.hoofdlijn.001</vt:identificatie>
                     <vt:naam>Geluid</vt:naam>
                     <vt:soort>Maatregel</vt:soort>
@@ -67,7 +67,7 @@
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
-                <vt:Tekstdeel ow:regeltekstId="">
+                <vt:Tekstdeel ow:regeltekstId="nl.imow-gm0363.formeleinhoud.002">
                     <vt:identificatie>nl.imow-gm0363.tekstdeel.002</vt:identificatie>
                     <vt:formeleInhoud>
                         <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.002"/>
@@ -81,7 +81,7 @@
         <!-- Hoofdstuk 3 -->
         <sl:stand>
             <ow-dc:owObject>
-                <vt:Hoofdlijn ow:regeltekstId="">
+                <vt:Hoofdlijn ow:regeltekstId="nl.imow-gm0363.formeleinhoud.003">
                     <vt:identificatie>nl.imow-gm0363.hoofdlijn.002</vt:identificatie>
                     <vt:naam>Verkeer</vt:naam>
                     <vt:soort>Maatregel</vt:soort>
@@ -97,7 +97,7 @@
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
-                <vt:Tekstdeel ow:regeltekstId="">
+                <vt:Tekstdeel ow:regeltekstId="nl.imow-gm0363.formeleinhoud.003">
                     <vt:identificatie>nl.imow-gm0363.tekstdeel.003</vt:identificatie>
                     <vt:formeleInhoud>
                         <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.003"/>
@@ -118,7 +118,7 @@
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
-                <vt:Tekstdeel ow:regeltekstId="">
+                <vt:Tekstdeel ow:regeltekstId="nl.imow-gm0363.formeleinhoud.004">
                     <vt:identificatie>nl.imow-gm0363.tekstdeel.004</vt:identificatie>
                     <vt:formeleInhoud>
                         <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.004"/>
