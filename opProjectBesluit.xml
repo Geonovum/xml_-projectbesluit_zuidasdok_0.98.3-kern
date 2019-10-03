@@ -1,24 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- imop versie 0.98-beta -->
-<!-- KL 21-08-2019: attribuut 'type' bij Waarde gewijzigd in 'class' -->
-<!-- KL 21-08-2019: GML in apart bestand opgeslagen en bestandsnaam opgenomen -->
-<!-- KL 21-08-2019: attribuut 'id' bij element 'Regeling' verwijderd. Moet deze ergens anders komen? -->
-<!-- KL 21-08-2019: element 'Inhoud' verwijderd bij element 'Li' -->
-<!-- KL 21-08-2019: element 'Inline' verwijderd bij element 'title' van element 'table' -->
-<!-- KL 21-08-2019: bij element 'tbody' het atribuut 'valign="top"' toegevoegd -->
-<!-- KL 07-09-2019: AKN.xsl transformatie uitgevoerd-->
-<!-- KL 20190916: ExpressionIdentificatie, soortWork Besluit=/join/id/stop/work_003-->
-<!-- KL 20190916: BesluitMetadata, eindverantwoordelijke en maker - ministerie van Infrastructuur en Waterstaat-->
-<!-- KL 20190916: BesluitMetadata, onderwerp - ruimtelijke ordening, overheidsdomein - bouwen, wonen en leefomgeving, rechtsgebied - omgevingsrecht-->
-<!-- KL 20190916: Procedure-->
-<!-- KL 20190916: Blokken Metadata verwijderd bij Besluit en Regeling/Lichaam/WijzigArtikel-->
-<!-- KL 20190916: MaakInitieleRegeling, FRBRwork="/akn/nl/act/rws_d1/2018/reg122/nld@2018-06-12" toegevoegd, is dit correct?-->
-<!-- KL 20190916: Lijst, xmlns:rws toegevoegd voor rws:class="Tekens"-->
-<!-- KL 20190917: entry, attribuut morerows moet positive integer zijn: 1 -->
-<!-- KL 20190917: BesluitDoel, toegevoegd, doel?-->
-<!-- KL 20190923: Artikel gewijzigd in Hoofdstuk-->
-<!-- KL 20190923: ws0636 (waterschap?) gewzijdigd in gm0363 (gemeente Amsterdam)-->
-<!-- KL 20191003: eerste deel akn identificatie aangepast en gelijkgetrokken met de GIO: /akn/nl/act/gm0363/2019/...-->
 <BesluitVersie schemaversie="0.98.kern" xmlns="https://standaarden.overheid.nl/stop/imop/instrument/" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xmlns:cons="https://standaarden.overheid.nl/stop/imop/consolidatie/" 
