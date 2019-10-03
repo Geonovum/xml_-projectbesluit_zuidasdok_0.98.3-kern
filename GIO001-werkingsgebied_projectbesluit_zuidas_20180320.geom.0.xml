@@ -5,7 +5,7 @@
    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
       <FRBRWork>/akn/nl/act/gm0363/2019/3520</FRBRWork>
       <FRBRExpression>/akn/nl/act/gm0363/2019/3520/nld@2019-12-01</FRBRExpression>
-      <soortWork></soortWork>
+      <soortWork>/join/id/stop/work_003</soortWork>
    </ExpressionIdentificatie>
    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
       <eindverantwoordelijke>/join/id/stop/gemeente/gm0363</eindverantwoordelijke>
