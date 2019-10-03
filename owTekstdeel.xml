@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- KL 20190918: lijst namspaces bijgewerkt-->
-<!-- KL 20190918: vt:Tekstdeel toegevoegd, Inleiding/Tracébesluit en bestemmingsplan-->
-<!-- KL 20190923: ws0636 (waterschap?) gewzijdigd in gm0363 (gemeente Amsterdam)-->
-<!-- KL 20190930: regeltekst gewijzigd in Tekstdeel-->
-<!-- KL 20190930: Hoofdlijn voor Hoofdstuk 2 en 3 toegevoegd-->
 <ow-dc:owBestand xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
     xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
     xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901"
