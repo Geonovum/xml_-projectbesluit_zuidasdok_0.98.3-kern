@@ -32,8 +32,18 @@
         </sl:inhoud>
         <sl:stand>
             <ow-dc:owObject>
-                <l:Gebied ow:regeltekstId="">
+                <l:Gebied ow:regeltekstId="nl.imow-gm0363.tekstdeel.001">
                     <l:identificatie>nl.imow-gm0363.gebied.001</l:identificatie>
+                    <l:geometrie>
+                        <g-ref:GeometrieRef type="simple" xlink:href="6e84ce4c-eb3c-4c87-976f-4466045a8c8d"/>
+                    </l:geometrie>
+                </l:Gebied>
+            </ow-dc:owObject>
+        </sl:stand>
+        <sl:stand>
+            <ow-dc:owObject>
+                <l:Gebied ow:regeltekstId="nl.imow-gm0363.formeleinhoud.001">
+                    <l:identificatie>nl.imow-gm0363.gebied.002</l:identificatie>
                     <l:geometrie>
                         <g-ref:GeometrieRef type="simple" xlink:href="6e84ce4c-eb3c-4c87-976f-4466045a8c8d"/>
                     </l:geometrie>
