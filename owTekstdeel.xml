@@ -45,6 +45,9 @@
                     <vt:formeleInhoud>
                         <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.001"/>
                     </vt:formeleInhoud>
+                    <vt:locatieaanduiding>
+                        <l-ref:LocatieRef xlink:href="nl.imow-gm0363.gebied.001"/>
+                    </vt:locatieaanduiding>
                 </vt:Tekstdeel>
             </ow-dc:owObject>
         </sl:stand>
@@ -123,6 +126,9 @@
                     <vt:formeleInhoud>
                         <vt-ref:FormeleInhoudRef xlink:href="nl.imow-gm0363.formeleinhoud.004"/>
                     </vt:formeleInhoud>
+                    <vt:gebiedsaanwijzing>
+                        <ga-ref:GebiedsaanwijzingRef xlink:href="nl.imow-gm0363.gebiedsaanwijzing.2019000001"/>
+                    </vt:gebiedsaanwijzing>
                 </vt:Tekstdeel>
             </ow-dc:owObject>
         </sl:stand>
