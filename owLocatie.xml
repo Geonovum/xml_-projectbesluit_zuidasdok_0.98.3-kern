@@ -45,7 +45,7 @@
                 <l:Gebied ow:regeltekstId="nl.imow-gm0363.formeleinhoud.001">
                     <l:identificatie>nl.imow-gm0363.gebied.002</l:identificatie>
                     <l:geometrie>
-                        <g-ref:GeometrieRef type="simple" xlink:href="6e84ce4c-eb3c-4c87-976f-4466045a8c8d"/>
+                        <g-ref:GeometrieRef type="simple" xlink:href="d42f13af-a37e-40e8-8f0d-d88ff53fa497"/>
                     </l:geometrie>
                 </l:Gebied>
             </ow-dc:owObject>
