@@ -1,105 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- imop versie 0.98-beta -->
-<!-- KL 21-08-2019: attribuut 'type' bij Waarde gewijzigd in 'class' -->
-<!-- KL 21-08-2019: GML in apart bestand opgeslagen en bestandsnaam opgenomen -->
-<!-- KL 21-08-2019: attribuut 'id' bij element 'Regeling' verwijderd. Moet deze ergens anders komen? -->
-<!-- KL 21-08-2019: element 'Inhoud' verwijderd bij element 'Li' -->
-<!-- KL 21-08-2019: element 'Inline' verwijderd bij element 'title' van element 'table' -->
-<!-- KL 21-08-2019: bij element 'tbody' het atribuut 'valign="top"' toegevoegd -->
-<!-- KL 07-09-2019: AKN.xsl transformatie uitgevoerd-->
-
-<Besluit xmlns="http://www.overheid.nl/imop/def#"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         schemaversie="0.98.0-beta"
-         xsi:schemaLocation="http://www.overheid.nl/imop/def# https://gitlab.com/koop/PR04/PR04-Overdracht/raw/master/xsd/stop/0.98.0-beta/imop-tekst.xsd">
-   <Metadata>
-      <Uitspraak eigenschap="imop:typeDocument">
-         <Waarde class="xs:string">Projectbesluit</Waarde>
-      </Uitspraak>
-      <Uitspraak eigenschap="imop:conformProfiel">
-         <Waarde class="xs:string">TPOD Projectbesluit V0.97</Waarde>
-      </Uitspraak>
-      <Uitspraak eigenschap="imop:citeertitel">
-         <Waarde>Projectbesluit Zuidas 2018</Waarde>
-      </Uitspraak>
-      <Uitspraak eigenschap="imop:datumLaatsteWijziging">
-         <Waarde class="xs:date">2018-06-12</Waarde>
-      </Uitspraak>
-      <Uitspraak eigenschap="imop:werkingsgebied">
-         <Waarde class="imop:Geometrie">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
-      </Uitspraak>
-      <Uitspraak eigenschap="imop:identificatie">
-         <Object type="imop:AKNIdentification">
-            <Eigenschap naam="imop:FRBRWork">
-               <Object type="imop:FRBRWorkIdentification">
-                  <Eigenschap naam="imop:FRBRthis">
-                     <Waarde class="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
-                  </Eigenschap>
-                  <Eigenschap naam="imop:FRBRuri">
-                     <Waarde class="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
-                  </Eigenschap>
-               </Object>
-            </Eigenschap>
-            <Eigenschap naam="imop:FRBRExpression">
-               <Object type="imop:FRBRExpressionIdentification">
-                  <Eigenschap naam="imop:FRBRthis">
-                     <Waarde class="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3@20190604121322741</Waarde>
-                  </Eigenschap>
-                  <Eigenschap naam="imop:FRBRuri">
-                     <Waarde class="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3@20190604121322741</Waarde>
-                  </Eigenschap>
-               </Object>
-            </Eigenschap>
-         </Object>
-      </Uitspraak>
-      <Uitspraak eigenschap="imop:heeftDatacollectie">
-         <Object type="imop:GeoInformatieobject">
-            <Eigenschap naam="imop:identificatie">
-               <Object type="imop:JOINIdentification">
-                  <Eigenschap naam="imop:FRBRWork">
-                     <Object type="imop:FRBRWorkIdentification">
-                        <Eigenschap naam="imop:FRBRthis">
-                           <Waarde class="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
-                        </Eigenschap>
-                     </Object>
-                  </Eigenschap>
-                  <Eigenschap naam="imop:FRBRExpression">
-                     <Object type="imop:FRBRExpressionIdentification">
-                        <Eigenschap naam="imop:FRBRthis">
-                           <Waarde class="xs:anyURI">/akn/nl/act/rws_d1/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</Waarde>
-                        </Eigenschap>
-                     </Object>
-                  </Eigenschap>
-               </Object>
-            </Eigenschap>
-            <Eigenschap naam="imop:noemer">
-               <Waarde class="xs:anyURI"> Noemer_waarde </Waarde>
-            </Eigenschap>
-            <Eigenschap naam="imop:collectieType">
-               <Waarde class="xs:anyURI"> imop:Geometrie </Waarde>
-            </Eigenschap>
-            <Eigenschap naam="imop:inhoud">
-               <Object type="imop:Locatie"
-                       oId="33c18e84-9581-4ef5-bf97-72bfc30c05c3-20190604121322741">
-                  <Eigenschap naam="imop:bestandsnaam">
-                     <Waarde>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</Waarde>
-                  </Eigenschap>
-               </Object>
-            </Eigenschap>
-         </Object>
-      </Uitspraak>
-   </Metadata>
-   <Regeling>
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringBesluit xmlns:gml="http://www.opengis.net/gml/3.2"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:tekst="https://standaarden.overheid.nl/stop/imop/tekst/"
+                    xmlns:gco="http://www.isotc211.org/2005/gco"
+                    xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+                    xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd" 
+                    schemaversie="0.98.3-kern">
+    <BesluitVersie>
+       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+          <FRBRWork>/akn/nl/act/pv27/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</FRBRWork>
+          <FRBRExpression>/akn/nl/act/pv27/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3/nld@20190604121322741</FRBRExpression>
+          <soortWork>/join/id/stop/work_003</soortWork>
+       </ExpressionIdentificatie>
+       <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+          <maker>/join/id/stop/provincie/pv27</maker>
+          <eindverantwoordelijke>/join/id/stop/provincie/pv27</eindverantwoordelijke>
+          <officieleTitel>Projectbesluit Zuidas 2018</officieleTitel>
+          <onderwerpen>
+             <onderwerp>/tooi/def/concept/c_849842ac</onderwerp>
+          </onderwerpen>
+          <overheidsdomein>/tooi/def/concept/c_3708ac5e</overheidsdomein>
+          <rechtsgebieden>
+             <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+          </rechtsgebieden>
+          <informatieobjectRefs>
+             <informatieobjectRef>/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit@20190604</informatieobjectRef>
+          </informatieobjectRefs>
+       </BesluitMetadata>
+       <Procedure xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+          <Procedureverloop>
+             <bekendOp>2019-12-01</bekendOp>
+             <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
+             <procedurestappen>
+                <Procedurestap>
+                   <soortStap>/join/id/stop/procedurestap/stap_002</soortStap>
+                   <voltooidOp>2019-11-01</voltooidOp>
+                </Procedurestap>
+             </procedurestappen>
+          </Procedureverloop>
+       </Procedure>
+       <BesluitDoel xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+          <BeoogdeRegelgeving>
+             <BeoogdeRegeling>
+                <doel>/join/id/proces/pv27/2019/ProjectBesluit</doel>
+                <instrumentVersie>/akn/nl/act/pv27/2019/Regeling/nld@2019-12-01</instrumentVersie>
+                <eId>art_1_inst_1</eId>
+             </BeoogdeRegeling>
+          </BeoogdeRegelgeving>
+          <Tijdstempels>
+             <Tijdstempel>
+                <doel>/join/id/proces/pv27/2019/ProjectBesluit</doel>
+                <soortTijdstempel>inwerkingtreding</soortTijdstempel>
+                <datum>2019-12-01</datum>
+                <eId>art_1_inst_1</eId>
+             </Tijdstempel>
+          </Tijdstempels>
+       </BesluitDoel>
+        <tekst:Besluit>
+            <Regeling  xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
       <Lichaam eId="body" wId="body">
          <WijzigArtikel eId="art_1_inst_1" wId="ws0636_1__art_1_inst_1">
-            <Metadata>
-               <Uitspraak eigenschap="imop:datumInwerkingtreding">
-                  <Waarde class="xs:date"/>
-               </Uitspraak>
-               <Uitspraak eigenschap="imop:wijzigBijlage">
-                  <Waarde class="xs:string">#cmp_1</Waarde>
-               </Uitspraak>
-            </Metadata>
             <Kop>
                <Label>Artikel</Label>
                <Nummer>I</Nummer>
@@ -117,17 +78,13 @@
          </Artikel>
       </Lichaam>
       <WijzigBijlage eId="cmp_1" wId="ws0636_1__cmp_1">
-         <Metadata>
-            <Uitspraak eigenschap="imop:wordtVersie">
-               <Waarde class="xs:string"/>
-            </Uitspraak>
-         </Metadata>
+         
          <Kop>
             <Label>Bijlage</Label>
             <Nummer>I</Nummer>
             <Opschrift>Bijlage bij artikel I</Opschrift>
          </Kop>
-         <MaakInitieleRegeling>
+         <MaakInitieleRegeling FRBRwork="" componentnaam="component_01" wordt="">
             <Lichaam eId="body" wId="body">
                <FormeleDivisie eId="dvs_1" wId="ws0636_1__dvs_1">
                   <Kop>
@@ -193,7 +150,7 @@
                            <Lijst eId="dvs_1__dvs_1__dvs_5__fin_1__list_1"
                                   wId="ws0636_1__dvs_1__dvs_1__dvs_5__fin_1__list_1"
                                   type="ongemarkeerd"
-                                  class="Tekens">
+                                  >
                               <Lijstaanhef>Opname in bijlage 2 van de Crisis- en herstelwet leidt ertoe dat:</Lijstaanhef>
                               <Li eId="dvs_1__dvs_1__dvs_5__fin_1__list_1__item_1"
                                   wId="ws0636_1__dvs_1__dvs_1__dvs_5__fin_1__list_1__item_1">
@@ -236,7 +193,7 @@
                         <Lijst eId="dvs_1__dvs_2__fin_1__list_1"
                                wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1"
                                type="ongemarkeerd"
-                               class="Nummers">
+                               >
                            <Li eId="dvs_1__dvs_2__fin_1__list_1__item_1"
                                wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_1">
                               <Al>De A10 Zuid wordt verbreed en ingericht met een systeem van hoofd- en parallelrijbanen. Deze worden beschreven in de leden 4 tot en met 7. De A10 Zuid wordt ter hoogte van station Amsterdam Zuid aangelegd in twee tunnels met een lengte van circa 1 km voor de noordelijke hoofdrijbaan en parallelrijbaan en van circa 1.1 km voor de zuidelijke hoofdrijbaan en parallelrijbaan, conform de kilometeraanduidingen in de artikelleden 4 tot en met 7. De hoofdrijbanen en de parallelrijbanen liggen in gescheiden tunnelbuizen met een middentunnelkanaal. De tunnels worden voor wat betreft de toegankelijkheid voor vervoer van gevaarlijke stoffen ingedeeld in categorie C.</Al>
@@ -250,14 +207,14 @@
                               <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>Het knooppunt De Nieuwe Meer wordt als volgt aangepast:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1">
                                     <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1"
                                            type="ongemarkeerd"
-                                           class="Nummers">
+                                           >
                                        <Lijstaanhef>De zuidelijke rijbaan van de A4 verbreedt ter hoogte van km 0.6 naar 4 rijstroken en splitst zich ter hoogte van km 0.3 in:</Lijstaanhef>
                                        <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1__item_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_1__list_1__item_1">
@@ -270,7 +227,7 @@
                                     <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1"
                                            type="ongemarkeerd"
-                                           class="Nummers">
+                                           >
                                        <Lijstaanhef>De verbindingsweg A10 West naar A10 Zuid splitst zich ter hoogte van km 21.0 in:</Lijstaanhef>
                                        <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1__item_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_2__list_1__item_1">
@@ -283,7 +240,7 @@
                                     <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1"
                                            type="ongemarkeerd"
-                                           class="Nummers">
+                                           >
                                        <Lijstaanhef>De noordelijke parallelrijbaan van de A10 Zuid splitst zich ter hoogte van km 20.9 in:</Lijstaanhef>
                                        <Li eId="dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_3__list_1__item_3__list_1__item_1">
@@ -306,7 +263,7 @@
                               <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_5__list_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_5__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>De noordelijke hoofdrijbaan van de A10 Zuid splitst zich ter hoogte van km 0.1 in:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_2__fin_1__list_1__item_5__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_5__list_1__item_1">
@@ -327,7 +284,7 @@
                               <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>De nieuwe zuidelijke parallelrijbaan van de A10 Zuid wordt van west naar oost als volgt ingericht:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_7__list_1__item_1">
@@ -364,7 +321,7 @@
                               <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_8__list_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_8__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>De nieuwe zuidelijke hoofdrijbaan van de A10 Zuid wordt van west naar oost als volgt ingericht:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_2__fin_1__list_1__item_8__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_8__list_1__item_1">
@@ -381,7 +338,7 @@
                               <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_9__list_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>De nieuwe noordelijke parallelrijbaan A10 Zuid wordt van oost naar west als volgt ingericht:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_9__list_1__item_1">
@@ -414,7 +371,7 @@
                               <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_10__list_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_10__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>De nieuwe noordelijke hoofdrijbaan A10 Zuid wordt als volgt ingericht:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_2__fin_1__list_1__item_10__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_10__list_1__item_1">
@@ -435,14 +392,14 @@
                               <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>Het knooppunt Amstel wordt als volgt aangepast:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1">
                                     <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1"
                                            type="ongemarkeerd"
-                                           class="Nummers">
+                                           >
                                        <Lijstaanhef>De zuidelijke parallelrijbaan van de A10 Zuid splitst zich ter hoogte van km 16.7 in:</Lijstaanhef>
                                        <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_1__list_1__item_1">
@@ -459,7 +416,7 @@
                                     <Lijst eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1"
                                            type="ongemarkeerd"
-                                           class="Nummers">
+                                           >
                                        <Lijstaanhef>De zuidelijke hoofdrijbaan van de A10 Zuid verbreedt ter hoogte van km 17.50 van 4 naar 5 rijstroken en splitst zich ter hoogte van km 16.8 in:</Lijstaanhef>
                                        <Li eId="dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_1"
                                            wId="ws0636_1__dvs_1__dvs_2__fin_1__list_1__item_11__list_1__item_2__list_1__item_1">
@@ -506,7 +463,7 @@
                               <Al>De hoogteligging van de parallelrijbanen tussen km 20.8 en km 16.9 is gelijk aan hoogteligging van de hoofdrijbanen, zoals weergegeven op de kaartbladen met lengteprofielen bij dit Projectbesluit.</Al>
                            </Li>
                         </Lijst>
-                        <Al class="Afstand_na">De hiervoor weergegeven beschrijving van het project wordt hierna in dit besluit aangeduid als ‘(het) Project’. Het Project wordt uitgevoerd binnen de grenzen van het werkingsgebied opgenomen in dit besluit, hierna aangeduid als ‘Projectgebied’.</Al>
+                        <Al >De hiervoor weergegeven beschrijving van het project wordt hierna in dit besluit aangeduid als ‘(het) Project’. Het Project wordt uitgevoerd binnen de grenzen van het werkingsgebied opgenomen in dit besluit, hierna aangeduid als ‘Projectgebied’.</Al>
                      </FormeleInhoud>
                   </FormeleDivisie>
                   <FormeleDivisie eId="dvs_1__dvs_3" wId="ws0636_1__dvs_1__dvs_3">
@@ -517,7 +474,7 @@
                         <Lijst eId="dvs_1__dvs_3__fin_1__list_1"
                                wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1"
                                type="ongemarkeerd"
-                               class="Nummers">
+                               >
                            <Li eId="dvs_1__dvs_3__fin_1__list_1__item_1"
                                wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_1">
                               <Al>De in Tabel 5 opgenomen geluidschermen worden gerealiseerd. Op de detailkaarten zijn de geluidschermen weergegeven als ‘Geluidscherm’.</Al>
@@ -539,7 +496,7 @@
                               <Lijst eId="dvs_1__dvs_3__fin_1__list_1__item_5__list_1"
                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_5__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>Ter beperking van de geluidafstraling van de nieuwe beweegbare Schinkelbrug in de noordelijke parallelrijbaan van de A10 worden de volgende maatregelen getroffen:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_5__list_1__item_1">
@@ -564,7 +521,7 @@
                               <Lijst eId="dvs_1__dvs_3__fin_1__list_1__item_6__list_1"
                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_6__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>Ter beperking van de geluidafstraling van de bestaande beweegbare Schinkelbrug in de noordelijke hoofdrijbaan van de A10 worden de volgende maatregelen getroffen:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_3__fin_1__list_1__item_6__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_3__fin_1__list_1__item_6__list_1__item_1">
@@ -583,7 +540,7 @@
                         </Lijst>
                         <table eId="dvs_1__dvs_3__fin_1__table_1"
                                wId="ws0636_1__dvs_1__dvs_3__fin_1__table_1"
-                               class="tabel"
+                               
                                frame="all"
                                colsep="1"
                                rowsep="1">
@@ -595,303 +552,303 @@
                               <colspec colname="col4" colwidth="970"/>
                               <thead valign="top">
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>Soort en hoogte afscherming*</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>Locatie</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>Van km</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>Tot km</Al>
                                     </entry>
                                  </row>
                               </thead>
                               <tbody valign="top">
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>2m hoog tweezijdig geluidabsorberend tussenbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan rechts (tussenberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>16.50Re</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>17.20Re</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>4m hoog tweezijdig geluidabsorberend tussenbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan rechts (tussenberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>17.20Re</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>18.27Re</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>6m hoog tweezijdig geluidabsorberend tussenbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan rechts (tussenberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>18.27Re</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>18.53Re</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>2m hoog transparant reflecterend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan rechts (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>16.84Rex</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>17.20Rex/a</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>5m hoog geluidabsorberend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan rechts (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>17.20Rex/a</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>17.72Rex</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>5m hoog transparant reflecterend zijbermscherm </Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan rechts (zijberm) </Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>17.55Rex/a </Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>18.00Rex/b</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>5m hoog geluidabsorberend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan rechts (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>17.80Rex/b</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>18.03Rex/b</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>4m hoog tweezijdig geluidabsorberend tussenbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan rechts (tussenberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>19.58Re</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>20.72Re</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>3m hoog geluidabsorberend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan rechts (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>19.73Rex</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>20.05Rex/a</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>2m hoog geluidabsorberend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan rechts (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>20.11Rex/b</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>20.35Rex/b</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>2m hoog geluidabsorberend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan rechts (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>20.55Rex</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>20.73Rex</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>2m hoog transparant reflecterend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan rechts (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>20.73Rex</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>20.87Rex</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>3m hoog transparant reflecterend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan rechts (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>19.93Rex/a</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>20.20Rex/b</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>2m hoog tweezijdig geluidabsorberend tussenbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan links (tussenberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>16.91Li</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>18.14Li</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>4m hoog tweezijdig geluidabsorberend tussenbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan links (tussenberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>18.14Li</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>18.44Li</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>8m hoog tweezijdig geluidabsorberend tussenbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan links (tussenberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>19.49Li</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>19.82Li</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>8m hoog tweezijdig geluidabsorberend tussenbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan links (tussenberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>19.82Li</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>20.06Li</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>1m hoog tweezijdig geluidabsorberend tussenbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan links (tussenberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>20.06Li</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>20.50Li</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>3m hoog geluidabsorberend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan links (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>18.14Liy</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>18.35Liy</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>3m hoog geluidabsorberend zijbermscherm</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 parallelrijbaan links (zijberm)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>19.60Liy</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>20.08Li/d</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col4" morerows="1">
                                        <Al>* geluidreflecterend scherm dient te voldoen aan productklasse A0 volgens NEN-EN 1793-1; geluidabsorberend scherm dient te voldoen aan productklasse A3 volgens NEN-EN 1793-1</Al>
                                     </entry>
                                  </row>
@@ -900,7 +857,7 @@
                         </table>
                         <table eId="dvs_1__dvs_3__fin_1__table_2"
                                wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2"
-                               class="tabel"
+                               
                                frame="all"
                                colsep="1"
                                rowsep="1">
@@ -912,75 +869,75 @@
                               <colspec colname="col4" colwidth="850"/>
                               <thead valign="top">
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>Maatregel</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>Locatie</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>Van km</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>Tot km</Al>
                                     </entry>
                                  </row>
                               </thead>
                               <tbody valign="top">
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>tweelaags ZOAB</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A2 hoofdrijbaan links en hoofdrijbaan rechts </Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>30.80</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>32.30</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>tweelaags ZOAB*</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A10 hoofdrijbaan links en hoofdrijbaan rechts en parallelrijbaan links en parallelrijbaan rechts </Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>15.10 </Al>
                                        <Al>(A10 Oost)</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>22.10 (A10 West)</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>tweelaags ZOAB</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>A4 hoofdrijbaan links en hoofdrijbaan rechts </Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>0.00</Al>
                                     </entry>
-                                    <entry align="left" namest="col4" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col4" nameend="col4" morerows="1">
                                        <Al>1.20</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col4" morerows="1">
                                        <Al>*Uitgezonderd zijn de volgende weggedeelten waar dicht asfalt beton (of een asfalttype met akoestisch gelijkwaardige eigenschappen) wordt gerealiseerd:</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col4" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col4" morerows="1">
                                        <Lijst eId="dvs_1__dvs_3__fin_1__table_2__list_1"
                                               wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1"
                                               type="ongemarkeerd"
-                                              class="Tekens">
+                                              >
                                           <Li eId="dvs_1__dvs_3__fin_1__table_2__list_1__item_1"
                                               wId="ws0636_1__dvs_1__dvs_3__fin_1__table_2__list_1__item_1">
                                              <Al>toe –en afritten S107, S108 en S109;</Al>
@@ -1049,13 +1006,13 @@
                         <Lijst eId="dvs_1__dvs_4__fin_1__list_1"
                                wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1"
                                type="ongemarkeerd"
-                               class="Nummers">
+                               >
                            <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1"
                                wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1">
                               <Lijst eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1"
                                      wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1"
                                      type="ongemarkeerd"
-                                     class="Nummers">
+                                     >
                                  <Lijstaanhef>Behalve definitieve werken met het oog op de uitvoering van het Projectbesluit kunnen op de gronden die op de detailkaarten zijn aangeduid als maatregelvlak ‘Verkeersdoeleinden, zone Wegverharding’, ‘Verkeersdoeleinden, Werkterrein’ en maatregelvlak ‘Verkeersdoeleinden, Zoekgebied Werkterrein’ tijdelijke werken ten behoeve van de uitvoering van het Projectbesluit worden uitgevoerd. Onder tijdelijke werken worden onder andere begrepen:</Lijstaanhef>
                                  <Li eId="dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_1"
                                      wId="ws0636_1__dvs_1__dvs_4__fin_1__list_1__item_1__list_1__item_1">
@@ -1092,7 +1049,7 @@
                               <Al>In afwijking van het gestelde in lid 1 is binnen de maatregelvlakken ‘Verkeersdoeleinden, Zoekgebied Werkterrein’ de op de detailkaarten (II) aangegeven maximale oppervlakte beschikbaar ten behoeve van de in lid 1 omschreven tijdelijke werken.</Al>
                            </Li>
                         </Lijst>
-                        <Al class="Afstand_na">Tijdelijke werken mogen niet langer in stand gehouden worden dan zes maanden na de ingebruikname van het tracé.</Al>
+                        <Al >Tijdelijke werken mogen niet langer in stand gehouden worden dan zes maanden na de ingebruikname van het tracé.</Al>
                      </FormeleInhoud>
                   </FormeleDivisie>
                   <FormeleDivisie eId="dvs_1__dvs_5" wId="ws0636_1__dvs_1__dvs_5">
@@ -1111,7 +1068,7 @@
                         <Al>De maximum rijsnelheden op de A10 Zuid en de van de knooppunten De Nieuwe Meer en Amstel onderdeel uitmakende gedeelten van de A4, A10 West, A10 Oost en A2 zijn weergeven in Tabel 1. </Al>
                         <table eId="dvs_1__dvs_6__fin_1__table_1"
                                wId="ws0636_1__dvs_1__dvs_6__fin_1__table_1"
-                               class="tabel"
+                               
                                frame="all"
                                colsep="1"
                                rowsep="1">
@@ -1122,69 +1079,69 @@
                               <colspec colname="col3" colwidth="1998"/>
                               <tbody valign="top">
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>Rijbaan</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>Van km - tot km (indicatief)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>Maximumsnelheid</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>Zuidelijke hoofdrijbaan</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>1.0 (A4)/20.5 (A10 Zuid ) - 32.3 (A2)/15.1 (A10 Oost)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>100 km/u</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>Zuidelijke parallelrijbaan</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>0.3 - 15.9 (A10 Oost)/16.5 (A2) </Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>80 km/u</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>Noordelijke hoofdrijbaan</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>15.1 (A10 Oost)/32.2 (A2) – 20.9 (A10 Zuid)/1.0 (A4)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>100 km/u</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>Noordelijke parallelrijbaan</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
                                        <Al>15.3 - 21.4 (A10 west)/1.3 (A4)</Al>
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>80 km/u</Al>
                                     </entry>
                                  </row>
                                  <row>
-                                    <entry align="left" namest="col1" nameend="col1" morerows="0">
+                                    <entry align="left" namest="col1" nameend="col1" morerows="1">
                                        <Al>Verbindingsweg parallelrijbaan A10 </Al>
                                        <Al>Zuid richting hoofdrijbaan A10 Oost</Al>
                                     </entry>
-                                    <entry align="left" namest="col2" nameend="col2" morerows="0">
-                                       <Al class="Standaard"/>
+                                    <entry align="left" namest="col2" nameend="col2" morerows="1">
+                                       <Al />
                                     </entry>
-                                    <entry align="left" namest="col3" nameend="col3" morerows="0">
+                                    <entry align="left" namest="col3" nameend="col3" morerows="1">
                                        <Al>50 km/u</Al>
                                     </entry>
                                  </row>
@@ -1220,4 +1177,6 @@
          </Inhoud>
       </Bijlage>
    </Regeling>
-</Besluit>
+        </tekst:Besluit>
+    </BesluitVersie>
+</AanleveringBesluit>
