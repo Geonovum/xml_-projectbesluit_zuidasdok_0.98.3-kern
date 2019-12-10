@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<owBestand 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
+    xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901"
+    xmlns="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
+    xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901 ../xsd/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
+    <sl:standBestand>
+        <sl:dataset>Zuidasdok</sl:dataset>
+        <sl:inhoud>
+            <sl:gebied>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</sl:gebied>
+            <sl:leveringsId>pv27_201912_01</sl:leveringsId>
+            <sl:objectTypen>
+                <sl:objectType>Regeltekst</sl:objectType>
+            </sl:objectTypen>
+        </sl:inhoud>
+        <!-- Artikel 9 -->
+        <sl:stand>
+            <owObject>
+                <r:Regeltekst wIdRegeling="" wId="pv27_1__dvs_1__dvs_6" id="ID003">
+                    <r:identificatie>nl.imow-gm0363.regeltekst.001</r:identificatie>
+                </r:Regeltekst>
+            </owObject>
+        </sl:stand>
+    </sl:standBestand>
+</owBestand>
