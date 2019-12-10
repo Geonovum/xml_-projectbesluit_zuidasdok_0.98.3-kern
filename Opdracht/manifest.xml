@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.overheid.nl/2017/lvbb"
+ xmlns:stop="http://www.overheid.nl/2017/stop"
+ xmlns:tns="http://www.logius.nl/digikoppeling/gb/2010/10"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.overheid.nl/2017/lvbb file:/E:/DSO/Geonovum/Bitbucket/projectbesluit_zuidasdok_0.98.3-kern/lvbb/lvbb-transport.xsd">
+    <bestand>
+        <bestandsnaam>ProjectBesluit.xml</bestandsnaam>
+        <contentType>application/xml</contentType>
+    </bestand>
+    <bestand>
+        <bestandsnaam>GIO_001.xml</bestandsnaam>
+        <contentType>application/xml</contentType>
+    </bestand>
+    <bestand>
+        <bestandsnaam>owRegeltekst.xml</bestandsnaam>
+        <contentType>application/xml</contentType>
+    </bestand>
+    <bestand>
+        <bestandsnaam>owLocatie.xml</bestandsnaam>
+        <contentType>application/xml</contentType>
+    </bestand>
+    <bestand>
+        <bestandsnaam>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</bestandsnaam>
+        <contentType>application/gml+xml</contentType>
+    </bestand>
+    <bestand>
+        <bestandsnaam>manifest-ow.xml</bestandsnaam>
+        <contentType>application/xml</contentType>
+    </bestand>
+    <bestand>
+        <bestandsnaam>opdracht.xml</bestandsnaam>
+        <contentType>application/xml</contentType>
+    </bestand>
+    <bestand>
+        <bestandsnaam>manifest.xml</bestandsnaam>
+        <contentType>application/xml</contentType>
+    </bestand>
+</manifest>
