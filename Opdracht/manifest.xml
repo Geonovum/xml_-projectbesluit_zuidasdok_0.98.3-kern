@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns="http://www.overheid.nl/2017/lvbb"
- xmlns:stop="http://www.overheid.nl/2017/stop"
- xmlns:tns="http://www.logius.nl/digikoppeling/gb/2010/10"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.overheid.nl/2017/lvbb file:/E:/DSO/Geonovum/Bitbucket/projectbesluit_zuidasdok_0.98.3-kern/lvbb/lvbb-transport.xsd">
+<manifest 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.overheid.nl/2017/lvbb"
+    xsi:schemaLocation="http://www.overheid.nl/2017/lvbb ../lvbb/lvbb-transport.xsd">
     <bestand>
         <bestandsnaam>ProjectBesluit.xml</bestandsnaam>
         <contentType>application/xml</contentType>
