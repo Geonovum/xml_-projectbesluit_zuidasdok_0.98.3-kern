@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<owBestand 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901"
+    xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709"
+    xmlns:g-ref="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901"
+    xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901"
+    xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"
+    xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190901"
+    xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709"
+    xmlns:k="http://www.geostandaarden.nl/imow/kaartrecept/v20190901"
+    xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709"
+    xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709"
+    xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
+    xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901"
+    xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901"
+    xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901"
+    xmlns:vt-ref="http://www.geostandaarden.nl/imow/vrijetekst-ref/v20190901"
+    xmlns:op="http://www.geostandaarden.nl/imow/opobject/v20190901"
+    xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901"
+    xmlns="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
+    xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901 ../xsd/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
+    <sl:standBestand>
+        <sl:dataset>Zuidasdok</sl:dataset>
+        <sl:inhoud>
+            <sl:gebied>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</sl:gebied>
+            <sl:leveringsId>pv27_201912_01</sl:leveringsId>
+            <sl:objectTypen>
+                <sl:objectType>Gebied</sl:objectType>
+            </sl:objectTypen>
+        </sl:inhoud>
+        <sl:stand>
+            <owObject>
+                <l:Gebied ow:regeltekstId="nl.imow-gm0363.regeltekst.001">
+                    <l:identificatie>nl.imow-gm0363.gebied.001</l:identificatie>
+                    <l:geometrie>
+                        <g-ref:GeometrieRef xlink:href="6e84ce4c-eb3c-4c87-976f-4466045a8c8d"/>
+                    </l:geometrie>
+                </l:Gebied>
+            </owObject>
+        </sl:stand>
+    </sl:standBestand>
+</owBestand>
