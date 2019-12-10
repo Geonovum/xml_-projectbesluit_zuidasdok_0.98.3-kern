@@ -1,0 +1,193 @@
+Folder PATH listing for volume MSSQL
+Volume serial number is CCC7-2D24
+E:.
+|   RELEASE_NOTES.md
+|   tree.txt
+|   
++---1998
+|   \---namespace
+|           xml.xsd
+|           
++---basisgeometrie
+|   \---v20190901
+|           geometrie.xsd
+|           
++---bestanden-ow
+|   +---deelbestand-ow
+|   |   \---v20190901
+|   |           IMOW_Deelbestand_v0_9_8_2.xsd
+|   |           
+|   \---generiek
+|       +---v20190301
+|       |       standlevering-generiek_1_0_0.xsd
+|       |       
+|       \---v20190901
+|               manifest-ow.xsd
+|               
++---gco
+|       basicTypes.xsd
+|       gco.xsd
+|       gcoBase.xsd
+|       
++---gmd
+|       applicationSchema.xsd
+|       citation.xsd
+|       constraints.xsd
+|       content.xsd
+|       dataQuality.xsd
+|       distribution.xsd
+|       extent.xsd
+|       freeText.xsd
+|       gmd.xsd
+|       identification.xsd
+|       maintenance.xsd
+|       metadataApplication.xsd
+|       metadataEntity.xsd
+|       metadataExtension.xsd
+|       portrayalCatalogue.xsd
+|       referenceSystem.xsd
+|       spatialRepresentation.xsd
+|       
++---gml
+|   \---3.2.1
+|           basicTypes.xsd
+|           coordinateOperations.xsd
+|           coordinateReferenceSystems.xsd
+|           coordinateSystems.xsd
+|           coverage.xsd
+|           datums.xsd
+|           defaultStyle.xsd
+|           deprecatedTypes.xsd
+|           dictionary.xsd
+|           direction.xsd
+|           dynamicFeature.xsd
+|           feature.xsd
+|           geometryAggregates.xsd
+|           geometryBasic0d1d.xsd
+|           geometryBasic2d.xsd
+|           geometryComplexes.xsd
+|           geometryPrimitives.xsd
+|           gml.xsd
+|           gmlBase.xsd
+|           gml_3_2_1-ReadMe.txt
+|           grids.xsd
+|           measures.xsd
+|           observation.xsd
+|           ReadMe.txt
+|           referenceSystems.xsd
+|           SchematronConstraints.xml
+|           temporal.xsd
+|           temporalReferenceSystems.xsd
+|           temporalTopology.xsd
+|           topology.xsd
+|           units.xsd
+|           valueObjects.xsd
+|           
++---gmlsfProfile
+|   \---2.0
+|           gmlsfLevels.xsd
+|           
++---gmx
+|       catalogues.xsd
+|       codelistItem.xsd
+|       crsItem.xsd
+|       extendedTypes.xsd
+|       gmx.xsd
+|       gmxUsage.xsd
+|       uomItem.xsd
+|       
++---gsr
+|       gsr.xsd
+|       spatialReferencing.xsd
+|       
++---gss
+|       geometry.xsd
+|       gss.xsd
+|       
++---gts
+|       gts.xsd
+|       temporalObjects.xsd
+|       
++---IMOW
+|   +---datatypenalgemeen
+|   |   \---v20190709
+|   |           IMOW_DatatypenAlgemeen_v0_9_8.xsd
+|   |           
+|   +---gebiedsaanwijzing
+|   |   \---v20190709
+|   |           IMOW_Gebiedsaanwijzing_v0_9_8.xsd
+|   |           
+|   +---gebiedsaanwijzing-ref
+|   |   \---v20190709
+|   |           IMOW_GebiedsaanwijzingRef_v0_9_8.xsd
+|   |           
+|   +---geometrie-ref
+|   |   \---v20190901
+|   |           IMOW_GeometrieRef_v0_9_8_2.xsd
+|   |           
+|   +---kaartrecept
+|   |   \---v20190901
+|   |           IMOW_Kaartrecept_v0_9_8_2.xsd
+|   |           
+|   +---locatie
+|   |   \---v20190901
+|   |           IMOW_Locatie_v0_9_8_2.xsd
+|   |           
+|   +---locatie-ref
+|   |   \---v20190901
+|   |           IMOW_LocatieRef_v0_9_8_2.xsd
+|   |           
+|   +---opobject
+|   |   \---v20190901
+|   |           IMOW_OPobject_v0_9_8_2.xsd
+|   |           
+|   +---opobject-ref
+|   |   \---v20190901
+|   |           IMOW_OPobjectRef_v0_9_8_2.xsd
+|   |           
+|   +---owobject
+|   |   \---v20190709
+|   |           IMOW_OWobject_v0_9_8.xsd
+|   |           
+|   +---owobject-ref
+|   |   \---v20190709
+|   |           IMOW_OWobjectRef_v0_9_8.xsd
+|   |           
+|   +---pons
+|   |   \---v20190901
+|   |           IMOW_Pons_v0_9_8_2.xsd
+|   |           
+|   +---regels
+|   |   \---v20190901
+|   |           IMOW_Regel_v0_9_8_2.xsd
+|   |           
+|   +---regels-ref
+|   |   \---v20190901
+|   |           IMOW_RegelRef_v0_9_8_2.xsd
+|   |           
+|   +---regelsoplocatie
+|   |   \---v20190901
+|   |           IMOW_RegelsOpLocatie_v0_9_8_2.xsd
+|   |           
+|   +---regelsoplocatie-ref
+|   |   \---v20190709
+|   |           IMOW_RegelsOpLocatieRef_v0_9_8.xsd
+|   |           
+|   +---vrijetekst
+|   |   \---v20190901
+|   |           IMOW_VrijeTekst_v0_9_8_2.xsd
+|   |           
+|   \---vrijetekst-ref
+|       \---v20190901
+|               IMOW_VrijeTekstRef_v0_9_8_2.xsd
+|               
++---smil20
+|       smil20-language.xsd
+|       smil20.xsd
+|       xml-mod.xsd
+|       
+\---xlink
+    \---1.0.0
+            ReadMe.txt
+            xlinks.xsd
+            
