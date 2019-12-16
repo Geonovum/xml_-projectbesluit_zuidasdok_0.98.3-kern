@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2013 rel. 2 sp2 (http://www.altova.com) by Paul Janssen (Geonovum) -->
-<xs:schema xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" 
-	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-	xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" 
-	xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" 
-	xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" 
-	xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" 
-	xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" 
-	xmlns:k="http://www.geostandaarden.nl/imow/kaartrecept/v20190901" 
-	xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190901" 
-	xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901" 
-	targetNamespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" 
-	elementFormDefault="qualified" 
-	version="0.9.8. beta">
+<xs:schema xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190901" xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" xmlns:k="http://www.geostandaarden.nl/imow/kaartrecept/v20190901" xmlns:p="http://www.geostandaarden.nl/imow/pons/v20190901" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901" targetNamespace="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" elementFormDefault="qualified" version="0.9.8. beta">
 	<xs:import namespace="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" schemaLocation="../../generiek/v20190301/standlevering-generiek_1_0_0.xsd"/>
 	<xs:import namespace="http://www.geostandaarden.nl/imow/locatie/v20190901" schemaLocation="../../../IMOW/locatie/v20190901/IMOW_Locatie_v0_9_8_2.xsd"/>
 	<xs:import namespace="http://www.geostandaarden.nl/imow/regels/v20190901" schemaLocation="../../../IMOW/regels/v20190901/IMOW_Regel_v0_9_8_2.xsd"/>
@@ -47,7 +35,7 @@
 					<xs:element ref="l:Puntengroep"/>
 					<xs:element ref="l:Lijn"/>
 					<xs:element ref="l:Lijnengroep"/>
-					<xs:element ref="vt:FormeleInhoud"/>
+					<xs:element ref="vt:FormeleDivisie"/>
 					<xs:element ref="k:Symbolisatiecollectie"/>
 					<xs:element ref="k:Kaart"/>
 					<xs:element ref="p:Pons"/>

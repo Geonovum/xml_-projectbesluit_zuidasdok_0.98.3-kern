@@ -48,7 +48,7 @@
          <xs:documentation>This complex datatype is transformed to a simple type because a content pattern is defined.</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:string">
-         <xs:pattern value="nl\.imow-(gm|pv|ws|mn)[0-9]{1,6}\.(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|formeleinhoud)\.[A-Za-z0-9]{1,32}"/>
+         <xs:pattern value="nl\.imow-(gm|pv|ws|mn)[0-9]{1,6}\.(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|formeledivisie)\.[A-Za-z0-9]{1,32}"/>
       </xs:restriction>
    </xs:simpleType>
    <xs:simpleType name="Eenheid">

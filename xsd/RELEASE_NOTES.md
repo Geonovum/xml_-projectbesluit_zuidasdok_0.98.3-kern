@@ -1,13 +1,10 @@
 Release notes
 =============
 
-Versie: Standaard v0.98-kern van 1 september 2019.
+Versie: Standaard v0.98.2-kern van 9 december 2019.
 
-Gebaseerd op: CIMOW v0.98-kern van 1 september 2019 en IMOW v0.98-kern van 1
+Gebaseerd op: CIMOW v0.98.1-kern van 27 november 2019 en IMOW v0.98.1-kern van 10
 september 2019.
-
-Wijzigingen t.o.v. van eerdere releases en nieuwe schemas zijn te herkennen aan
-namespace versie 20190901. Andere schema's zijn ongewijzigd.
 
 Functionele wijzigingen staan in het CIMOW en het IMOW document opgesomd. Deze
 zorgen voor bijwerkingen van de 'OW' XSD's in de map /IMOW - Generieke schema's
@@ -27,6 +24,12 @@ op STOP 0.9.8 is te zien aan de opgenomen `<xs:appinfo>0.9.8.1</xs:appinfo>`
 Opm. Referentie schemas krijgen versie 0_9 omdat er geen nieuwe objecttypen zijn
 bijgekomen.
 
+Verbeteringen tussen v0.98.2-kern en v0.98.1-kern
+-------------------------------------------------
+-	FormeleInhoud heet nu FormeleDivisie
+
+-	Tekstdeel heeft het attribuut idealisatie
+
 Verbeteringen tussen v0.98.1-kern en v0.98-kern
 -----------------------------------------------
 
@@ -37,7 +40,7 @@ Verbeteringen tussen v0.98.1-kern en v0.98-kern
     waardoor we niet aan de slag zouden kunnen met OW-annotaties voor
     omgevingsdocumenten die gericht zijn op vrijetekststructuur
 
--   De schematron-regel die identificatie-attributen valideert is uitgebreid om
+-   De reguliere expressie die identificatie-attributen valideert is uitgebreid om
     ook “formeleinhoud” te kunnen bevatten deze was abusievelijk vergeten bij de
     vorige versie waardoor we niet aan de slag zouden kunnen met OW-annotaties
     voor omgevingsdocumenten die gericht zijn op vrijetekststructuur
