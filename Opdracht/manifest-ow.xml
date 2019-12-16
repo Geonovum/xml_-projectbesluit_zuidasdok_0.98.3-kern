@@ -8,8 +8,8 @@
         <FRBRwork>/akn/nl/act/pv27/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3</FRBRwork>
         <FRBRExpression>/akn/nl/act/pv27/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3/nld@20190604121322741</FRBRExpression>
         <Bestand>
-            <naam>owRegeltekst.xml</naam>
-            <objecttype>Regeltekst</objecttype>
+            <naam>owTekstdeel.xml</naam>
+            <objecttype>Formele Divisie</objecttype>
         </Bestand>
         <Bestand>
             <naam>owLocatie.xml</naam>

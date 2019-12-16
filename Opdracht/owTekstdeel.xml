@@ -4,6 +4,7 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301"
     xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901"
+    xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst/v20190901"
     xmlns="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901"
     xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901 ../xsd/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
     <sl:standBestand>
@@ -12,15 +13,15 @@
             <sl:gebied>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</sl:gebied>
             <sl:leveringsId>pv27_201912_01</sl:leveringsId>
             <sl:objectTypen>
-                <sl:objectType>Regeltekst</sl:objectType>
+                <sl:objectType>Formele Divisie</sl:objectType>
             </sl:objectTypen>
         </sl:inhoud>
         <!-- Artikel 9 -->
         <sl:stand>
             <owObject>
-                <r:Regeltekst wIdRegeling="" wId="pv27_1__dvs_1__dvs_6" id="ID003">
-                    <r:identificatie>nl.imow-gm0363.regeltekst.001</r:identificatie>
-                </r:Regeltekst>
+                <vt:FormeleDivisie wId="pv27_1__dvs_1__dvs_6" id="ID003" wIdRegeling="/akn/nl/act/pv27/2018/bsl_33c18e84-9581-4ef5-bf97-72bfc30c05c3/nld@20190604121322741">
+                    <vt:identificatie>nl.imow-pv27.formeledivisie.2019000001</vt:identificatie>
+                </vt:FormeleDivisie>
             </owObject>
         </sl:stand>
     </sl:standBestand>
