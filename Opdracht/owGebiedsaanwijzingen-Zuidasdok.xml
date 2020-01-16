@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ow-dc:owBestand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing/v20190709" 
+	xmlns:gml="http://www.opengis.net/gml/3.2" 
+	xmlns:l="http://www.geostandaarden.nl/imow/locatie/v20190709" 
+	xmlns:ga-ref="http://www.geostandaarden.nl/imow/gebiedsaanwijzing-ref/v20190709" 
+	xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190801" 
+	xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek/v20190301" 
+	xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand/v20190901" 
+	xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie/v20190901" 
+	xmlns:l-ref="http://www.geostandaarden.nl/imow/locatie-ref/v20190901" 
+	xmlns:ow="http://www.geostandaarden.nl/imow/owobject/v20190709"
+	xmlns:rol-ref="http://www.geostandaarden.nl/imow/regelsoplocatie-ref/v20190709" 
+	xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/v20190709" 
+	xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" 
+	xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901"
+	xsi:schemaLocation="http://www.geostandaarden.nl/imow/0.98.1 ../imow-algemeen/xsd/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
+<!-- 
+-->
+	<sl:standBestand>
+		<sl:dataset>Zuidasdok</sl:dataset>
+		<sl:inhoud>
+			<sl:gebied>Gemeentestad</sl:gebied>
+			<sl:leveringsId>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</sl:leveringsId>
+			<sl:objectTypen>
+				<sl:objectType>Gebiedsaanwijzing</sl:objectType>
+			</sl:objectTypen>
+		</sl:inhoud>
+		<sl:stand>
+			<ow-dc:owObject>
+				<!-- -->
+				<ga:Gebiedsaanwijzing ow:regeltekstId="gm0363_1__dvs_1__dvs_4__fin_1">
+					<ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.2019000001</ga:identificatie>
+					<ga:type>Verkeergroep</ga:type>
+					<ga:naam>A10-Zuidas-projectgebied</ga:naam>
+					<ga:groep>weg</ga:groep>
+					<ga:locatieaanduiding>
+						<l-ref:LocatieRef xlink:href="nl.imow-gm0363.gebied.001"/>
+					</ga:locatieaanduiding>
+				</ga:Gebiedsaanwijzing>
+			</ow-dc:owObject>
+		</sl:stand>
+	</sl:standBestand>
+</ow-dc:owBestand>
