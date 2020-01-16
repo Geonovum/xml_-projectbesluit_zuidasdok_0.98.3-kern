@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringGIO 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:xlink="http://www.w3.org/1999/xlink" 
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+   xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd"
+   schemaversie="0.98.3-kern">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/regdata/pv27/2019/nl.imow-pv27.gebied.002</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv27/2019/nl.imow-pv27.gebied.002/nld@2019-12-01</FRBRExpression>
+         <soortWork>/join/id/stop/work_007</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/provincie/pv27</eindverantwoordelijke>
+         <maker>/tooi/id/provincie/pv27</maker>
+         <noemer>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</noemer>
+         <officieleTitel>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</officieleTitel>
+         <publicatieinstructie>TeConsolideren</publicatieinstructie>
+         <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
+         <!-- Koppeling naar het gml-bestand -->
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0.gml</bestandsnaam>
+                  <hash>47a85397a923e8b98ec4a38dc4655ea25cdfd09f00eeed57c8f02c480a757b91a54130e10bf0256a06added074e59312d0ca96e4e3a240ef51278287dc89417a</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+      </InformatieObjectMetadata>
+      <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+         <featureMember>
+            <Locatie gml:id="NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0">
+               <wId>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0</wId>
+               <naam>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</naam>
+               <geometrie xlink:href="NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0.gml#d42f13af-a37e-40e8-8f0d-d88ff53fa497"></geometrie>
+            </Locatie>
+         </featureMember>
+      </GeoInformatie>
+      <Achtergrond xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bronactualiteit>2019-01-01</bronactualiteit>
+         <bronbeschrijving>top10nl</bronbeschrijving>
+         <brontype>achtergrond</brontype>
+         <bronverwijzing>#6e84ce4c-eb3c-4c87-976f-4466045a8c8d</bronverwijzing>
+         <nauwkeurigheid>10</nauwkeurigheid>
+      </Achtergrond>
+   </InformatieObjectVersie>
+</AanleveringGIO>
