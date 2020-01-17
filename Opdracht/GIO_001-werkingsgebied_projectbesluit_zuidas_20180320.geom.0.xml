@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AanleveringGIO 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:gml="http://www.opengis.net/gml/3.2"
-    xmlns="https://standaarden.overheid.nl/lvbb/stop/"
-    xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd" 
-    schemaversie="0.98.3-kern">
+<AanleveringGIO xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xlink="http://www.w3.org/1999/xlink" schemaversie="0.98.3-kern"
+    xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd">
     <InformatieObjectVersie>
         <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-            <FRBRWork>/join/id/regdata/pv27/2019/nl.imow-pv27.gebied.001</FRBRWork>
-            <FRBRExpression>/join/id/regdata/pv27/2019/nl.imow-pv27.gebied.001/nld@2019-12-12</FRBRExpression>
+            <FRBRWork>/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit_zuidas</FRBRWork>
+            <FRBRExpression>/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit_zuidas/nld@2019-12-12</FRBRExpression>
             <soortWork>/join/id/stop/work_007</soortWork>
         </ExpressionIdentificatie>
         <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -23,17 +20,19 @@
                 <heeftBestand>
                     <Bestand>
                         <bestandsnaam>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</bestandsnaam>
-                        <hash>e2f44d1710fc6bf8740c994f213b79be79c86d34e2168169c4b8f958630d7f5fa5f677e75e7924a28c1da7507d4b0522b48864d64f490030d4bc3382a0909e34</hash>
+                        <hash>5c592832103c405c16e2071ce6abd26857617efe7e3f7e1e5f6d5a74e5eacca38ec64771cd6289781095d2570fc8d13a3630870fc78da5f7ecd07221a39e7319</hash>
                     </Bestand>
                 </heeftBestand>
             </heeftBestanden>
         </InformatieObjectMetadata>
-        <GeoInformatie  xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
+        <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
             <featureMember>
                 <Locatie gml:id="werkingsgebied_projectbesluit_zuidas_20180320.geom.0">
                     <wId>werkingsgebied_projectbesluit_zuidas_20180320.geom.0</wId>
                     <naam>Werkingsgebied projectbesluit zuidas</naam>
-                    <geometrie xlink:href="werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml#6e84ce4c-eb3c-4c87-976f-4466045a8c8d"></geometrie>
+                    <geometrie
+                        xlink:href="werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml#6e84ce4c-eb3c-4c87-976f-4466045a8c8d"
+                    />
                 </Locatie>
             </featureMember>
         </GeoInformatie>
