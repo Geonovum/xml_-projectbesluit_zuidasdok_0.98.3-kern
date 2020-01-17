@@ -8,8 +8,8 @@
    schemaversie="0.98.3-kern">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <FRBRWork>/join/id/regdata/pv27/2019/nl.imow-pv27.gebied.002</FRBRWork>
-         <FRBRExpression>/join/id/regdata/pv27/2019/nl.imow-pv27.gebied.002/nld@2019-12-01</FRBRExpression>
+         <FRBRWork>/join/id/regdata/pv27/2019/bestemming_verkeer</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv27/2019/bestemming_verkeer/nld@2019-12-01</FRBRExpression>
          <soortWork>/join/id/stop/work_007</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -24,7 +24,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0.gml</bestandsnaam>
-                  <hash>47a85397a923e8b98ec4a38dc4655ea25cdfd09f00eeed57c8f02c480a757b91a54130e10bf0256a06added074e59312d0ca96e4e3a240ef51278287dc89417a</hash>
+                  <hash>61597bcca5f2a60fe2c067d70731e365b8464bccf7726d673c5aa4a8c7388dd29132bdc4a5034d779ee60af1ed2f9f8dce6c40edddd8e053445f86be9d5fcd59</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
