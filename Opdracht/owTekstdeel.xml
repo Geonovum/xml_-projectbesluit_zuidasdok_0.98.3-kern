@@ -22,7 +22,7 @@
         <!-- Vrije tekst Inleiding, Tracébesluit en bestemmingsplan-->
         <sl:stand>
             <ow-dc:owObject>
-                <vt:FormeleDivisie wIdRegeling="/akn/nl/bill/pv27/2019/3520/nld@2019-12-01" wId="pv27_1__dvs_1__dvs_1__dvs_2__fin_1">
+                <vt:FormeleDivisie wIdRegeling="/akn/nl/bill/pv27/2019/3520/nld@2019-12-01" wId="pv27_1__fdvs_o_1__fdvs_o_1__fdvs_o_2">
                     <vt:identificatie>nl.imow-pv27.formeledivisie.2019000001</vt:identificatie>
                 </vt:FormeleDivisie>
             </ow-dc:owObject>
@@ -31,12 +31,13 @@
             <ow-dc:owObject>
                 <vt:Tekstdeel ow:regeltekstId="nl.imow-pv27.formeledivisie.2019000001">
                     <vt:identificatie>nl.imow-pv27.tekstdeel.2019000001</vt:identificatie>
-                    <vt:idealisatie></vt:idealisatie>
+                    <vt:idealisatie>exact</vt:idealisatie>
+                    <vt:thema>Algemeen</vt:thema>
                     <vt:formeleDivisie>
-                        <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv27.formeleinhoud.001"/>
+                        <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv27.formeleinhoud.2019000001"/>
                     </vt:formeleDivisie>
                     <vt:locatieaanduiding>
-                        <l-ref:LocatieRef xlink:href="nl.imow-pv27.gebied.001"/>
+                        <l-ref:LocatieRef xlink:href="nl.imow-pv27.gebied.2019000001"/>
                     </vt:locatieaanduiding>
                 </vt:Tekstdeel>
             </ow-dc:owObject>
@@ -53,7 +54,7 @@
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
-                <vt:FormeleDivisie wIdRegeling="/akn/nl/bill/pv27/2019/3520/nld@2019-12-01" wId="pv27_1__dvs_1__dvs_3__fin_1">
+                <vt:FormeleDivisie wIdRegeling="/akn/nl/bill/pv27/2019/3520/nld@2019-12-01" wId="pv27_1__fdvs_o_1__fdvs_o_3">
                     <vt:identificatie>nl.imow-pv27.formeledivisie.2019000002</vt:identificatie>
                 </vt:FormeleDivisie>
             </ow-dc:owObject>
@@ -84,7 +85,7 @@
         </sl:stand>
         <sl:stand>
             <ow-dc:owObject>
-                <vt:FormeleDivisie wIdRegeling="/akn/nl/bill/pv27/2019/3520/nld@2019-12-01" wId="pv27_1__dvs_1__dvs_4__fin_1">
+                <vt:FormeleDivisie wIdRegeling="/akn/nl/bill/pv27/2019/3520/nld@2019-12-01" wId="pv27_1__fdvs_o_1__fdvs_o_4">
                     <vt:identificatie>nl.imow-pv27.formeledivisie.2019000003</vt:identificatie>
                 </vt:FormeleDivisie>
             </ow-dc:owObject>
@@ -106,7 +107,7 @@
         <!-- Hoofdstuk 9 -->
         <sl:stand>
             <ow-dc:owObject>
-                <vt:FormeleDivisie wIdRegeling="/akn/nl/bill/pv27/2019/3520/nld@2019-12-01" wId="pv27_1__dvs_1__dvs_6__fin_1">
+                <vt:FormeleDivisie wIdRegeling="/akn/nl/bill/pv27/2019/3520/nld@2019-12-01" wId="pv27_1__fdvs_o_1__fdvs_o_6">
                     <vt:identificatie>nl.imow-pv27.formeledivisie.2019000004</vt:identificatie>
                 </vt:FormeleDivisie>
             </ow-dc:owObject>
@@ -116,6 +117,7 @@
                 <vt:Tekstdeel ow:regeltekstId="nl.imow-pv27.formeledivisie.2019000004">
                     <vt:identificatie>nl.imow-pv27.tekstdeel.2019000004</vt:identificatie>
                     <vt:idealisatie>exact</vt:idealisatie>
+                    <vt:thema>Verkeer</vt:thema>
                     <vt:formeleDivisie>
                         <vt-ref:FormeleDivisieRef xlink:href="nl.imow-pv27.formeledivisie.2019000004"/>
                     </vt:formeleDivisie>
