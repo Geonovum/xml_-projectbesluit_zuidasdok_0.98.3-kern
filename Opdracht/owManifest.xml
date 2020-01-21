@@ -1,21 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Modules xmlns="https://standaarden.overheid.nl/stop/DSO-PI10" 
+<?xml version="1.0" encoding="UTF-8"?>
+<Modules 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xsi:schemaLocation="../Mapping/xsd_stop_0.97.1_manifest-ow.xsd">
+  xmlns:m="http://www.geostandaarden.nl/imow/manifest/v20190901" 
+  xsi:schemaLocation="http://www.geostandaarden.nl/imow/manifest/v20190901 ../xsd/bestanden-ow/generiek/v20190901/manifest-ow.xsd">
   <domein>omgevingswet</domein>
   <RegelingVersie>
-    <FRBRwork>/akn/nl/act/gm0363/2019/2019000001</FRBRwork>
-    <FRBRExpression>/akn/nl/act/gm0363/2019/2019000001/nld@2019-12-01</FRBRExpression>
+    <FRBRwork>/akn/nl/bill/pv27/2019/3520</FRBRwork>
+    <FRBRExpression>/akn/nl/bill/pv27/2019/3520/nld@2019-12-01</FRBRExpression>
     <Bestand>
       <naam>owTekstdeel.xml</naam>
       <objecttype>Tekstdeel</objecttype>
-      <objecttype>FormeleInhoud</objecttype>
+      <objecttype>Formele Divisie</objecttype>
       <objecttype>Hoofdlijn</objecttype>
     </Bestand>
     <Bestand>
       <naam>owLocatie.xml</naam>
-      <objecttype>Gebiedengroep</objecttype>
       <objecttype>Gebied</objecttype>
+    </Bestand>
+    <Bestand>
+      <naam>owGebiedsaanwijzingen-Zuidasdok.xml</naam>
+      <objecttype>Gebiedsaanwijzing</objecttype>
+    </Bestand>
+    <Bestand>
+      <naam>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</naam>
+    </Bestand>
+    <Bestand>
+      <naam>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0.gml</naam>
     </Bestand>
   </RegelingVersie>
 </Modules>
