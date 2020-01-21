@@ -15,9 +15,7 @@
 	xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/v20190709" 
 	xmlns:r="http://www.geostandaarden.nl/imow/regels/v20190901" 
 	xmlns:r-ref="http://www.geostandaarden.nl/imow/regels-ref/v20190901"
-	xsi:schemaLocation="http://www.geostandaarden.nl/imow/0.98.1 ../imow-algemeen/xsd/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
-<!-- 
--->
+	xsi:schemaLocation="http://www.geostandaarden.nl/imow/0.98.1 ../xsd/bestanden-ow/deelbestand-ow/v20190901/IMOW_Deelbestand_v0_9_8_2.xsd">
 	<sl:standBestand>
 		<sl:dataset>Zuidasdok</sl:dataset>
 		<sl:inhoud>
@@ -29,14 +27,13 @@
 		</sl:inhoud>
 		<sl:stand>
 			<ow-dc:owObject>
-				<!-- -->
-				<ga:Gebiedsaanwijzing ow:regeltekstId="gm0363_1__dvs_1__dvs_4__fin_1">
-					<ga:identificatie>nl.imow-gm0363.gebiedsaanwijzing.2019000001</ga:identificatie>
+				<ga:Gebiedsaanwijzing ow:regeltekstId="nl.imow-pv27.formeledivisie.2019000004">
+					<ga:identificatie>nl.imow-pv27.gebiedsaanwijzing.2019000001</ga:identificatie>
 					<ga:type>Verkeergroep</ga:type>
 					<ga:naam>A10-Zuidas-projectgebied</ga:naam>
 					<ga:groep>weg</ga:groep>
 					<ga:locatieaanduiding>
-						<l-ref:LocatieRef xlink:href="nl.imow-gm0363.gebied.001"/>
+						<l-ref:LocatieRef xlink:href="nl.imow-pv27.gebied.2019000001"/>
 					</ga:locatieaanduiding>
 				</ga:Gebiedsaanwijzing>
 			</ow-dc:owObject>
