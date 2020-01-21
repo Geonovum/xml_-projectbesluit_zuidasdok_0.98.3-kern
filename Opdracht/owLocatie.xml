@@ -11,18 +11,30 @@
     <sl:standBestand>
         <sl:dataset>Zuidasdok</sl:dataset>
         <sl:inhoud>
-            <sl:gebied>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</sl:gebied>
-            <sl:leveringsId>pv27_201912_01</sl:leveringsId>
+            <sl:gebied>Amsterdam Zuid</sl:gebied>
+            <sl:leveringsId>Projectbesluit_Zuidasdok</sl:leveringsId>
             <sl:objectTypen>
                 <sl:objectType>Gebied</sl:objectType>
             </sl:objectTypen>
         </sl:inhoud>
         <sl:stand>
             <owObject>
-                <l:Gebied ow:regeltekstId="nl.imow-gm0363.regeltekst.001">
-                    <l:identificatie>nl.imow-gm0363.gebied.001</l:identificatie>
+                <l:Gebied ow:regeltekstId="nl.imow-pv27.formeledivisie.2019000001">
+                    <l:identificatie>nl.imow-pv27.gebied.2019000001</l:identificatie>
+                    <l:noemer>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0</l:noemer>
                     <l:geometrie>
                         <g-ref:GeometrieRef xlink:href="6e84ce4c-eb3c-4c87-976f-4466045a8c8d"/>
+                    </l:geometrie>
+                </l:Gebied>
+            </owObject>
+        </sl:stand>
+        <sl:stand>
+            <owObject>
+                <l:Gebied ow:regeltekstId="nl.imow-pv27.formeledivisie.2019000004">
+                    <l:identificatie>nl.imow-pv27.gebied.2019000002</l:identificatie>
+                    <l:noemer>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0</l:noemer>
+                    <l:geometrie>
+                        <g-ref:GeometrieRef type="simple" xlink:href="d42f13af-a37e-40e8-8f0d-d88ff53fa497"/>
                     </l:geometrie>
                 </l:Gebied>
             </owObject>
