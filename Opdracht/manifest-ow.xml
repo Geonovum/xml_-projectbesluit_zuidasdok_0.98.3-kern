@@ -21,11 +21,5 @@
       <naam>owGebiedsaanwijzingen-Zuidasdok.xml</naam>
       <objecttype>Gebiedsaanwijzing</objecttype>
     </Bestand>
-    <Bestand>
-      <naam>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</naam>
-    </Bestand>
-    <Bestand>
-      <naam>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0.gml</naam>
-    </Bestand>
   </RegelingVersie>
 </Modules>
