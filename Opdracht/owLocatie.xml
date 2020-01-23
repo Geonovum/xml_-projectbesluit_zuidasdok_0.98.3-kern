@@ -21,7 +21,7 @@
             <owObject>
                 <l:Gebied ow:regeltekstId="nl.imow-pv27.formeledivisie.2019000001">
                     <l:identificatie>nl.imow-pv27.gebied.2019000001</l:identificatie>
-                    <l:noemer>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0</l:noemer>
+                    <l:noemer>werkingsgebied_projectbesluit_zuidas_20180320.geom.0</l:noemer>
                     <l:geometrie>
                         <g-ref:GeometrieRef xlink:href="6e84ce4c-eb3c-4c87-976f-4466045a8c8d"/>
                     </l:geometrie>
