@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<publicatieOpdracht 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://www.overheid.nl/2017/lvbb"
-    xsi:schemaLocation="http://www.overheid.nl/2017/lvbb ../lvbb/lvbb-transport.xsd">
-    <idLevering>pv27_201912_01</idLevering>
-    <publicatie>ProjectBesluit.xml</publicatie>
-    <datumBekendmaking>2020-01-01</datumBekendmaking>
-</publicatieOpdracht>
