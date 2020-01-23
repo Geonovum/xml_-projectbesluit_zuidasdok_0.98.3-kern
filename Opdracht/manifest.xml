@@ -24,10 +24,6 @@
         <contentType>application/xml</contentType>
     </bestand>
     <bestand>
-        <bestandsnaam>opManifest.xml</bestandsnaam>
-        <contentType>application/xml</contentType>
-    </bestand>
-    <bestand>
         <bestandsnaam>opOpdracht.xml</bestandsnaam>
         <contentType>application/xml</contentType>
     </bestand>
@@ -44,7 +40,7 @@
         <contentType>application/xml</contentType>
     </bestand>
     <bestand>
-        <bestandsnaam>owManifest.xml</bestandsnaam>
+        <bestandsnaam>manifest-ow.xml</bestandsnaam>
         <contentType>application/xml</contentType>
     </bestand>
     <bestand>
