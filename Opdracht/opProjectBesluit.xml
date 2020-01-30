@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AanleveringBesluit xmlns="https://standaarden.overheid.nl/lvbb/stop/">
-    <BesluitVersie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd" schemaversie="0.98.3-kern">
+<AanleveringBesluit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://standaarden.overheid.nl/lvbb/stop/"
+    xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ https://raw.githubusercontent.com/Geonovum/xml_op_xsd_0.98.3-kern/master/lvbb/LVBB-stop.xsd"
+    schemaversie="0.98.3-kern">
+    <BesluitVersie>
         <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
             <FRBRWork>/akn/nl/bill/pv27/2019/3520</FRBRWork>
             <FRBRExpression>/akn/nl/bill/pv27/2019/3520/nld@2019-12-01</FRBRExpression>
             <soortWork>/join/id/stop/work_003</soortWork>
         </ExpressionIdentificatie>
         <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-            <eindverantwoordelijke>/join/id/stop/provincie/pv27</eindverantwoordelijke>
-            <maker>/join/id/stop/provincie/pv27</maker>
+            <eindverantwoordelijke>/tooi/id/provincie/pv27</eindverantwoordelijke>
+            <maker>/tooi/id/provincie/pv27</maker>
             <officieleTitel>Projectbesluit Zuidas 2018</officieleTitel>
             <onderwerpen>
-                <onderwerp>/tooi/def/concept/c_849842ac</onderwerp>
+                <onderwerp>/tooi/def/concept/c_849842ac</onderwerp><!-- verkeer -->
             </onderwerpen>
-            <overheidsdomein>/tooi/def/concept/c_3708ac5e</overheidsdomein>
+            <overheidsdomein>/tooi/def/concept/c_3708ac5e</overheidsdomein><!-- bouwen, wonen en leefomgeving -->
             <rechtsgebieden>
-                <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+                <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied><!-- ruimtelijke ordening en milieu -->
             </rechtsgebieden>
             <informatieobjectRefs>
                 <informatieobjectRef>/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit@20190604</informatieobjectRef>
@@ -969,4 +973,25 @@
             </NieuweRegeling>
         </Besluit>
     </BesluitVersie>
+    <RegelingVersieInformatie>
+        <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <FRBRWork>/akn/nl/act/pv27/2020/3520</FRBRWork>
+            <FRBRExpression>/akn/nl/act/pv27/2020/3520/nld@main</FRBRExpression>
+            <soortWork>/join/id/stop/work_019</soortWork>
+        </ExpressionIdentificatie>
+        <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <eindverantwoordelijke>/tooi/id/provincie/pv27</eindverantwoordelijke>
+            <maker>/tooi/id/provincie/pv27</maker>
+            <officieleTitel>>Projectbesluit Zuidas 2018</officieleTitel>
+            <onderwerpen>
+                <onderwerp>/tooi/def/concept/c_849842ac</onderwerp><!-- verkeer -->
+            </onderwerpen>
+            <overheidsdomein>/tooi/def/concept/c_3708ac5e</overheidsdomein><!-- bouwen, wonen en leefomgeving -->
+            <rechtsgebieden>
+                <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied><!-- ruimtelijke ordening en milieu -->
+            </rechtsgebieden>
+            <soortRegeling>geen</soortRegeling><!-- 20200129: Projectbesluit nog niet in waardelijst opgenomen -->
+            <versienummer>1</versienummer>
+        </RegelingMetadata>
+    </RegelingVersieInformatie>
 </AanleveringBesluit>
