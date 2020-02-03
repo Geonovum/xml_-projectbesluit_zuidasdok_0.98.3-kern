@@ -4,11 +4,11 @@
     xmlns:stop="http://www.overheid.nl/2017/stop"
     xsi:schemaLocation="http://www.overheid.nl/2017/lvbb ../lvbb/lvbb-transport.xsd">
     <bestand>
-        <bestandsnaam>GIO_001-werkingsgebied_projectbesluit_zuidas_20180320.geom.0.xml</bestandsnaam>
+        <bestandsnaam>GIO01.xml</bestandsnaam>
         <contentType>application/xml</contentType>
     </bestand>
     <bestand>
-        <bestandsnaam>GIO_002-NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0.xml</bestandsnaam>
+        <bestandsnaam>GIO02.xml</bestandsnaam>
         <contentType>application/xml</contentType>
     </bestand>
     <bestand>
@@ -16,7 +16,11 @@
         <contentType>application/xml</contentType>
     </bestand>
     <bestand>
-        <bestandsnaam>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0.gml</bestandsnaam>
+        <bestandsnaam>Locatie01.gml</bestandsnaam>
+        <contentType>application/gml+xml</contentType>
+    </bestand>
+    <bestand>
+        <bestandsnaam>Locatie02.gml</bestandsnaam>
         <contentType>application/gml+xml</contentType>
     </bestand>
     <bestand>
@@ -24,11 +28,7 @@
         <contentType>application/xml</contentType>
     </bestand>
     <bestand>
-        <bestandsnaam>opOpdracht.xml</bestandsnaam>
-        <contentType>application/xml</contentType>
-    </bestand>
-    <bestand>
-        <bestandsnaam>opProjectBesluit.xml</bestandsnaam>
+        <bestandsnaam>opProjectbesluit.xml</bestandsnaam>
         <contentType>application/xml</contentType>
     </bestand>
     <bestand>
@@ -46,9 +46,5 @@
     <bestand>
         <bestandsnaam>owTekstdeel.xml</bestandsnaam>
         <contentType>application/xml</contentType>
-    </bestand>
-    <bestand>
-        <bestandsnaam>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</bestandsnaam>
-        <contentType>application/gml+xml</contentType>
     </bestand>
 </manifest>

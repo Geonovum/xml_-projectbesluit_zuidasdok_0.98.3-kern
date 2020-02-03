@@ -8,8 +8,8 @@
    schemaversie="0.98.3-kern">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <FRBRWork>/join/id/regdata/pv27/2019/bestemming_verkeer</FRBRWork>
-         <FRBRExpression>/join/id/regdata/pv27/2019/bestemming_verkeer/nld@2019-12-01</FRBRExpression>
+         <FRBRWork>/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel</FRBRWork>
+         <FRBRExpression>/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel/nld@2019-12-01</FRBRExpression>
          <soortWork>/join/id/stop/work_007</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -23,7 +23,7 @@
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
-                  <bestandsnaam>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0.gml</bestandsnaam>
+                  <bestandsnaam>Locatie02.gml</bestandsnaam>
                   <hash>61597bcca5f2a60fe2c067d70731e365b8464bccf7726d673c5aa4a8c7388dd29132bdc4a5034d779ee60af1ed2f9f8dce6c40edddd8e053445f86be9d5fcd59</hash>
                </Bestand>
             </heeftBestand>
@@ -31,10 +31,10 @@
       </InformatieObjectMetadata>
       <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
          <featureMember>
-            <Locatie gml:id="NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0">
-               <wId>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0</wId>
+            <Locatie gml:id="A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel">
+               <wId>A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel</wId>
                <naam>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</naam>
-               <geometrie xlink:href="NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0.gml#d42f13af-a37e-40e8-8f0d-d88ff53fa497"></geometrie>
+               <geometrie xlink:href="Locatie02.gml#d42f13af-a37e-40e8-8f0d-d88ff53fa497"></geometrie>
             </Locatie>
          </featureMember>
       </GeoInformatie>
@@ -42,7 +42,6 @@
          <bronactualiteit>2019-01-01</bronactualiteit>
          <bronbeschrijving>top10nl</bronbeschrijving>
          <brontype>achtergrond</brontype>
-         <bronverwijzing>#6e84ce4c-eb3c-4c87-976f-4466045a8c8d</bronverwijzing>
          <nauwkeurigheid>10</nauwkeurigheid>
       </Achtergrond>
    </InformatieObjectVersie>

@@ -31,7 +31,7 @@
                 <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
                 <procedurestappen>
                     <Procedurestap>
-                        <soortStap>/join/id/stop/procedurestap/stap_002</soortStap>
+                        <soortStap>/join/id/stop/procedurestap/stap_003</soortStap>
                         <voltooidOp>2019-11-01</voltooidOp>
                     </Procedurestap>
                 </procedurestappen>
@@ -40,22 +40,24 @@
         <BesluitDoel xmlns="https://standaarden.overheid.nl/stop/imop/data/">
             <BeoogdeRegelgeving>
                 <BeoogdeRegeling>
-                    <doel>/join/id/proces/pv27/2019/ProjectBesluit</doel>
-                    <instrumentVersie>/akn/nl/act/pv27/2019/Regeling/nld@2019-12-01</instrumentVersie>
-                    <eId>art_1</eId>
+                    <doel>/akn/ontology/event/nl/pv27/sync/Instelling</doel>
+                    <instrumentVersie>/akn/nl/act/pv27/2019/3520/nld@2019-12-01</instrumentVersie>
+                    <eId/>
+                </BeoogdeRegeling>
+                <BeoogdeRegeling>
+                    <doel>/akn/ontology/event/nl/pv27/sync/Instelling</doel>
+                    <instrumentVersie>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12</instrumentVersie>
+                    <eId>cmp_I__list_o_1__item_o_1__ref_o_1</eId>
+                </BeoogdeRegeling>
+                <BeoogdeRegeling>
+                    <doel>/akn/ontology/event/nl/pv27/sync/Instelling</doel>
+                    <instrumentVersie>/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel/nld@2019-12-12</instrumentVersie>
+                    <eId>cmp_I__list_o_1__item_o_2__ref_o_1</eId>
                 </BeoogdeRegeling>
             </BeoogdeRegelgeving>
-            <Tijdstempels>
-                <Tijdstempel>
-                    <doel>/join/id/proces/pv27/2019/ProjectBesluit</doel>
-                    <soortTijdstempel>inwerkingtreding</soortTijdstempel>
-                    <datum>2019-12-01</datum>
-                    <eId>art_1</eId>
-                </Tijdstempel>
-            </Tijdstempels>
         </BesluitDoel>
         <Besluit xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
-            <NieuweRegeling FRBRwork="/akn/nl/bill/pv27/2019/3520" componentnaam="regelin01" wordt="/akn/nl/bill/pv27/2019/3520/nld@2019-12-01">
+            <NieuweRegeling FRBRwork="/akn/nl/act/pv27/2019/3520" componentnaam="regelin01" wordt="/akn/nl/act/pv27/2019/3520/nld@2019-12-01">
                 <Lichaam eId="body" wId="body">
                     <FormeleDivisie eId="fdvs_o_1" wId="pv27_1__fdvs_o_1">
                         <Kop>
@@ -79,7 +81,7 @@
                                     <Opschrift>Tracébesluit en bestemmingsplan</Opschrift>
                                 </Kop>
                                 <FormeleInhoud eId="fdvs_o_1__fdvs_o_1__fdvs_o_2__fcontent_o_1" wId="pv27_1__fdvs_o_1__fdvs_o_1__fdvs_o_2__fcontent_o_1">
-                                    <Al>Het project Zuidasdok omvat zowel de aanpassingen aan station Amsterdam Zuid ten behoeve van de capaciteitvergroting en de opwaardering tot een volwaardige openbaarvervoerterminal (OVT) als aanpassingen aan de A10, waaronder de uitbreiding naar twee maal zes rijstroken en het - ter hoogte van het plangebied - ondertunnelen van de A10. Het tracébesluit maakt de totale wegverbreding van knooppunt Amstel tot knooppunt De Nieuwe Meer inclusief het plaatselijk ondergronds brengen van de A10 mogelijk. Het bestemmingsplan regelt de openbaarvervoerterminal, de tunneldaken, aangrenzende gronden en een langzaamverkeersverbinding ter hoogte van het Beatrixpark. De infrastructurele aanpassingen en de gebiedsontwikkeling kunnen niet los van elkaar worden gezien. Omdat het hier een integrale gebiedsontwikkeling betreft, is gekozen om het tracébesluit en het bestemmingsplan voor dit gebied zoveel mogelijk parallel te laten lopen.</Al>
+                                    <Al>Het <IntIoRef eId="fdvs_o_1__fdvs_o_1__fdvs_o_2__fcontent_o_1__ref_o_1" wId="pv27_1__fdvs_o_1__fdvs_o_1__fdvs_o_2__fcontent_o_1__ref_o_1" doel="pv27_1__cmp_I__list_o_1__item_o_1__ref_o_1">plangebied project Zuidasdok</IntIoRef> omvat zowel de aanpassingen aan station Amsterdam Zuid ten behoeve van de capaciteitvergroting en de opwaardering tot een volwaardige openbaarvervoerterminal (OVT) als aanpassingen aan de A10, waaronder de uitbreiding naar twee maal zes rijstroken en het - ter hoogte van het plangebied - ondertunnelen van de A10. Het tracébesluit maakt de totale wegverbreding van knooppunt Amstel tot knooppunt De Nieuwe Meer inclusief het plaatselijk ondergronds brengen van de A10 mogelijk. Het bestemmingsplan regelt de openbaarvervoerterminal, de tunneldaken, aangrenzende gronden en een langzaamverkeersverbinding ter hoogte van het Beatrixpark. De infrastructurele aanpassingen en de gebiedsontwikkeling kunnen niet los van elkaar worden gezien. Omdat het hier een integrale gebiedsontwikkeling betreft, is gekozen om het tracébesluit en het bestemmingsplan voor dit gebied zoveel mogelijk parallel te laten lopen.</Al>
                                     <Al>Het onderhavige bestemmingsplan beoogt voor de gronden die binnen het bestemmingsplangebied vallen het tracébesluit te incorporeren. Het gaat daarbij om de parallel aan het station gelegen gronden, waar de 2 verkeerstunnels zijn voorzien. Daarmee zijn de verbreding van de A10 en de ondertunneling voor dit bestemmingsplan een gegeven.</Al>
                                     <Al>Het tracébesluit wordt vastgesteld door de Minister van Infrastructuur en Milieu. De gemeenteraad stelt vervolgens het bestemmingsplan Zuidasdok vast, waarbij in aanvulling op de verbreding en de ondertunneling een juridisch planologisch kader wordt geboden voor de verbouw van de openbaarvervoerterminal en de inrichting van de tunneldaken.</Al>
                                     <Al>Met dit bestemmingsplan wordt voor dit gebied voldaan aan de verplichting om binnen een jaar nadat het tracébesluit onherroepelijk is geworden een bestemmingsplan overeenkomstig het tracébesluit vast te stellen (artikel 13, lid 10 Tracéwet). Voor de overige gronden blijft vooralsnog het tracébesluit het geldende planologisch regime waaraan ontwikkelingen getoetst dienen te worden. Het bestemmingsplan regelt de openbaarvervoerterminal, de functies op de tunneldaken en de langzaamverkeersbrug ter hoogte van de RAI.</Al>
@@ -868,7 +870,7 @@
                                 <Opschrift>Hoofdstuk 9: Verkeersbesluit</Opschrift>
                             </Kop>
                             <FormeleInhoud eId="fdvs_o_1__fdvs_o_6__fcontent_o_1" wId="pv27_1__fdvs_o_1__fdvs_o_6__fcontent_o_1">
-                                <Al>De maximum rijsnelheden op de A10 Zuid en de van de knooppunten De Nieuwe Meer en Amstel onderdeel uitmakende gedeelten van de A4, A10 West, A10 Oost en A2 zijn weergeven in Tabel 1. </Al>
+                                <Al>De <IntIoRef eId="fdvs_o_1__fdvs_o_6__fcontent_o_1__ref_o_1" wId="pv27_1__fdvs_o_1__fdvs_o_6__fcontent_o_1__ref_o_1" doel="">maximum rijsnelheden op de A10 Zuid en de van de knooppunten De Nieuwe Meer en Amstel onderdeel uitmakende gedeelten van de A4, A10 West, A10 Oost en A2</IntIoRef> zijn weergeven in Tabel 1.</Al>
                                 <table xmlns:rws="https://www.rws.nl" eId="fdvs_o_1__fdvs_o_6__fcontent_o_1__table_o_1" wId="pv27_1__fdvs_o_1__fdvs_o_6__fcontent_o_1__table_o_1" rws:class="tabel" frame="all" colsep="1" rowsep="1">
                                     <title>Tabel 1 – Rijsnelheden</title>
                                     <tgroup align="left" cols="3">
@@ -960,10 +962,18 @@
                     <Inhoud>
                         <Begrippenlijst eId="cmp_I__list_o_1" wId="pv27_1__cmp_I__list_o_1">
                             <Begrip eId="cmp_I__list_o_1__item_o_1" wId="pv27_1__cmp_I__list_o_1__item_o_1">
-                                <Term> Werkinggebied A </Term>
+                                <Term>Plangebied project Zuidas</Term>
                                 <Definitie>
                                     <Al>
-                                        <ExtIoRef eId="cmp_I__list_o_1__item_o_1__ref_o_1" wId="pv27_1__cmp_I__list_o_1__item_o_1__ref_o_1" doel="/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit_zuidas/nld@2019-12-12">/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit_zuidas/nld@2019-12-12</ExtIoRef>
+                                        <ExtIoRef eId="cmp_I__list_o_1__item_o_1__ref_o_1" wId="pv27_1__cmp_I__list_o_1__item_o_1__ref_o_1" doel="/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12">/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit_zuidas/nld@2019-12-12</ExtIoRef>
+                                    </Al>
+                                </Definitie>
+                            </Begrip>
+                            <Begrip eId="cmp_I__list_o_1__item_o_2" wId="pv27_1__cmp_I__list_o_1__item_o_2">
+                                <Term>A10-Zuid en de knooppunten Nieuwe Meer en Amstel</Term>
+                                <Definitie>
+                                    <Al>
+                                        <ExtIoRef eId="cmp_I__list_o_1__item_o_2__ref_o_1" wId="pv27_1__cmp_I__list_o_1__item_o_2__ref_o_1" doel="/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel/nld@2019-12-12">/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel/nld@2019-12-12</ExtIoRef>
                                     </Al>
                                 </Definitie>
                             </Begrip>
@@ -976,7 +986,7 @@
     <RegelingVersieInformatie>
         <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
             <FRBRWork>/akn/nl/act/pv27/2020/3520</FRBRWork>
-            <FRBRExpression>/akn/nl/act/pv27/2020/3520/nld@main</FRBRExpression>
+            <FRBRExpression>/akn/nl/act/pv27/2019/3520/nld@2019-12-01</FRBRExpression>
             <soortWork>/join/id/stop/work_019</soortWork>
         </ExpressionIdentificatie>
         <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">

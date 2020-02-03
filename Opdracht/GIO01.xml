@@ -5,21 +5,21 @@
     xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/ ../lvbb/LVBB-stop.xsd">
     <InformatieObjectVersie>
         <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-            <FRBRWork>/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit_zuidas</FRBRWork>
-            <FRBRExpression>/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit_zuidas/nld@2019-12-12</FRBRExpression>
+            <FRBRWork>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas</FRBRWork>
+            <FRBRExpression>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12</FRBRExpression>
             <soortWork>/join/id/stop/work_007</soortWork>
         </ExpressionIdentificatie>
         <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
             <eindverantwoordelijke>/tooi/id/provincie/pv27</eindverantwoordelijke>
             <maker>/tooi/id/provincie/pv27</maker>
-            <noemer>Werkingsgebied projectbesluit zuidas</noemer>
-            <officieleTitel>Werkingsgebied projectbesluit zuidas</officieleTitel>
+            <noemer>Plangebied projectbesluit Zuidas</noemer>
+            <officieleTitel>Plangebied projectbesluit Zuidas</officieleTitel>
             <publicatieinstructie>TeConsolideren</publicatieinstructie>
             <soortInformatieobject>/join/id/stop/informatieobject/gio_001</soortInformatieobject>
             <heeftBestanden>
                 <heeftBestand>
                     <Bestand>
-                        <bestandsnaam>werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml</bestandsnaam>
+                        <bestandsnaam>Locatie01.gml</bestandsnaam>
                         <hash>5c592832103c405c16e2071ce6abd26857617efe7e3f7e1e5f6d5a74e5eacca38ec64771cd6289781095d2570fc8d13a3630870fc78da5f7ecd07221a39e7319</hash>
                     </Bestand>
                 </heeftBestand>
@@ -27,12 +27,10 @@
         </InformatieObjectMetadata>
         <GeoInformatie xmlns="https://standaarden.overheid.nl/stop/imop/geo/">
             <featureMember>
-                <Locatie gml:id="werkingsgebied_projectbesluit_zuidas_20180320.geom.0">
-                    <wId>werkingsgebied_projectbesluit_zuidas_20180320.geom.0</wId>
-                    <naam>Werkingsgebied projectbesluit zuidas</naam>
-                    <geometrie
-                        xlink:href="werkingsgebied_projectbesluit_zuidas_20180320.geom.0.gml#6e84ce4c-eb3c-4c87-976f-4466045a8c8d"
-                    />
+                <Locatie gml:id="plangebied_projectbesluit_zuidas">
+                    <wId>plangebied_projectbesluit_zuidas</wId>
+                    <naam>Plangebied projectbesluit Zuidas</naam>
+                    <geometrie xlink:href="Locatie01.gml#6e84ce4c-eb3c-4c87-976f-4466045a8c8d"/>
                 </Locatie>
             </featureMember>
         </GeoInformatie>

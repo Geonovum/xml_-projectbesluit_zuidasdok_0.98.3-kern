@@ -12,7 +12,7 @@
         <sl:dataset>Zuidasdok</sl:dataset>
         <sl:inhoud>
             <sl:gebied>Amsterdam Zuid</sl:gebied>
-            <sl:leveringsId>Projectbesluit_Zuidasdok</sl:leveringsId>
+            <sl:leveringsId>projectbesluit_zuidasdok</sl:leveringsId>
             <sl:objectTypen>
                 <sl:objectType>Gebied</sl:objectType>
             </sl:objectTypen>
@@ -21,7 +21,7 @@
             <owObject>
                 <l:Gebied ow:regeltekstId="nl.imow-pv27.formeledivisie.2019000001">
                     <l:identificatie>nl.imow-pv27.gebied.2019000001</l:identificatie>
-                    <l:noemer>werkingsgebied_projectbesluit_zuidas_20180320.geom.0</l:noemer>
+                    <l:noemer>plangebied project Zuidasdok</l:noemer>
                     <l:geometrie>
                         <g-ref:GeometrieRef xlink:href="6e84ce4c-eb3c-4c87-976f-4466045a8c8d"/>
                     </l:geometrie>
@@ -32,9 +32,9 @@
             <owObject>
                 <l:Gebied ow:regeltekstId="nl.imow-pv27.formeledivisie.2019000004">
                     <l:identificatie>nl.imow-pv27.gebied.2019000002</l:identificatie>
-                    <l:noemer>NL.IMRO.0363.K1402BPGST-VG01.bestemming_verkeer.geom.0</l:noemer>
+                    <l:noemer>A10-zuidas projectgebied</l:noemer>
                     <l:geometrie>
-                        <g-ref:GeometrieRef type="simple" xlink:href="d42f13af-a37e-40e8-8f0d-d88ff53fa497"/>
+                        <g-ref:GeometrieRef xlink:href="d42f13af-a37e-40e8-8f0d-d88ff53fa497"/>
                     </l:geometrie>
                 </l:Gebied>
             </owObject>
