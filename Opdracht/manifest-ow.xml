@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Modules 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:m="http://www.geostandaarden.nl/imow/manifest/v20190901" 
-  xsi:schemaLocation="http://www.geostandaarden.nl/imow/manifest/v20190901 ../xsd/bestanden-ow/generiek/v20190901/manifest-ow.xsd">
+  xsi:schemaLocation="http://www.geostandaarden.nl/imow https://register.geostandaarden.nl/xmlschema/tpod/v0.98.2-kern/bestanden-ow/generiek/v20190901/manifest-ow.xsd">
   <domein>omgevingswet</domein>
   <RegelingVersie>
     <FRBRwork>/akn/nl/act/pv27/2019/3520</FRBRwork>
