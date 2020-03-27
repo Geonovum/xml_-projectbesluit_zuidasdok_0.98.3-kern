@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://www.geostandaarden.nl/imow https://register.geostandaarden.nl/xmlschema/tpod/v0.98.2-kern/bestanden-ow/generiek/v20190901/manifest-ow.xsd">
   <domein>omgevingswet</domein>
   <RegelingVersie>
-    <FRBRwork>/akn/nl/act/pv27/2019/3520</FRBRwork>
+    <FRBRwork>/akn/nl/bill/pv27/2019/3520</FRBRwork>
     <FRBRExpression>/akn/nl/act/pv27/2019/3520/nld@2019-12-01</FRBRExpression>
     <Bestand>
       <naam>owTekstdeel.xml</naam>
