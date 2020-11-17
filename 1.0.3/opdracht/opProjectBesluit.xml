@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Voor validatie is het noodzakelijk om ook de catalogi van de gepubliceerde versie 1.0.4 te laden.-->
 <AanleveringBesluit xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
-                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    schemaversie="1.0.4"
-                    xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.0.4/lvbb-stop-aanlevering.xsd">
+                    schemaversie="1.0.3">
    <BesluitVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/akn/nl/bill/pv27/2019/3520</FRBRWork>
@@ -13,9 +10,7 @@
       <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <eindverantwoordelijke>/tooi/id/provincie/pv27</eindverantwoordelijke>
          <maker>/tooi/id/provincie/pv27</maker>
-         <!--soortBestuursorgaan is onbekend. Waarde soortRegeling is '', soort bestuursorgaan is 'provincie'.-->
-         <soortBestuursorgaan>onbekend</soortBestuursorgaan>
-         <officieleTitel>[regelingopschrift van het besluit]</officieleTitel>
+         <officieleTitel>Projectbesluit Zuidas 2018</officieleTitel>
          <onderwerpen>
             <onderwerp>/tooi/def/concept/c_849842ac</onderwerp>
             <!-- verkeer -->
@@ -45,21 +40,21 @@
                   <doel>/join/id/proces/pv27/2019/Instelling</doel>
                </doelen>
                <instrumentVersie>/akn/nl/act/pv27/2019/3520/nld@2019-12-01</instrumentVersie>
-               <eId>art_I</eId>
+               <eId/>
             </BeoogdeRegeling>
             <BeoogdInformatieobject>
                <doelen>
                   <doel>/join/id/proces/pv27/2019/Instelling</doel>
                </doelen>
                <instrumentVersie>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12</instrumentVersie>
-               <eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
+               <eId>cmp_I__list_o_1__item_o_1__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
                   <doel>/join/id/proces/pv27/2019/Instelling</doel>
                </doelen>
                <instrumentVersie>/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel/nld@2019-12-12</instrumentVersie>
-               <eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
+               <eId>cmp_I__list_o_1__item_o_2__ref_o_1</eId>
             </BeoogdInformatieobject>
          </BeoogdeRegelgeving>
       </ConsolidatieInformatie>
@@ -117,7 +112,7 @@
                            <Divisietekst eId="div_o_1__div_o_1__div_o_1__content_o_1"
                                          wId="pv27_1__div_o_1__div_o_1__div_o_1__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                               <Kop>
-                                 <Opschrift> </Opschrift>
+                                 <Opschrift/>
                               </Kop>
                               <Inhoud>
                                  <Al>Zoals ook aangegeven in de Rijksstructuurvisie Infrastructuur en Ruimte (SVIR) en de gemeentelijke structuurvisie Amsterdam 2040 ontwikkelt de Zuidas zich tot internationale toplocatie voor wonen en werken in de metropoolregio Amsterdam. De uitstekende bereikbaarheid, de kwalitatief hoogwaardige omgeving en de economische aantrekkingskracht van Amsterdam vormen de grondslagen voor een succesvolle ontwikkeling. Een ontwikkeling waarmee de internationale concurrentiekracht wordt vergroot en de economische positie van Nederland in Europa en de rest van de wereld versterkt.<br/>Sinds de vaststelling van het Masterplan Zuidas door de gemeenteraad van Amsterdam in 1998 wordt de ontwikkelingsstrategie voor de Zuidas uitgewerkt in verschillende deelprojecten. Eén van deze deelprojecten is het project Zuidasdok van ProRail, Rijkswaterstaat en de gemeente Amsterdam. In de Structuurvisie ZuidasDok en het ambitiedocument zijn de ambities voor de ontwikkeling weergegeven. In de Structuurvisie zijn doelen gesteld om de bereikbaarheid van de noordelijke Randstad te verbeteren én Zuidas zich verder te laten ontwikkelen als internationale toplocatie en hoogwaardig stedelijk gebied. Het ambitiedocument geeft richting aan de infrastructurele ontwikkeling en inpassing van Zuidasdok en is te beschouwen als nadere uitwerking van deze Structuurvisie ZuidasDok. Deze twee documenten samen vormen de basis voor dit bestemmingsplan.</Al>
@@ -131,7 +126,7 @@
                            <Divisietekst eId="div_o_1__div_o_1__div_o_2__content_o_1"
                                          wId="pv27_1__div_o_1__div_o_1__div_o_2__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                               <Kop>
-                                 <Opschrift> </Opschrift>
+                                 <Opschrift/>
                               </Kop>
                               <Inhoud>
                                  <Al>Het <IntIoRef eId="div_o_1__div_o_1__div_o_2__content_o_1__ref_o_1"
@@ -147,7 +142,7 @@
                            <Divisietekst eId="div_o_1__div_o_1__div_o_3__content_o_1"
                                          wId="pv27_1__div_o_1__div_o_1__div_o_3__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                               <Kop>
-                                 <Opschrift> </Opschrift>
+                                 <Opschrift/>
                               </Kop>
                               <Inhoud>
                                  <Al>Het project Zuidasdok doorloopt verschillende fasen volgens het Meerjarenprogramma Infrastructuur, Ruimte en Transport (MIRT). Het MIRT gaat over de financiële investeringen in deze integrale gezamenlijke oplossingen (programma’s en projecten). Momenteel bevindt het project zich in fase twee: de planuitwerkingsfase.</Al>
@@ -165,7 +160,7 @@
                            <Divisietekst eId="div_o_1__div_o_1__div_o_4__content_o_1"
                                          wId="pv27_1__div_o_1__div_o_1__div_o_4__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                               <Kop>
-                                 <Opschrift> </Opschrift>
+                                 <Opschrift/>
                               </Kop>
                               <Inhoud>
                                  <Al>Het plangebied is gelegen binnen de grenzen van het stadsdeel Zuid. Bij besluiten van de gemeenteraad van 1997, 29 oktober 2003 en 13 juli 2011 is de Zuidas, waar het bestemmingsplangebied deel van uitmaakt, aangewezen als grootstedelijk project. Voor grootstedelijke projecten geldt dat alle bevoegdheden op grond van de Wet ruimtelijke ordening bij de centrale stad en dus het college van Burgemeester &amp; Wethouders en de gemeenteraad liggen. De bevoegdheid tot het in ontwerp ter visie leggen en het vaststellen van het onderhavige bestemmingsplan is dus aan de gemeenteraad toegekend.<br/>Na de terinzageligging van het ontwerpbestemmingsplan is de bestuurlijke structuur van de gemeente Amsterdam gewijzigd. De stadsdelen zijn omgezet in Bestuurscommissies, waarbij overigens de term stadsdelen nog wel wordt gebezigd. De bevoegdheid tot vaststelling van bestemmingsplannen is nu voor de gehele gemeente overgegaan naar de gemeenteraad. Voor het onderhavige bestemmingsplan is er in dit verband geen sprake van een wijziging.</Al>
@@ -179,7 +174,7 @@
                            <Divisietekst eId="div_o_1__div_o_1__div_o_5__content_o_1"
                                          wId="pv27_1__div_o_1__div_o_1__div_o_5__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                               <Kop>
-                                 <Opschrift> </Opschrift>
+                                 <Opschrift/>
                               </Kop>
                               <Inhoud>
                                  <Al>Zuidasdok is in het kader van de zevende tranche (inwerkingtreding 15 mei 2014; Stb 2014, nr. 168) opgenomen in bijlage 2 van de Crisis- en herstelwet als overig ruimtelijk project. De ontwikkeling wordt daarin aangehaald als een “Combinatie van stedelijke ontwikkeling en verbetering van bereikbaarheid, zowel via de weg als het openbaar vervoer. Onderdelen van het project zijn herinrichting van de A10-Zuid en de knooppunten Nieuwe Meer en Amstel en herinrichting van de openbaarvervoerterminal.” In de Nota van toelichting bij de 7e tranche staat vermeld dat “de aanwijzing van het project in aanvulling is op de reeds aangewezen gebiedsontwikkeling Zuidas en om zeker te stellen dat ook Zuidasdok, inclusief de infrastructurele onderdelen, onder de werking van de Crisis- en herstelwet valt”.</Al>
@@ -220,7 +215,7 @@
                            <Divisietekst eId="div_o_1__div_o_1__div_o_6__content_o_1"
                                          wId="pv27_1__div_o_1__div_o_1__div_o_6__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                               <Kop>
-                                 <Opschrift> </Opschrift>
+                                 <Opschrift/>
                               </Kop>
                               <Inhoud>
                                  <Al>Het bestemmingsplan bestaat uit regels, een verbeelding en gaat vergezeld van een toelichting. Op de verbeelding zijn de bestemmingen in het plangebied weergegeven. Deze bestemmingen zijn gerelateerd aan de in de regels opgenomen juridische regeling. De verbeelding en de planregels vormen samen de bestemmingsplanregeling zoals deze door de gemeenteraad wordt vastgesteld. De toelichting geeft de achtergronden (relevant beleid, resultaten van onderzoeken en gemaakte keuzes) bij de bestemmingsplanregeling en licht deze vanzelfsprekend toe.</Al>
@@ -235,7 +230,7 @@
                         <Divisietekst eId="div_o_1__div_o_2__content_o_1"
                                       wId="pv27_1__div_o_1__div_o_2__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                            <Kop>
-                              <Opschrift> </Opschrift>
+                              <Opschrift/>
                            </Kop>
                            <Inhoud>
                               <Lijst xmlns:rws="https://www.rws.nl"
@@ -523,7 +518,7 @@
                         <Divisietekst eId="div_o_1__div_o_3__content_o_1"
                                       wId="pv27_1__div_o_1__div_o_3__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                            <Kop>
-                              <Opschrift> </Opschrift>
+                              <Opschrift/>
                            </Kop>
                            <Inhoud>
                               <Lijst xmlns:rws="https://www.rws.nl"
@@ -1063,7 +1058,7 @@
                         <Divisietekst eId="div_o_1__div_o_4__content_o_1"
                                       wId="pv27_1__div_o_1__div_o_4__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                            <Kop>
-                              <Opschrift> </Opschrift>
+                              <Opschrift/>
                            </Kop>
                            <Inhoud>
                               <Lijst xmlns:rws="https://www.rws.nl"
@@ -1124,7 +1119,7 @@
                         <Divisietekst eId="div_o_1__div_o_5__content_o_1"
                                       wId="pv27_1__div_o_1__div_o_5__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                            <Kop>
-                              <Opschrift> </Opschrift>
+                              <Opschrift/>
                            </Kop>
                            <Inhoud>
                               <Al>Dit besluit wijzigt de regels van het omgevingsplan van de gemeente Amsterdam. De wijziging van deze regels, inclusief de daarbij behorende gewijzigde Verbeelding, zijn opgenomen in <b>bijlage (-)</b>.</Al>
@@ -1138,7 +1133,7 @@
                         <Divisietekst eId="div_o_1__div_o_6__content_o_1"
                                       wId="pv27_1__div_o_1__div_o_6__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                            <Kop>
-                              <Opschrift> </Opschrift>
+                              <Opschrift/>
                            </Kop>
                            <Inhoud>
                               <Al>De <IntIoRef eId="div_o_1__div_o_6__content_o_1__ref_o_1"
@@ -1238,7 +1233,7 @@
                   </Kop>
                   <Divisietekst eId="cmp_I__content_o_1" wId="pv27_1__cmp_I__content_o_1"><!-- lege kop tbv validatie imop-tekst.sch -->
                      <Kop>
-                        <Opschrift> </Opschrift>
+                        <Opschrift/>
                      </Kop>
                      <Inhoud>
                         <Begrippenlijst eId="cmp_I__content_o_1__list_o_1"
@@ -1285,8 +1280,6 @@
       <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <eindverantwoordelijke>/tooi/id/provincie/pv27</eindverantwoordelijke>
          <maker>/tooi/id/provincie/pv27</maker>
-         <!--soortBestuursorgaan is onbekend. Waarde soortRegeling is '', soort bestuursorgaan is 'provincie'.-->
-         <soortBestuursorgaan>onbekend</soortBestuursorgaan>
          <officieleTitel>&gt;Projectbesluit Zuidas 2018</officieleTitel>
          <onderwerpen>
             <onderwerp>/tooi/def/concept/c_849842ac</onderwerp>
