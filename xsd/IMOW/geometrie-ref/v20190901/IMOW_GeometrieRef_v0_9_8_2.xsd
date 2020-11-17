@@ -6,10 +6,10 @@
            targetNamespace="http://www.geostandaarden.nl/imow/geometrie-ref/v20190901"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="0.9.8.2-">
+           version="0.9.8.3-">
    <xs:annotation>
       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/geometrie-ref</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/schema-info/version">0.9.8.2</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/schema-info/version">0.9.8.3</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/schema-info/release">20190901</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/schema-info/generated">2019-09-04T13:47:07Z</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/schema-info/generator">1.53.4 - EVALUATION VERSION, PLEASE REGISTER!</xs:appinfo>

@@ -12,7 +12,7 @@
            targetNamespace="http://www.geostandaarden.nl/imow/vrijetekst/v20190901"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="0.9.8.2-1">
+           version="0.9.8.3">
    <xs:annotation>
       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/vrijetekst</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/schema-info/version">0.9.8.2</xs:appinfo>

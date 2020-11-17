@@ -5,7 +5,7 @@
            targetNamespace="http://www.geostandaarden.nl/imow/datatypenalgemeen/v20190709"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="0.9.8-2">
+           version="0.9.8-3">
    <xs:annotation>
       <xs:appinfo source="http://www.imvertor.org/schema-info/uri">http://www.geostandaarden.nl/imow/datatypenalgemeen</xs:appinfo>
       <xs:appinfo source="http://www.imvertor.org/schema-info/version">0.9.8</xs:appinfo>
@@ -48,7 +48,7 @@
          <xs:documentation>This complex datatype is transformed to a simple type because a content pattern is defined.</xs:documentation>
       </xs:annotation>
       <xs:restriction base="xs:string">
-         <xs:pattern value="nl\.imow-(gm|pv|ws|mn)[0-9]{1,6}\.(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|formeledivisie)\.[A-Za-z0-9]{1,32}"/>
+         <xs:pattern value="nl\.imow-(gm|pv|ws|mn|mnre)[0-9]{1,6}\.(regeltekst|gebied|gebiedengroep|lijn|lijnengroep|punt|puntengroep|activiteit|gebiedsaanwijzing|omgevingswaarde|omgevingsnorm|pons|kaart|tekstdeel|hoofdlijn|formeledivisie)\.[A-Za-z0-9]{1,32}"/>
       </xs:restriction>
    </xs:simpleType>
    <xs:simpleType name="Eenheid">
