@@ -36,13 +36,17 @@
                <soortStap>/join/id/stop/procedurestap/stap_003</soortStap>
                <voltooidOp>2019-11-01</voltooidOp>
             </Procedurestap>
+            <Procedurestap>
+               <soortStap>/join/id/stop/procedurestap/stap_003</soortStap>
+               <voltooidOp>2019-11-03</voltooidOp>
+            </Procedurestap>
          </procedurestappen>
       </Procedureverloop>
       <ConsolidatieInformatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <BeoogdeRegelgeving>
             <BeoogdeRegeling>
                <doelen>
-                  <doel>/join/id/proces/pv27/2019/Instelling</doel>
+                  <doel>/join/id/proces/pv27/2019/Projectbesluit</doel>
                </doelen>
                <instrumentVersie>/akn/nl/act/pv27/2019/3520/nld@2019-12-01</instrumentVersie>
                <eId>art_I</eId>
@@ -62,10 +66,18 @@
                <eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
             </BeoogdInformatieobject>
          </BeoogdeRegelgeving>
+         <Tijdstempels>
+            <Tijdstempel>
+               <doel>/join/id/proces/pv27/2019/Projectbesluit</doel>
+               <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
+               <datum>2019-12-31</datum>
+               <eId>art_II</eId>               
+            </Tijdstempel>
+         </Tijdstempels>
       </ConsolidatieInformatie>
       <BesluitCompact xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
          <RegelingOpschrift eId="longTitle" wId="longTitle">
-            <Al>[regelingopschrift van het besluit]</Al>
+            <Al>Het Projectbesluit Zuidas</Al>
          </RegelingOpschrift>
          <Aanhef eId="formula_1" wId="formula_1">
             <Al>[optionele aanhef]</Al>
@@ -101,6 +113,9 @@
             </Kop>
             <RegelingVrijetekst componentnaam="initieel_reg"
                                 wordt="/akn/nl/act/pv27/2019/3520/nld@2019-12-01">
+               <RegelingOpschrift wId="longTitle" eId="longTitle">
+                  <Al>Het Projectbesluit Zuidas</Al>
+               </RegelingOpschrift>
                <Lichaam eId="body" wId="body">
                   <Divisie eId="div_o_1" wId="pv27_1__div_o_1">
                      <Kop>
@@ -603,10 +618,10 @@
                                      rowsep="1">
                                  <title>Tabel 5 – Overzicht geluidschermen</title>
                                  <tgroup align="left" cols="4">
-                                    <colspec colname="col1" colwidth="4082"/>
-                                    <colspec colname="col2" colwidth="2733"/>
-                                    <colspec colname="col3" colwidth="1047"/>
-                                    <colspec colname="col4" colwidth="970"/>
+                                    <colspec colname="col1" colwidth="4082*"/>
+                                    <colspec colname="col2" colwidth="2733*"/>
+                                    <colspec colname="col3" colwidth="1047*"/>
+                                    <colspec colname="col4" colwidth="970*"/>
                                     <thead valign="top">
                                        <row>
                                           <entry align="left" namest="col1" nameend="col1">
@@ -921,10 +936,10 @@
                                      rowsep="1">
                                  <title>Tabel 6 – Overzicht asfalttypen</title>
                                  <tgroup align="left" cols="4">
-                                    <colspec colname="col1" colwidth="3534"/>
-                                    <colspec colname="col2" colwidth="3553"/>
-                                    <colspec colname="col3" colwidth="907"/>
-                                    <colspec colname="col4" colwidth="850"/>
+                                    <colspec colname="col1" colwidth="3534*"/>
+                                    <colspec colname="col2" colwidth="3553*"/>
+                                    <colspec colname="col3" colwidth="907*"/>
+                                    <colspec colname="col4" colwidth="850*"/>
                                     <thead valign="top">
                                        <row>
                                           <entry align="left" namest="col1" nameend="col1">
@@ -1153,9 +1168,9 @@
                                      rowsep="1">
                                  <title>Tabel 1 – Rijsnelheden</title>
                                  <tgroup align="left" cols="3">
-                                    <colspec colname="col1" colwidth="2721"/>
-                                    <colspec colname="col2" colwidth="4120"/>
-                                    <colspec colname="col3" colwidth="1998"/>
+                                    <colspec colname="col1" colwidth="2721*"/>
+                                    <colspec colname="col2" colwidth="4120*"/>
+                                    <colspec colname="col3" colwidth="1998*"/>
                                     <tbody valign="top">
                                        <row>
                                           <entry align="left" namest="col1" nameend="col1">
