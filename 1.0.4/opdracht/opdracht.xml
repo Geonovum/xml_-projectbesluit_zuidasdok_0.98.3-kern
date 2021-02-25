@@ -3,6 +3,6 @@
    <lvbb:idLevering>Projectbesluit_Zuidasdok</lvbb:idLevering>
    <lvbb:idBevoegdGezag>00000001001003124000</lvbb:idBevoegdGezag>
    <lvbb:idAanleveraar>00000001001003124000</lvbb:idAanleveraar>
-   <lvbb:publicatie>opProjectbesluit.xml</lvbb:publicatie>
+   <lvbb:publicatie>opProjectBesluit.xml</lvbb:publicatie>
    <lvbb:datumBekendmaking>2019-03-08</lvbb:datumBekendmaking>
 </lvbb:publicatieOpdracht>
