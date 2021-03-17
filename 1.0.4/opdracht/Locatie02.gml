@@ -14,8 +14,8 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork/>
-         <geo:FRBRExpression/>
+         <geo:FRBRWork>/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel/nld@2019-12-12</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:geometrie>

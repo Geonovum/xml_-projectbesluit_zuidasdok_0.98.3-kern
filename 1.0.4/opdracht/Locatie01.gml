@@ -14,8 +14,8 @@
    </geo:context>
    <geo:vastgesteldeVersie>
       <geo:GeoInformatieObjectVersie>
-         <geo:FRBRWork/>
-         <geo:FRBRExpression/>
+         <geo:FRBRWork>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas</geo:FRBRWork>
+         <geo:FRBRExpression>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12</geo:FRBRExpression>
          <geo:locaties>
             <geo:Locatie>
                <geo:geometrie>

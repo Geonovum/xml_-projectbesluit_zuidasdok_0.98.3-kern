@@ -26,7 +26,7 @@
          </rechtsgebieden>
          <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
          <informatieobjectRefs>
-            <informatieobjectRef>/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit_zuidas/nld@2019-12-12</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12</informatieobjectRef>
             <informatieobjectRef>/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel/nld@2019-12-12</informatieobjectRef>
          </informatieobjectRefs>
       </BesluitMetadata>
@@ -34,12 +34,12 @@
          <bekendOp>2019-12-01</bekendOp>
          <procedurestappen>
             <Procedurestap>
-               <soortStap>/join/id/stop/procedurestap/stap_002</soortStap>
-               <voltooidOp>2019-11-01</voltooidOp>
+               <soortStap>/join/id/stop/procedure/stap_002</soortStap>
+               <voltooidOp>2021-03-11</voltooidOp>
             </Procedurestap>
             <Procedurestap>
-               <soortStap>/join/id/stop/procedurestap/stap_003</soortStap>
-               <voltooidOp>2019-11-03</voltooidOp>
+               <soortStap>/join/id/stop/procedure/stap_003</soortStap>
+               <voltooidOp>2021-03-13</voltooidOp>
             </Procedurestap>
          </procedurestappen>
       </Procedureverloop>
@@ -198,7 +198,7 @@
                                  <Opschrift> </Opschrift>
                               </Kop>
                               <Inhoud>
-                                 <Al>Zuidasdok is in het kader van de zevende tranche (inwerkingtreding 15 mei 2014; Stb 2014, nr. 168) opgenomen in bijlage 2 van de Crisis- en herstelwet als overig ruimtelijk project. De ontwikkeling wordt daarin aangehaald als een “Combinatie van stedelijke ontwikkeling en verbetering van bereikbaarheid, zowel via de weg als het openbaar vervoer. Onderdelen van het project zijn herinrichting van de A10-Zuid en de knooppunten Nieuwe Meer en Amstel en herinrichting van de openbaarvervoerterminal.” In de Nota van toelichting bij de 7e tranche staat vermeld dat “de aanwijzing van het project in aanvulling is op de reeds aangewezen gebiedsontwikkeling Zuidas en om zeker te stellen dat ook Zuidasdok, inclusief de infrastructurele onderdelen, onder de werking van de Crisis- en herstelwet valt”.</Al>
+                                 <Al>Zuidasdok is in het kader van de zevende tranche (inwerkingtreding 15 mei 2014; Stb 2014, nr. 168) opgenomen in bijlage 2 van de Crisis- en herstelwet als overig ruimtelijk project. De ontwikkeling wordt daarin aangehaald als een “Combinatie van stedelijke ontwikkeling en verbetering van bereikbaarheid, zowel via de weg als het openbaar vervoer. Onderdelen van het project zijn herinrichting van de <IntIoRef wId="pv27_1__div_o_1__div_o_1__div_o_5__content_o_1__ref_o_1" eId="div_o_1__div_o_1__div_o_5__content_o_1__ref_o_1" ref="pv27_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1">A10-Zuid en de knooppunten Nieuwe Meer en Amstel</IntIoRef> en herinrichting van de openbaarvervoerterminal.” In de Nota van toelichting bij de 7e tranche staat vermeld dat “de aanwijzing van het project in aanvulling is op de reeds aangewezen gebiedsontwikkeling Zuidas en om zeker te stellen dat ook Zuidasdok, inclusief de infrastructurele onderdelen, onder de werking van de Crisis- en herstelwet valt”.</Al>
                                  <Lijst xmlns:rws="https://www.rws.nl"
                                         eId="div_o_1__div_o_1__div_o_5__content_o_1__list_o_1"
                                         wId="pv27_1__div_o_1__div_o_1__div_o_5__content_o_1__list_o_1"
@@ -1264,7 +1264,7 @@
                                  <Al>
                                     <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
                                               wId="pv27_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"
-                                              ref="/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12">/join/id/regdata/pv27/2019/werkingsgebied_projectbesluit_zuidas/nld@2019-12-12</ExtIoRef>
+                                              ref="/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12">/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12</ExtIoRef>
                                  </Al>
                               </Definitie>
                            </Begrip>
