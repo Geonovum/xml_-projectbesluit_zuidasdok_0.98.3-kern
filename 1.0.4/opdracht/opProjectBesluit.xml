@@ -54,14 +54,14 @@
             </BeoogdeRegeling>
             <BeoogdInformatieobject>
                <doelen>
-                  <doel>/join/id/proces/pv27/2019/Instelling</doel>
+                  <doel>/join/id/proces/pv27/2019/Projectbesluit</doel>
                </doelen>
                <instrumentVersie>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12</instrumentVersie>
                <eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
             </BeoogdInformatieobject>
             <BeoogdInformatieobject>
                <doelen>
-                  <doel>/join/id/proces/pv27/2019/Instelling</doel>
+                  <doel>/join/id/proces/pv27/2019/Projectbesluit</doel>
                </doelen>
                <instrumentVersie>/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel/nld@2019-12-12</instrumentVersie>
                <eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
@@ -90,7 +90,7 @@
                   <Nummer>I</Nummer>
                   <Opschrift>[optioneel opschrift]</Opschrift>
                </Kop>
-               <Wat>[omschrijving wat er besloten wordt, met een verwijzing naar de WijzigBijlage]</Wat>
+               <Wat><IntRef ref="cmp_A" scope="WijzigBijlage">"Projectbesluit Zuidas"</IntRef> wordt vastgesteld.</Wat>
             </WijzigArtikel>
             <Artikel eId="art_II" wId="pv27_1__art_II">
                <Kop>
@@ -106,7 +106,7 @@
          <Sluiting eId="formula_2" wId="formula_2">
             <Al>[sluiting]</Al>
          </Sluiting>
-         <WijzigBijlage eId="cmp_I" wId="pv27_1__cmp_I">
+         <WijzigBijlage eId="cmp_A" wId="pv27_1__cmp_A">
             <Kop>
                <Label>Bijlage</Label>
                <Nummer>I</Nummer>
