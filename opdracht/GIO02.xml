@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AanleveringInformatieObject 
    xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
-   xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" schemaversie="1.0.4"
+   xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" schemaversie="1.1.0"
    xmlns:gml="http://www.opengis.net/gml/3.2">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
@@ -14,7 +14,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Locatie02.gml</bestandsnaam>
-                  <hash>2976e037afa63a7e36c0ca5f203086cffdbe91ea7204fe115697c8dfdf526402e06e796567ecf40cbcbf07e13073f5e2a2b6a06c05ad52f64c0c9c58137525ea</hash>
+                  <hash>3843fe28287afb69fbf5bdea396cac083781419265e1ca7a20df96dbdfa996e7bff7b1a53df48b46195281b68b16ff9834ce4c64b7639436e2af9425441aef8b</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
