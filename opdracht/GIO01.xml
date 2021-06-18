@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AanleveringInformatieObject 
+    xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+    xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" schemaversie="1.0.4"
+    xmlns:gml="http://www.opengis.net/gml/3.2">
+    <InformatieObjectVersie>
+        <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <FRBRWork>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas</FRBRWork>
+            <FRBRExpression>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas/nld@2019-12-12</FRBRExpression>
+            <soortWork>/join/id/stop/work_010</soortWork>
+        </ExpressionIdentificatie>
+        <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <heeftBestanden>
+                <heeftBestand>
+                    <Bestand>
+                        <bestandsnaam>Locatie01.gml</bestandsnaam>
+                        <hash>a2785af825f3687c3f5dd6c5c4e114a875cd48f02ec9faa1ad588eaf86eb2cf4916b2e665ae8de5eb0ed11a5d0925e6577dbd974436bd9794d975a246cf0979e</hash>
+                    </Bestand>
+                </heeftBestand>
+            </heeftBestanden>
+            <heeftGeboorteregeling>/akn/nl/act/pv27/2019/3520</heeftGeboorteregeling>
+        </InformatieObjectVersieMetadata>
+        <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+            <eindverantwoordelijke>/tooi/id/provincie/pv27</eindverantwoordelijke>
+            <maker>/tooi/id/provincie/pv27</maker>
+            <alternatieveTitels>
+                <alternatieveTitel>Plangebied projectbesluit Zuidas</alternatieveTitel>
+            </alternatieveTitels>
+            <officieleTitel>/join/id/regdata/pv27/2019/plangebied_projectbesluit_zuidas</officieleTitel>
+            <publicatieinstructie>TeConsolideren</publicatieinstructie>
+            <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+            <naamInformatieObject>Plangebied projectbesluit Zuidas</naamInformatieObject>
+        </InformatieObjectMetadata>
+    </InformatieObjectVersie>
+</AanleveringInformatieObject>
