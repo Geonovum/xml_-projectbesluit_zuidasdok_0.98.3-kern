@@ -8,9 +8,9 @@
       <DoelID>/join/id/proces/pv27/2019/Projectbesluit</DoelID>
       <Bestand>
          <naam>owTekstdeel.xml</naam>
-         <objecttype>Tekstdeel</objecttype>
          <objecttype>Divisie</objecttype>
-         <objecttype>Hoofdlijn</objecttype>
+         <objecttype>Divisietekst</objecttype>
+         <objecttype>Tekstdeel</objecttype>
       </Bestand>
       <Bestand>
          <naam>owLocatie.xml</naam>

@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<AanleveringInformatieObject 
-   xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
-   xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" schemaversie="1.1.0"
-   xmlns:gml="http://www.opengis.net/gml/3.2">
+<?xml version="1.0" encoding="utf-8"?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             schemaversie="1.2.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <FRBRWork>/join/id/regdata/pv27/2019/A10-zuid_en_de_knooppunten_nieuwe_meer_en_amstel</FRBRWork>
@@ -14,7 +15,7 @@
             <heeftBestand>
                <Bestand>
                   <bestandsnaam>Locatie02.gml</bestandsnaam>
-                  <hash>3843fe28287afb69fbf5bdea396cac083781419265e1ca7a20df96dbdfa996e7bff7b1a53df48b46195281b68b16ff9834ce4c64b7639436e2af9425441aef8b</hash>
+                  <hash>607a10a2e1c56d0ca8e2b37e1da57047aa31899ae01ed334cde3a8a4134db9d484eaed50c0d99cf3863ca67d0f30df45907194a212a37ab8ab166e2a8eb28b76</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
