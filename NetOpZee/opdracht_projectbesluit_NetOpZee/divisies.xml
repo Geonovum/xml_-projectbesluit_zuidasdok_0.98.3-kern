@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:op="http://www.geostandaarden.nl/imow/opobject" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+  <sl:standBestand>
+    <sl:dataset>OOWPNOZIJ</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>IJmuiden</sl:gebied>
+      <sl:leveringsId>OOWPNOZIJ2</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>Divisie</sl:objectType>
+      </sl:objectTypen>
+    </sl:inhoud>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_1__div_1.1">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ1faf9e96b6713de3494ff7e49</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_1__div_1.2__div_1.2.1">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ1eff0501a5636be5ab65d6872</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_1__div_1.2__div_1.2.2">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ12ee6b4a33c134a230c2c87f9</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_1__div_1.2__div_1.2.3">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ1b505a7a21174b6fe9e6cbd0d</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_2">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ170b5e90468443731d25254aa</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_3__div_3.1">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ1f21960df4650ea2fec2f3730</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_3__div_3.2">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ17bfe8846c70ca736d31a6857</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_3__div_3.3">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ1bd8d341b0d2a416278db641d</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_4">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ1ed0271b156f12121b383a7c3</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_5">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ15eb0650aeecf53d12bb1332f</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_6">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ15694b4f933bd4c07c13f419f</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Divisie wId="mnre1045_1__div_7">
+          <vt:identificatie>nl.imow-mnre1045.divisie.PIJ1d3e8e805405c9ff891d02995</vt:identificatie>
+        </vt:Divisie>
+      </ow-dc:owObject>
+    </sl:stand>
+  </sl:standBestand>
+</ow-dc:owBestand>

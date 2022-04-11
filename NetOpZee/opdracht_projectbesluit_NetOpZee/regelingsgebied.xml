@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<ow-dc:owBestand xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:rg="http://www.geostandaarden.nl/imow/regelingsgebied" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+  <sl:standBestand>
+    <sl:dataset>OOWPNOZIJ</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>IJmuiden</sl:gebied>
+      <sl:leveringsId>OOWPNOZIJ2</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>Regelingsgebied</sl:objectType>
+      </sl:objectTypen>
+    </sl:inhoud>
+    <sl:stand>
+      <ow-dc:owObject>
+        <rg:Regelingsgebied>
+          <rg:identificatie>nl.imow-mnre1045.regelingsgebied.PIJ1OOWPNOZIJReg1vBrgb</rg:identificatie>
+          <rg:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Projectgebied"/>
+          </rg:locatieaanduiding>
+        </rg:Regelingsgebied>
+      </ow-dc:owObject>
+    </sl:stand>
+  </sl:standBestand>
+</ow-dc:owBestand>

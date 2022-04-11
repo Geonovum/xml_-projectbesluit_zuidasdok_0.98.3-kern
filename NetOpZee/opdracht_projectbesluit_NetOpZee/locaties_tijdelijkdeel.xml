@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+  <sl:standBestand>
+    <sl:dataset>OOWPNOZIJ</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>IJmuiden</sl:gebied>
+      <sl:leveringsId>OOWPNOZIJ2</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>Gebied</sl:objectType>
+      </sl:objectTypen>
+    </sl:inhoud>
+    <sl:stand>
+      <ow-dc:owObject>
+        <l:Gebied>
+           <l:identificatie>nl.imow-mnre1045.gebied.TijdelijkDeelgebied</l:identificatie>
+          <l:noemer>Projectgebied</l:noemer>
+          <l:geometrie>
+            <l:GeometrieRef xlink:href="98028ffc-e095-4ee6-85f4-75fb47ef5941"/>
+          </l:geometrie>
+        </l:Gebied>
+      </ow-dc:owObject>
+    </sl:stand>
+  </sl:standBestand>
+</ow-dc:owBestand>

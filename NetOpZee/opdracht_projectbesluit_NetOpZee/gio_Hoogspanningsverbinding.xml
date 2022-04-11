@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<AanleveringInformatieObject schemaversie="1.1.0" xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/ ../lvbb/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding</FRBRWork>
+      <FRBRExpression>/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding/nld@2021-02-06;1</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>Hoogspanningsverbinding.gml</bestandsnaam>
+             <hash>8bf827c6cbe106db1ac73bcf0bba687e776e92172ac923fe4a1d1b04f639000f353dd314380506a42345f92e97b1c21e3cde9da4c1c14db56c36999b292cace3</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+      <heeftGeboorteregeling>/akn/nl/act/mnre1045/2020/OOWPNOZIJReg1vB</heeftGeboorteregeling>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
+      <maker>/tooi/id/ministerie/mnre1045</maker>
+      <officieleTitel>/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding</officieleTitel>
+      <naamInformatieObject>Hoogspanningsverbinding</naamInformatieObject>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

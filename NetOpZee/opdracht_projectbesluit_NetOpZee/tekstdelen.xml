@@ -1,0 +1,218 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:k="http://www.geostandaarden.nl/imow/kaart" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rkow="http://www.geostandaarden.nl/imow/regeltekstkoppelingow/" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:vt="http://www.geostandaarden.nl/imow/vrijetekst" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+  <sl:standBestand>
+    <sl:dataset>OOWPNOZIJ</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>IJmuiden</sl:gebied>
+      <sl:leveringsId>OOWPNOZIJ2</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>Tekstdeel</sl:objectType>
+      </sl:objectTypen>
+    </sl:inhoud>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ1faf9e96b6713de3494ff7e49D0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ1faf9e96b6713de3494ff7e49"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Projectgebied"/>
+          </vt:locatieaanduiding>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ1d3e8e805405c9ff891d02995D0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ1d3e8e805405c9ff891d02995"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Projectgebied"/>
+          </vt:locatieaanduiding>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ15eb0650aeecf53d12bb1332fD0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ15eb0650aeecf53d12bb1332f"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Projectgebied"/>
+          </vt:locatieaanduiding>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ12ee6b4a33c134a230c2c87f9D0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ12ee6b4a33c134a230c2c87f9"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Hoogspanningsverbinding"/>
+          </vt:locatieaanduiding>
+          <vt:gebiedsaanwijzing>
+            <ga:GebiedsaanwijzingRef xlink:href="nl.imow-mnre1045.gebiedsaanwijzing.PIJ1gaHoogspanningsverbinding"/>
+          </vt:gebiedsaanwijzing>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ1ed0271b156f12121b383a7c3D0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ1ed0271b156f12121b383a7c3"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Projectgebied"/>
+          </vt:locatieaanduiding>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ1f21960df4650ea2fec2f3730D0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ1f21960df4650ea2fec2f3730"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Projectgebied"/>
+          </vt:locatieaanduiding>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ170b5e90468443731d25254aaD0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ170b5e90468443731d25254aa"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Projectgebied"/>
+          </vt:locatieaanduiding>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ1b505a7a21174b6fe9e6cbd0dD0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ1b505a7a21174b6fe9e6cbd0d"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Converterstation"/>
+          </vt:locatieaanduiding>
+          <vt:gebiedsaanwijzing>
+            <ga:GebiedsaanwijzingRef xlink:href="nl.imow-mnre1045.gebiedsaanwijzing.PIJ1gaConverterstation"/>
+          </vt:gebiedsaanwijzing>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ15694b4f933bd4c07c13f419fD0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ15694b4f933bd4c07c13f419f"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Projectgebied"/>
+          </vt:locatieaanduiding>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ1eff0501a5636be5ab65d6872D0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ1eff0501a5636be5ab65d6872"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Projectgebied"/>
+          </vt:locatieaanduiding>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ17bfe8846c70ca736d31a6857D0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ17bfe8846c70ca736d31a6857"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Hoogspanningsverbinding"/>
+          </vt:locatieaanduiding>
+          <vt:gebiedsaanwijzing>
+            <ga:GebiedsaanwijzingRef xlink:href="nl.imow-mnre1045.gebiedsaanwijzing.PIJ1gaHoogspanningsverbinding"/>
+          </vt:gebiedsaanwijzing>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <vt:Tekstdeel>
+          <vt:identificatie>nl.imow-mnre1045.tekstdeel.PIJ1bd8d341b0d2a416278db641dD0</vt:identificatie>
+          <vt:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</vt:idealisatie>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/EnergieEnNatuurlijkeHulpbronnen</vt:thema>
+          <vt:thema>http://standaarden.omgevingswet.overheid.nl/thema/id/concept/Infrastructuur</vt:thema>
+          <vt:divisieaanduiding>
+            <vt:DivisieRef xlink:href="nl.imow-mnre1045.divisie.PIJ1bd8d341b0d2a416278db641d"/>
+          </vt:divisieaanduiding>
+          <vt:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Converterstation"/>
+          </vt:locatieaanduiding>
+          <vt:gebiedsaanwijzing>
+            <ga:GebiedsaanwijzingRef xlink:href="nl.imow-mnre1045.gebiedsaanwijzing.PIJ1gaConverterstation"/>
+          </vt:gebiedsaanwijzing>
+        </vt:Tekstdeel>
+      </ow-dc:owObject>
+    </sl:stand>
+  </sl:standBestand>
+</ow-dc:owBestand>

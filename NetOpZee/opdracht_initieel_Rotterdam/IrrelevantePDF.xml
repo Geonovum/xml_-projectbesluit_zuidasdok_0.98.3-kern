@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Voor validatie is het noodzakelijk om ook de catalogi van de gepubliceerde versie 1.0.4 te laden.-->
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+                             xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                             schemaversie="1.2.0"
+                             xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+   <InformatieObjectVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/join/id/pubdata/gm0599/2022/PDF</FRBRWork>
+         <FRBRExpression>/join/id/pubdata/gm0599/2022/PDF/nld@2022-04-11;1</FRBRExpression>
+         <soortWork>/join/id/stop/work_010</soortWork>
+      </ExpressionIdentificatie>
+      <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <heeftBestanden>
+            <heeftBestand>
+               <Bestand>
+                  <bestandsnaam>IrrelevantePDF.pdf</bestandsnaam>
+                  <hash>f175e67800f87f7fa8bc0df7493910ee42c98f170b2bca7fae0653330c7eca05550bf8d3c8dbbfe42f230568b13d346826cc23f635da1e1dd581885867f040f1</hash>
+               </Bestand>
+            </heeftBestand>
+         </heeftBestanden>
+         <heeftGeboorteregeling>/akn/nl/act/gm0599/2021/omgevingsplanRotterdam</heeftGeboorteregeling>
+      </InformatieObjectVersieMetadata>
+      <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/gemeente/gm0599</eindverantwoordelijke>
+         <maker>/tooi/id/gemeente/gm0599</maker>
+         <alternatieveTitels>
+            <alternatieveTitel>Zuilichem</alternatieveTitel>
+         </alternatieveTitels>
+         <officieleTitel>/join/id/pubdata/gm0599/2022/PDF</officieleTitel>
+         <publicatieinstructie>AlleenBekendTeMaken</publicatieinstructie>
+         <formaatInformatieobject>/join/id/stop/informatieobject/doc_001</formaatInformatieobject>
+         <naamInformatieObject>pubdata</naamInformatieObject>
+      </InformatieObjectMetadata>
+   </InformatieObjectVersie>
+</AanleveringInformatieObject>

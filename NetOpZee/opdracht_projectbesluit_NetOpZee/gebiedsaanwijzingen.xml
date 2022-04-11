@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!-- created by OpenOmgevingswet -->
+<ow-dc:owBestand xmlns:da="http://www.geostandaarden.nl/imow/datatypenalgemeen" xmlns:ga="http://www.geostandaarden.nl/imow/gebiedsaanwijzing" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:l="http://www.geostandaarden.nl/imow/locatie" xmlns:op="http://www.geostandaarden.nl/imow/opobject" xmlns:ow="http://www.geostandaarden.nl/imow/owobject" xmlns:ow-dc="http://www.geostandaarden.nl/imow/bestanden/deelbestand" xmlns:r="http://www.geostandaarden.nl/imow/regels" xmlns:rol="http://www.geostandaarden.nl/imow/regelsoplocatie" xmlns:sl="http://www.geostandaarden.nl/bestanden-ow/standlevering-generiek" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geostandaarden.nl/imow/bestanden/deelbestand ../xsd/bestanden-ow/deelbestand-ow/IMOW_Deelbestand.xsd">
+  <sl:standBestand>
+    <sl:dataset>OOWPNOZIJ</sl:dataset>
+    <sl:inhoud>
+      <sl:gebied>IJmuiden</sl:gebied>
+      <sl:leveringsId>OOWPNOZIJ2</sl:leveringsId>
+      <sl:objectTypen>
+        <sl:objectType>Gebiedsaanwijzing</sl:objectType>
+      </sl:objectTypen>
+    </sl:inhoud>
+    <sl:stand>
+      <ow-dc:owObject>
+        <ga:Gebiedsaanwijzing>
+          <ga:identificatie>nl.imow-mnre1045.gebiedsaanwijzing.PIJ1gaConverterstation</ga:identificatie>
+          <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Energievoorziening</ga:type>
+          <ga:naam>Converterstation IJmuiden Ver Beta</ga:naam>
+          <ga:groep>http://standaarden.omgevingswet.overheid.nl/energievoorziening/id/concept/Energieproductiegebied</ga:groep>
+          <ga:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Converterstation"/>
+          </ga:locatieaanduiding>
+        </ga:Gebiedsaanwijzing>
+      </ow-dc:owObject>
+    </sl:stand>
+    <sl:stand>
+      <ow-dc:owObject>
+        <ga:Gebiedsaanwijzing>
+          <ga:identificatie>nl.imow-mnre1045.gebiedsaanwijzing.PIJ1gaHoogspanningsverbinding</ga:identificatie>
+          <ga:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Energievoorziening</ga:type>
+          <ga:naam>Hoogspanningsverbinding IJmuiden Ver Beta</ga:naam>
+          <ga:groep>http://standaarden.omgevingswet.overheid.nl/energievoorziening/id/concept/Hoogspanningsverbinding</ga:groep>
+          <ga:locatieaanduiding>
+            <l:LocatieRef xlink:href="nl.imow-mnre1045.gebied.PIJ1Hoogspanningsverbinding"/>
+          </ga:locatieaanduiding>
+        </ga:Gebiedsaanwijzing>
+      </ow-dc:owObject>
+    </sl:stand>
+  </sl:standBestand>
+</ow-dc:owBestand>

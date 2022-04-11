@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AanleveringInformatieObject xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:geo="https://standaarden.overheid.nl/stop/imop/geo/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaversie="1.2.0" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
+  <InformatieObjectVersie>
+    <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/join/id/regdata/gm0599/2021/Rotterdam</FRBRWork>
+      <FRBRExpression>/join/id/regdata/gm0599/2021/Rotterdam/nld@2021-04-10;1</FRBRExpression>
+      <soortWork>/join/id/stop/work_010</soortWork>
+    </ExpressionIdentificatie>
+    <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <heeftBestanden>
+        <heeftBestand>
+          <Bestand>
+            <bestandsnaam>Rotterdam.gml</bestandsnaam>
+            <hash>5ff80cc4dbb1296b1f0cba84d4aa706097617f286de5c9c3048d362746423a1ce49c56b2dfa18b22097fd45e347298f3fea15f49adcbcb415d11d961b7a53566</hash>
+          </Bestand>
+        </heeftBestand>
+      </heeftBestanden>
+    </InformatieObjectVersieMetadata>
+    <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/gemeente/gm0599</eindverantwoordelijke>
+      <maker>/tooi/id/gemeente/gm0599</maker>
+      <alternatieveTitels>
+        <alternatieveTitel>Rotterrrrrrdam</alternatieveTitel>
+      </alternatieveTitels>
+      <officieleTitel>/join/id/regdata/gm0599/2021/Rotterdam</officieleTitel>
+      <publicatieinstructie>TeConsolideren</publicatieinstructie>
+      <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
+      <naamInformatieObject>Rotterdam</naamInformatieObject>
+    </InformatieObjectMetadata>
+  </InformatieObjectVersie>
+</AanleveringInformatieObject>

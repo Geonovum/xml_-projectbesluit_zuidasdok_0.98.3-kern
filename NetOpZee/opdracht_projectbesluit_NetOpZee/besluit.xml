@@ -1,0 +1,1342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Richard heeft dit gejat van Open Omgevingswet versie 143-->
+<AanleveringBesluit xmlns="https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   schemaversie="1.1.0"
+   xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.1.0/lvbb-stop-aanlevering.xsd">
+   <BesluitVersie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/akn/nl/bill/mnre1045/2020/OOWPNOZIJBsl1Uniek</FRBRWork>
+         <FRBRExpression>/akn/nl/bill/mnre1045/2020/OOWPNOZIJBsl1Uniek/nld@2020-01-21</FRBRExpression>
+         <soortWork>/join/id/stop/work_003</soortWork>
+      </ExpressionIdentificatie>
+      <BesluitMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
+         <maker>/tooi/id/ministerie/mnre1045</maker>
+         <soortBestuursorgaan>/tooi/def/thes/kern/c_91fb5e42</soortBestuursorgaan>
+         <officieleTitel>Vaststelling Projecbesluit Net op zee IJmuiden Ver Beta</officieleTitel>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_cfc7d5ab</onderwerp>
+         </onderwerpen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+         </rechtsgebieden>
+         <soortProcedure>/join/id/stop/proceduretype_definitief</soortProcedure>
+         <informatieobjectRefs>
+            <informatieobjectRef>/join/id/regdata/mnre1045/2020/Converterstation/nld@2021-02-06;1</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding/nld@2021-02-06;1</informatieobjectRef>
+            <informatieobjectRef>/join/id/regdata/mnre1045/2020/Projectgebied/nld@2021-02-06;1</informatieobjectRef>
+         </informatieobjectRefs>
+      </BesluitMetadata>
+      <Procedureverloop xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <bekendOp>2020-02-06</bekendOp>
+         <procedurestappen>
+            <Procedurestap>
+               <soortStap>/join/id/stop/procedure/stap_003</soortStap>
+               <voltooidOp>2020-02-08</voltooidOp>
+            </Procedurestap>
+         </procedurestappen>
+      </Procedureverloop>
+      <ConsolidatieInformatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <BeoogdeRegelgeving>
+            <BeoogdeRegeling>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2020/OOWPNOZIJ1</doel>
+               </doelen>
+               <instrumentVersie>/akn/nl/act/mnre1045/2020/OOWPNOZIJReg1vB/nld@2021-02-06;1</instrumentVersie>
+               <eId>art_I</eId>
+            </BeoogdeRegeling>
+            <BeoogdeRegeling>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2020/OOWPNOZIJ1</doel>
+               </doelen>
+               <instrumentVersie>/akn/nl/act/mnre1045/2020/TijdelijkDeel/nld@2021-02-06;1</instrumentVersie>
+               <eId>art_I</eId>
+            </BeoogdeRegeling>
+            <!-- Hier GIO's toevoegen -->
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2020/OOWPNOZIJ1</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/mnre1045/2020/Converterstation/nld@2021-02-06;1</instrumentVersie>
+               <eId>!regeling#cmp_A__content_o_1__list_o_1__item_o_1__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2020/OOWPNOZIJ1</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding/nld@2021-02-06;1</instrumentVersie>
+               <eId>!regeling#cmp_A__content_o_1__list_o_1__item_o_2__ref_o_1</eId>
+            </BeoogdInformatieobject>
+            <BeoogdInformatieobject>
+               <doelen>
+                  <doel>/join/id/proces/mnre1045/2020/OOWPNOZIJ1</doel>
+               </doelen>
+               <instrumentVersie>/join/id/regdata/mnre1045/2020/Projectgebied/nld@2021-02-06;1</instrumentVersie>
+               <eId>!regeling#cmp_A__content_o_1__list_o_1__item_o_3__ref_o_1</eId>
+            </BeoogdInformatieobject>
+         </BeoogdeRegelgeving>
+         <Tijdstempels>
+            <Tijdstempel>
+               <doel>/join/id/proces/mnre1045/2020/OOWPNOZIJ1</doel>
+               <soortTijdstempel>juridischWerkendVanaf</soortTijdstempel>
+               <datum>2020-08-09</datum>
+               <eId>art_III</eId>
+            </Tijdstempel>
+         </Tijdstempels>
+      </ConsolidatieInformatie>
+      <BesluitCompact xmlns="https://standaarden.overheid.nl/stop/imop/tekst/">
+         <RegelingOpschrift eId="longTitle" wId="longTitle">
+            <Al>Vaststelling Projecbesluit Net op zee IJmuiden Ver Beta</Al>
+         </RegelingOpschrift>
+         <Aanhef eId="formula_1" wId="formula_1">
+            <Al>De minister van Economische Zaken en Klimaat en de minister van Binnenlandse Zaken en Koninkrijksrelaties BESLUITEN:</Al>
+         </Aanhef>
+         <Lichaam eId="body" wId="body">
+            <WijzigArtikel eId="art_I" wId="mnre1045_1__art_I">
+               <Kop>
+                  <Nummer>I</Nummer>
+               </Kop>
+               <Wat>Het omgevingsdocument wordt vastgesteld zoals gegeven in <IntRef ref="cmp_A">Bijlage A</IntRef> van dit Besluit. </Wat>
+            </WijzigArtikel>
+            <WijzigArtikel eId="art_II" wId="mnre1045_1__art_II">
+               <Kop>
+                  <Nummer>II</Nummer>
+               </Kop>
+               <Wat>Het Tijdelijk deel staat in <IntRef ref="cmp_B">Bijlage B</IntRef></Wat>
+            </WijzigArtikel>
+            <Artikel eId="art_III" wId="mnre1045_1__art_III">
+               <Kop>
+                  <Nummer>III</Nummer>
+               </Kop>
+               <Inhoud>
+                  <Al>Deze regeling treedt in werking op 2020-08-02.</Al>
+               </Inhoud>
+            </Artikel>
+         </Lichaam>
+         <Sluiting eId="formula_2" wId="formula_2">
+            <Al>Aldus besloten 2020-07-02</Al>
+            <Ondertekening>
+               <Al>Minister van Binnenlandse Zaken en Koninkrijksrelaties,</Al>
+               <Al>K. Ollongren</Al>
+               <Al>Minister van Economische Zaken en Klimaat,</Al>
+               <Al>B. van ‘t Wout</Al>
+            </Ondertekening>
+         </Sluiting>
+         <WijzigBijlage eId="cmp_A" wId="mnre1045_1__cmp_A">
+            <Kop>
+               <Label>Bijlage</Label>
+               <Nummer>A</Nummer>
+               <Opschrift>Bijlage bij Artikel 1</Opschrift>
+            </Kop>
+            <RegelingVrijetekst componentnaam="regeling"
+                                wordt="/akn/nl/act/mnre1045/2020/OOWPNOZIJReg1vB/nld@2021-02-06;1">
+               <RegelingOpschrift eId="longTitle" wId="longTitle">
+                  <Al>Projectbesluit net op zee IJmuiden Ver Beta</Al>
+               </RegelingOpschrift>
+               <Lichaam eId="body" wId="body">
+                  <Divisie eId="div_1" wId="mnre1045_1__div_1">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>1</Nummer>
+                        <Opschrift>Beschrijving van het project Net op zee IJmuiden Ver Beta</Opschrift>
+                     </Kop>
+                     <Divisie eId="div_1__div_1.1" wId="mnre1045_1__div_1__div_1.1">
+                        <Kop>
+                           <Nummer>1.1</Nummer>
+                           <Opschrift>Inleiding</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_1__div_1.1__content_o_1"
+                                      wId="mnre1045_1__div_1__div_1.1__content_o_1">
+                           <Inhoud>
+                              <Al>Het project omvat het Net op zee IJmuiden Ver Beta. Het Net op zee IJmuiden Ver Beta loopt vanaf het platform IJmuiden Ver Beta naar de aanlanding bij de Maasvlakte. </Al>
+                              <table xmlns:eigen="https://www.eigen.nl/"
+                                     eId="div_1__div_1.1__content_o_1__table_o_1"
+                                     wId="mnre1045_1__div_1__div_1.1__content_o_1__table_o_1"
+                                     colsep="1"
+                                     eigen:class="standaard"
+                                     frame="all"
+                                     rowsep="1">
+                                 <tgroup align="left" cols="1">
+                                    <colspec colname="col1" colwidth="7927*"/>
+                                    <tbody valign="top">
+                                       <row>
+                                          <entry align="left" nameend="col1" namest="col1">
+                                             <Al>IJmuiden Ver Alpha en Beta</Al>
+                                             <Al>In totaal wordt 4 GW vanuit het windenergiegebied IJmuiden Ver aangesloten op het landelijk hoogspanningsnet. Met het project Net op zee IJmuiden Ver Beta wordt 2 GW aangesloten. Binnen dit project is gekeken naar een aansluiting op het landelijke hoogspanningsnet op de Maasvlakte. De afvoer van de andere 2 GW wordt geregeld in het project Net op zee IJmuiden Ver Alpha. Hier wordt aangesloten op hoogspanningsstation Borssele. Voor beide projecten wordt een zelfstandige RCR (Rijkscoördinatieregeling)- en m.e.r.(milieueffectrapportage)-procedure doorlopen. Er vindt afstemming tussen beide projecten plaats. Bij raakvlakken zijn beide projecten in gezamenlijkheid bekeken.</Al>
+                                          </entry>
+                                       </row>
+                                    </tbody>
+                                 </tgroup>
+                              </table>
+                              <Lijst eId="div_1__div_1.1__content_o_1__list_o_1"
+                                     wId="mnre1045_1__div_1__div_1.1__content_o_1__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Het project bestaat uit de volgende hoofdonderdelen:</Lijstaanhef>
+                                 <Li eId="div_1__div_1.1__content_o_1__list_o_1__item_o_1"
+                                     wId="mnre1045_1__div_1__div_1.1__content_o_1__list_o_1__item_o_1">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een platform op zee voor de aansluiting van de windturbines en het omzetten van 66kV-wisselstroom (afkomstig van de windturbines) naar 525kV-gelijkstroom;</Al>
+                                 </Li>
+                                 <Li eId="div_1__div_1.1__content_o_1__list_o_1__item_o_2"
+                                     wId="mnre1045_1__div_1__div_1.1__content_o_1__list_o_1__item_o_2">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een ondergronds kabelsysteem op zee voor transport van 525kV-gelijkstroom;</Al>
+                                 </Li>
+                                 <Li eId="div_1__div_1.1__content_o_1__list_o_1__item_o_3"
+                                     wId="mnre1045_1__div_1__div_1.1__content_o_1__list_o_1__item_o_3">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een ondergronds kabelsysteem op land voor het verdere transport van 525kV-gelijkstroom naar een converterstation;</Al>
+                                 </Li>
+                                 <Li eId="div_1__div_1.1__content_o_1__list_o_1__item_o_4"
+                                     wId="mnre1045_1__div_1__div_1.1__content_o_1__list_o_1__item_o_4">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een converterstation op land voor het omzetten van 525kV-gelijkstroom naar 380kV-wisselstroom;</Al>
+                                 </Li>
+                                 <Li eId="div_1__div_1.1__content_o_1__list_o_1__item_o_5"
+                                     wId="mnre1045_1__div_1__div_1.1__content_o_1__list_o_1__item_o_5">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een ondergrondse 380kV verbinding tussen het nieuwe converterstation en het nieuw te realiseren hoogspanningsstation Amaliahaven.</Al>
+                                 </Li>
+                              </Lijst>
+                              <Al>Het inpassingsplan maakt enkel het Net op zee binnen het gemeentelijk ingedeelde gebied (circa 2 kilometer uit de kust) mogelijk en dus niet het offshore platform en grote delen van het kabelsysteem op zee. Daarnaast voorziet het inpassingsplan niet in het nieuw te realiseren 380kV-hoogspanningsstation Amaliahaven op de Maasvlakte. </Al>
+                              <Figuur eId="div_1__div_1.1__content_o_1__img_o_1"
+                                      wId="mnre1045_1__div_1__div_1.1__content_o_1__img_o_1">
+                                 <Illustratie breedte="7934"
+                                              dpi="72"
+                                              formaat="image/jpeg"
+                                              hoogte="7934"
+                                              naam="image1.jpeg"
+                                              uitlijning="start"/>
+                                 <Bijschrift locatie="onder">Figuur 1.1: Overzicht projectonderdelen Net op zee IJmuiden Ver Beta in het inpassingsplan</Bijschrift>
+                              </Figuur>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="div_1__div_1.2" wId="mnre1045_1__div_1__div_1.2">
+                        <Kop>
+                           <Nummer>1.2</Nummer>
+                           <Opschrift>Beschrijving van het project</Opschrift>
+                        </Kop>
+                        <Divisie eId="div_1__div_1.2__div_1.2.1"
+                                 wId="mnre1045_1__div_1__div_1.2__div_1.2.1">
+                           <Kop>
+                              <Nummer>1.2.1</Nummer>
+                              <Opschrift>Hoogspanningstracé op zee</Opschrift>
+                           </Kop>
+                           <Divisie eId="div_1__div_1.2__div_1.2.1__div_o_1"
+                                    wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_1">
+                              <Kop>
+                                 <Opschrift>Het tracé</Opschrift>
+                              </Kop>
+                              <Divisietekst eId="div_1__div_1.2__div_1.2.1__div_o_1__content_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_1__content_o_1">
+                                 <Inhoud>
+                                    <Al>Het tracé loopt vanaf het platform Beta in zuidoostelijke richting naar de rand van het windenergiegebied IJmuiden Ver. Het tracé vervolgt in zuidwestelijke richting parallel aan en tussen het verkeersscheidingsstelsel (VSS) en het windenergiegebied IJmuiden Ver. Na het verlaten van het windenergiegebied IJmuiden Ver kruist Net op zee IJmuiden Ver Beta de scheepvaartroute. Ten noordwesten van windenergiegebied Hollandse Kust (west) komen de tracés van Net op zee IJmuiden Ver Alpha en Beta samen om vanaf dit punt tot aan het lichtplatform Goeree over een lengte van circa 78 kilometer parallel te liggen aan elkaar. Net op zee IJmuiden Ver Beta blijft buiten de Bruine Bank. Bij lichtplatform Goeree traceren Net op zee IJmuiden Ver Alpha en Beta gezamenlijk aan de oostzijde van het lichtplatform Goeree langs.</Al>
+                                    <Figuur eId="div_1__div_1.2__div_1.2.1__div_o_1__content_o_1__img_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_1__content_o_1__img_o_1">
+                                       <Illustratie breedte="7937"
+                                                    dpi="72"
+                                                    formaat="image/png"
+                                                    hoogte="7630"
+                                                    naam="image2.png"
+                                                    uitlijning="start"/>
+                                       <Bijschrift locatie="onder">Figuur 1.2: Ligging tracé op zee</Bijschrift>
+                                    </Figuur>
+                                    <Al>Op platform IJmuiden Ver Beta wordt de 66kV-wisselstroom die afkomstig is van de windturbines omgezet naar 525 kV-gelijkstroom. Vanaf het platform lopen de ondergrondse transportkabels naar de kust. Deze kabels transporteren gelijkstroom met een spanningsniveau van 525 kV.</Al>
+                                    <Al>Een hoogspanningsverbinding bestaat uit een samenstel van vier kabels. Dit zijn twee hoogspanning gelijkstroom kabels, waarvan één van de kabels fungeert als de plus (+) pool en de tweede als de min (-) pool. De derde kabel is de zogenoemde metallic return (MR). Deze transporteert de reststroom die ontstaat door onbalans in het voltage. Daarnaast kan de metallic return fungeren als back-up kabel in onderhoudssituaties. Dan kan er tussen één van de polen en de metallic return op half vermogen (1GW) elektriciteitstransport plaatsvinden. De vierde kabel van de bundel is de glasvezelkabel (FO) die wordt aangelegd voor communicatie tussen het platform en het landstation. </Al>
+                                 </Inhoud>
+                              </Divisietekst>
+                           </Divisie>
+                           <Divisie eId="div_1__div_1.2__div_1.2.1__div_o_2"
+                                    wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2">
+                              <Kop>
+                                 <Opschrift>Gebundelde ligging</Opschrift>
+                              </Kop>
+                              <Divisietekst eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1">
+                                 <Inhoud>
+                                    <Al>Er is gekozen voor een innovatieve gebundelde aanleg van de 2 GW 525 kilovolt (kV) gelijkstroomkabels, wat betekent dat de plus- en minpool, samen met een glasvezelkabel en de Metallic Return, in één bundel worden gelegd. Deze keuze is gemaakt op basis van de vele (milieu)voordelen die een gebundelde aanleg biedt in combinatie met voortschrijdende kennisontwikkeling en het behalen van mijlpalen in het ontwikkelproces met diverse marktpartijen van gebundelde kabels. </Al>
+                                    <Al>De voordelen van een gebundelde aanleg zijn: </Al>
+                                    <Lijst eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1"
+                                           type="expliciet">
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_1"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_1">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>lagere kosten; </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_2"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_2">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder ruimtebeslag; </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_3"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_3">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>kleiner statisch magneetveld; </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_4"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_4">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder ecologische impact (op vissen, haaien en roggen); </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_5"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_5">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder kompasafwijking; </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_6"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_6">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder verstoring van de bodem; </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_7"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_7">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder vertroebeling (door minder baggervolumes); </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_8"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_8">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder stikstofuitstoot (door minder baggervolumes en snellere aanleg); </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_9"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_9">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder bronbemaling; </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_10"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_10">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>kleinere onderzoeklast (want een kleiner te onderzoeken oppervlakte); </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_11"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_11">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder overlast voor scheepvaart; </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_12"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_12">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder overlast voor de omgeving;</Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_13"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_13">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder boringen; </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_14"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_14">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder kruisingen met andere kabels- en leidingen (want die worden in één keer gekruist i.p.v. in twee keer); en </Al>
+                                       </Li>
+                                       <Li eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_15"
+                                           wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__list_o_1__item_o_15">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>minder beïnvloeding op andere kabels- en leidingen. </Al>
+                                       </Li>
+                                    </Lijst>
+                                    <Al>Dankzij deze gebundelde ligging is het tracé van het zeedeel van Net op zee IJmuiden Ver Beta 1.000 meter breed, waar 1.200 meter voor een ongebundeld tracé gebruikelijk is. Dit bestaat uit een gebundelde set kabels en een onderhoudszone aan weerszijden van het kabelsysteem van 500 meter (zie figuur 1.3).</Al>
+                                    <Figuur eId="div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__img_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_2__content_o_1__img_o_1">
+                                       <Illustratie breedte="7937"
+                                                    dpi="72"
+                                                    formaat="image/png"
+                                                    hoogte="5812"
+                                                    naam="image3.png"
+                                                    uitlijning="start"/>
+                                       <Bijschrift locatie="onder">Figuur 1.3: Doorsnede van de tracébreedte van het kabelsysteem op zee</Bijschrift>
+                                    </Figuur>
+                                 </Inhoud>
+                              </Divisietekst>
+                           </Divisie>
+                           <Divisie eId="div_1__div_1.2__div_1.2.1__div_o_3"
+                                    wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_3">
+                              <Kop>
+                                 <Opschrift>Parallelligging met IJmuiden Ver Alpha</Opschrift>
+                              </Kop>
+                              <Divisietekst eId="div_1__div_1.2__div_1.2.1__div_o_3__content_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_3__content_o_1">
+                                 <Inhoud>
+                                    <Al>Voor een aanzienlijk deel van het tracé op zee vindt een parallelligging plaats met IJmuiden Ver Alpha. Door één corridor voor twee hoogspanningstracés in plaats van twee corridors met elk één hoogspanningsracé, wordt de ruimte op de Noordzee efficiënter gebruikt, waardoor er meer ruimte blijft voor aansluiting van eventuele toekomstige windparken en/of overige functies. Beide hoogspanningstracés komen op 200 meter van elkaar te liggen, met de onderhoudszones aan weerszijden. Dankzij de gebundelde én parallelle ligging is het tracé van Net op zee IJmuiden Ver Alpha en Beta samen 1.200 meter breed (zie figuur 1.4).</Al>
+                                    <Figuur eId="div_1__div_1.2__div_1.2.1__div_o_3__content_o_1__img_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_3__content_o_1__img_o_1">
+                                       <Illustratie breedte="7937"
+                                                    dpi="72"
+                                                    formaat="image/png"
+                                                    hoogte="4170"
+                                                    naam="image4.png"
+                                                    uitlijning="start"/>
+                                       <Bijschrift locatie="onder">Figuur 1.4: Doorsnede van de tracébreedte van het kabelsysteem op zee bij parallelligging met Alpha</Bijschrift>
+                                    </Figuur>
+                                    <Al>Bijkomend voordeel is dat het (aanstaande) Natura 2000-gebied Bruine Bank dankzij de smallere corridor eenvoudiger kan worden vermeden, wat in overeenstemming is met de zorgplicht zoals verwoord in artikel 1.11, lid 2, van de Wet natuurbescherming.</Al>
+                                    <Figuur eId="div_1__div_1.2__div_1.2.1__div_o_3__content_o_1__img_o_2"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_3__content_o_1__img_o_2">
+                                       <Illustratie breedte="7995"
+                                                    dpi="72"
+                                                    formaat="image/jpeg"
+                                                    hoogte="7995"
+                                                    naam="image5.jpeg"
+                                                    uitlijning="start"/>
+                                       <Bijschrift locatie="onder">Figuur 1.5: Parallelligging met IJmuiden Ver Alpha</Bijschrift>
+                                    </Figuur>
+                                 </Inhoud>
+                              </Divisietekst>
+                           </Divisie>
+                           <Divisie eId="div_1__div_1.2__div_1.2.1__div_o_4"
+                                    wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_4">
+                              <Kop>
+                                 <Opschrift>Nearshore</Opschrift>
+                              </Kop>
+                              <Divisietekst eId="div_1__div_1.2__div_1.2.1__div_o_4__content_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_4__content_o_1">
+                                 <Inhoud>
+                                    <Al>Nabij de kust, vanaf de gemeentegrens van Rotterdam, is de corridorbreedte 200 meter. De onderhoudszone is hier teruggebracht tot 100 meter aan weerszijden van de hoogspanningsverbinding (zie figuur 2.6). </Al>
+                                    <Figuur eId="div_1__div_1.2__div_1.2.1__div_o_4__content_o_1__img_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.1__div_o_4__content_o_1__img_o_1">
+                                       <Illustratie breedte="7937"
+                                                    dpi="72"
+                                                    formaat="image/png"
+                                                    hoogte="5925"
+                                                    naam="image6.png"
+                                                    uitlijning="start"/>
+                                       <Bijschrift locatie="onder">Figuur 1.6 Corridorbreedte op zee nabij de kust (het plangebied van het inpassingsplan)</Bijschrift>
+                                    </Figuur>
+                                 </Inhoud>
+                              </Divisietekst>
+                           </Divisie>
+                        </Divisie>
+                        <Divisie eId="div_1__div_1.2__div_1.2.2"
+                                 wId="mnre1045_1__div_1__div_1.2__div_1.2.2">
+                           <Kop>
+                              <Nummer>1.2.2</Nummer>
+                              <Opschrift>Hoogspanningstracé op land</Opschrift>
+                           </Kop>
+                           <Divisie eId="div_1__div_1.2__div_1.2.2__div_o_1"
+                                    wId="mnre1045_1__div_1__div_1.2__div_1.2.2__div_o_1">
+                              <Kop>
+                                 <Opschrift>Aanlanding</Opschrift>
+                              </Kop>
+                              <Divisietekst eId="div_1__div_1.2__div_1.2.2__div_o_1__content_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.2__div_o_1__content_o_1">
+                                 <Inhoud>
+                                    <Al>Het tracé landt aan de zuidzijde van de Maasvlakte aan. De kruising van het strand zal met open ontgraving worden aangelegd. </Al>
+                                 </Inhoud>
+                              </Divisietekst>
+                           </Divisie>
+                           <Divisie eId="div_1__div_1.2__div_1.2.2__div_o_2"
+                                    wId="mnre1045_1__div_1__div_1.2__div_1.2.2__div_o_2">
+                              <Kop>
+                                 <Opschrift>Het tracé</Opschrift>
+                              </Kop>
+                              <Divisietekst eId="div_1__div_1.2__div_1.2.2__div_o_2__content_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.2__div_o_2__content_o_1">
+                                 <Inhoud>
+                                    <Al>Het tracé gaat over land naar de locatie van het converterstation op de Maasvlakte. Het tracé gaat ten zuiden van de Slufter langs hetzelfde tracé als de BritNed verbinding; langs de Noordzeeboulevard en de N15. Vervolgens gaat het tracé langs de Dardanellenstraat naar de locatie van het converterstation.</Al>
+                                    <Figuur eId="div_1__div_1.2__div_1.2.2__div_o_2__content_o_1__img_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.2__div_o_2__content_o_1__img_o_1">
+                                       <Illustratie breedte="7937"
+                                                    dpi="72"
+                                                    formaat="image/png"
+                                                    hoogte="7756"
+                                                    naam="image7.png"
+                                                    uitlijning="start"/>
+                                       <Bijschrift locatie="onder">Figuur 1.7: Overzicht van het tracé op land</Bijschrift>
+                                    </Figuur>
+                                 </Inhoud>
+                              </Divisietekst>
+                           </Divisie>
+                        </Divisie>
+                        <Divisie eId="div_1__div_1.2__div_1.2.3"
+                                 wId="mnre1045_1__div_1__div_1.2__div_1.2.3">
+                           <Kop>
+                              <Nummer>1.2.3</Nummer>
+                              <Opschrift>Converterstation</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="div_1__div_1.2__div_1.2.3__content_o_1"
+                                         wId="mnre1045_1__div_1__div_1.2__div_1.2.3__content_o_1">
+                              <Inhoud>
+                                 <Al>Het converterstation zet de stroom van 525kV-gelijkstroom om naar 380kV-wisselstroom. Dat is nodig omdat het landelijk hoogspanningsnet op 380kV-wisselstroom draait. </Al>
+                                 <Al>Het converterstation bestaat onder andere uit converters (omvormers), reactoren, transformatoren en 380 kV-schakelvelden. De converters, reactoren en transformatoren staan in gebouwen, de schakelvelden buiten.</Al>
+                                 <Figuur eId="div_1__div_1.2__div_1.2.3__content_o_1__img_o_1"
+                                         wId="mnre1045_1__div_1__div_1.2__div_1.2.3__content_o_1__img_o_1">
+                                    <Illustratie breedte="7937"
+                                                 dpi="72"
+                                                 formaat="image/png"
+                                                 hoogte="4011"
+                                                 naam="image8.png"
+                                                 uitlijning="start"/>
+                                    <Bijschrift locatie="onder">Figuur 1.8: Indicatieve weergave converterstation</Bijschrift>
+                                 </Figuur>
+                              </Inhoud>
+                           </Divisietekst>
+                           <Divisie eId="div_1__div_1.2__div_1.2.3__div_o_1"
+                                    wId="mnre1045_1__div_1__div_1.2__div_1.2.3__div_o_1">
+                              <Kop>
+                                 <Opschrift>Locatie en lay out</Opschrift>
+                              </Kop>
+                              <Divisietekst eId="div_1__div_1.2__div_1.2.3__div_o_1__content_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.3__div_o_1__content_o_1">
+                                 <Inhoud>
+                                    <Al>Het converterstation is voorzien tussen de Prinses Amaliahaven en de Dardanellenstraat (zie figuur 1.9). Het converterstation wordt ontsloten via de Dardanellenstraat.</Al>
+                                    <Figuur eId="div_1__div_1.2__div_1.2.3__div_o_1__content_o_1__img_o_1"
+                                            wId="mnre1045_1__div_1__div_1.2__div_1.2.3__div_o_1__content_o_1__img_o_1">
+                                       <Illustratie breedte="7934"
+                                                    dpi="72"
+                                                    formaat="image/jpeg"
+                                                    hoogte="7934"
+                                                    naam="image9.jpeg"
+                                                    uitlijning="start"/>
+                                       <Bijschrift locatie="onder">Figuur 1.9: Locatie en lay-out converterstation met direct noordoostelijk aansluitend het toekomstige 380kV-hoogspanningsstation Amaliahaven</Bijschrift>
+                                    </Figuur>
+                                    <Al>De benodigde oppervlakte voor het converterstation is circa 4,5 hectare. De afmetingen zijn circa 125 meter bij 370 meter. In het midden van de locatie is een gebouw voorzien van circa 70 meter lang, 30 meter breed en 15 meter hoog. Onder dit gebouw is een kelder voorzien van circa 46 meter lang en 20 meter breed, die tot maximaal 2,5 meter diep de grond in gaat. Overige bouwwerken op het converterstation zijn maximaal 25 meter hoog.</Al>
+                                    <Al>Direct ten noordoosten van het converterstation is een toekomstig nieuw 380kV-hoogspanningsstation voorzien (station Amaliahaven). Dit nieuwe station is geen onderdeel van dit inpassingsplan. Het station is nodig vanwege voorziene ontwikkelingen op de Maasvlakte. Net op zee IJmuiden Ver Beta zal op dit nieuwe 380kV-hoogspanningsstation aansluiten.</Al>
+                                 </Inhoud>
+                              </Divisietekst>
+                           </Divisie>
+                        </Divisie>
+                     </Divisie>
+                  </Divisie>
+                  <Divisie eId="div_2" wId="mnre1045_1__div_2">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>2</Nummer>
+                        <Opschrift>Verkenning en motivering participatie</Opschrift>
+                     </Kop>
+                     <Divisie eId="div_2__div_2.1" wId="mnre1045_1__div_2__div_2.1">
+                        <Kop>
+                           <Nummer>2.1</Nummer>
+                           <Opschrift>Inleiding</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_2__div_2.1__content_o_1"
+                                      wId="mnre1045_1__div_2__div_2.1__content_o_1">
+                           <Inhoud>
+                              <Al>De aanleg en het in gebruik hebben van een hoogspanningsverbinding met bijbehorende infrastructuur hebben een effect op de mens en de omgeving. Bij het bepalen van het tracé voor een nieuwe hoogspanningsverbinding en de locatie voor een converterstation (voorgenomen activiteit) is het van belang om te onderzoeken welke effecten (kunnen) optreden. In de voorbereiding op dit inpassingsplan is het tracé voor het Net op zee IJmuiden Ver Beta onder andere op basis van informatie uit de m.e.r.-procedure bepaald. Het resultaat van de m.e.r.-procedure is het MER waarin de effecten staan beschreven van de verschillende tracéalternatieven van het Net op zee IJmuiden Ver Beta op het milieu. Het doel van het opstellen van een milieueffectrapport (MER) is om het milieubelang een volwaardige rol te geven in de besluitvorming ten aanzien van onder andere het tracé en de locatie van het converterstation.</Al>
+                              <Al>Etc.</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="div_2__div_2.2" wId="mnre1045_1__div_2__div_2.2">
+                        <Kop>
+                           <Nummer>2.2</Nummer>
+                           <Opschrift>Verkenning</Opschrift>
+                        </Kop>
+                        <Divisie eId="div_2__div_2.2__div_2.2.1"
+                                 wId="mnre1045_1__div_2__div_2.2__div_2.2.1">
+                           <Kop>
+                              <Nummer>2.2.1</Nummer>
+                              <Opschrift>Onderzochte alternatieven</Opschrift>
+                           </Kop>
+                           <Divisie eId="div_2__div_2.2__div_2.2.1__div_2.2.1.1"
+                                    wId="mnre1045_1__div_2__div_2.2__div_2.2.1__div_2.2.1.1">
+                              <Kop>
+                                 <Nummer>2.2.1.1</Nummer>
+                                 <Opschrift>Uitgangspunten</Opschrift>
+                              </Kop>
+                              <Divisietekst eId="div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1"
+                                            wId="mnre1045_1__div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1">
+                                 <Inhoud>
+                                    <Lijst eId="div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1"
+                                           wId="mnre1045_1__div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1"
+                                           type="expliciet">
+                                       <Lijstaanhef>Bij het bepalen van de tracéalternatieven is een aantal uitgangspunten gehanteerd. Een generiek uitgangspunt is dat er gestreefd wordt naar een tracé dat effecten op de omgeving zo veel als mogelijk voorkomt en dat leidt tot een doelmatige uitvoering van het project. Dit betekent in de praktijk dat een zo kort mogelijk tracé wordt nagestreefd. Voor zee en land zijn verder de volgende uitgangspunten van toepassing:</Lijstaanhef>
+                                       <Li eId="div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_1"
+                                           wId="mnre1045_1__div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_1">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>beperken van hinder voor gebruiksfuncties en omgeving, zoals zandwingebieden, olie- en gasinfrastructuur, scheepvaart, landbouw, bedrijven en recreatie en toerisme;</Al>
+                                       </Li>
+                                       <Li eId="div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_2"
+                                           wId="mnre1045_1__div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_2">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>beperken van milieueffecten, zoals het zo veel mogelijk vermijden van effecten op Natura 2000-gebieden, archeologie en woningen;</Al>
+                                       </Li>
+                                       <Li eId="div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_3"
+                                           wId="mnre1045_1__div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_3">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>daar waar mogelijk bundelen met kabel-, leidingen- en (weg)infrastructuur;</Al>
+                                       </Li>
+                                       <Li eId="div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_4"
+                                           wId="mnre1045_1__div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_4">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>technische randvoorwaarden, zoals een lengte voor boren tot 1.200 meter (land);</Al>
+                                       </Li>
+                                       <Li eId="div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_5"
+                                           wId="mnre1045_1__div_2__div_2.2__div_2.2.1__div_2.2.1.1__content_o_1__list_o_1__item_o_5">
+                                          <LiNummer>-</LiNummer>
+                                          <Al>beperken van (onderhouds)activiteiten in de toekomst, zoals rekening houden met de dynamiek van de zeebodem die van invloed is op de begraafdiepte van de hoogspanningsverbinding (zee) en aanleg van de hoogspanningsverbinding in plat vlak en alleen waar nodig in driehoeksligging (land) of met een boring.</Al>
+                                       </Li>
+                                    </Lijst>
+                                    <Al>Etc.</Al>
+                                 </Inhoud>
+                              </Divisietekst>
+                           </Divisie>
+                        </Divisie>
+                     </Divisie>
+                     <Divisie eId="div_2__div_2.3" wId="mnre1045_1__div_2__div_2.3">
+                        <Kop>
+                           <Nummer>2.3</Nummer>
+                           <Opschrift>Motivering participatie</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_2__div_2.3__content_o_1"
+                                      wId="mnre1045_1__div_2__div_2.3__content_o_1">
+                           <Inhoud>
+                              <Al>Het ministerie van Economische Zaken en Klimaat (EZK) en TenneT vinden participatie erg belangrijk. TenneT en EZK werken nauw samen aan dit project en het bijbehorende participatieproces. TenneT is de beheerder van het landelijk hoogspanningsnet en legt een nieuwe hoogspanningsverbinding aan tussen windenergiegebied IJmuiden Ver op de Noordzee en het vasteland. De minister van EZK bepaalt in overleg met het ministerie van Binnenlandse Zaken en Koninkrijksrelaties (BZK) na uitgebreide consultatie van onder andere lokale overheden, belangenorganisaties, bedrijven en alle andere belanghebbenden waar het tracé van het net op zee mag komen en waar het net op zeeaansluit op het hoogspanningsnet op land.</Al>
+                              <Al>De manier waarop EZK en TenneT participatie hebben ingezet, staat beschreven in het participatieplan. Dit plan is bij elke fase van het project geëvalueerd in een verslag en opnieuw vastgesteld voor de betreffende periode. Dit participatieplan met verslag is opgenomen in bijlage I van dit projectbesluit. </Al>
+                              <Al>Burgers, bedrijven, maatschappelijke organisaties en andere overheden zijn op diverse wijzen betrokken bij de voorbereiding van het voorliggende inpassingsplan. TenneT zet, in samenwerking met het ministerie van EZK voor dit project een omgevingsproces in om belanghebbenden in het plangebied te informeren en te betrekken. Bij deze partijen worden onderwerpen en belangen die spelen opgehaald en vervolgens met hen besproken. In deze fase van het project zijn belanghebbende partijen, waaronder bestuursorganen, het Havenbedrijf Rotterdam, belangenvertegenwoordigers, nautische partijen, partijen zoals natuur- en infrabeheerders en burgers benaderd. Ook heeft nadere afstemming plaatsgevonden met een aantal gebruikers in het gebied, waarvan het belang van invloed kon zijn op de tracékeuze.</Al>
+                              <Al>Het omgevingsproces is gestart met de publicatie van de formele aankondiging van het project op 21 maart 2019. Deze aankondiging (voornemen van het project en het voorstel voor participatie) heeft van 22 maart tot en met 2 mei 2019 ter inzage gelegen. In het voorstel voor participatie is beschreven op welke wijze TenneT en EZK om willen gaan met communicatie met en participatie van belanghebbenden bij dit project. Met de kennisgeving zijn mensen uitgenodigd om mee te denken over de invulling van participatie tijdens het project. Op deze aankondiging zijn vier reacties binnengekomen.</Al>
+                              <Al>De reacties die betrekking hadden op het omgevingsproces zijn verwerkt in het participatieplan. Op basis van reacties en de stand van zaken van het project wordt het participatieplan op meerdere momenten tijdens het project geactualiseerd en gepubliceerd op de website van Bureau Energieprojecten (Rijksdienst voor Ondernemend Nederland - RVO). </Al>
+                              <Al>In de participatie vanaf het voornemen tot en met de keuze van het VKA hebben er diverse werksessies en persoonlijke contacten plaatsgevonden. In 2019 hebben diverse bijeenkomsten plaatsgevonden. Vanwege het coronavirus zijn er vanaf maart 2020 digitale sessies geweest en is uitdrukkelijk de mogelijkheid geboden voor 1-op-1 contact via telefoon, e-mail of online vergadertools. Op deze wijze is met inachtneming van de ‘coronamaatregelen’ constructief met belanghebbenden contact onderhouden. </Al>
+                              <Al>Ten behoeve van de officiële procedure, zoals het proces rondom de Notitie Reikwijdte en Detailniveau (NRD), zijn stukken gepubliceerd en zienswijzen/reacties opgehaald. Het ministerie heeft hierbij haar gebruikelijke werkwijze gevolgd. </Al>
+                              <Al>Alle stukken worden gepubliceerd op de website: https://www.rvo.nl/onderwerpen/bureau-energieprojecten/lopende-projecten/hoogspanning/net-op-zee-ijmuiden-ver-beta. </Al>
+                              <Al>Algemene informatie over het project plaatst TenneT op de website: <ExtRef ref="https://www.netopzee.eu/ijmuidenverbeta/" soort="URL">https://www.netopzee.eu/ijmuidenverbeta/</ExtRef>.</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                        <Divisie eId="div_2__div_2.3__div_2.3.1"
+                                 wId="mnre1045_1__div_2__div_2.3__div_2.3.1">
+                           <Kop>
+                              <Nummer>2.3.1</Nummer>
+                              <Opschrift>Notitie reikwijdte en detailniveau</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="div_2__div_2.3__div_2.3.1__content_o_1"
+                                         wId="mnre1045_1__div_2__div_2.3__div_2.3.1__content_o_1">
+                              <Inhoud>
+                                 <Al>De resultaten zijn opgenomen in de concept Notitie reikwijdte en detailniveau (NRD). In de NRD is beschreven welke tracéalternatieven onderzocht worden in het milieueffectrapport (MER) en hoe dat gebeurt. De concept-NRD heeft ter inzage gelegen van 30 augustus tot en met 10 oktober 2019. Het ministerie van EZK heeft betrokken partijen over deze formele stap geïnformeerd en alle stukken zijn gepubliceerd op de website van RVO. De inhoud van de concept-NRD is daarnaast onder andere gedeeld op de website van het project (www.netopzee.eu). Op de concept-NRD zijn 54 zienswijzen van organisaties en bewoners ontvangen en twee reacties van overheden. Veel genoemde onderwerpen zijn belangen bij de verschillende alternatieven (bijvoorbeeld scheepvaart, visserij, zandwinning, recreatie, natuur, landschap en woon- en leefkwaliteit). Het ministerie heeft alle zienswijzen beantwoord in een Nota van Antwoord. Mede op basis van de zienswijzen en het advies van de Commissie voor de Milieueffectrapportage (Commissie m.e.r., 22 oktober 2019) heeft de minister de NRD op 20 maart 2020 definitief vastgesteld en daarmee bepaald welke tracéalternatieven onderzocht worden in het MER.</Al>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                        <Divisie eId="div_2__div_2.3__div_2.3.2"
+                                 wId="mnre1045_1__div_2__div_2.3__div_2.3.2">
+                           <Kop>
+                              <Nummer>2.3.2</Nummer>
+                              <Opschrift>Integrale effectenanalyse</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="div_2__div_2.3__div_2.3.2__content_o_1"
+                                         wId="mnre1045_1__div_2__div_2.3__div_2.3.2__content_o_1">
+                              <Inhoud>
+                                 <Al>In de IEA zijn de alternatieven afgewogen op de thema’s milieu, techniek, kosten, omgeving en toekomstvast. Van 12 juni tot en met 10 juli 2020 was het mogelijk om een reactie te geven op de IEA en het onderliggende MER fase 1. Op de IEA zijn in totaal 11 reacties binnengekomen. De Commissie m.e.r. heeft op 29 juli 2020 advies uitgebracht over MER fase 1. Daarnaast heeft de provincie Zuid-Holland namens de regionale overheden advies uitgebracht en heeft Rijkswaterstaat advies uitgebracht. </Al>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                        <Divisie eId="div_2__div_2.3__div_2.3.3"
+                                 wId="mnre1045_1__div_2__div_2.3__div_2.3.3">
+                           <Kop>
+                              <Nummer>2.3.3</Nummer>
+                              <Opschrift>Voorbereiding inpassingsplan</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="div_2__div_2.3__div_2.3.3__content_o_1"
+                                         wId="mnre1045_1__div_2__div_2.3__div_2.3.3__content_o_1">
+                              <Inhoud>
+                                 <Al>Aan de betrokken regiopartijen (betrokken gemeenten, waterschappen en provincie) is advies gevraagd over het door de minister van EZK te kiezen voorkeursalternatief (VKA). Het doel hiervan was de omgeving volwaardig mee te nemen in het onderzoek, selectie en trechtering van alternatieven en te komen tot een gedragen VKA (het plan zoals dat in dit inpassingsplan wordt vastgelegd). Op basis van de beschikbare informatie en de input uit het participatieproces, heeft de minister van EZK het VKA in het gemeentelijk ingedeeld gebied vastgelegd in een voorbereidingsbesluit en juridisch-planologisch vastgelegd in dit inpassingsplan.</Al>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                     </Divisie>
+                  </Divisie>
+                  <Divisie eId="div_3" wId="mnre1045_1__div_3">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>3</Nummer>
+                        <Opschrift>Tijdelijke maatregelen en voorzieningen</Opschrift>
+                     </Kop>
+                     <Divisie eId="div_3__div_3.1" wId="mnre1045_1__div_3__div_3.1">
+                        <Kop>
+                           <Nummer>3.1</Nummer>
+                           <Opschrift>Aanleg op zee</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_3__div_3.1__content_o_1"
+                                      wId="mnre1045_1__div_3__div_3.1__content_o_1">
+                           <Inhoud>
+                              <Al>Bij de aanleg en het gebruik van de hoogspanningsverbinding op zee is een belangrijk aandachtspunt dat scheepvaart zo min mogelijk hinder mag ondervinden van de verbinding (scheepvaartroutes et cetera). Bovendien dient voorkomen te worden dat de verbinding beschadigd raakt door te vermijden oorzaken van buitenaf, zoals ankeren. De verbinding op zee wordt op de zeebodem in ieder geval met een gronddekking van één meter aangelegd en dichter bij de kust een gronddekking van drie meter. Daar waar het tracé vaargeulen passeert, gelden specifieke voorschriften voor de diepteligging. Dit om schade aan de verbinding en beperkingen voor de omgeving te voorkomen. Deze voorwaarden worden vastgelegd in de watervergunning. </Al>
+                              <Al>Er zijn twee hoofdvarianten voor aanleg. De eerste is gelijktijdig leggen en begraven (SimultaneousLayandBurial (SLB)) waarbij de verbinding wordt gelegd en begraven in één operatie. De tweede is begraven na leggen (Post LayBurial (PLB)) waarbij de verbinding eerst op de zeebodem wordt gelegd en in een tweede gang wordt begraven. Afhankelijk van de diepte waarop de verbinding gelegd moet worden (wordt vooral bepaald door actieve zones en/of zandgolven), moet er naast trenchen ook gebaggerd worden. Tot circa 2,5 meter diepte wordt er getrenched, dit kan met behulp van o.a. spuitlansen en ploegen. Voor grotere dieptes wordt over het algemeen eerst een sleuf in de bodem gebaggerd of wordt ter plaatse van een zandgolf deze vlak getrokken. Hierna wordt het laatste deel alsnog getrenched. </Al>
+                              <Al>Er is inmiddels (vanuit andere projecten zoals NorNed, BritNed en projecten van TenneT in Duitsland) veel bekend over de mogelijkheden en voor- en nadelen van de verschillende aanlegmethoden. Afhankelijk van de aanlegdiepte is de verwachte en onderzochte aanlegmethode het baggeren van zandgolven en/of het baggeren van de actieve zone en het trenchen onder de actieve zone.</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="div_3__div_3.2" wId="mnre1045_1__div_3__div_3.2">
+                        <Kop>
+                           <Nummer>3.2</Nummer>
+                           <Opschrift>Aanleg op land </Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_3__div_3.2__content_o_1"
+                                      wId="mnre1045_1__div_3__div_3.2__content_o_1">
+                           <Inhoud>
+                              <Al>Ook bij het tracé op land is een gebundelde aanleg het uitgangspunt. In figuur 3.1 is de corridorbreedte op land opgenomen. Vanwege de beperkte beschikbare ruimte is er voor de kabelconfiguratie op de Maasvlakte maatwerk toegepast met een smalle belemmerende strook. </Al>
+                              <Figuur eId="div_3__div_3.2__content_o_1__img_o_1"
+                                      wId="mnre1045_1__div_3__div_3.2__content_o_1__img_o_1">
+                                 <Illustratie breedte="6660"
+                                              dpi="72"
+                                              formaat="image/png"
+                                              hoogte="14775"
+                                              naam="image10.png"
+                                              uitlijning="start"/>
+                                 <Bijschrift locatie="onder">Figuur 3.1: Tracébreedtes kabelsysteem op land</Bijschrift>
+                              </Figuur>
+                              <Al>Overigens blijft ter plaatse van de belemmerende strook de bestaande bestemming en functie op maaiveld gehandhaafd. Zo kan op het strand nog steeds recreatie plaatsvinden. </Al>
+                              <Al>Om de circa 800 tot 1.200 meter is een verbindingsmof nodig om landkabels te verbinden. Op de moflocatie ligt een betonplaat. De breedte van de verbindingsmofput is circa 5 meter, de lengte circa 10 meter en de diepte circa 1,6 meter.</Al>
+                              <Al>De hoogspanningsverbinding wordt deels met HDD boringen aangelegd en deels met een open ontgraving (zie figuur 3.2). Bij een boring is op maaiveld alleen werkruimte nodig bij het in- en uittredepunt. Bij een open ontgraving is sprake van een werkstrook van 27 meter breed, zie figuur 3.2. </Al>
+                              <Figuur eId="div_3__div_3.2__content_o_1__img_o_2"
+                                      wId="mnre1045_1__div_3__div_3.2__content_o_1__img_o_2">
+                                 <Illustratie breedte="7547"
+                                              dpi="72"
+                                              formaat="image/jpeg"
+                                              hoogte="3325"
+                                              naam="image11.jpeg"
+                                              uitlijning="start"/>
+                                 <Bijschrift locatie="onder">Figuur 3.2: Werkstrookbreedte bij open ontgraving op land</Bijschrift>
+                              </Figuur>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="div_3__div_3.3" wId="mnre1045_1__div_3__div_3.3">
+                        <Kop>
+                           <Nummer>3.3</Nummer>
+                           <Opschrift>Aanleg converterstation</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="div_3__div_3.3__content_o_1"
+                                      wId="mnre1045_1__div_3__div_3.3__content_o_1">
+                           <Inhoud>
+                              <Al>Op de locatie voor het converterstation komt een aantal bouwwerken, installaties en aansluitingen van het kabelsysteem. Daarvoor is de aanleg van funderingen noodzakelijk. Daarnaast vindt er de nodige bestrating plaats ten behoeve van de wegen op het terrein. De schakeltuin wordt afgewerkt met een grasmengsel met slechts lokaal bodemversterking waar dit nodig is voor beheer en onderhoud. Op die plaatsen waar de bodem wordt versterkt, wordt dit afgewerkt met vlakke grasblokken/grastegels.</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                  </Divisie>
+                  <Divisie eId="div_4" wId="mnre1045_1__div_4">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>4</Nummer>
+                        <Opschrift>Maatregelen ter voorkoming, beperking of compensatie van nadelige gevolgen</Opschrift>
+                     </Kop>
+                     <Divisietekst eId="div_4__content_o_1" wId="mnre1045_1__div_4__content_o_1">
+                        <Inhoud>
+                           <Lijst eId="div_4__content_o_1__list_o_1"
+                                  wId="mnre1045_1__div_4__content_o_1__list_o_1"
+                                  type="expliciet">
+                              <Lijstaanhef>De volgende maatregelen zijn (mogelijk) noodzakelijk:</Lijstaanhef>
+                              <Li eId="div_4__content_o_1__list_o_1__item_o_1"
+                                  wId="mnre1045_1__div_4__content_o_1__list_o_1__item_o_1">
+                                 <LiNummer>-</LiNummer>
+                                 <Al>Momenteel wordt de passende beoordeling opgesteld, samen met een stikstofdepositieberekening. Deze worden toegevoegd bij het ontwerp inpassingsplan, waarbij ook eventueel benodigde mitigerende of compenserende maatregelen -voor zover nodig- in het inpassingsplan geborgd worden.</Al>
+                              </Li>
+                              <Li eId="div_4__content_o_1__list_o_1__item_o_2"
+                                  wId="mnre1045_1__div_4__content_o_1__list_o_1__item_o_2">
+                                 <LiNummer>-</LiNummer>
+                                 <Al>Er moet wordengewerkt buiten het broedseizoen of er wordt dat gezorgd dat geschikt broedgebied voorafgaande aan het broedseizoen niet (meer) aanwezig is. Voor rugstreeppad geldt dat gezorgd moet worden dat geen exemplaren meer op het terrein aanwezig zijn en dat exemplaren het werkterrein ook niet meer kunnen bereiken gedurende de verstorende activiteiten. Voor glad biggenkruid geldt dat exemplaren verplaatst dienen te worden naar aan alternatieve groeiplaats.</Al>
+                              </Li>
+                              <Li eId="div_4__content_o_1__list_o_1__item_o_3"
+                                  wId="mnre1045_1__div_4__content_o_1__list_o_1__item_o_3">
+                                 <LiNummer>-</LiNummer>
+                                 <Al>Op de Maasvlakte komen in de ondergrond relatief veel verontreinigingen voor. Voor het tracé hebben op het gehele traject bodemonderzoeken plaatsgevonden. De huidige onderzoeken geven aan dat er lichte verontreinigingen zijn, maar dat er geen vervolgonderzoek nodig is. Dit betekent dat deze locaties geen risico vormen voor het tracé. Enkel wanneer bij (graaf)werkzaamheden (verontreinigde) grond wordt afgevoerd moet dit gemeld worden volgens de wettelijke bepalingen. De effecten zijn tijdelijk als de locatie na ontdekking gesaneerd wordt.</Al>
+                              </Li>
+                              <Li eId="div_4__content_o_1__list_o_1__item_o_4"
+                                  wId="mnre1045_1__div_4__content_o_1__list_o_1__item_o_4">
+                                 <LiNummer>-</LiNummer>
+                                 <Al>Bij de verdere planuitwerking worden maatregelen genomen aan het converterstation zoals het binnen plaatsen van transformatoren en isolatie zodat het converterstation binnen de bestaande geluidzone wordt ingepast.</Al>
+                              </Li>
+                              <Li eId="div_4__content_o_1__list_o_1__item_o_5"
+                                  wId="mnre1045_1__div_4__content_o_1__list_o_1__item_o_5">
+                                 <LiNummer>-</LiNummer>
+                                 <Al>Bij de aanleg van de hoogspanningsverbinding op zee in het verdachte gebied wordt rekening gehouden met de aanwezigheid van niet gesprongen explosieven. Daarom zal voor de aanleg van de hoogspanningsverbinding onderzoek worden uitgevoerd om de aanleg veilig te laten geschieden. </Al>
+                              </Li>
+                              <Li eId="div_4__content_o_1__list_o_1__item_o_6"
+                                  wId="mnre1045_1__div_4__content_o_1__list_o_1__item_o_6">
+                                 <LiNummer>-</LiNummer>
+                                 <Al>Bij elke kruising van het tracé met andere kabels en leidingen moeten maatregelen worden genomen om ervoor te zorgen dat deze elkaar niet negatief beïnvloeden.</Al>
+                              </Li>
+                              <Li eId="div_4__content_o_1__list_o_1__item_o_7"
+                                  wId="mnre1045_1__div_4__content_o_1__list_o_1__item_o_7">
+                                 <LiNummer>-</LiNummer>
+                                 <Al>Er vindt nog onderzoek plaats naar beïnvloeding (EMC) op onder meer de spoorwegen. Indien noodzakelijk worden (technische) maatregelen genomen om de beïnvloeding te beperken of te voorkomen.</Al>
+                              </Li>
+                           </Lijst>
+                        </Inhoud>
+                     </Divisietekst>
+                  </Divisie>
+                  <Divisie eId="div_5" wId="mnre1045_1__div_5">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>5</Nummer>
+                        <Opschrift>Termijn waarin gemeente geen regels mag stellen die het projectbesluit belemmeren</Opschrift>
+                     </Kop>
+                     <Divisietekst eId="div_5__content_o_1" wId="mnre1045_1__div_5__content_o_1">
+                        <Inhoud>
+                           <Al>Op basis van artikel 4.19a van de Omgevingswet worden er in een omgevingsplan gedurende een termijn van 10 jaar na vaststelling van dit projectbesluit geen regels gesteld die het uitvoeren van het project Net op zee IJmuiden ver Beta belemmeren.</Al>
+                        </Inhoud>
+                     </Divisietekst>
+                  </Divisie>
+                  <Divisie eId="div_6" wId="mnre1045_1__div_6">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>6</Nummer>
+                        <Opschrift>Buiten toepassing gelaten regels</Opschrift>
+                     </Kop>
+                     <Divisietekst eId="div_6__content_o_1" wId="mnre1045_1__div_6__content_o_1">
+                        <Inhoud>
+                           <Al>Omdat de archeologische verwachtingswaarden in het projectgebied laag zijn, wordt niet verwacht dat verstoring van de archeologische waarden plaatsvindt. Er is dan ook geen beschermingsregeling noodzakelijk. Ter voorkoming van een onevenredige belemmering van de uitvoering van het project Net op zee IJmuiden Ver Beta worden daarom de regels in het omgevingsplan over het uitvoeren van werken en werkzaamheden binnen gebieden met archeologische waarden voor zover deze samenvallen met het project Net op zee IJmuiden Ver Betaop basis van artikel 5.53 lid 3 van de Omgevingswet buiten toepassing gelaten.</Al>
+                        </Inhoud>
+                     </Divisietekst>
+                  </Divisie>
+                  <Divisie eId="div_7" wId="mnre1045_1__div_7">
+                     <Kop>
+                        <Label>Hoofdstuk</Label>
+                        <Nummer>7</Nummer>
+                        <Opschrift>Omgevingsvergunningen en andere toestemmingen</Opschrift>
+                     </Kop>
+                     <Divisietekst eId="div_7__content_o_1" wId="mnre1045_1__div_7__content_o_1">
+                        <Inhoud>
+                           <Al>Voor de aanleg en instandhouding van het Net op zee IJmuiden Ver Beta is een projectbesluit noodzakelijk. Daarnaast zijn allerlei uitvoeringsbesluiten (vergunningen, ontheffingen, meldingen e.d.) vereist om tot daadwerkelijke realisatie van het Net op zee IJmuiden Ver Beta te komen. De minister heeft op basis van artikel 5.45 van de Omgevingswet bepaald dat artikel 16.7 van de Omgevingswet van toepassing is op de coördinatie van de besluiten ter uitvoering van dit projectbesluit. Dat betekent dat de coördinatieregeling uit afdeling 3.5 van de Algemene wet bestuursrecht van toepassing is op de voorbereiding van de besluiten ter uitvoering van dit projectbesluit. </Al>
+                           <Lijst eId="div_7__content_o_1__list_o_1"
+                                  wId="mnre1045_1__div_7__content_o_1__list_o_1"
+                                  type="expliciet">
+                              <Lijstaanhef>Dit projectbesluit voorziet dus enkel in het ruimtelijk mogelijk maken van het project Net op zee IJmuiden Ver Beta en geldt dus niet als:</Lijstaanhef>
+                              <Li eId="div_7__content_o_1__list_o_1__item_a"
+                                  wId="mnre1045_1__div_7__content_o_1__list_o_1__item_a">
+                                 <LiNummer>a.</LiNummer>
+                                 <Al>als omgevingsvergunning voor activiteiten ter uitvoering van het projectbesluit;</Al>
+                              </Li>
+                              <Li eId="div_7__content_o_1__list_o_1__item_b"
+                                  wId="mnre1045_1__div_7__content_o_1__list_o_1__item_b">
+                                 <LiNummer>b.</LiNummer>
+                                 <Al>als een bij algemene maatregel van bestuur aangewezen besluit, als bedoeld in artikel 5.52 sub b van de Omgevingswet.</Al>
+                              </Li>
+                           </Lijst>
+                        </Inhoud>
+                     </Divisietekst>
+                  </Divisie>
+               </Lichaam>
+               <Bijlage eId="cmp_A" wId="mnre1045_1__cmp_A">
+                  <Kop>
+                     <Label>Bijlage</Label>
+                     <Nummer>A</Nummer>
+                     <Opschrift>Overzicht informatieobjecten</Opschrift>
+                  </Kop>
+                  <Divisietekst eId="cmp_A__content_o_1" wId="mnre1045_1__cmp_A__content_o_1">
+                     <Inhoud>
+                        <Begrippenlijst eId="cmp_A__content_o_1__list_o_1"
+                                        wId="mnre1045_1__cmp_A__content_o_1__list_o_1">
+                           <Begrip eId="cmp_A__content_o_1__list_o_1__item_o_1"
+                                   wId="mnre1045_1__cmp_A__content_o_1__list_o_1__item_o_1">
+                              <Term>Converterstation</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_A__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              wId="mnre1045_1__cmp_A__content_o_1__list_o_1__item_o_1__ref_o_1"
+                                              ref="/join/id/regdata/mnre1045/2020/Converterstation/nld@2021-02-06;1">/join/id/regdata/mnre1045/2020/Converterstation/nld@2021-02-06;1</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_A__content_o_1__list_o_1__item_o_2"
+                                   wId="mnre1045_1__cmp_A__content_o_1__list_o_1__item_o_2">
+                              <Term>Hoogspanningsverbinding</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_A__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                              wId="mnre1045_1__cmp_A__content_o_1__list_o_1__item_o_2__ref_o_1"
+                                              ref="/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding/nld@2021-02-06;1">/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding/nld@2021-02-06;1</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                           <Begrip eId="cmp_A__content_o_1__list_o_1__item_o_3"
+                                   wId="mnre1045_1__cmp_A__content_o_1__list_o_1__item_o_3">
+                              <Term>Projectgebied</Term>
+                              <Definitie>
+                                 <Al>
+                                    <ExtIoRef eId="cmp_A__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                              wId="mnre1045_1__cmp_A__content_o_1__list_o_1__item_o_3__ref_o_1"
+                                              ref="/join/id/regdata/mnre1045/2020/Projectgebied/nld@2021-02-06;1">/join/id/regdata/mnre1045/2020/Projectgebied/nld@2021-02-06;1</ExtIoRef>
+                                 </Al>
+                              </Definitie>
+                           </Begrip>
+                        </Begrippenlijst>
+                     </Inhoud>
+                  </Divisietekst>
+               </Bijlage>
+               <Bijlage eId="cmp_o_2" wId="mnre1045_1__cmp_o_2">
+                  <Kop><Label>Bijlage 1: Motivering en overwegingen </Label></Kop>
+                  <Divisie eId="cmp_o_2__div_1" wId="mnre1045_1__cmp_o_2__div_1">
+                     <Kop>
+                        <Nummer>1</Nummer>
+                        <Opschrift>Inleiding</Opschrift>
+                     </Kop>
+                     <Divisie eId="cmp_o_2__div_1__div_1.1" wId="mnre1045_1__cmp_o_2__div_1__div_1.1">
+                        <Kop>
+                           <Nummer>1.1</Nummer>
+                           <Opschrift>Aanleiding</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="cmp_o_2__div_1__div_1.1__content_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_1__div_1.1__content_o_1">
+                           <Inhoud>
+                              <Al>Deze toelichting bevat de motivering van het besluit van de minister van Economische Zaken en Klimaat (EZK) en de minister van Binnenlandse Zaken en Koninkrijksrelaties (BZK) om de aanleg van een ondergrondse hoogspanningsverbinding van het windenergiegebied IJmuiden Ver naar het converterstation op de Maasvlakte in een inpassingsplan (ook wel afgekort tot IP) te regelen en is daarnaast de toelichting op de wijze van regelen.</Al>
+                              <Figuur eId="cmp_o_2__div_1__div_1.1__content_o_1__img_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_1__div_1.1__content_o_1__img_o_1">
+                                 <Illustratie breedte="7425"
+                                              dpi="72"
+                                              formaat="image/jpeg"
+                                              hoogte="7425"
+                                              naam="bijlage_1_image1.jpeg"
+                                              uitlijning="start"/>
+                                 <Bijschrift locatie="onder">Figuur 1.1: Ligging Net op zee IJmuiden Ver Beta</Bijschrift>
+                              </Figuur>
+                              <Al>Het windenergiegebied IJmuiden Ver Beta levert een belangrijke bijdrage aan het doel uit het Klimaatakkoord om in 2030 11,5 GW (gigawatt) windenergie op zee te realiseren. Op 27 maart 2018 zijn in een Kamerbrief de hoofdlijnen voor de verdere ontwikkeling van windenergie op zee tot 2030 uiteengezet, in de zogenaamde Routekaart 2030. Windenergiegebied IJmuiden Ver maakt onderdeel uit van de routekaart 2030. De routekaart 2030 gaat uit van het realiseren van windparken met een totaalvermogen van 6,1 GW in de onderstaande achtereenvolgende gebieden: 1.400 MW in het gebied Hollandse Kust (west), 700 MW in het gebied Ten noorden van de Waddeneilanden en circa 4 GW in het gebied IJmuiden Ver. De stroomproductie van het windenergiegebied IJmuiden Ver gaat via Net op zee IJmuiden Ver Alpha (2GW) en Net op zee IJmuiden Ver Beta (2GW) naar land. Alle bovengenoemde windenergiegebieden zijn aangewezen in opeenvolgende Rijksstructuurvisies. Op 5 april 2019 is een Kamerbief verschenen over de voortgang van de routekaart 2030. Hierin staat dat een platform de manier van aansluiten is voor Net op zee IJmuiden Ver, voor zowel Alpha als Beta. Waarbij op ieder platform circa 2 GW windenergiecapaciteit kan worden aangesloten en met behulp van 525 kilovolt (kV)-gelijkstroomkabels naar land kan worden getransporteerd. TenneT TSO B.V. (hierna: TenneT) zal als netbeheerder deze verbinding realiseren. </Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="cmp_o_2__div_1__div_1.2" wId="mnre1045_1__cmp_o_2__div_1__div_1.2">
+                        <Kop>
+                           <Nummer>1.2</Nummer>
+                           <Opschrift>Het project </Opschrift>
+                        </Kop>
+                        <Divisietekst eId="cmp_o_2__div_1__div_1.2__content_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_1__div_1.2__content_o_1">
+                           <Inhoud>
+                              <Al>In totaal wordt 4 GW van het windenergiegebied IJmuiden Ver aangesloten op het landelijk hoogspanningsnet. Met het onderhavige project Net op zee IJmuiden Ver Beta wordt 2 GW aangesloten. </Al>
+                              <Al>De windturbines in het windenergiegebied IJmuiden Ver worden direct aangesloten op een converterplatform (hierna ‘platform’) in het windenergiegebied. Het platform wordt met 525 kilovolt (kV)-gelijkstroomkabels aangesloten op een converterstation op land. In dit converterstation wordt de gelijkstroom omgezet in wisselstroom. Vervolgens gaat de elektriciteit via wisselstroomkabels van het converterstation naar het landelijke hoogspanningsnet.</Al>
+                              <Al>Het Net op zee IJmuiden Ver Beta betreft de aansluiting van het windpark IJmuiden Ver in het windenergiegebied IJmuiden Ver op het landelijke hoogspanningsnet. In figuur 1.2 zijn de onderdelen van het Net op zee IJmuiden Ver Beta schematisch weergegeven.</Al>
+                              <Figuur eId="cmp_o_2__div_1__div_1.2__content_o_1__img_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_1__div_1.2__content_o_1__img_o_1">
+                                 <Illustratie breedte="7652"
+                                              dpi="72"
+                                              formaat="image/jpeg"
+                                              hoogte="2729"
+                                              naam="bijlage_1_image2.jpeg"
+                                              uitlijning="start"/>
+                                 <Bijschrift locatie="onder">Figuur 1.2: Onderdelen project Net op zee IJmuiden Ver Beta, aangeduid met vlak binnen blauwe stippellijn</Bijschrift>
+                              </Figuur>
+                              <Lijst eId="cmp_o_2__div_1__div_1.2__content_o_1__list_o_1"
+                                     wId="mnre1045_1__cmp_o_2__div_1__div_1.2__content_o_1__list_o_1"
+                                     type="expliciet">
+                                 <Lijstaanhef>Het project bestaat uit de volgende hoofdonderdelen:</Lijstaanhef>
+                                 <Li eId="cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_1"
+                                     wId="mnre1045_1__cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_1">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een platform op zee voor de aansluiting van de windturbines en het omzetten van 66kV-wisselstroom (afkomstig van de windturbines) naar 525kV-gelijkstroom;</Al>
+                                 </Li>
+                                 <Li eId="cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_2"
+                                     wId="mnre1045_1__cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_2">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een ondergronds kabelsysteem op zee voor transport van 525kV-gelijkstroom;</Al>
+                                 </Li>
+                                 <Li eId="cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_3"
+                                     wId="mnre1045_1__cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_3">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een ondergronds kabelsysteem op land voor het verdere transport van 525kV-gelijkstroom naar een converterstation;</Al>
+                                 </Li>
+                                 <Li eId="cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_4"
+                                     wId="mnre1045_1__cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_4">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een converterstation op land voor het omzetten van 525kV-gelijkstroom naar 380kV-wisselstroom;</Al>
+                                 </Li>
+                                 <Li eId="cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_5"
+                                     wId="mnre1045_1__cmp_o_2__div_1__div_1.2__content_o_1__list_o_1__item_o_5">
+                                    <LiNummer>•</LiNummer>
+                                    <Al>een ondergrondse 380kV verbinding tussen het nieuwe converterstation en het nieuw te realiseren hoogspanningsstation Amaliahaven.</Al>
+                                 </Li>
+                              </Lijst>
+                              <Al>Het inpassingsplan heeft betrekking op het deel van het project dat in het gemeentelijk ingedeeld gebied is gelegen. Dit betreft het hoogspanningstracé tot circa 2 kilometer uit de kust , het hoogspanningstracé op land en de realisatie van het converterstation op de Maasvlakte. Het toekomstige 380kV-hoogspanningstation Amaliahaven is niet voorzien in dit project. Hiervoor wordt een separate procedure doorlopen. </Al>
+                              <Al>Omdat het ontwerp van dit inpassingsplan nog voor inwerkingtreding van de Omgevingswet ter inzage ligt, wordt gebruik gemaakt van het instrumentarium van de Wet ruimtelijke ordening in plaats van een projectbesluit op grond van de Omgevingswet. </Al>
+                           </Inhoud>
+                        </Divisietekst>
+                        <Divisie eId="cmp_o_2__div_1__div_1.2__div_1.2.1"
+                                 wId="mnre1045_1__cmp_o_2__div_1__div_1.2__div_1.2.1">
+                           <Kop>
+                              <Nummer>1.2.1</Nummer>
+                              <Opschrift>Ligging plangebied </Opschrift>
+                           </Kop>
+                           <Divisietekst eId="cmp_o_2__div_1__div_1.2__div_1.2.1__content_o_1"
+                                         wId="mnre1045_1__cmp_o_2__div_1__div_1.2__div_1.2.1__content_o_1">
+                              <Inhoud>
+                                 <Al>Het inpassingsplan reikt tot circa 2 kilometer uit de kust, daarbinnen ligt het gemeentelijk ingedeelde gebied. Voor het deel dat verder uit de kust gelegen is, wordt geen inpassingsplan opgesteld. Voor het gehele tracé (binnen en buiten gemeentelijk ingedeeld gebied) zijn uitvoeringsbesluiten nodig . Het plangebied is gelegen op grondgebied van de gemeenten Rotterdam en Westvoorne en is voor dit inpassingsplan in twee delen te verdelen, een onshore (land) en offshore (zee) gedeelte : </Al>
+                                 <Lijst eId="cmp_o_2__div_1__div_1.2__div_1.2.1__content_o_1__list_o_1"
+                                        wId="mnre1045_1__cmp_o_2__div_1__div_1.2__div_1.2.1__content_o_1__list_o_1"
+                                        type="expliciet">
+                                    <Li eId="cmp_o_2__div_1__div_1.2__div_1.2.1__content_o_1__list_o_1__item_o_1"
+                                        wId="mnre1045_1__cmp_o_2__div_1__div_1.2__div_1.2.1__content_o_1__list_o_1__item_o_1">
+                                       <LiNummer>•</LiNummer>
+                                       <Al>offshore: vanaf de grens van het gemeentelijk ingedeelde gebied voor de kust van de Maasvlakte tot aan het aanlandingspunt; </Al>
+                                    </Li>
+                                    <Li eId="cmp_o_2__div_1__div_1.2__div_1.2.1__content_o_1__list_o_1__item_o_2"
+                                        wId="mnre1045_1__cmp_o_2__div_1__div_1.2__div_1.2.1__content_o_1__list_o_1__item_o_2">
+                                       <LiNummer>•</LiNummer>
+                                       <Al>onshore: het tracé vanaf het aanlandingspunt tot en met het converterstation. </Al>
+                                    </Li>
+                                 </Lijst>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                     </Divisie>
+                     <Divisie eId="cmp_o_2__div_1__div_1.3" wId="mnre1045_1__cmp_o_2__div_1__div_1.3">
+                        <Kop>
+                           <Nummer>1.3</Nummer>
+                           <Opschrift>Nut en noodzaak</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="cmp_o_2__div_1__div_1.3__content_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_1__div_1.3__content_o_1">
+                           <Inhoud>
+                              <Al>Met het Net op zee IJmuiden Ver Beta wordt de door windenergie duurzaam opgewekte stroom in het windenergiegebied IJmuiden Ver aangesloten op het landelijke hoogspanningsnet. Er zijn twee belangrijke redenen voor het opwekken van duurzame energie. De eerste is het tegengaan van klimaatverandering als gevolg van te veel uitstoot van broeikasgassen waaronder CO2. De tweede reden is door zelf duurzame energie op te wekken, Nederland minder afhankelijk te maken van de import van fossiele energie. </Al>
+                              <Al>Met het ondertekenen van het VN-klimaatakkoord van Parijs (2016) heeft de Nederlandse regering zich gecommitteerd aan een vergaande vermindering van de uitstoot van broeikasgassen (49% vermindering in 2030 ten opzichte van 1990). Het regeerakkoord bevat de doelstelling om in 2030 een reductie van de CO2-uitstoot te realiseren door middel van onder meer windenergie op zee. Op 28 juni 2019 is met het Klimaatakkoord een omvangrijk samenhangend pakket gepresenteerd waarmee Nederland in 2030 de uitstoot van CO2 met ten minste 49% kan terugdringen.</Al>
+                              <Al>Op 27 maart 2018 is in de ‘Routekaart 2030’ de ontwikkeling van windenergie op zee tot 2030 uiteengezet. Het windenergiegebied IJmuiden Ver maakt onderdeel uit van deze routekaart 2030. In deze routekaart is aangegeven dat vanwege de grote totale omvang van de beoogde windparken (4 GW) en de grote afstand tot de kust (circa 80 km hemelsbreed), hiervoor een nieuw aansluitconcept nodig is. Daarom wordt IJmuiden Ver aangesloten met behulp van gelijkstroom. De omvang van het windenergiegebied (kavel) en de aansluiting van TenneT zijn op elkaar afgestemd wat leidt tot efficiëntie en kostenbesparing. Om aan de duurzame energiedoelstellingen te voldoen en een tijdige realisatie van de windparken te kunnen faciliteren, dient het Net op zee IJmuiden Ver Beta vanaf 2029 in bedrijf te zijn. In het ontwikkelkader windenergie op zee is als indicatieve opleverdatum het vierde kwartaal 2029 opgenomen.</Al>
+                              <Al>De Nederlandse Noordzee kan een grote rol spelen in het realiseren van de nationale bijdrage aan de doelen van het klimaatakkoord van Parijs en de daarvoor benodigde verduurzaming van onze energievoorziening richting 2050. Het Net op zee IJmuiden Ver Beta levert een bijdrage aan de energietransitie in Nederland door op doelmatige wijze de in het windenergiegebied opgewekte duurzame elektriciteit naar het Nederlandse hoogspanningsnet te transporteren.</Al>
+                              <Al>Eind 2018 is de afwegingsnotitie ‘Verkenning aanlanding netten op zee 2030’ verschenen waarin onderzocht is waar onder meer windenergiegebied IJmuiden aangesloten kan worden . Op 5 april 2019 is er een kamerbrief verschenen over de voortgang van de Routekaart 2030 . Hierin is, op basis van deze verkenning en het bestuurlijk overleg daarover, aangegeven dat IJmuiden Ver verbonden wordt met het landelijke hoogspanningsnet door twee 525 kV ondergrondse gelijkstroomverbindingen met elk een transportvermogen van 2 gigawatt (GW). De aansluitingen van beide verbindingen worden gespreid: zo zal ten minste één verbinding vanuit IJmuiden Ver moeten worden aangesloten op één van de zuidwestelijke 380 kV-stations Borssele, Rilland of Geertruidenberg. Verder wordt er gebruik gemaakt van twee platforms van elk 2 GW voor de aansluiting van windparken in IJmuiden Ver. Er is op die manier de meeste zekerheid dat het lukt om tijdig de windparken aldaar operationeel te hebben. </Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="cmp_o_2__div_1__div_1.6" wId="mnre1045_1__cmp_o_2__div_1__div_1.6">
+                        <Kop>
+                           <Nummer>1.6</Nummer>
+                           <Opschrift>Relatie met de m.e.r. </Opschrift>
+                        </Kop>
+                        <Divisietekst eId="cmp_o_2__div_1__div_1.6__content_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_1__div_1.6__content_o_1">
+                           <Inhoud>
+                              <Al>Het tracé voor het Net op zee IJmuiden Ver Beta is in de voorbereiding op dit inpassingsplan onder andere op basis van informatie uit de m.e.r.-procedure bepaald. Het doel hiervan is om het milieubelang een volwaardige rol te geven in de afweging ten aanzien van het tracé. </Al>
+                              <Al>Op grond van categorie D24.2 van het Besluit m.e.r. is de vaststelling van een tracé voor de aanleg van een ondergrondse hoogspanningsleiding m.e.r.-beoordelingsplichtig wanneer die verbinding over een lengte van 5 km of meer (tot 3 nautische mijl uit de kust) door (nader in het Besluit m.e.r. aangeduid) gevoelig gebied loopt en het spanningsniveau van die verbinding 150 kV of meer is. Ook is het project m.e.r.-beoordelingsplichtig op grond van categorie D 15.2 in verband met de grondwateronttrekking voor de aanleg. Bovendien is een Passende Beoordeling noodzakelijk omdat significante effecten op Natura 2000-gebieden bij het realiseren van het project niet op voorhand uit te sluiten zijn. Omdat een Passende Beoordeling nodig is, dient op grond van art. 7.2a Wet milieubeheer verplicht een Milieueffectrapport (MER) te worden opgesteld. </Al>
+                              <Al>Het resultaat van de m.e.r.-procedure is het MER waarin de effecten op het milieu staan beschreven van de verschillende tracéalternatieven van het Net op zee IJmuiden Ver Beta. De m.e.r.-procedure is beschreven in hoofdstuk 4 en is van belang bij het bepalen van het voorkeursalternatief. Het MER is als bijlage 1 bij de toelichting gevoegd. ‘Milieueffecten’ zijn effecten op zowel de mens (leefomgeving, ruimtegebruik en gebruiksfuncties) als de omgeving (bodem, water, natuur, archeologie, landschap en cultuurhistorie). Dit inpassingsplan maakt de juridisch-planologische inpassing van dit (voorkeurs)tracé mogelijk.</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                  </Divisie>
+                  <Divisie eId="cmp_o_2__div_2" wId="mnre1045_1__cmp_o_2__div_2">
+                     <Kop>
+                        <Nummer>2</Nummer>
+                        <Opschrift>Beleidskader</Opschrift>
+                     </Kop>
+                     <Divisie eId="cmp_o_2__div_2__div_2.1" wId="mnre1045_1__cmp_o_2__div_2__div_2.1">
+                        <Kop>
+                           <Nummer>2.1</Nummer>
+                           <Opschrift>Rijksbeleid</Opschrift>
+                        </Kop>
+                        <Divisie eId="cmp_o_2__div_2__div_2.1__div_2.1.1"
+                                 wId="mnre1045_1__cmp_o_2__div_2__div_2.1__div_2.1.1">
+                           <Kop>
+                              <Nummer>2.1.1</Nummer>
+                              <Opschrift>Energieakkoord voor duurzame groei, 2013</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="cmp_o_2__div_2__div_2.1__div_2.1.1__content_o_1"
+                                         wId="mnre1045_1__cmp_o_2__div_2__div_2.1__div_2.1.1__content_o_1">
+                              <Inhoud>
+                                 <Al>In het Energieakkoord voor duurzame groei (kortweg: Energieakkoord) is met de betrokken partijen een pakket aan maatregelen afgesproken om te komen tot een toename van het aandeel van hernieuwbare energieopwekking naar 14% in 2020 (deze doelstelling komt voort uit de Europese richtlijn voor hernieuwbare energie) en een verdere stijging van dit aandeel naar 16% in 2023. Onderdeel van dit pakket is de bouw van grootschalige windmolenparken in de Noordzee. Afgesproken is dat 4.450 MW aan windvermogen op zee operationeel is in 2023. </Al>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                        <Divisie eId="cmp_o_2__div_2__div_2.1__div_2.1.2"
+                                 wId="mnre1045_1__cmp_o_2__div_2__div_2.1__div_2.1.2">
+                           <Kop>
+                              <Nummer>2.1.2</Nummer>
+                              <Opschrift>Structuurvisie Windenergie op Zee</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="cmp_o_2__div_2__div_2.1__div_2.1.2__content_o_1"
+                                         wId="mnre1045_1__cmp_o_2__div_2__div_2.1__div_2.1.2__content_o_1">
+                              <Inhoud>
+                                 <Al>Etc…</Al>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                     </Divisie>
+                  </Divisie>
+                  <Divisie eId="cmp_o_2__div_3" wId="mnre1045_1__cmp_o_2__div_3">
+                     <Kop>
+                        <Nummer>3</Nummer>
+                        <Opschrift>Toepassing instructieregels en instructies</Opschrift>
+                     </Kop>
+                     <Divisie eId="cmp_o_2__div_3__div_3.1" wId="mnre1045_1__cmp_o_2__div_3__div_3.1">
+                        <Kop>
+                           <Nummer>3.1</Nummer>
+                           <Opschrift>Inleiding</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="cmp_o_2__div_3__div_3.1__content_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_3__div_3.1__content_o_1">
+                           <Inhoud>
+                              <Al>In het kader van het MER is uitgebreid onderzoek uitgevoerd gericht op het in beeld brengen van de milieugevolgen van de verschillende alternatieven voor het Net op zee IJmuiden Ver Beta en meer specifiek voor het gekozen voorkeursalternatief. Dit MER en onderzoek is voor het volledige project uitgevoerd. In dit inpassingsplan wordt alleen ingegaan op de effecten van de projectonderdelen zoals opgenomen in dit inpassingsplan en dus alleen het gedeelte van het project dat in gemeentelijk ingedeeld gebied ligt. In dit hoofdstuk wordt een beschrijving gegeven van de effecten van deze projectonderdelen. Deze effecten worden getoetst aan de sectorale wet- en regelgeving tijdens de aanlegfase en de gebruiksfase. Per milieuaspect wordt een beschrijving gegeven van het toetsingskader, de effecten van het project op basis van de resultaten van de diverse onderzoeken en de conclusie. Per aspect wordt beschreven of en op welke wijze een vertaling naar de bestemmingsregeling heeft plaatsgevonden. Voor een gedetailleerde beschrijving van het onderzoek naar de effecten van het Net op zee IJmuiden Ver Beta (en de onderzochte alternatieven) wordt verwezen naar het MER. Het MER is opgenomen in bijlage I bij deze motivering.</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="cmp_o_2__div_3__div_3.2" wId="mnre1045_1__cmp_o_2__div_3__div_3.2">
+                        <Kop>
+                           <Nummer>3.2</Nummer>
+                           <Opschrift>Natura 2000 </Opschrift>
+                        </Kop>
+                        <Divisie eId="cmp_o_2__div_3__div_3.2__div_3.2.1"
+                                 wId="mnre1045_1__cmp_o_2__div_3__div_3.2__div_3.2.1">
+                           <Kop>
+                              <Nummer>3.2.1</Nummer>
+                              <Opschrift>Toetsingskader</Opschrift>
+                           </Kop>
+                           <Divisietekst eId="cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1"
+                                         wId="mnre1045_1__cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1">
+                              <Inhoud>
+                                 <Al>De bescherming van de natuur is vastgelegd in de Wet natuurbescherming (Wnb). De Wet natuurbescherming heeft voor wat betreft gebiedsbescherming betrekking op de Europees beschermde Natura 2000-gebieden. Als er naar aanleiding van projecten, plannen en activiteiten, afzonderlijk of in combinatie met andere plannen of projecten, mogelijkerwijs significante effecten optreden, dienen deze bij de voorbereiding van een inpassingsplan in kaart te worden gebracht en beoordeeld. </Al>
+                                 <Al>Natura 2000-gebieden hebben een externe werking, zodat ook ingrepen die buiten deze gebieden plaatsvinden en verstoring kunnen veroorzaken, moeten worden getoetst op het effect van de ingreep op soorten en habitats. </Al>
+                                 <Lijst eId="cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1__list_o_1"
+                                        wId="mnre1045_1__cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1__list_o_1"
+                                        type="expliciet">
+                                    <Lijstaanhef>Een ruimtelijk plan dat ingevolge artikel 2.7, eerste lid, jo. artikel 2.8 van de Wnb significante gevolgen kan hebben voor een Natura 2000-gebied kan alleen worden vastgesteld indien uit een Passende Beoordeling de zekerheid is verkregen dat het plan de natuurlijke kenmerken van het gebied niet zal aantasten. Indien deze zekerheid niet is verkregen, kan het plan worden vastgesteld, indien wordt voldaan aan de volgende drie voorwaarden:</Lijstaanhef>
+                                    <Li eId="cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1__list_o_1__item_1"
+                                        wId="mnre1045_1__cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1__list_o_1__item_1">
+                                       <LiNummer>1.</LiNummer>
+                                       <Al>alternatieve oplossingen zijn niet voorhanden;</Al>
+                                    </Li>
+                                    <Li eId="cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1__list_o_1__item_2"
+                                        wId="mnre1045_1__cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1__list_o_1__item_2">
+                                       <LiNummer>2.</LiNummer>
+                                       <Al>het plan is nodig om dwingende redenen van grootopenbaar belang, met inbegrip van redenen van sociale of economische aard; en</Al>
+                                    </Li>
+                                    <Li eId="cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1__list_o_1__item_3"
+                                        wId="mnre1045_1__cmp_o_2__div_3__div_3.2__div_3.2.1__content_o_1__list_o_1__item_3">
+                                       <LiNummer>3.</LiNummer>
+                                       <Al>de noodzakelijke compenserende maatregelen worden getroffen om te waarborgen dat de algehele samenhang van het Natura 2000-netwerk bewaard blijft.</Al>
+                                    </Li>
+                                 </Lijst>
+                                 <Al>Etc. </Al>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                     </Divisie>
+                  </Divisie>
+                  <Divisie eId="cmp_o_2__div_4" wId="mnre1045_1__cmp_o_2__div_4">
+                     <Kop>
+                        <Nummer>4</Nummer>
+                        <Opschrift>Uitvoerbaarheid</Opschrift>
+                     </Kop>
+                     <Divisietekst eId="cmp_o_2__div_4__content_o_1"
+                                   wId="mnre1045_1__cmp_o_2__div_4__content_o_1">
+                        <Inhoud>
+                           <Al>In dit hoofdstuk staat de uitvoerbaarheid van het Net op zee IJmuiden Ver Beta centraal. Eerst wordt ingegaan op de economische uitvoerbaarheid, daarna wordt het schadebeleid van TenneT beschreven en vervolgens wordt de beschikbaarheid van de gronden toegelicht. Als laatste wordt ingegaan op de maatschappelijke en procedurele uitvoerbaarheid.</Al>
+                        </Inhoud>
+                     </Divisietekst>
+                     <Divisie eId="cmp_o_2__div_4__div_4.1" wId="mnre1045_1__cmp_o_2__div_4__div_4.1">
+                        <Kop>
+                           <Nummer>4.1</Nummer>
+                           <Opschrift>Economische uitvoerbaarheid</Opschrift>
+                        </Kop>
+                        <Divisie eId="cmp_o_2__div_4__div_4.1__div_4.1.1"
+                                 wId="mnre1045_1__cmp_o_2__div_4__div_4.1__div_4.1.1">
+                           <Kop>
+                              <Nummer>4.1.1</Nummer>
+                              <Opschrift>Financiële uitvoerbaarheid </Opschrift>
+                           </Kop>
+                           <Divisietekst eId="cmp_o_2__div_4__div_4.1__div_4.1.1__content_o_1"
+                                         wId="mnre1045_1__cmp_o_2__div_4__div_4.1__div_4.1.1__content_o_1">
+                              <Inhoud>
+                                 <Al>De kosten van de aanleg en instandhouding van de voorgenomen ontwikkeling en het risico, komen voor rekening van initiatiefnemer TenneT. De Wet windenergie op zee geeft TenneT als beheerder van het landelijk hoogspanningsnet formeel de taak het Net op zee voor te bereiden.</Al>
+                                 <Al>De taak om het Net op zee aan te leggen, inclusief de randvoorwaarden die daarbij horen en de regulering rond het Net op zee, is opgenomen in de Wet van 23 maart 2016 tot wijziging van de Elektriciteitswet 1998 (tijdig realiseren doelstellingen Energieakkoord; Staatsblad 2016, 116). In deze wet is TenneT aangewezen als netbeheerder op zee en daarmee verantwoordelijk voor de netaansluiting van de offshore windparken. TenneT kan de investeringskosten doorberekenen in de tarieven voor het transport van elektriciteit. Daarmee is sprake van een financieel uitvoerbaar project.</Al>
+                                 <Al>Etc. </Al>
+                              </Inhoud>
+                           </Divisietekst>
+                        </Divisie>
+                     </Divisie>
+                  </Divisie>
+                  <Divisie eId="cmp_o_2__div_5" wId="mnre1045_1__cmp_o_2__div_5">
+                     <Kop>
+                        <Nummer>5</Nummer>
+                        <Opschrift>Procesverloop</Opschrift>
+                     </Kop>
+                     <Divisietekst eId="cmp_o_2__div_5__content_o_1"
+                                   wId="mnre1045_1__cmp_o_2__div_5__content_o_1">
+                        <Inhoud>
+                           <Lijst eId="cmp_o_2__div_5__content_o_1__list_o_1"
+                                  wId="mnre1045_1__cmp_o_2__div_5__content_o_1__list_o_1"
+                                  type="expliciet">
+                              <Lijstaanhef>Op basis van art. 3.28, tweede lid, in samenhang met afdeling 3.2 Wro is op de voorbereiding van een inpassingsplan afdeling 3:4 van de Awb van toepassing. Dientengevolge zijn de volgende fasen te onderscheiden:</Lijstaanhef>
+                              <Li eId="cmp_o_2__div_5__content_o_1__list_o_1__item_o_1"
+                                  wId="mnre1045_1__cmp_o_2__div_5__content_o_1__list_o_1__item_o_1">
+                                 <LiNummer>•</LiNummer>
+                                 <Al>Verkenningsfase en m.e.r.-procedure;</Al>
+                              </Li>
+                              <Li eId="cmp_o_2__div_5__content_o_1__list_o_1__item_o_2"
+                                  wId="mnre1045_1__cmp_o_2__div_5__content_o_1__list_o_1__item_o_2">
+                                 <LiNummer>•</LiNummer>
+                                 <Al>Voorbereidings-/overlegfase; </Al>
+                              </Li>
+                              <Li eId="cmp_o_2__div_5__content_o_1__list_o_1__item_o_3"
+                                  wId="mnre1045_1__cmp_o_2__div_5__content_o_1__list_o_1__item_o_3">
+                                 <LiNummer>•</LiNummer>
+                                 <Al>Ontwerpfase waarin zienswijzen kunnen worden ingediend;</Al>
+                              </Li>
+                              <Li eId="cmp_o_2__div_5__content_o_1__list_o_1__item_o_4"
+                                  wId="mnre1045_1__cmp_o_2__div_5__content_o_1__list_o_1__item_o_4">
+                                 <LiNummer>•</LiNummer>
+                                 <Al>Vaststellingsfase;</Al>
+                              </Li>
+                              <Li eId="cmp_o_2__div_5__content_o_1__list_o_1__item_o_5"
+                                  wId="mnre1045_1__cmp_o_2__div_5__content_o_1__list_o_1__item_o_5">
+                                 <LiNummer>•</LiNummer>
+                                 <Al>Beroepsfase. </Al>
+                              </Li>
+                           </Lijst>
+                           <Al>In deze paragraaf wordt nader ingegaan op de participatie die heeft plaatsgevonden tijdens de verschillende fasen.</Al>
+                        </Inhoud>
+                     </Divisietekst>
+                     <Divisie eId="cmp_o_2__div_5__div_5.1" wId="mnre1045_1__cmp_o_2__div_5__div_5.1">
+                        <Kop>
+                           <Nummer>5.1</Nummer>
+                           <Opschrift>Verkenningsfase en m.e.r.-procedure</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="cmp_o_2__div_5__div_5.1__content_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_5__div_5.1__content_o_1">
+                           <Inhoud>
+                              <Al>Indien voor een activiteit tegelijkertijd een besluit en een plan worden voorbereid, uitsluitend met het oog op de inpassing van die activiteit, wordt op grond van artikel 14.4b Wet milieubeheer (Wm) één gecombineerd MER opgesteld en één m.e.r.-procedure doorlopen. Kortheidshalve wordt daarom gesproken over 'het MER'. In casu gaat het dus om een MER met een dubbele functie. In de eerste plaats betreft het een onderbouwend rapport ten behoeve van het onderhavige inpassingsplan; het planMER. Hiervoor zijn de ministers van EZK en van BZK verantwoordelijk. In de tweede plaats betreft het een onderbouwing van de vergunningen die afgegeven moeten worden; het projectMER. Hiervoor is de initiatiefnemer (TenneT) verantwoordelijk. In het navolgende wordt beschreven hoe de m.e.r.-procedure is doorlopen. </Al>
+                              <Al>De kennisgeving van het voornemen om te starten met het project Net op zee IJmuiden Ver Beta heeft van 22 maart tot en met 2 mei 2019 ter inzage gelegen (samen met het voorstel tot participatie). Van 30 augustus tot en met 10 oktober 2019 lag de concept Notitie Reikwijdte en Detailniveau voor het milieueffectrapport (MER) voor Net op zee IJmuiden Ver Beta ter inzage. Alle zienswijzen, reacties en adviezen, waaronder het advies van de Commissie voor de milieueffectrapportage, zijn meegenomen bij het vaststellen van de definitieve NRD. Op 20 maart 2020 heeft de minister van Economische Zaken en Klimaat de definitieve NRD voor Net op zee IJmuiden Ver Beta vastgesteld. De vaststelling van de definitieve NRD is bekendgemaakt door publicatie in de Staatscourant van 26 maart 2020 en in huis-aan-huisbladen. </Al>
+                              <Al>Op basis van de NRD, met in acht name van het advies van de Commissie voor de m.e.r. en de resultaten uit het participatieproces, is het MER Net op zee IJmuiden Ver Beta opgesteld. Ook is een Passende Beoordeling opgesteld waarin de effecten op de instandhoudingsdoelstellingen (IHD) van Natura 2000-gebieden als gevolg van het project zijn onderzocht en beschreven. Bij het opstellen van dit inpassingsplan en de uitvoeringsbesluiten is de informatie uit het MER gebruikt. </Al>
+                              <Al>Het MER wordt gelijktijdig met het ontwerp-inpassingsplan en de ontwerp-uitvoeringsbesluiten ter inzage gelegd. Gedurende deze termijn heeft een ieder de gelegenheid om zienswijzen in te dienen. De Commissie voor de m.e.r. wordt gelijktijdig om een toetsingsadvies gevraagd. Het toetsingsadvies van de Commissie m.e.r. en de zienswijzen worden door de ministers bij de besluitvorming omtrent het inpassingsplan betrokken. Voor het procedureverloop wordt voorts verwezen naar hoofdstuk 8 van deze toelichting.</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="cmp_o_2__div_5__div_5.2" wId="mnre1045_1__cmp_o_2__div_5__div_5.2">
+                        <Kop>
+                           <Nummer>5.2</Nummer>
+                           <Opschrift>Voorbereidings-/overlegfase </Opschrift>
+                        </Kop>
+                        <Divisietekst eId="cmp_o_2__div_5__div_5.2__content_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_5__div_5.2__content_o_1">
+                           <Inhoud>
+                              <Al>In het kader van 3.28, eerste lid Wro worden de raden van de gemeenten Rotterdam en Westvoorne alsook de Provinciale Staten van de provincie Zuid-Holland gehoord. Het horen van de gemeenteraden en provinciale staten wordt gecombineerd met het overleg, bedoeld in artikel 3.1.1 van het Bro. Ter voorbereiding worden tegelijkertijd ook de uitvoeringsdiensten van het Rijk (Rijkswaterstaat en RCE) en het waterschap gevraagd reactie te geven op het voorontwerp-inpassingsplan, alsmede de andere betrokken partijen, zoals het Havenbedrijf Rotterdam. </Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="cmp_o_2__div_5__div_5.3" wId="mnre1045_1__cmp_o_2__div_5__div_5.3">
+                        <Kop>
+                           <Nummer>5.3</Nummer>
+                           <Opschrift>Ontwerpfase </Opschrift>
+                        </Kop>
+                        <Divisietekst eId="cmp_o_2__div_5__div_5.3__content_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_5__div_5.3__content_o_1">
+                           <Inhoud>
+                              <Al>Met de kennisgeving van de terinzagelegging van het ontwerp inpassingsplan gaat de formele procedure voor de vaststelling van het inpassingsplan onder de rijkscoördinatieregeling van start. Van deze terinzagelegging wordt kennis gegeven in de Staatscourant, de plaatselijke krant(en) en de website van Bureau Energieprojecten (www.bureau-energieprojecten.nl). Het ontwerp inpassingsplan wordt vervolgens met het MER en de ontwerpuitvoeringsbesluiten gedurende zes weken ter inzage gelegd. Een ieder kan hierop zienswijzen indienen. </Al>
+                              <Al>Gelijktijdig met de plaatsing van de kennisgeving worden het ontwerp inpassingsplan en de overige ontwerp besluiten langs elektronische weg toegezonden aan de reeds genoemde, betrokken gemeenten, provincie, waterschappen en uitvoeringsdiensten van het Rijk. Ook wordt een informatieavond gehouden met als doel de burgers, bedrijven en overige maatschappelijke organisaties in het gebied te informeren over het ontwerp inpassingsplan, de overige ontwerp besluiten en het MER. Grondeigenaren en –gebruikers zijn over de terinzage legging van het ontwerp-inpassingsplan en de informatieavond rechtstreeks aangeschreven.</Al>
+                              <Al>Naar verwachting treedt per 1 januari 2022 de Omgevingswet in werking. Op dat moment is het onderhavige inpassingsplan nog in procedure. Voor deze situaties is op grond van hoofdstuk 11 van de Invoeringswet Omgevingswet overgangsrecht van toepassing. Ingevolge dit overgangsrecht worden lopende procedures volgens het oude recht afgewikkeld, voor zover het ontwerp inpassingsplan vòòr inwerkingtreding van de Omgevingswet ter inzage is gelegd. Dit betekent dat voor dit inpassingsplan alle relevante inhoudelijke en procedurele regels gelden die vóór inwerkingtreding van de Omgevingswet gelden. </Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                     <Divisie eId="cmp_o_2__div_5__div_5.4" wId="mnre1045_1__cmp_o_2__div_5__div_5.4">
+                        <Kop>
+                           <Nummer>5.4</Nummer>
+                           <Opschrift>Vaststellingsfase</Opschrift>
+                        </Kop>
+                        <Divisietekst eId="cmp_o_2__div_5__div_5.4__content_o_1"
+                                      wId="mnre1045_1__cmp_o_2__div_5__div_5.4__content_o_1">
+                           <Inhoud>
+                              <Al>Na afronding van de terinzagelegging, worden de ingediende zienswijzen in de Nota van Antwoord Zienswijzen samengevat en voorzien van commentaar. Daar waar nodig wordt het inpassingsplan aangepast of gewijzigd ten opzichte van het ontwerp inpassingsplan. Hetzelfde geldt voor de uitvoeringsbesluiten. Na vaststelling van het inpassingsplan door de minister van EZK en de minister van BZK wordt opnieuw een kennisgeving gedaan en worden het vastgestelde inpassingsplan en de uitvoeringsbesluiten gedurende zes weken ter inzage gelegd. Gedurende deze fase is het voor belanghebbenden die tijdig een zienswijze hebben ingediend en voor belanghebbenden wie redelijkerwijs niet kan worden verweten dat zij dit niet hebben gedaan, mogelijk om beroep in te stellen bij de Afdeling bestuursrechtspraak van de Raad van State. Er kan geen beroep ingesteld worden door gemeenten en andere decentrale overheden.</Al>
+                           </Inhoud>
+                        </Divisietekst>
+                     </Divisie>
+                  </Divisie>
+               </Bijlage>
+            </RegelingVrijetekst>
+         </WijzigBijlage>
+         <WijzigBijlage eId="cmp_B" wId="mnre1045_1__cmp_B">
+            <Kop>
+               <Label>Bijlage</Label>
+               <Nummer>A</Nummer>
+               <Opschrift>Bijlage bij Artikel 1</Opschrift>
+            </Kop>
+            <RegelingTijdelijkdeel componentnaam="tijdelijkDeel" wordt="/akn/nl/act/mnre1045/2020/TijdelijkDeel/nld@2021-02-06;1">
+               <RegelingOpschrift wId="longTitle" eId="longTitle">
+                  <Al>Projectbesluit net op zee</Al>
+               </RegelingOpschrift>
+               <Lichaam wId="body" eId="body">
+                  <Conditie>
+                     <Artikel eId="art_o_1" wId="mnre1045_1__art_o_1">
+                        <Kop>
+                           <Opschrift>Voorrangsbepaling</Opschrift>
+                        </Kop>
+                        <Inhoud>
+                           <Al>In aanvulling op en/of in afwijking van de bepalingen in het omgevingsplan van de gemeente Rotterdam gelden de navolgende beschermingsregels. Voor zover deze voorbeschermingsregels afwijken van het omgevingsplan gelden alleen de voorbeschermingsregels.</Al>
+                        </Inhoud>
+                     </Artikel>
+                  </Conditie>
+                  <Artikel wId="mnre1045_1__art_I" eId="art_I">
+                     <Kop>
+                        <Label>Oppassen!</Label>
+                     </Kop>
+                     <Inhoud>
+                        <Al>Oppassen voor schepen, er ligt een net op zee.</Al>
+                     </Inhoud>
+                  </Artikel>
+               </Lichaam>
+            </RegelingTijdelijkdeel>
+         </WijzigBijlage>
+      </BesluitCompact>
+   </BesluitVersie>
+   <RegelingVersieInformatie>
+      <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <FRBRWork>/akn/nl/act/mnre1045/2020/OOWPNOZIJReg1vB</FRBRWork>
+         <FRBRExpression>/akn/nl/act/mnre1045/2020/OOWPNOZIJReg1vB/nld@2021-02-06;1</FRBRExpression>
+         <soortWork>/join/id/stop/work_019</soortWork>
+      </ExpressionIdentificatie>
+      <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <versienummer>1</versienummer>
+      </RegelingVersieMetadata>
+      <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+         <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
+         <maker>/tooi/id/ministerie/mnre1045</maker>
+         <soortBestuursorgaan>/tooi/def/thes/kern/c_91fb5e42</soortBestuursorgaan>
+         <officieleTitel>Projectbesluit net op zee IJmuiden Ver Beta</officieleTitel>
+         <alternatieveTitels>
+            <alternatieveTitel>Projectbesluit net op zee</alternatieveTitel>
+         </alternatieveTitels>
+         <heeftCiteertitelInformatie>
+            <CiteertitelInformatie>
+               <citeertitel>Projectbesluit net op zee IJmuiden Ver Beta</citeertitel>
+               <isOfficieel>true</isOfficieel>
+            </CiteertitelInformatie>
+         </heeftCiteertitelInformatie>
+         <afkortingen>
+            <afkorting>PBNOZIJ</afkorting>
+         </afkortingen>
+         <soortRegeling>/join/id/stop/regelingtype_007</soortRegeling>
+         <onderwerpen>
+            <onderwerp>/tooi/def/concept/c_cfc7d5ab</onderwerp>
+         </onderwerpen>
+         <overheidsdomeinen>
+            <overheidsdomein>/tooi/def/concept/c_3708ac5e</overheidsdomein>
+         </overheidsdomeinen>
+         <rechtsgebieden>
+            <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+         </rechtsgebieden>
+      </RegelingMetadata>
+   </RegelingVersieInformatie>
+   <RegelingVersieInformatie>
+   <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <FRBRWork>/akn/nl/act/mnre1045/2020/TijdelijkDeel</FRBRWork>
+      <FRBRExpression>/akn/nl/act/mnre1045/2020/TijdelijkDeel/nld@2021-02-06;1</FRBRExpression>
+      <soortWork>/join/id/stop/work_021</soortWork>
+      <isTijdelijkDeelVan>
+         <WorkIdentificatie>
+            <FRBRWork>/akn/nl/act/gm0599/2021/omgevingsplanRotterdam</FRBRWork>
+            <soortWork>/join/id/stop/work_019</soortWork>
+         </WorkIdentificatie>
+      </isTijdelijkDeelVan>
+   </ExpressionIdentificatie>
+   <RegelingVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <versienummer>1</versienummer>
+   </RegelingVersieMetadata>
+   <RegelingMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
+      <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
+      <maker>/tooi/id/ministerie/mnre1045</maker>
+      <soortBestuursorgaan>/tooi/def/thes/kern/c_91fb5e42</soortBestuursorgaan>
+      <officieleTitel>Projectbesluit net op zee</officieleTitel>
+      <alternatieveTitels>
+         <alternatieveTitel>Projectbesluit net op zee</alternatieveTitel>
+      </alternatieveTitels>
+      <heeftCiteertitelInformatie>
+         <CiteertitelInformatie>
+            <citeertitel>Projectbesluit net op zee omgevingsplan Rotterdam deel</citeertitel>
+            <isOfficieel>true</isOfficieel>
+         </CiteertitelInformatie>
+      </heeftCiteertitelInformatie>
+      <afkortingen>
+         <afkorting>PBNOZIJ</afkorting>
+      </afkortingen>
+      <soortRegeling>/join/id/stop/regelingtype_007</soortRegeling>
+      <onderwerpen>
+         <onderwerp>/tooi/def/concept/c_cfc7d5ab</onderwerp>
+      </onderwerpen>
+      <overheidsdomeinen>
+         <overheidsdomein>/tooi/def/concept/c_3708ac5e</overheidsdomein>
+      </overheidsdomeinen>
+      <rechtsgebieden>
+         <rechtsgebied>/tooi/def/concept/c_8ad05f6d</rechtsgebied>
+      </rechtsgebieden>
+   </RegelingMetadata>
+   </RegelingVersieInformatie>
+</AanleveringBesluit>
