@@ -7,16 +7,16 @@
                              xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering https://standaarden.overheid.nl/lvbb/1.2.0/lvbb-stop-aanlevering.xsd">
    <InformatieObjectVersie>
       <ExpressionIdentificatie xmlns="https://standaarden.overheid.nl/stop/imop/data/">
-         <FRBRWork>/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding</FRBRWork>
-         <FRBRExpression>/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding/nld@2021-02-06;1</FRBRExpression>
+         <FRBRWork>/join/id/regdata/mnre1045/2020/Projectgebied2</FRBRWork>
+         <FRBRExpression>/join/id/regdata/mnre1045/2020/Projectgebied2/nld@2021-02-06;1</FRBRExpression>
          <soortWork>/join/id/stop/work_010</soortWork>
       </ExpressionIdentificatie>
       <InformatieObjectVersieMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <heeftBestanden>
             <heeftBestand>
                <Bestand>
-                  <bestandsnaam>Hoogspanningsverbinding.gml</bestandsnaam>
-                  <hash>d4ba3d91100bc02f97c44d3ad1cb3808a66052a8f09488ec25c3f4c60b5a7f236021228ac3812fa13bc17f21e6e37fed65d9a7757c95f1e032b80a01909c82dd</hash>
+                  <bestandsnaam>Projectgebied2.gml</bestandsnaam>
+                  <hash>ba7ae366a0769b4f034ce5f556bd9f01e55fb4b9051dc4060272022ba82d9d15dee52cd7db4f1ee31fb7ca38def89efae9518e1c7626b56ee495d21df48f5495</hash>
                </Bestand>
             </heeftBestand>
          </heeftBestanden>
@@ -25,8 +25,8 @@
       <InformatieObjectMetadata xmlns="https://standaarden.overheid.nl/stop/imop/data/">
          <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
          <maker>/tooi/id/ministerie/mnre1045</maker>
-         <officieleTitel>/join/id/regdata/mnre1045/2020/Hoogspanningsverbinding</officieleTitel>
-         <naamInformatieObject>Hoogspanningsverbinding</naamInformatieObject>
+         <officieleTitel>/join/id/regdata/mnre1045/2020/Projectgebied2</officieleTitel>
+         <naamInformatieObject>Projectgebied</naamInformatieObject>
          <publicatieinstructie>TeConsolideren</publicatieinstructie>
          <formaatInformatieobject>/join/id/stop/informatieobject/gio_002</formaatInformatieobject>
       </InformatieObjectMetadata>

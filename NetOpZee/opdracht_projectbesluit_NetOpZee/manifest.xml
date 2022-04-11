@@ -14,6 +14,10 @@
     <contentType>application/gml+xml</contentType>
   </bestand>
   <bestand>
+    <bestandsnaam>Projectgebied2.gml</bestandsnaam>
+    <contentType>application/gml+xml</contentType>
+  </bestand>
+  <bestand>
     <bestandsnaam>besluit.xml</bestandsnaam>
     <contentType>application/xml</contentType>
   </bestand>
@@ -43,6 +47,10 @@
   </bestand>
   <bestand>
     <bestandsnaam>gio_Projectgebied.xml</bestandsnaam>
+    <contentType>application/xml</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>gio_Projectgebied2.xml</bestandsnaam>
     <contentType>application/xml</contentType>
   </bestand>
   <bestand>
