@@ -1156,7 +1156,7 @@
             <RegelingTijdelijkdeel componentnaam="tijdelijkDeel"
                                    wordt="/akn/nl/act/mnre1045/2020/TijdelijkDeel/nld@2021-02-06;1">
                <RegelingOpschrift eId="longTitle" wId="longTitle">
-                  <Al>Projectbesluit net op zee</Al>
+                  <Al>Regels vanuit projectbesluit geldend op Omgevingsplan</Al>
                </RegelingOpschrift>
                <Lichaam eId="body" wId="body">
                   <Conditie>
@@ -1165,13 +1165,14 @@
                            <Opschrift>Voorrangsbepaling</Opschrift>
                         </Kop>
                         <Inhoud>
-                           <Al>In aanvulling op en/of in afwijking van de bepalingen in het omgevingsplan van de gemeente Rotterdam gelden de navolgende beschermingsregels. Voor zover deze voorbeschermingsregels afwijken van het omgevingsplan gelden alleen de voorbeschermingsregels.</Al>
+                           <Al>Voor zover de regels van het omgevingsplan van de gemeente Rotterdam afwijken van de regels waarmee Projectbesluit Net op zee Ijmuiden het omgevingsplan wijzigt, gelden alleen de regels die door het projectbesluit zijn toegevoegd.</Al>
                         </Inhoud>
                      </Artikel>
                   </Conditie>
                   <Artikel eId="art_o_1_inst2" wId="mnre1045_1__art_o_1_inst2">
                      <Kop>
-                        <Label>Oppassen!</Label>
+                        <Label>Artikel</Label>
+                        <Opschrift>Oppassen!</Opschrift>
                      </Kop>
                      <Inhoud>
                         <Al>Oppassen voor schepen, er ligt een net op zee.</Al>
@@ -1264,7 +1265,7 @@
          <eindverantwoordelijke>/tooi/id/ministerie/mnre1045</eindverantwoordelijke>
          <maker>/tooi/id/ministerie/mnre1045</maker>
          <soortBestuursorgaan>/tooi/def/thes/kern/c_91fb5e42</soortBestuursorgaan>
-         <officieleTitel>Projectbesluit net op zee IJmuiden Ver Beta</officieleTitel>
+         <officieleTitel>Regels vanuit projectbesluit geldend op Omgevingsplan</officieleTitel>
          <alternatieveTitels>
             <alternatieveTitel>Projectbesluit net op zee</alternatieveTitel>
          </alternatieveTitels>
@@ -1274,6 +1275,15 @@
                <isOfficieel>true</isOfficieel>
             </CiteertitelInformatie>
          </heeftCiteertitelInformatie>
+         <!--<grondslagen>
+            <grondslag>
+               <TekstReferentie>
+                  <uri></uri>
+                  <label></label>
+                  <soortRef></soortRef>
+               </TekstReferentie>
+            </grondslag>
+         </grondslagen>-->
          <afkortingen>
             <afkorting>PBNOZIJ</afkorting>
          </afkortingen>

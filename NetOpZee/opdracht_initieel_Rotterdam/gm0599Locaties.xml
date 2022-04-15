@@ -38,7 +38,7 @@
             <l:Gebied>
                <l:identificatie>nl.imow-gm0599.gebied.Rotterdam</l:identificatie>
                <l:geometrie>
-                  <l:GeometrieRef xlink:href="07088a0d-4c17-4f66-95f7-bc70514bf42b"/>
+                  <l:GeometrieRef xlink:href="7298e482-47cf-4dc1-a61c-e19997f46f77"/>
                </l:geometrie>
             </l:Gebied>
          </ow-dc:owObject>
