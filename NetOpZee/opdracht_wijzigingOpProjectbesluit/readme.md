@@ -1,1 +1,0 @@
-Dit is puur een technische wijziging, slaat inhoudelijk nergens op.

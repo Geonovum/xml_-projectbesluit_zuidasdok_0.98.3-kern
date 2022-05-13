@@ -1126,7 +1126,7 @@
             <RegelingMutatie componentnaam="omgevingsplandeel" 
                was="/akn/nl/act/mnre1045/2020/TijdelijkDeel/nld@2021-02-06;1" 
                wordt="/akn/nl/act/mnre1045/2020/TijdelijkDeel/nld@2021-03-07;2">
-               <Vervang wat="">
+               <Vervang wat="mnre1045_1__art_o_1_inst2">
                   <Artikel eId="art_o_1_inst2" wId="mnre1045_1__art_o_1_inst2">
                      <Kop>
                         <Label>Artikel</Label>

@@ -4,6 +4,7 @@
     <bestand>
     <bestandsnaam>besluit.xml</bestandsnaam>
     <contentType>application/xml</contentType>
+    </bestand>
     <bestand>
     <bestandsnaam>manifest-ow.xml</bestandsnaam>
     <contentType>application/xml</contentType>
@@ -15,5 +16,57 @@
   <bestand>
     <bestandsnaam>opdracht.xml</bestandsnaam>
     <contentType>application/xml</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image1.jpeg</bestandsnaam>
+    <contentType>image/jpeg</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image10.png</bestandsnaam>
+    <contentType>image/png</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image11.jpeg</bestandsnaam>
+    <contentType>image/jpeg</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image2.png</bestandsnaam>
+    <contentType>image/png</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image3.png</bestandsnaam>
+    <contentType>image/png</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image4.png</bestandsnaam>
+    <contentType>image/png</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image5.jpeg</bestandsnaam>
+    <contentType>image/jpeg</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image6.png</bestandsnaam>
+    <contentType>image/png</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image7.png</bestandsnaam>
+    <contentType>image/png</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image8.png</bestandsnaam>
+    <contentType>image/png</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>image9.jpeg</bestandsnaam>
+    <contentType>image/jpeg</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>bijlage_1_image1.jpeg</bestandsnaam>
+    <contentType>image/jpeg</contentType>
+  </bestand>
+  <bestand>
+    <bestandsnaam>bijlage_1_image2.jpeg</bestandsnaam>
+    <contentType>image/jpeg</contentType>
   </bestand>
 </manifest>
