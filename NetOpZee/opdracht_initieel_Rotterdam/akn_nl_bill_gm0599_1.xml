@@ -113,9 +113,8 @@
                   <Nummer>IV</Nummer>
                </Kop>
                <Inhoud>
-                     <Al>Ter demonstratie hier een PDF dat alleen bij het besluit hoort, namelijk: <ExtIoRef eId="art_IV__ref_o_1"
-                        wId="gm0599_1__art_IV__ref_o_1"
-                        ref="/join/id/pubdata/gm0599/2022/PDF/nld@2022-04-11;1">/join/id/pubdata/gm0599/2022/PDF/nld@2022-04-11;1</ExtIoRef>.</Al>
+                     <Al>Ter demonstratie hier een PDF dat alleen bij het besluit hoort, namelijk: <ExtRef soort="JOIN"
+                        ref="/join/id/pubdata/gm0599/2022/PDF/nld@2022-04-11;1">/join/id/pubdata/gm0599/2022/PDF/nld@2022-04-11;1</ExtRef>.</Al>
                </Inhoud>
             </Artikel>
          </Lichaam>
